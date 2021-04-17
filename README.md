@@ -23,7 +23,7 @@ Projects from the TSIA classes:
 
 Projects from the MODS classes:
 
-- MODS202: *Econometrics
+- MODS202: *Econometrics*
 - MODS203: *Data Analysis in Economics I: Collection and Visualization*
 - MODS206: *Data Analysis in Economics II: Applied Econometrics*
 
