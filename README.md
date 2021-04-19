@@ -13,7 +13,7 @@ Hope it helps some lost students haha
 
 ## What You'll Find Here
 
-🧠 Projects from the TSIA:
+🧠 TSIA projects:
 
 - TSIA201: *Signal Representation*
 - SD-TSIA204: *Statistics: Linear Models*
@@ -21,13 +21,13 @@ Hope it helps some lost students haha
 - SD-TSIA210: *Machine Learning*
 - SD-TSIA211: *Optimization for Machine Learning*
 
-📈 Projects from the MODS:
+📈 MODS projects:
 
 - MODS202: *Econometrics*
 - MODS203: *Data Analysis in Economics I: Collection and Visualization*
 - MODS206: *Data Analysis in Economics II: Applied Econometrics*
 
-💻 Projects from Créneau D:
+💻 Créneau D projects:
 
 - MDI210: *Optimization and Numerical Analysis*
 - MDI220: *Statistics*
