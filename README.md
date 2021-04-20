@@ -32,3 +32,4 @@ Hope it helps some lost students haha
 - MDI210: *Optimization and Numerical Analysis*
 - MDI220: *Statistics*
 - INF203: *Web Development*
+- SD202: *Databases*
