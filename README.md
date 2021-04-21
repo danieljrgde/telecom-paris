@@ -16,6 +16,7 @@ Hope it helps some lost students haha
 🧠 TSIA projects:
 
 - TSIA201: *Signal Representation*
+- TSIA203: *Introduction to Deep Learning*
 - SD-TSIA204: *Statistics: Linear Models*
 - SD-TSIA205: *Advanced Statistics*
 - SD-TSIA210: *Machine Learning*
