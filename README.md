@@ -1,4 +1,4 @@
-# Telecom
+# Télécom Paris - Institut Polytechnique de Paris
 
 Hi there 👋
 
