@@ -1,0 +1,20 @@
+curl --header "Content-Type: application/json" \
+--data '{ 
+    "key": "imaginary",
+    "title": "title",
+    "journal": "journal",
+    "year": "year",
+    "month": "month",
+    "keywords": "keywords",
+    "lang": "lang",
+    "authors": [ 
+        "author1",
+        "author2",
+        "author3" 
+    ], 
+    "category": "category",
+    "state": "state",
+    "dept": "dept",
+    "group": "group"
+}' \
+--request POST http://localhost:8000/ref

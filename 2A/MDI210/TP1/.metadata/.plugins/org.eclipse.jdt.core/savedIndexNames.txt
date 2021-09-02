@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\Dell\Desktop\Code\Telecom\2A\P1\MDI210\TP1\.metadata\.plugins\org.eclipse.jdt.core
+542094340.index
+1858919773.index

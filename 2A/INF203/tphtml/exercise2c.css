@@ -1,0 +1,12 @@
+#dv1 {
+    border: 1px solid; 
+    padding: 15px;
+}
+#dv2 img {
+    margin-right: 11px; 
+    float: left;
+}
+#dv3 {
+    background-color: gray; 
+    margin: 10px;
+}

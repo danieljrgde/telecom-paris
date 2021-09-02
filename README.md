@@ -4,10 +4,11 @@ Hi there 👋
 
 My name is Daniel, I attended Télécom Paris in 2020/2021.
 
-I created this repository to share with you some of the projects that I did while following the TSIA (Signal Processing for Artificial Intelligence) and MODS-DATA (Markets, 
-Organizations, Data, Strategies) filières.
+I created this repository to share with you some of the projects that I did while following the TSIA (Signal Processing for Artificial Intelligence) and MODS-DATA (Markets, Organizations, Data, Strategies) filières.
 
 Hope it helps some lost students haha
+
+**PS: I'd also like to thank José Lucas Barretto, Kevin Kühl and Lucas Miguel Agrizzi for providing their works from other filières.**
 
 <br>
 

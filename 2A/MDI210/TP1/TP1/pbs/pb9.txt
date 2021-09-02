@@ -1,0 +1,12 @@
+
+2 3
+1 1 11
+1 0 7 
+0 1 7
+1 2
+Attention : ecrire en debut de fichier
+nombre de variables puis nombre de contraintes
+puis les contraintes, si a1 x1 + a2 x2 <= b : ecrire a1 a2 b
+puis la fonction objectif, si z = c1 x1 + c2 x2 : ecrire c1 c2
+
+

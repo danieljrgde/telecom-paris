@@ -1,0 +1,17 @@
+{
+  "name": "webapplab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "mime-types": "^2.1.28",
+    "url": "^0.11.0"
+  }
+}

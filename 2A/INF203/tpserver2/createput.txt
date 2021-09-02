@@ -1,0 +1,6 @@
+curl --header "Content-Type: application/json" \
+--data '{
+    "title": "putTitle",
+    "journal": "putJournal"
+}' \
+--request PUT http://localhost:8000/ref/seacBook-Ch2

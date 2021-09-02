@@ -1,0 +1,23 @@
+#dv1 {
+    border: 1px solid; 
+    padding: 15px;
+}
+#dv2 img {
+    margin-right: 11px; 
+    float: left;
+}
+#dv3 {
+    background-color: gray; 
+    margin: 10px;
+}
+.third-div {
+    position: absolute;
+    height: 420px;
+    width: 420px;
+    top: 125px;
+    left: 125px;
+}
+
+.third-div:hover {
+    color: crimson;
+}
