@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>C (programming language) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"C_(programming_language)","wgTitle":"C (programming language)","wgCurRevisionId":799760474,"wgRevisionId":799760474,"wgArticleId":6021,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages containing links to subscription-only content","Wikipedia semi-protected pages","All articles with unsourced statements","Articles with unsourced statements from April 2015","Articles needing additional references from October 2012","All articles needing additional references","Articles needing additional references from July 2014","Wikipedia articles with LCCN identifiers","Wikipedia articles with GND identifiers","Wikipedia articles with BNF identifiers","Articles with example code","American inventions","C (programming language)","C programming language family","Cross-platform software","Low-level programming languages","Procedural programming languages","Programming languages created in 1972","Programming languages with an ISO standard","Statically typed programming languages","Systems programming languages"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"C_(programming_language)","wgRelevantArticleId":6021,"wgRequestId":"WcFWsApAMCUAABmRSa4AAABU","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["autoconfirmed"],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":false,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q15777","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.math.scripts","ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.30.0-wmf.18"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/1200px-The_C_Programming_Language_logo.svg.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/C_(programming_language)"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/C_(programming_language)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-C_programming_language rootpage-C_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+<div id="mw-indicator-pp-default" class="mw-indicator"><a><img alt="Page semi-protected" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Padlock-silver.svg/20px-Padlock-silver.svg.png" width="20" height="20" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Padlock-silver.svg/30px-Padlock-silver.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Padlock-silver.svg/40px-Padlock-silver.svg.png 2x" data-file-width="128" data-file-height="128" /></a></div>
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">C (programming language)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					navigation, 					search
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="infobox vevent" style="width:22em">
+<caption class="summary">C</caption>
+<tr>
+<td colspan="2" style="text-align:center"><a><img alt="Text in light blue serif capital letters on white background and very large light blue sans-serif letter C." src="//upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/140px-The_C_Programming_Language_logo.svg.png" width="140" height="149" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/210px-The_C_Programming_Language_logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/280px-The_C_Programming_Language_logo.svg.png 2x" data-file-width="731" data-file-height="777" /></a>
+<div><i>The C Programming Language</i><sup id="cite_ref-k.26r1e_1-0" class="reference">[1]</sup> (often referred to as "K&amp;R"), the seminal book on C</div>
+</td>
+</tr>
+<tr>
+<th scope="row">Paradigm</th>
+<td><a href="Imperative_programming.html" title="Imperative programming">Imperative</a> (procedural), structured</td>
+</tr>
+<tr>
+<th scope="row">Designed&#160;by</th>
+<td>Dennis Ritchie</td>
+</tr>
+<tr>
+<th scope="row">Developer</th>
+<td class="organiser">Dennis Ritchie &amp; Bell Labs (creators); ANSI X3J11 (ANSI C); <span class="nowrap">ISO/IEC JTC1/SC22/WG14</span> (ISO C)</td>
+</tr>
+<tr>
+<th scope="row">First&#160;appeared</th>
+<td>1972<span class="noprint">; 45&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">1972</span>)</span><sup id="cite_ref-dottcl_2_2-0" class="reference">[2]</sup></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center"></td>
+</tr>
+<tr>
+<th scope="row" style="white-space: nowrap;">Stable release</th>
+<td>
+<div style="margin:0px;">C11 / December&#160;2011<span class="noprint">; 5&#160;years ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2011-12</span>)</span></div>
+</td>
+</tr>
+<tr style="display:none">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row"><a href="Type_system.html" title="Type system">Typing discipline</a></th>
+<td><a href="Type_system.html" title="Type system">Static</a>, weak, manifest, nominal</td>
+</tr>
+<tr>
+<th scope="row"><a href="Operating_system.html" title="Operating system">OS</a></th>
+<td>Cross-platform</td>
+</tr>
+<tr>
+<th scope="row">Filename extensions</th>
+<td><span style="font-family: monospace, monospace;">.c</span>, <span style="font-family: monospace, monospace;">.h</span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Major implementations</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">K&amp;R, <a href="GNU_Compiler_Collection.html" title="GNU Compiler Collection">GCC</a>, Clang, <span class="nowrap">Intel C,</span> Microsoft Visual C++, <span class="nowrap">Pelles C,</span> <span class="nowrap">Watcom C</span></td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Dialects</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">Cyclone, Unified Parallel C, Split-C, Cilk, C*</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced by</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">B (BCPL, CPL), ALGOL 68,<sup id="cite_ref-dottcl_3-0" class="reference">[3]</sup> <a href="Assembly_language.html" title="Assembly language">Assembly</a>, PL/I, FORTRAN</td>
+</tr>
+<tr>
+<th colspan="2" style="text-align:center;background-color: #eee;">Influenced</th>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center">Numerous: AMPL, AWK, csh, <a href="C++.html" title="C++">C++</a>, C--, C#, Objective-C, BitC, D, Go, <a href="Java_(programming_language).html" title="Java (programming language)">Java</a>, <a href="JavaScript.html" title="JavaScript">JavaScript</a>, Julia, Limbo, LPC, Perl, PHP, Pike, Processing, <a href="Python_(programming_language).html" title="Python (programming language)">Python</a>, Rust, Seed7, Vala, Verilog (HDL)<sup id="cite_ref-vinsp_4-0" class="reference">[4]</sup></td>
+</tr>
+<tr>
+<td colspan="2" class="hlist" style="text-align:center;border-top: 1px solid #aaa; padding-top: 3px;">
+<ul>
+<li><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/16px-Wikibooks-logo-en-noslogan.svg.png" width="16" height="16" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/24px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/32px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></a> C Programming at Wikibooks</li>
+</ul>
+</td>
+</tr>
+</table>
+<p><b>C</b> (<span class="nowrap"><span class="IPA nopopups noexcerpt"><a>/<span style="border-bottom:1px dotted"><span title="/ˈ/: primary stress follows">ˈ</span><span title="'s' in 'sigh'">s</span><span title="/iː/: 'ee' in 'fleece'">iː</span></span>/</a></span></span>, as in the <a>letter <i>c</i></a>) is a general-purpose, <a href="Imperative_programming.html" title="Imperative programming">imperative</a> computer <a href="Programming_language.html" title="Programming language">programming language</a>, supporting structured programming, lexical variable scope and recursion, while a static type system prevents many unintended operations. By design, C provides constructs that map efficiently to typical machine instructions, and therefore it has found lasting use in applications that had formerly been coded in <a href="Assembly_language.html" title="Assembly language">assembly language</a>, including <a href="Operating_system.html" title="Operating system">operating systems</a>, as well as various application software for computers ranging from supercomputers to embedded systems.</p>
+<p>C was originally developed by Dennis Ritchie between 1969 and 1973 at Bell Labs,<sup id="cite_ref-chistory_5-0" class="reference">[5]</sup> and used to re-implement the <a href="Unix.html" title="Unix">Unix</a> operating system.<sup id="cite_ref-AutoTX-1_6-0" class="reference">[6]</sup> It has since become one of the most widely used programming languages of all time,<sup id="cite_ref-AutoTX-2_7-0" class="reference">[7]</sup><sup id="cite_ref-AutoTX-3_8-0" class="reference">[8]</sup> with C <a href="Compiler.html" title="Compiler">compilers</a> from various vendors available for the majority of existing computer architectures and operating systems. C has been standardized by the American National Standards Institute (ANSI) since 1989 (see ANSI C) and subsequently by the International Organization for Standardization (ISO).</p>
+<p>C is an <a href="Imperative_programming.html" title="Imperative programming">imperative</a> procedural language. It was designed to be compiled using a relatively straightforward <a href="Compiler.html" title="Compiler">compiler</a>, to provide low-level access to memory, to provide language constructs that map efficiently to machine instructions, and to require minimal run-time support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming. A standards-compliant and <a href="Porting.html" title="Porting">portably</a> written C program can be compiled for a very wide variety of computer platforms and operating systems with few changes to its source code. The language has become available on a very wide range of platforms, from embedded microcontrollers to supercomputers.</p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a><span class="tocnumber">1</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a><span class="tocnumber">1.1</span> <span class="toctext">Relations to other languages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a><span class="tocnumber">2</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a><span class="tocnumber">2.1</span> <span class="toctext">Early developments</span></a></li>
+<li class="toclevel-2 tocsection-5"><a><span class="tocnumber">2.2</span> <span class="toctext">K&amp;R C</span></a></li>
+<li class="toclevel-2 tocsection-6"><a><span class="tocnumber">2.3</span> <span class="toctext">ANSI C and ISO C</span></a></li>
+<li class="toclevel-2 tocsection-7"><a><span class="tocnumber">2.4</span> <span class="toctext">C99</span></a></li>
+<li class="toclevel-2 tocsection-8"><a><span class="tocnumber">2.5</span> <span class="toctext">C11</span></a></li>
+<li class="toclevel-2 tocsection-9"><a><span class="tocnumber">2.6</span> <span class="toctext">Embedded C</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a><span class="tocnumber">3</span> <span class="toctext">Syntax</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a><span class="tocnumber">3.1</span> <span class="toctext">Character set</span></a></li>
+<li class="toclevel-2 tocsection-12"><a><span class="tocnumber">3.2</span> <span class="toctext">Reserved words</span></a></li>
+<li class="toclevel-2 tocsection-13"><a><span class="tocnumber">3.3</span> <span class="toctext">Operators</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a><span class="tocnumber">4</span> <span class="toctext">"Hello, world" example</span></a></li>
+<li class="toclevel-1 tocsection-15"><a><span class="tocnumber">5</span> <span class="toctext">Data types</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a><span class="tocnumber">5.1</span> <span class="toctext">Pointers</span></a></li>
+<li class="toclevel-2 tocsection-17"><a><span class="tocnumber">5.2</span> <span class="toctext">Arrays</span></a></li>
+<li class="toclevel-2 tocsection-18"><a><span class="tocnumber">5.3</span> <span class="toctext">Array–pointer interchangeability</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a><span class="tocnumber">6</span> <span class="toctext">Memory management</span></a></li>
+<li class="toclevel-1 tocsection-20"><a><span class="tocnumber">7</span> <span class="toctext">Libraries</span></a></li>
+<li class="toclevel-1 tocsection-21"><a><span class="tocnumber">8</span> <span class="toctext">Language tools</span></a></li>
+<li class="toclevel-1 tocsection-22"><a><span class="tocnumber">9</span> <span class="toctext">Uses</span></a></li>
+<li class="toclevel-1 tocsection-23"><a><span class="tocnumber">10</span> <span class="toctext">Related languages</span></a></li>
+<li class="toclevel-1 tocsection-24"><a><span class="tocnumber">11</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-25"><a><span class="tocnumber">12</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-26"><a><span class="tocnumber">13</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-27"><a><span class="tocnumber">14</span> <span class="toctext">Sources</span></a></li>
+<li class="toclevel-1 tocsection-28"><a><span class="tocnumber">15</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-29"><a><span class="tocnumber">16</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Overview">Overview</span></h2>
+<p>Like most imperative languages in the ALGOL tradition, C has facilities for structured programming and allows lexical variable scope and recursion, while a static <a href="Type_system.html" title="Type system">type system</a> prevents many unintended operations. In C, all executable code is contained within <a href="Subroutine.html" title="Subroutine">subroutines</a>, which are called "functions" (although not in the strict sense of functional programming). Function parameters are always passed by value. Pass-by-reference is simulated in C by explicitly passing <a href="Pointer_(computer_programming).html" title="Pointer (computer programming)">pointer</a> values. C program source text is free-format, using the semicolon as a statement terminator and curly braces for grouping blocks of statements.</p>
+<p>The C language also exhibits the following characteristics:</p>
+<ul>
+<li>There is a small, fixed number of keywords, including a full set of flow of control primitives: <code>for</code>, <code>if/else</code>, <code>while</code>, <code>switch</code>, and <code>do/while</code>. User-defined names are not distinguished from keywords by any kind of sigil.</li>
+<li>There are a large number of arithmetical and logical operators, such as <code>+</code>, <code>+=</code>, <code>++</code>, <code>&amp;</code>, <code>~</code>, etc.</li>
+<li>More than one assignment may be performed in a single statement.</li>
+<li>Function return values can be ignored when not needed.</li>
+<li>Typing is static, but <a href="Strong_and_weak_typing.html" title="Strong and weak typing">weakly enforced</a>: all data has a type, but implicit conversions may be performed.</li>
+<li>Declaration syntax mimics usage context. C has no "define" keyword; instead, a statement beginning with the name of a type is taken as a declaration. There is no "function" keyword; instead, a function is indicated by the parentheses of an argument list.</li>
+<li>User-defined (<code>typedef</code>) and compound types are possible.
+<ul>
+<li>Heterogeneous aggregate data types (<code>struct</code>) allow related data elements to be accessed and assigned as a unit.</li>
+<li>Array indexing is a secondary notation, defined in terms of pointer arithmetic. Unlike structs, arrays are not first-class objects; they cannot be assigned or compared using single built-in operators. There is no "array" keyword, in use or definition; instead, square brackets indicate arrays syntactically, for example <code>month[11]</code>.</li>
+<li>Enumerated types are possible with the <code>enum</code> keyword. They are not tagged, and are freely interconvertible with integers.</li>
+<li>Strings are not a separate data type, but are conventionally implemented as null-terminated arrays of characters.</li>
+</ul>
+</li>
+<li>Low-level access to <a href="Computer_memory.html" title="Computer memory">computer memory</a> is possible by converting machine addresses to typed <a href="Pointer_(computer_programming).html" title="Pointer (computer programming)">pointers</a>.</li>
+<li>Procedures (subroutines not returning values) are a special case of function, with an untyped return type <code>void</code>.</li>
+<li>Functions may not be defined within the lexical scope of other functions.</li>
+<li>Function and data pointers permit <i>ad hoc</i> run-time polymorphism.</li>
+<li>A preprocessor performs macro definition, <a href="Source_code.html" title="Source code">source code</a> file inclusion, and conditional compilation.</li>
+<li>There is a basic form of modularity: files can be compiled separately and linked together, with control over which functions and data objects are visible to other files via <a><code>static</code></a> and <code>extern</code> attributes.</li>
+<li>Complex functionality such as I/O, string manipulation, and mathematical functions are consistently delegated to library routines.</li>
+</ul>
+<p>While C does not include some features found in some other languages, such as <a href="Object-oriented_programming.html" title="Object-oriented programming">object orientation</a> or garbage collection, such features can be implemented or emulated in C, often by way of external libraries (e.g., the Boehm garbage collector or the GLib Object System).</p>
+<h3><span class="mw-headline" id="Relations_to_other_languages">Relations to other languages</span></h3>
+<p>Many later languages have borrowed directly or indirectly from C, including <a href="C++.html" title="C++">C++</a>, D, Go, Rust, <a href="Java_(programming_language).html" title="Java (programming language)">Java</a>, <a href="JavaScript.html" title="JavaScript">JavaScript</a>, Limbo, LPC, C#, Objective-C, Perl, PHP, <a href="Python_(programming_language).html" title="Python (programming language)">Python</a>, Swift, Verilog (hardware description language),<sup id="cite_ref-vinsp_4-1" class="reference">[4]</sup> and Unix's C shell. These languages have drawn many of their control structures and other basic features from C. Most of them (with Python being the most dramatic exception) are also very syntactically similar to C in general, and they tend to combine the recognizable expression and statement syntax of C with underlying type systems, data models, and semantics that can be radically different.</p>
+<h2><span class="mw-headline" id="History">History</span></h2>
+<h3><span class="mw-headline" id="Early_developments">Early developments</span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ken_n_dennis.jpg/220px-Ken_n_dennis.jpg" width="220" height="143" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/3/36/Ken_n_dennis.jpg 1.5x" data-file-width="310" data-file-height="201" /></a>
+<div class="thumbcaption">
+<div class="magnify"></div>
+Ken Thompson (left) with Dennis Ritchie (right, the inventor of the C programming language)</div>
+</div>
+</div>
+<p>The origin of C is closely tied to the development of the <a href="Unix.html" title="Unix">Unix</a> operating system, originally implemented in <a href="Assembly_language.html" title="Assembly language">assembly language</a> on a PDP-7 by Dennis Ritchie and Ken Thompson, incorporating several ideas from colleagues. Eventually, they decided to port the operating system to a PDP-11. The original PDP-11 version of Unix was developed in assembly language. The developers were considering rewriting the system using the B language, Thompson's simplified version of BCPL.<sup id="cite_ref-sigplan_9-0" class="reference">[9]</sup> However B's inability to take advantage of some of the PDP-11's features, notably byte addressability, led to C. The name of C was chosen simply as the next after B.<sup id="cite_ref-10" class="reference">[10]</sup></p>
+<p>The development of C started in 1972 on the PDP-11 Unix system<sup id="cite_ref-unixport_11-0" class="reference">[11]</sup> and first appeared in Version 2 Unix.<sup id="cite_ref-12" class="reference">[12]</sup> The language was not initially designed with portability in mind, but soon ran on different platforms as well: a compiler for the Honeywell 6000 was written within the first year of C's history, while an IBM System/370 port followed soon.<sup id="cite_ref-k.26r1e_1-1" class="reference">[1]</sup><sup id="cite_ref-unixport_11-1" class="reference">[11]</sup></p>
+<p>Also in 1972, a large part of Unix was rewritten in C.<sup id="cite_ref-Stallings_13-0" class="reference">[13]</sup> By 1973, with the addition of <code>struct</code> types, the C language had become powerful enough that most of the <a href="Unix.html" title="Unix">Unix</a> kernel was now in C.</p>
+<p>Unix was one of the first operating system kernels implemented in a language other than <a href="Assembly_language.html" title="Assembly language">assembly</a>. Earlier instances include the Multics system which was written in PL/I), and Master Control Program (MCP) for the Burroughs B5000 written in ALGOL in 1961. In around 1977, Ritchie and Stephen C. Johnson made further changes to the language to facilitate portability of the Unix operating system. Johnson's Portable C Compiler served as the basis for several implementations of C on new platforms.<sup id="cite_ref-unixport_11-2" class="reference">[11]</sup></p>
+<h3><span id="K&amp;R_C"></span><span class="mw-headline" id="K.26R_C">K&amp;R C</span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:173px;"><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/95/The_C_Programming_Language%2C_First_Edition_Cover_%282%29.svg/171px-The_C_Programming_Language%2C_First_Edition_Cover_%282%29.svg.png" width="171" height="240" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/95/The_C_Programming_Language%2C_First_Edition_Cover_%282%29.svg/256px-The_C_Programming_Language%2C_First_Edition_Cover_%282%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/95/The_C_Programming_Language%2C_First_Edition_Cover_%282%29.svg/341px-The_C_Programming_Language%2C_First_Edition_Cover_%282%29.svg.png 2x" data-file-width="1000" data-file-height="1405" /></a>
+<div class="thumbcaption">
+<div class="magnify"></div>
+The cover of the book, <i>The C Programming Language</i>, first edition by Brian Kernighan and Dennis Ritchie</div>
+</div>
+</div>
+<p>In 1978, Brian Kernighan and Dennis Ritchie published the first edition of <i>The C Programming Language</i>.<sup id="cite_ref-k.26r1e_1-2" class="reference">[1]</sup> This book, known to C programmers as "K&amp;R", served for many years as an informal specification of the language. The version of C that it describes is commonly referred to as <i>K&amp;R C</i>. The second edition of the book<sup id="cite_ref-k.26r2e_14-0" class="reference">[14]</sup> covers the later ANSI C standard, described below.</p>
+<p>K&amp;R introduced several language features:</p>
+<ul>
+<li>Standard I/O library</li>
+<li><code>long int</code> data type</li>
+<li><code>unsigned int</code> data type</li>
+<li>Compound assignment operators of the form <code>=<i>op</i></code> (such as <code>=-</code>) were changed to the form <code><i>op</i>=</code> (that is, <code>-=</code>) to remove the semantic ambiguity created by constructs such as <code>i=-10</code>, which had been interpreted as <code>i&#160;=-&#160;10</code> (decrement <code>i</code> by 10) instead of the possibly intended <code>i&#160;=&#160;-10</code> (let <code>i</code> be -10).</li>
+</ul>
+<p>Even after the publication of the 1989 ANSI standard, for many years K&amp;R C was still considered the "lowest common denominator" to which C programmers restricted themselves when maximum portability was desired, since many older compilers were still in use, and because carefully written K&amp;R C code can be legal Standard C as well.</p>
+<p>In early versions of C, only functions that return types other than <code>int</code> must be declared if used before the function definition; functions used without prior declaration were presumed to return type <code>int</code>.</p>
+<p>For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">long</span> <span class="nf">some_function</span><span class="p">();</span>
+<span class="cm">/* int */</span> <span class="n">other_function</span><span class="p">();</span>
+
+<span class="cm">/* int */</span> <span class="n">calling_function</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">long</span> <span class="n">test1</span><span class="p">;</span>
+    <span class="k">register</span> <span class="cm">/* int */</span> <span class="n">test2</span><span class="p">;</span>
+
+    <span class="n">test1</span> <span class="o">=</span> <span class="n">some_function</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">test1</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+          <span class="n">test2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">else</span>
+          <span class="n">test2</span> <span class="o">=</span> <span class="n">other_function</span><span class="p">();</span>
+    <span class="k">return</span> <span class="n">test2</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+<p>The <code>int</code> type specifiers which are commented out could be omitted in K&amp;R C, but are required in later standards.</p>
+<p>Since K&amp;R function declarations did not include any information about function arguments, function parameter type checks were not performed, although some compilers would issue a warning message if a local function was called with the wrong number of arguments, or if multiple calls to an external function used different numbers or types of arguments. Separate tools such as Unix's lint utility were developed that (among other things) could check for consistency of function use across multiple source files.</p>
+<p>In the years following the publication of K&amp;R C, several features were added to the language, supported by compilers from AT&amp;T (in particular PCC<sup id="cite_ref-15" class="reference">[15]</sup>) and some other vendors. These included:</p>
+<ul>
+<li><code>void</code> functions (i.e., functions with no return value)</li>
+<li>functions returning <code>struct</code> or <code>union</code> types (rather than pointers)</li>
+<li>assignment for <code>struct</code> data types</li>
+<li>enumerated types</li>
+</ul>
+<p>The large number of extensions and lack of agreement on a standard library, together with the language popularity and the fact that not even the Unix compilers precisely implemented the K&amp;R specification, led to the necessity of standardization.</p>
+<h3><span class="mw-headline" id="ANSI_C_and_ISO_C">ANSI C and ISO C</span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: ANSI C</div>
+<p>During the late 1970s and 1980s, versions of C were implemented for a wide variety of mainframe computers, minicomputers, and microcomputers, including the IBM PC, as its popularity began to increase significantly.</p>
+<p>In 1983, the American National Standards Institute (ANSI) formed a committee, X3J11, to establish a standard specification of C. X3J11 based the C standard on the Unix implementation; however, the non-portable portion of the Unix C library was handed off to the IEEE working group 1003 to become the basis for the 1988 POSIX standard. In 1989, the C standard was ratified as ANSI X3.159-1989 "Programming Language C". This version of the language is often referred to as ANSI C, Standard C, or sometimes C89.</p>
+<p>In 1990, the ANSI C standard (with formatting changes) was adopted by the International Organization for Standardization (ISO) as ISO/IEC 9899:1990, which is sometimes called C90. Therefore, the terms "C89" and "C90" refer to the same programming language.</p>
+<p>ANSI, like other national standards bodies, no longer develops the C standard independently, but defers to the international C standard, maintained by the working group ISO/IEC JTC1/SC22/WG14. National adoption of an update to the international standard typically occurs within a year of ISO publication.</p>
+<p>One of the aims of the C standardization process was to produce a superset of K&amp;R C, incorporating many of the subsequently introduced unofficial features. The standards committee also included several additional features such as function prototypes (borrowed from C++), <code>void</code> pointers, support for international character sets and locales, and preprocessor enhancements. Although the syntax for parameter declarations was augmented to include the style used in C++, the K&amp;R interface continued to be permitted, for compatibility with existing source code.</p>
+<p>C89 is supported by current C compilers, and most C code being written today is based on it. Any program written only in Standard C and without any hardware-dependent assumptions will run correctly on any platform with a conforming C implementation, within its resource limits. Without such precautions, programs may compile only on a certain platform or with a particular compiler, due, for example, to the use of non-standard libraries, such as GUI libraries, or to a reliance on compiler- or platform-specific attributes such as the exact size of data types and byte endianness.</p>
+<p>In cases where code must be compilable by either standard-conforming or K&amp;R C-based compilers, the <code>__STDC__</code> macro can be used to split the code into Standard and K&amp;R sections to prevent the use on a K&amp;R C-based compiler of features available only in Standard C.</p>
+<p>After the ANSI/ISO standardization process, the C language specification remained relatively static for several years. In 1995, Normative Amendment 1 to the 1990 C standard (ISO/IEC 9899/AMD1:1995, known informally as C95) was published, to correct some details and to add more extensive support for international character sets.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (April 2015)">citation needed</span></a></i>]</sup></p>
+<h3><span class="mw-headline" id="C99">C99</span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: C99</div>
+<p>The C standard was further revised in the late 1990s, leading to the publication of ISO/IEC 9899:1999 in 1999, which is commonly referred to as "C99". It has since been amended three times by Technical Corrigenda.<sup id="cite_ref-AutoTX-5_16-0" class="reference">[16]</sup></p>
+<p>C99 introduced several new features, including inline functions, several new <a href="Data_type.html" title="Data type">data types</a> (including <code>long long int</code> and a <code>complex</code> type to represent complex numbers), variable-length arrays and flexible array members, improved support for IEEE 754 floating point, support for variadic macros (macros of variable arity), and support for one-line comments beginning with <code>//</code>, as in BCPL or C++. Many of these had already been implemented as extensions in several C compilers.</p>
+<p>C99 is for the most part backward compatible with C90, but is stricter in some ways; in particular, a declaration that lacks a type specifier no longer has <code>int</code> implicitly assumed. A standard macro <code>__STDC_VERSION__</code> is defined with value <code>199901L</code> to indicate that C99 support is available. <a href="GNU_Compiler_Collection.html" title="GNU Compiler Collection">GCC</a>, Solaris Studio, and other C compilers now support many or all of the new features of C99. The C compiler in Microsoft Visual C++, however, implements the C89 standard and those parts of C99 that are required for compatibility with C++11.<sup id="cite_ref-17" class="reference">[17]</sup></p>
+<h3><span class="mw-headline" id="C11">C11</span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: C11 (C standard revision)</div>
+<p>In 2007, work began on another revision of the C standard, informally called "C1X" until its official publication on 2011-12-08. The C standards committee adopted guidelines to limit the adoption of new features that had not been tested by existing implementations.</p>
+<p>The C11 standard adds numerous new features to C and the library, including type generic macros, anonymous structures, improved Unicode support, atomic operations, multi-threading, and bounds-checked functions. It also makes some portions of the existing C99 library optional, and improves compatibility with C++. The standard macro <code>__STDC_VERSION__</code> is defined as <code>201112L</code> to indicate that C11 support is available.</p>
+<h3><span class="mw-headline" id="Embedded_C">Embedded C</span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Embedded C</div>
+<p>Historically, embedded C programming requires nonstandard extensions to the C language in order to support exotic features such as fixed-point arithmetic, multiple distinct memory banks, and basic I/O operations.</p>
+<p>In 2008, the C Standards Committee published a technical report extending the C language<sup id="cite_ref-AutoTX-6_18-0" class="reference">[18]</sup> to address these issues by providing a common standard for all implementations to adhere to. It includes a number of features not available in normal C, such as fixed-point arithmetic, named address spaces, and basic I/O hardware addressing.</p>
+<h2><span class="mw-headline" id="Syntax">Syntax</span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: C syntax</div>
+<p>C has a formal grammar specified by the C standard.<sup id="cite_ref-h.26s5e_19-0" class="reference">[19]</sup> Line endings are generally not significant in C; however, line boundaries do have significance during the preprocessing phase. Comments may appear either between the delimiters <code>/*</code> and <code>*/</code>, or (since C99) following <code>//</code> until the end of the line. Comments delimited by <code>/*</code> and <code>*/</code> do not nest, and these sequences of characters are not interpreted as comment delimiters if they appear inside string or character literals.<sup id="cite_ref-KandR1_20-0" class="reference">[20]</sup></p>
+<p>C source files contain declarations and function definitions. Function definitions, in turn, contain declarations and statements. Declarations either define new types using keywords such as <code>struct</code>, <code>union</code>, and <code>enum</code>, or assign types to and perhaps reserve storage for new variables, usually by writing the type followed by the variable name. Keywords such as <code>char</code> and <code>int</code> specify built-in types. Sections of code are enclosed in braces (<code>{</code> and <code>}</code>, sometimes called "curly brackets") to limit the scope of declarations and to act as a single statement for control structures.</p>
+<p>As an imperative language, C uses <i>statements</i> to specify actions. The most common statement is an <i>expression statement</i>, consisting of an expression to be evaluated, followed by a semicolon; as a side effect of the evaluation, functions may be called and variables may be assigned new values. To modify the normal sequential execution of statements, C provides several control-flow statements identified by reserved keywords. Structured programming is supported by <code>if</code>(-<code>else</code>) conditional execution and by <code>do</code>-<code>while</code>, <code>while</code>, and <code>for</code> iterative execution (looping). The <code>for</code> statement has separate initialization, testing, and reinitialization expressions, any or all of which can be omitted. <code>break</code> and <code>continue</code> can be used to leave the innermost enclosing loop statement or skip to its reinitialization. There is also a non-structured <code>goto</code> statement which branches directly to the designated label within the function. <code>switch</code> selects a <code>case</code> to be executed based on the value of an integer expression.</p>
+<p>Expressions can use a variety of built-in operators and may contain function calls. The order in which arguments to functions and operands to most operators are evaluated is unspecified. The evaluations may even be interleaved. However, all side effects (including storage to variables) will occur before the next "sequence point"; sequence points include the end of each expression statement, and the entry to and return from each function call. Sequence points also occur during evaluation of expressions containing certain operators (<code>&amp;&amp;</code>, <code>||</code>, <code>?:</code> and the comma operator). This permits a high degree of object code optimization by the compiler, but requires C programmers to take more care to obtain reliable results than is needed for other programming languages.</p>
+<p>Kernighan and Ritchie say in the Introduction of <i>The C Programming Language</i>: "C, like any other language, has its blemishes. Some of the operators have the wrong precedence; some parts of the syntax could be better."<sup id="cite_ref-21" class="reference">[21]</sup> The C standard did not attempt to correct many of these blemishes, because of the impact of such changes on already existing software.</p>
+<h3><span class="mw-headline" id="Character_set">Character set</span></h3>
+<p>The basic C source character set includes the following characters:</p>
+<ul>
+<li>Lowercase and uppercase letters of ISO Basic Latin Alphabet: <code>a</code>–<code>z</code> <code>A</code>–<code>Z</code></li>
+<li>Decimal digits: <code>0</code>–<code>9</code></li>
+<li>Graphic characters: <code>! " #&#160;% &amp; ' ( ) * + , - . /&#160;:&#160;; &lt; = &gt;&#160;? [ \ ] ^ _ { | } ~</code></li>
+<li>Whitespace characters: <i>space</i>, <i>horizontal tab</i>, <i>vertical tab</i>, <i>form feed</i>, <i>newline</i></li>
+</ul>
+<p>Newline indicates the end of a text line; it need not correspond to an actual single character, although for convenience C treats it as one.</p>
+<p>Additional multi-byte encoded characters may be used in string literals, but they are not entirely <a href="Software_portability.html" title="Software portability">portable</a>. The latest C standard (C11) allows multi-national Unicode characters to be embedded portably within C source text by using <code>\uXXXX</code> or <code>\UXXXXXXXX</code> encoding (where the <code>X</code> denotes a hexadecimal character), although this feature is not yet widely implemented.</p>
+<p>The basic C execution character set contains the same characters, along with representations for alert, backspace, and carriage return. Run-time support for extended character sets has increased with each revision of the C standard.</p>
+<h3><span class="mw-headline" id="Reserved_words">Reserved words</span></h3>
+<p>C89 has 32 reserved words, also known as keywords, which are the words that cannot be used for any purposes other than those for which they are predefined:</p>
+<div>
+<table class="multicol" role="presentation" style="border-collapse: collapse; padding: 0; border: 0; background:transparent; width:100%;">
+<tr>
+<td style="width: 20%;text-align: left; vertical-align: top;">
+<dl>
+<dd><code>auto</code></dd>
+<dd><code>break</code></dd>
+<dd><code>case</code></dd>
+<dd><code>char</code></dd>
+<dd><code>const</code></dd>
+<dd><code>continue</code></dd>
+<dd><code>default</code></dd>
+<dd><code>do</code></dd>
+</dl>
+</td>
+<td style="width: 20%;text-align: left; vertical-align: top;">
+<dl>
+<dd><code>double</code></dd>
+<dd><code>else</code></dd>
+<dd><code>enum</code></dd>
+<dd><code>extern</code></dd>
+<dd><code>float</code></dd>
+<dd><code>for</code></dd>
+<dd><code>goto</code></dd>
+<dd><code>if</code></dd>
+</dl>
+</td>
+<td style="width: 20%;text-align: left; vertical-align: top;">
+<dl>
+<dd><code>int</code></dd>
+<dd><code>long</code></dd>
+<dd><code>register</code></dd>
+<dd><code>return</code></dd>
+<dd><code>short</code></dd>
+<dd><code>signed</code></dd>
+<dd><code>sizeof</code></dd>
+<dd><code>static</code></dd>
+</dl>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<dl>
+<dd><code>struct</code></dd>
+<dd><code>switch</code></dd>
+<dd><code>typedef</code></dd>
+<dd><code>union</code></dd>
+<dd><code>unsigned</code></dd>
+<dd><code>void</code></dd>
+<dd><code>volatile</code></dd>
+<dd><code>while</code></dd>
+</dl>
+</td>
+</tr>
+</table>
+</div>
+<p>C99 reserved five more words:</p>
+<div>
+<table class="multicol" role="presentation" style="border-collapse: collapse; padding: 0; border: 0; background:transparent; width:100%;">
+<tr>
+<td style="width: 20%;text-align: left; vertical-align: top;">
+<dl>
+<dd><code>_Bool</code></dd>
+<dd><code>_Complex</code></dd>
+</dl>
+</td>
+<td style="width: 20%;text-align: left; vertical-align: top;">
+<dl>
+<dd><code>_Imaginary</code></dd>
+<dd><code>inline</code></dd>
+</dl>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<dl>
+<dd><code>restrict</code></dd>
+</dl>
+</td>
+</tr>
+</table>
+</div>
+<p>C11 reserved seven more words:<sup id="cite_ref-AutoTX-7_22-0" class="reference">[22]</sup></p>
+<div>
+<table class="multicol" role="presentation" style="border-collapse: collapse; padding: 0; border: 0; background:transparent; width:100%;">
+<tr>
+<td style="width: 20%;text-align: left; vertical-align: top;">
+<dl>
+<dd><code>_Alignas</code></dd>
+<dd><code>_Alignof</code></dd>
+</dl>
+</td>
+<td style="width: 20%;text-align: left; vertical-align: top;">
+<dl>
+<dd><code>_Atomic</code></dd>
+<dd><code>_Generic</code></dd>
+</dl>
+</td>
+<td style="width: 20%;text-align: left; vertical-align: top;">
+<dl>
+<dd><code>_Noreturn</code></dd>
+<dd><code>_Static_assert</code></dd>
+</dl>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<dl>
+<dd><code>_Thread_local</code></dd>
+</dl>
+</td>
+</tr>
+</table>
+</div>
+<p>Most of the recently reserved words begin with an underscore followed by a capital letter, because identifiers of that form were previously reserved by the C standard for use only by implementations. Since existing program source code should not have been using these identifiers, it would not be affected when C implementations started supporting these extensions to the programming language. Some standard headers do define more convenient synonyms for underscored identifiers. The language previously included a reserved word called <code>entry</code>, but this was seldom implemented, and has now been removed as a reserved word.<sup id="cite_ref-KandR2_23-0" class="reference">[23]</sup></p>
+<h3><span class="mw-headline" id="Operators">Operators</span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Operators in C and C++</div>
+<p>C supports a rich set of operators, which are symbols used within an expression to specify the manipulations to be performed while evaluating that expression. C has operators for:</p>
+<ul>
+<li>arithmetic: <a><code>+</code></a>, <a><code>-</code></a>, <a><code>*</code></a>, <a><code>/</code></a>, <a><code>%</code></a></li>
+<li>assignment: <code>=</code></li>
+<li>augmented assignment: <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code>, <code>&amp;=</code>, <code>|=</code>, <code>^=</code>, <code>&lt;&lt;=</code>, <code>&gt;&gt;=</code></li>
+<li>bitwise logic: <code>~</code>, <code>&amp;</code>, <code>|</code>, <code>^</code></li>
+<li>bitwise shifts: <code>&lt;&lt;</code>, <code>&gt;&gt;</code></li>
+<li>boolean logic: <code>!</code>, <code>&amp;&amp;</code>, <code>||</code></li>
+<li>conditional evaluation: <a><code>? :</code></a></li>
+<li>equality testing: <a><code>==</code></a>, <a><code>!=</code></a></li>
+<li><a href="Subroutine.html" title="Subroutine">calling functions</a>: <code>( )</code></li>
+<li>increment and decrement: <code>++</code>, <code>--</code></li>
+<li>member selection: <code>.</code>, <code>-&gt;</code></li>
+<li>object size: <code>sizeof</code></li>
+<li>order relations: <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code></li>
+<li><a href="Pointer_(computer_programming).html" title="Pointer (computer programming)">reference and dereference</a>: <code>&amp;</code>, <code>*</code>, <code>[ ]</code></li>
+<li>sequencing: <a><code>,</code></a></li>
+<li>subexpression grouping: <code>( )</code></li>
+<li>type conversion: <code>(<i>typename</i>)</code></li>
+</ul>
+<p>C uses the operator <code>=</code> (used in mathematics to express equality) to indicate assignment, following the precedent of <a href="Fortran.html" title="Fortran">Fortran</a> and PL/I, but unlike ALGOL and its derivatives. C uses the operator <code>==</code> to test for equality. The similarity between these two operators (assignment and equality) may result in the accidental use of one in place of the other, and in many cases, the mistake does not produce an error message (although some compilers produce warnings). For example, the conditional expression <code>if(a==b+1)</code> might mistakenly be written as <code>if(a=b+1)</code>, which will be evaluated as true if <code>a</code> is not zero after the assignment.<sup id="cite_ref-AutoTX-8_24-0" class="reference">[24]</sup></p>
+<p>The C operator precedence is not always intuitive. For example, the operator <code>==</code> binds more tightly than (is executed prior to) the operators <code>&amp;</code> (bitwise AND) and <code>|</code> (bitwise OR) in expressions such as <code>x &amp; 1 == 0</code>, which must be written as <code>(x &amp; 1) == 0</code> if that is the coder's intent.<sup id="cite_ref-AutoTX-9_25-0" class="reference">[25]</sup></p>
+<h2><span id="&quot;Hello,_world&quot;_example"></span><span class="mw-headline" id=".22Hello.2C_world.22_example"><span id="HELLOWORLD"></span>"Hello, world" example</span></h2>
+<p>The "hello, world" example, which appeared in the first edition of K&amp;R, has become the model for an introductory program in most programming textbooks, regardless of programming language. The program prints "hello, world" to the standard output, which is usually a terminal or screen display.</p>
+<p>The original version was:<sup id="cite_ref-26" class="reference">[26]</sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"hello, world</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<p>A standard-conforming "hello, world" program is:<sup id="cite_ref-27" class="reference">[a]</sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"hello, world</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+<p>The first line of the program contains a preprocessing directive, indicated by <code>#include</code>. This causes the compiler to replace that line with the entire text of the <code>stdio.h</code> standard header, which contains declarations for standard input and output functions such as <code>printf</code>. The angle brackets surrounding <code>stdio.h</code> indicate that <code>stdio.h</code> is located using a search strategy that prefers headers provided with the compiler to other headers having the same name, as opposed to double quotes which typically include local or project-specific header files.</p>
+<p>The next line indicates that a function named <code>main</code> is being defined. The <code>main</code> function serves a special purpose in C programs; the run-time environment calls the <code>main</code> function to begin program execution. The type specifier <code>int</code> indicates that the value that is returned to the invoker (in this case the run-time environment) as a result of evaluating the <code>main</code> function, is an integer. The keyword <code>void</code> as a parameter list indicates that this function takes no arguments.<sup id="cite_ref-28" class="reference">[b]</sup></p>
+<p>The opening curly brace indicates the beginning of the definition of the <code>main</code> function.</p>
+<p>The next line <i>calls</i> (diverts execution to) a function named <code>printf</code>, which in this case is supplied from a system library. In this call, the <code>printf</code> function is <i>passed</i> (provided with) a single argument, the address of the first character in the string literal <code>"hello, world\n"</code>. The string literal is an unnamed array with elements of type <code>char</code>, set up automatically by the compiler with a final 0-valued character to mark the end of the array (<code>printf</code> needs to know this). The <code>\n</code> is an <i>escape sequence</i> that C translates to a <i>newline</i> character, which on output signifies the end of the current line. The return value of the <code>printf</code> function is of type <code>int</code>, but it is silently discarded since it is not used. (A more careful program might test the return value to determine whether or not the <code>printf</code> function succeeded.) The semicolon <code>;</code> terminates the statement.</p>
+<p>The closing curly brace indicates the end of the code for the <code>main</code> function. According to the C99 specification and newer, the <code>main</code> function, unlike any other function, will implicitly return a value of <code>0</code> upon reaching the <code>}</code> that terminates the function. (Formerly an explicit <code>return 0;</code> statement was required.) This is interpreted by the run-time system as an exit code indicating successful execution.<sup id="cite_ref-bk21st_29-0" class="reference">[27]</sup></p>
+<h2><span class="mw-headline" id="Data_types">Data types</span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: C variable types and declarations</div>
+<table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>needs additional citations for verification</b>. <span class="hide-when-compact">Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.</span> <small><i>(October 2012)</i></small> <small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></span></td>
+</tr>
+</table>
+<p>The <a href="Type_system.html" title="Type system">type system</a> in C is static and weakly typed, which makes it similar to the type system of ALGOL descendants such as Pascal.<sup id="cite_ref-30" class="reference">[28]</sup> There are built-in types for integers of various sizes, both signed and unsigned, floating-point numbers, and enumerated types (<code>enum</code>). Integer type <code>char</code> is often used for single-byte characters. C99 added a boolean datatype. There are also derived types including arrays, <a href="Pointer_(computer_programming).html" title="Pointer (computer programming)">pointers</a>, records (<code>struct</code>), and untagged unions (<code>union</code>).</p>
+<p>C is often used in low-level systems programming where escapes from the type system may be necessary. The compiler attempts to ensure type correctness of most expressions, but the programmer can override the checks in various ways, either by using a <i>type cast</i> to explicitly convert a value from one type to another, or by using pointers or unions to reinterpret the underlying bits of a data object in some other way.</p>
+<p>Some find C's declaration syntax unintuitive, particularly for function pointers. (Ritchie's idea was to declare identifiers in contexts resembling their use: "declaration reflects use".)<sup id="cite_ref-31" class="reference">[29]</sup></p>
+<p>C's <i>usual arithmetic conversions</i> allow for efficient code to be generated, but can sometimes produce unexpected results. For example, a comparison of signed and unsigned integers of equal width requires a conversion of the signed value to unsigned. This can generate unexpected results if the signed value is negative.</p>
+<h3><span class="mw-headline" id="Pointers">Pointers</span></h3>
+<p>C supports the use of <a href="Pointer_(computer_programming).html" title="Pointer (computer programming)">pointers</a>, a type of reference that records the address or location of an object or function in memory. Pointers can be <i>dereferenced</i> to access data stored at the address pointed to, or to invoke a pointed-to function. Pointers can be manipulated using assignment or pointer arithmetic. The run-time representation of a pointer value is typically a raw memory address (perhaps augmented by an offset-within-word field), but since a pointer's type includes the type of the thing pointed to, expressions including pointers can be type-checked at compile time. Pointer arithmetic is automatically scaled by the size of the pointed-to data type. Pointers are used for many purposes in C. Text strings are commonly manipulated using pointers into arrays of characters. Dynamic memory allocation is performed using pointers. Many data types, such as trees, are commonly implemented as dynamically allocated <code>struct</code> objects linked together using pointers. Pointers to functions are useful for passing functions as arguments to higher-order functions (such as qsort or bsearch) or as callbacks to be invoked by event handlers.<sup id="cite_ref-bk21st_29-1" class="reference">[27]</sup></p>
+<p>A <i>null pointer value</i> explicitly points to no valid location. Dereferencing a null pointer value is undefined, often resulting in a segmentation fault. Null pointer values are useful for indicating special cases such as no "next" pointer in the final node of a linked list, or as an error indication from functions returning pointers. In appropriate contexts in source code, such as for assigning to a pointer variable, a <i>null pointer constant</i> can be written as <code>0</code>, with or without explicit casting to a pointer type, or as the <code>NULL</code> macro defined by several standard headers. In conditional contexts, null pointer values evaluate to false, while all other pointer values evaluate to true.</p>
+<p>Void pointers (<code>void *</code>) point to objects of unspecified type, and can therefore be used as "generic" data pointers. Since the size and type of the pointed-to object is not known, void pointers cannot be dereferenced, nor is pointer arithmetic on them allowed, although they can easily be (and in many contexts implicitly are) converted to and from any other object pointer type.<sup id="cite_ref-bk21st_29-2" class="reference">[27]</sup></p>
+<p>Careless use of pointers is potentially dangerous. Because they are typically unchecked, a pointer variable can be made to point to any arbitrary location, which can cause undesirable effects. Although properly used pointers point to safe places, they can be made to point to unsafe places by using invalid pointer arithmetic; the objects they point to may continue to be used after deallocation (dangling pointers); they may be used without having been initialized (wild pointers); or they may be directly assigned an unsafe value using a cast, union, or through another corrupt pointer. In general, C is permissive in allowing manipulation of and conversion between pointer types, although compilers typically provide options for various levels of checking. Some other programming languages address these problems by using more restrictive reference types.</p>
+<h3><span class="mw-headline" id="Arrays">Arrays</span></h3>
+<div role="note" class="hatnote navigation-not-searchable">See also: C string</div>
+<p>Array types in C are traditionally of a fixed, static size specified at compile time. (The more recent C99 standard also allows a form of variable-length arrays.) However, it is also possible to allocate a block of memory (of arbitrary size) at run-time, using the standard library's <code>malloc</code> function, and treat it as an array. C's unification of arrays and pointers means that declared arrays and these dynamically allocated simulated arrays are virtually interchangeable.</p>
+<p>Since arrays are always accessed (in effect) via pointers, array accesses are typically <i>not</i> checked against the underlying array size, although some compilers may provide bounds checking as an option.<sup id="cite_ref-AutoTX-10_32-0" class="reference">[30]</sup> Array bounds violations are therefore possible and rather common in carelessly written code, and can lead to various repercussions, including illegal memory accesses, corruption of data, buffer overruns, and run-time exceptions. If bounds checking is desired, it must be done manually.</p>
+<p>C does not have a special provision for declaring multi-dimensional arrays, but rather relies on recursion within the type system to declare arrays of arrays, which effectively accomplishes the same thing. The index values of the resulting "multi-dimensional array" can be thought of as increasing in row-major order.</p>
+<p>Multi-dimensional arrays are commonly used in numerical algorithms (mainly from applied linear algebra) to store matrices. The structure of the C array is well suited to this particular task. However, since arrays are passed merely as pointers, the bounds of the array must be known fixed values or else explicitly passed to any subroutine that requires them, and dynamically sized arrays of arrays cannot be accessed using double indexing. (A workaround for this is to allocate the array with an additional "row vector" of pointers to the columns.)</p>
+<p>C99 introduced "variable-length arrays" which address some, but not all, of the issues with ordinary C arrays.</p>
+<h3><span id="Array–pointer_interchangeability"></span><span class="mw-headline" id="Array.E2.80.93pointer_interchangeability">Array–pointer interchangeability</span></h3>
+<p>The subscript notation <code>x[i]</code> (where <code>x</code> designates a pointer) is syntactic sugar for <code>*(x+i)</code>.<sup id="cite_ref-Raymond1996_33-0" class="reference">[31]</sup> Taking advantage of the compiler's knowledge of the pointer type, the address that <code>x + i</code> points to is not the base address (pointed to by <code>x</code>) incremented by <code>i</code> bytes, but rather is defined to be the base address incremented by <code>i</code> multiplied by the size of an element that <code>x</code> points to. Thus, <code>x[i]</code> designates the <code>i+1</code>th element of the array.</p>
+<p>Furthermore, in most expression contexts (a notable exception is as operand of <code>sizeof</code>), the name of an array is automatically converted to a pointer to the array's first element. This implies that an array is never copied as a whole when named as an argument to a function, but rather only the address of its first element is passed. Therefore, although function calls in C use pass-by-value semantics, arrays are in effect passed by reference.</p>
+<p>The size of an element can be determined by applying the operator <code>sizeof</code> to any dereferenced element of <code>x</code>, as in <code>n = sizeof *x</code> or <code>n = sizeof x[0]</code>, and the number of elements in a declared array <code>A</code> can be determined as <code>sizeof A / sizeof A[0]</code>. The latter only applies to array names: variables declared with subscripts (<code>int A[20]</code>). Due to the semantics of C, it is not possible to determine the entire size of arrays through pointers to arrays or those created by dynamic allocation (<code>malloc</code>); code such as <code>sizeof arr / sizeof arr[0]</code> (where <code>arr</code> designates a pointer) will not work since the compiler assumes the size of the pointer itself is being requested.<sup id="cite_ref-cfaq623_34-0" class="reference">[32]</sup><sup id="cite_ref-cfaq728_35-0" class="reference">[33]</sup> Since array name arguments to <code>sizeof</code> are not converted to pointers, they do not exhibit such ambiguity. However, arrays created by dynamic allocation are accessed by pointers rather than true array variables, so they suffer from the same <code>sizeof</code> issues as array pointers.</p>
+<p>Thus, despite this apparent equivalence between array and pointer variables, there is still a distinction to be made between them. Even though the name of an array is, in most expression contexts, converted into a pointer (to its first element), this pointer does not itself occupy any storage; the array name is not an l-value, and its address is a constant, unlike a pointer variable. Consequently, what an array "points to" cannot be changed, and it is impossible to assign a new address to an array name. Array contents may be copied, however, by using the <code>memcpy</code> function, or by accessing the individual elements.</p>
+<h2><span class="mw-headline" id="Memory_management">Memory management</span></h2>
+<p>One of the most important functions of a programming language is to provide facilities for managing <a href="Computer_memory.html" title="Computer memory">memory</a> and the objects that are stored in memory. C provides three distinct ways to allocate memory for objects:<sup id="cite_ref-bk21st_29-3" class="reference">[27]</sup></p>
+<ul>
+<li>Static memory allocation: space for the object is provided in the binary at compile-time; these objects have an extent (or lifetime) as long as the binary which contains them is loaded into memory.</li>
+<li>Automatic memory allocation: temporary objects can be stored on the stack, and this space is automatically freed and reusable after the block in which they are declared is exited.</li>
+<li>Dynamic memory allocation: blocks of memory of arbitrary size can be requested at run-time using library functions such as <code>malloc</code> from a region of memory called the heap; these blocks persist until subsequently freed for reuse by calling the library function <code>realloc</code> or <code>free</code></li>
+</ul>
+<p>These three approaches are appropriate in different situations and have various trade-offs. For example, static memory allocation has little allocation overhead, automatic allocation may involve slightly more overhead, and dynamic memory allocation can potentially have a great deal of overhead for both allocation and deallocation. The persistent nature of static objects is useful for maintaining state information across function calls, automatic allocation is easy to use but stack space is typically much more limited and transient than either static memory or heap space, and dynamic memory allocation allows convenient allocation of objects whose size is known only at run-time. Most C programs make extensive use of all three.</p>
+<p>Where possible, automatic or static allocation is usually simplest because the storage is managed by the compiler, freeing the programmer of the potentially error-prone chore of manually allocating and releasing storage. However, many data structures can change in size at runtime, and since static allocations (and automatic allocations before C99) must have a fixed size at compile-time, there are many situations in which dynamic allocation is necessary.<sup id="cite_ref-bk21st_29-4" class="reference">[27]</sup> Prior to the C99 standard, variable-sized arrays were a common example of this. (See the article on <code>malloc</code> for an example of dynamically allocated arrays.) Unlike automatic allocation, which can fail at run time with uncontrolled consequences, the dynamic allocation functions return an indication (in the form of a null pointer value) when the required storage cannot be allocated. (Static allocation that is too large is usually detected by the linker or loader, before the program can even begin execution.)</p>
+<p>Unless otherwise specified, static objects contain zero or null pointer values upon program startup. Automatically and dynamically allocated objects are initialized only if an initial value is explicitly specified; otherwise they initially have indeterminate values (typically, whatever bit pattern happens to be present in the storage, which might not even represent a valid value for that type). If the program attempts to access an uninitialized value, the results are undefined. Many modern compilers try to detect and warn about this problem, but both false positives and false negatives can occur.</p>
+<p>Another issue is that heap memory allocation has to be synchronized with its actual usage in any program in order for it to be reused as much as possible. For example, if the only pointer to a heap memory allocation goes out of scope or has its value overwritten before <code>free()</code> is called, then that memory cannot be recovered for later reuse and is essentially lost to the program, a phenomenon known as a <i>memory leak.</i> Conversely, it is possible for memory to be freed but continue to be referenced, leading to unpredictable results. Typically, the symptoms will appear in a portion of the program far removed from the actual error, making it difficult to track down the problem. (Such issues are ameliorated in languages with automatic garbage collection.)</p>
+<h2><span class="mw-headline" id="Libraries">Libraries</span></h2>
+<p>The C programming language uses libraries as its primary method of extension. In C, a library is a set of functions contained within a single "archive" file. Each library typically has a header file, which contains the prototypes of the functions contained within the library that may be used by a program, and declarations of special data types and macro symbols used with these functions. In order for a program to use a library, it must include the library's header file, and the library must be linked with the program, which in many cases requires compiler flags (e.g., <code>-lm</code>, shorthand for "link the math library").<sup id="cite_ref-bk21st_29-5" class="reference">[27]</sup></p>
+<p>The most common C library is the C standard library, which is specified by the ISO and ANSI C standards and comes with every C implementation (implementations which target limited environments such as embedded systems may provide only a subset of the standard library). This library supports stream input and output, memory allocation, mathematics, character strings, and time values. Several separate standard headers (for example, <code>stdio.h</code>) specify the interfaces for these and other standard library facilities.</p>
+<p>Another common set of C library functions are those used by applications specifically targeted for <a href="Unix.html" title="Unix">Unix</a> and Unix-like systems, especially functions which provide an interface to the kernel. These functions are detailed in various standards such as POSIX and the Single UNIX Specification.</p>
+<p>Since many programs have been written in C, there are a wide variety of other libraries available. Libraries are often written in C because C compilers generate efficient object code; programmers then create interfaces to the library so that the routines can be used from higher-level languages like <a href="Java_(programming_language).html" title="Java (programming language)">Java</a>, Perl, and <a href="Python_(programming_language).html" title="Python (programming language)">Python</a>.<sup id="cite_ref-bk21st_29-6" class="reference">[27]</sup></p>
+<h2><span class="mw-headline" id="Language_tools">Language tools</span></h2>
+<table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>needs additional citations for verification</b>. <span class="hide-when-compact">Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.</span> <small><i>(July 2014)</i></small> <small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></span></td>
+</tr>
+</table>
+<p>A number of tools have been developed to help C programmers find and fix statements with undefined behavior or possibly erroneous expressions, with greater rigor than that provided by the compiler. The tool lint was the first such, leading to many others.</p>
+<p>Automated source code checking and auditing are beneficial in any language, and for C many such tools exist, such as Lint. A common practice is to use Lint to detect questionable code when a program is first written. Once a program passes Lint, it is then compiled using the C compiler. Also, many compilers can optionally warn about syntactically valid constructs that are likely to actually be errors. MISRA C is a proprietary set of guidelines to avoid such questionable code, developed for embedded systems.<sup id="cite_ref-36" class="reference">[34]</sup></p>
+<p>There are also compilers, libraries, and operating system level mechanisms for performing actions that are not a standard part of C, such as bounds checking for arrays, detection of buffer overflow, serialization, dynamic memory tracking, and automatic garbage collection.</p>
+<p>Tools such as Purify or Valgrind and linking with libraries containing special versions of the memory allocation functions can help uncover runtime errors in memory usage.</p>
+<h2><span class="mw-headline" id="Uses">Uses</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:422px;"><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Tiobe_index.png/420px-Tiobe_index.png" width="420" height="210" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Tiobe_index.png/630px-Tiobe_index.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Tiobe_index.png/840px-Tiobe_index.png 2x" data-file-width="920" data-file-height="461" /></a>
+<div class="thumbcaption">
+<div class="magnify"></div>
+The TIOBE index graph from 2002 to 2015, showing a comparison of the popularity of various programming languages<sup id="cite_ref-37" class="reference">[35]</sup></div>
+</div>
+</div>
+<p>C is widely used for system programming in implementing <a href="Operating_system.html" title="Operating system">operating systems</a> and embedded system applications<sup id="cite_ref-38" class="reference">[36]</sup>, because C code, when written for portability, can be used for most purposes, yet when needed, system-specific code can be used to access specific hardware addresses and to perform type punning to match externally imposed interface requirements, with a low run-time demand on system resources.</p>
+<p>C can also be used for website programming using CGI as a "gateway" for information between the Web application, the server, and the browser.<sup id="cite_ref-AutoTX-11_39-0" class="reference">[37]</sup> C is often chosen over interpreted languages because of its speed, stability, and near-universal availability.<sup id="cite_ref-AutoTX-12_40-0" class="reference">[38]</sup></p>
+<p>One consequence of C wide availability and efficiency is that <a href="Compiler.html" title="Compiler">compilers</a>, libraries and interpreters of other programming languages are often implemented in C. The reference implementations of <a href="Python_(programming_language).html" title="Python (programming language)">Python</a>, Perl and PHP, for example, are all written in C.</p>
+<p>Because the layer of abstraction is thin and the overhead is low, C enables programmers to create efficient implementations of algorithms and data structures, useful for computationally intense programs. For example, the GNU Multiple Precision Arithmetic Library, the GNU Scientific Library, Mathematica, and MATLAB are completely or partially written in C.</p>
+<p>C is sometimes used as an intermediate language by implementations of other languages. This approach may be used for portability or convenience; by using C as an intermediate language, additional machine-specific code generators are not necessary. C has some features, such as line-number preprocessor directives and optional superfluous commas at the end of initializer lists, that support compilation of generated code. However, some of C shortcomings have prompted the development of other C-based languages specifically designed for use as intermediate languages, such as C--.</p>
+<p>C has also been widely used to implement end-user applications. However, such applications can also be written in newer, higher-level languages.</p>
+<h2><span class="mw-headline" id="Related_languages">Related languages</span></h2>
+<p>C has both directly and indirectly influenced many later languages such as C#, D, Go, <a href="Java_(programming_language).html" title="Java (programming language)">Java</a>, <a href="JavaScript.html" title="JavaScript">JavaScript</a>, Limbo, LPC, Perl, PHP, <a href="Python_(programming_language).html" title="Python (programming language)">Python</a>, and Unix's C shell.<sup id="cite_ref-41" class="reference">[39]</sup> The most pervasive influence has been syntactical, all of the languages mentioned combine the statement and (more or less recognizably) expression syntax of C with type systems, data models and/or large-scale program structures that differ from those of C, sometimes radically.</p>
+<p>Several C or near-C interpreters exist, including Ch and CINT, which can also be used for scripting.</p>
+<p>When object-oriented languages became popular, <a href="C++.html" title="C++">C++</a> and Objective-C were two different extensions of C that provided object-oriented capabilities. Both languages were originally implemented as source-to-source compilers; source code was translated into C, and then compiled with a C compiler.<sup id="cite_ref-42" class="reference">[40]</sup></p>
+<p>The <a href="C++.html" title="C++">C++</a> programming language was devised by Bjarne Stroustrup as an approach to providing <a href="Object-oriented_programming.html" title="Object-oriented programming">object-oriented</a> functionality with a C-like syntax.<sup id="cite_ref-AutoTX-4_43-0" class="reference">[41]</sup> C++ adds greater typing strength, scoping, and other tools useful in object-oriented programming, and permits generic programming via templates. Nearly a superset of C, C++ now supports most of C, with a few exceptions.</p>
+<p>Objective-C was originally a very "thin" layer on top of C, and remains a strict superset of C that permits object-oriented programming using a hybrid dynamic/static typing paradigm. Objective-C derives its syntax from both C and Smalltalk: syntax that involves preprocessing, expressions, function declarations, and function calls is inherited from C, while the syntax for object-oriented features was originally taken from Smalltalk.</p>
+<p>In addition to <a href="C++.html" title="C++">C++</a> and Objective-C, Ch, Cilk and Unified Parallel C are nearly supersets of C.</p>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><a><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cc/8bit-dynamiclist_%28reversed%29.gif/28px-8bit-dynamiclist_%28reversed%29.gif" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/c/cc/8bit-dynamiclist_%28reversed%29.gif 1.5x" data-file-width="32" data-file-height="32" /></a></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle">Computer programming portal</span></li>
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg/32px-Desktop_computer_clipart_-_Yellow_theme.svg.png" width="32" height="23" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg/48px-Desktop_computer_clipart_-_Yellow_theme.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg/64px-Desktop_computer_clipart_-_Yellow_theme.svg.png 2x" data-file-width="281" data-file-height="203" /></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle">Information technology portal</span></li>
+</ul>
+</div>
+<ul>
+<li>Comparison of Pascal and C</li>
+<li><a href="Comparison_of_programming_languages.html" title="Comparison of programming languages">Comparison of programming languages</a></li>
+<li>International Obfuscated C Code Contest</li>
+<li>List of C-based programming languages</li>
+<li>List of C compilers</li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span></h2>
+<div class="reflist" style="list-style-type: lower-alpha;">
+<div class="mw-references-wrap">
+<ol class="references">
+<li id="cite_note-27"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">The original example code will compile on most modern compilers that are not in strict standard compliance mode, but it does not fully conform to the requirements of either C89 or C99. In fact, C99 requires that a diagnostic message be produced.</span></li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">The <code>main</code> function actually has two arguments, <code>int argc</code> and <code>char *argv[]</code>, respectively, which can be used to handle command line arguments. The ISO C standard (section 5.1.2.2.1) requires both forms of <code>main</code> to be supported, which is special treatment not afforded to any other function.</span></li>
+</ol>
+</div>
+</div>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-k.26r1e-1"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a> <a><sup><i><b>c</b></i></sup></a> <a><sup><i><b>d</b></i></sup></a> <a><sup><i><b>e</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">Kernighan, Brian W.; Ritchie, Dennis M. (February 1978). <i>The C Programming Language</i> (1st ed.). Englewood Cliffs, NJ: Prentice Hall. ISBN&#160;0-13-110163-3.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.au=Ritchie%2C+Dennis+M.&amp;rft.aufirst=Brian+W.&amp;rft.aulast=Kernighan&amp;rft.btitle=The+C+Programming+Language&amp;rft.date=1978-02&amp;rft.edition=1st&amp;rft.genre=book&amp;rft.isbn=0-13-110163-3&amp;rft.place=Englewood+Cliffs%2C+NJ&amp;rft.pub=Prentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> Regarded by many to be the authoritative reference on C.</span></li>
+<li id="cite_note-dottcl_2-2"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Ritchie (1993): "Thompson had made a brief attempt to produce a system coded in an early version of C—before structures—in 1972, but gave up the effort."</span></li>
+<li id="cite_note-dottcl-3"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Ritchie (1993): "The scheme of type composition adopted by C owes considerable debt to Algol 68, although it did not, perhaps, emerge in a form that Algol's adherents would approve of."</span></li>
+<li id="cite_note-vinsp-4"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">"Verilog HDL (and C)" <span style="font-size:85%;">(PDF)</span>. The Research School of Computer Science at the Australian National University. 2010-06-03<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-08-19</span></span>. <q>1980s:&#160;; Verilog first introduced&#160;; Verilog inspired by the C programming language</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.btitle=Verilog+HDL+%28and+C%29&amp;rft.date=2010-06-03&amp;rft.genre=unknown&amp;rft.pub=The+Research+School+of+Computer+Science+at+the+Australian+National+University&amp;rft_id=http%3A%2F%2Fcs.anu.edu.au%2Fcourses%2FENGN3213%2Flectures%2Flecture6_VERILOG_2010.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-chistory-5"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Ritchie (1993)</span></li>
+<li id="cite_note-AutoTX-1-6"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Lawlis, Patricia K. (August 1997). "Guidelines for Choosing a Computer Language: Support for the Visionary Organization". Ada Information Clearinghouse<span class="reference-accessdate">. Retrieved <span class="nowrap">18 July</span> 2006</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.aufirst=Patricia+K.&amp;rft.aulast=Lawlis&amp;rft.btitle=Guidelines+for+Choosing+a+Computer+Language%3A+Support+for+the+Visionary+Organization&amp;rft.date=1997-08&amp;rft.genre=unknown&amp;rft.pub=Ada+Information+Clearinghouse&amp;rft_id=http%3A%2F%2Farchive.adaic.com%2Fdocs%2Freports%2Flawlis%2Fk.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoTX-2-7"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"Programming Language Popularity". 2009. Archived from the original on 13 December 2007<span class="reference-accessdate">. Retrieved <span class="nowrap">16 January</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.btitle=Programming+Language+Popularity&amp;rft.date=2009&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.langpop.com%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoTX-3-8"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"TIOBE Programming Community Index". 2009<span class="reference-accessdate">. Retrieved <span class="nowrap">6 May</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.btitle=TIOBE+Programming+Community+Index&amp;rft.date=2009&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.tiobe.com%2Findex.php%2Fcontent%2Fpaperinfo%2Ftpci%2Findex.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-sigplan-9"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite id="CITEREFRitchie1993" class="citation journal">Ritchie, Dennis M. (March 1993). "The Development of the C Language". <i>ACM SIGPLAN Notices</i>. <b>28</b> (3): 201–208. doi:10.1145/155360.155580.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.atitle=The+Development+of+the+C+Language&amp;rft.aufirst=Dennis+M.&amp;rft.aulast=Ritchie&amp;rft.date=1993-03&amp;rft.genre=article&amp;rft.issue=3&amp;rft.jtitle=ACM+SIGPLAN+Notices&amp;rft.pages=201-208&amp;rft.volume=28&amp;rft_id=http%3A%2F%2Fwww.bell-labs.com%2Fusr%2Fdmr%2Fwww%2Fchist.html&amp;rft_id=info%3Adoi%2F10.1145%2F155360.155580&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Ulf Bilting &amp; Jan Skansholm "Vägen till C" (Swedish) meaning "The Road to C", third edition, Studentlitteratur, year 2000, page 3. ISBN&#160;91-44-01468-6.</span></li>
+<li id="cite_note-unixport-11"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a> <a><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">Johnson, S. C.; Ritchie, D. M. (1978). "Portability of C Programs and the UNIX System". <i>Bell System Tech. J</i>. <b>57</b> (6): 2021–2048. doi:10.1002/j.1538-7305.1978.tb02141.x<span class="reference-accessdate">. Retrieved <span class="nowrap">16 December</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.atitle=Portability+of+C+Programs+and+the+UNIX+System&amp;rft.au=Ritchie%2C+D.+M.&amp;rft.aufirst=S.+C.&amp;rft.aulast=Johnson&amp;rft.date=1978&amp;rft.genre=article&amp;rft.issue=6&amp;rft.jtitle=Bell+System+Tech.+J.&amp;rft.pages=2021-2048&amp;rft.volume=57&amp;rft_id=http%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fdownload%3Fdoi%3D10.1.1.138.35%26rep%3Drep1%26type%3Dpdf&amp;rft_id=info%3Adoi%2F10.1002%2Fj.1538-7305.1978.tb02141.x&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span> (Note: this reference is an OCR scan of the original, and contains an OCR glitch rendering "IBM 370" as "IBM 310".)</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation techreport">McIlroy, M. D. (1987). <a><i>A Research Unix reader: annotated excerpts from the Programmer's Manual, 1971–1986</i></a> <span style="font-size:85%;">(PDF)</span> (Technical report). CSTR. Bell Labs. p.&#160;10. 139.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.aufirst=M.+D.&amp;rft.aulast=McIlroy&amp;rft.btitle=A+Research+Unix+reader%3A+annotated+excerpts+from+the+Programmer%27s+Manual%2C+1971%E2%80%931986&amp;rft.date=1987&amp;rft.genre=report&amp;rft.pages=10&amp;rft.pub=Bell+Labs&amp;rft.series=CSTR&amp;rft_id=http%3A%2F%2Fwww.cs.dartmouth.edu%2F~doug%2Freader.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Stallings-13"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Stallings, William. "Operating Systems: Internals and Design Principles" 5th ed, page 91. Pearson Education, Inc. 2005.</span></li>
+<li id="cite_note-k.26r2e-14"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">Kernighan, Brian W.; Ritchie, Dennis M. (March 1988). <i>The C Programming Language</i> (2nd ed.). Englewood Cliffs, NJ: Prentice Hall. ISBN&#160;0-13-110362-8.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.au=Ritchie%2C+Dennis+M.&amp;rft.aufirst=Brian+W.&amp;rft.aulast=Kernighan&amp;rft.btitle=The+C+Programming+Language&amp;rft.date=1988-03&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.isbn=0-13-110362-8&amp;rft.place=Englewood+Cliffs%2C+NJ&amp;rft.pub=Prentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation report">Stroustrup, Bjarne (2002). Sibling rivalry: C and C++ <span style="font-size:85%;">(PDF)</span> (Report). AT&amp;T Labs.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.aufirst=Bjarne&amp;rft.aulast=Stroustrup&amp;rft.btitle=Sibling+rivalry%3A+C+and+C%2B%2B&amp;rft.date=2002&amp;rft.genre=report&amp;rft.pub=AT%26T+Labs&amp;rft_id=http%3A%2F%2Fstroustrup.com%2Fsibling_rivalry.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoTX-5-16"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"JTC1/SC22/WG14&#160;– C". <i>Home page</i>. ISO/IEC<span class="reference-accessdate">. Retrieved <span class="nowrap">2 June</span> 2011</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.atitle=JTC1%2FSC22%2FWG14+%E2%80%93+C&amp;rft.genre=unknown&amp;rft.jtitle=Home+page&amp;rft_id=http%3A%2F%2Fwww.open-std.org%2Fjtc1%2Fsc22%2Fwg14%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Andrew Binstock (October 12, 2011). "Interview with Herb Sutter". <i>Dr. Dobbs</i><span class="reference-accessdate">. Retrieved <span class="nowrap">September 7,</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.atitle=Interview+with+Herb+Sutter&amp;rft.au=Andrew+Binstock&amp;rft.date=2011-10-12&amp;rft.genre=unknown&amp;rft.jtitle=Dr.+Dobbs&amp;rft_id=http%3A%2F%2Fwww.drdobbs.com%2Fcpp%2Finterview-with-herb-sutter%2F231900562&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoTX-6-18"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"TR 18037: Embedded C" <span style="font-size:85%;">(PDF)</span>. ISO / IEC<span class="reference-accessdate">. Retrieved <span class="nowrap">26 July</span> 2011</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.btitle=TR+18037%3A+Embedded+C&amp;rft.genre=unknown&amp;rft.pub=ISO+%2F+IEC&amp;rft_id=http%3A%2F%2Fwww.open-std.org%2Fjtc1%2Fsc22%2Fwg14%2Fwww%2Fdocs%2Fn1169.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-h.26s5e-19"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Harbison, Samuel P.; Steele, Guy L. (2002). <i>C: A Reference Manual</i> (5th ed.). Englewood Cliffs, NJ: Prentice Hall. ISBN&#160;0-13-089592-X.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.au=Steele%2C+Guy+L.&amp;rft.aufirst=Samuel+P.&amp;rft.aulast=Harbison&amp;rft.btitle=C%3A+A+Reference+Manual&amp;rft.date=2002&amp;rft.edition=5th&amp;rft.genre=book&amp;rft.isbn=0-13-089592-X&amp;rft.place=Englewood+Cliffs%2C+NJ&amp;rft.pub=Prentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> Contains a BNF grammar for C.</span></li>
+<li id="cite_note-KandR1-20"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Kernighan, Brian W.; Ritchie, Dennis M. (1996). <i>The C Programming Language</i> (2nd ed.). Prentice Hall. p.&#160;192. ISBN&#160;7 302 02412 X.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.au=Ritchie%2C+Dennis+M.&amp;rft.aufirst=Brian+W.&amp;rft.aulast=Kernighan&amp;rft.btitle=The+C+Programming+Language&amp;rft.date=1996&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.isbn=730202412X&amp;rft.pages=192&amp;rft.pub=Prentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Page 3 of the original K&amp;R<sup id="cite_ref-k.26r1e_1-3" class="reference">[1]</sup></span></li>
+<li id="cite_note-AutoTX-7-22"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">ISO/IEC 9899:201x (ISO C11) Committee Draft</span></li>
+<li id="cite_note-KandR2-23"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Kernighan, Brian W.; Ritchie, Dennis M. (1996). <i>The C Programming Language</i> (2nd ed.). Prentice Hall. pp.&#160;192, 259. ISBN&#160;7 302 02412 X.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.au=Ritchie%2C+Dennis+M.&amp;rft.aufirst=Brian+W.&amp;rft.aulast=Kernighan&amp;rft.btitle=The+C+Programming+Language&amp;rft.date=1996&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.isbn=730202412X&amp;rft.pages=192%2C+259&amp;rft.pub=Prentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoTX-8-24"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"10 Common Programming Mistakes in C++". Cs.ucr.edu<span class="reference-accessdate">. Retrieved <span class="nowrap">26 June</span> 2009</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.btitle=10+Common+Programming+Mistakes+in+C%2B%2B&amp;rft.genre=unknown&amp;rft.pub=Cs.ucr.edu&amp;rft_id=http%3A%2F%2Fwww.cs.ucr.edu%2F~nxiao%2Fcs10%2Ferrors.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoTX-9-25"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Schultz, Thomas (2004). <a><i>C and the 8051</i></a> (3rd ed.). Otsego, MI: PageFree Publishing Inc. p.&#160;20. ISBN&#160;1-58961-237-X<span class="reference-accessdate">. Retrieved <span class="nowrap">10 February</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.aufirst=Thomas&amp;rft.aulast=Schultz&amp;rft.btitle=C+and+the+8051&amp;rft.date=2004&amp;rft.edition=3rd&amp;rft.genre=book&amp;rft.isbn=1-58961-237-X&amp;rft.pages=20&amp;rft.place=Otsego%2C+MI&amp;rft.pub=PageFree+Publishing+Inc.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2F%3Fid%3DrI0c8kWbxooC%26pg%3DPT47%23v%3Donepage%26q%26f%3Dfalse&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Page 6 of the original K&amp;R<sup id="cite_ref-k.26r1e_1-4" class="reference">[1]</sup></span></li>
+<li id="cite_note-bk21st-29"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a> <a><sup><i><b>c</b></i></sup></a> <a><sup><i><b>d</b></i></sup></a> <a><sup><i><b>e</b></i></sup></a> <a><sup><i><b>f</b></i></sup></a> <a><sup><i><b>g</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">Klemens, Ben (2013). <i>21st Century C</i>. O'Reilly Media. ISBN&#160;1-4493-2714-1.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.aufirst=Ben&amp;rft.aulast=Klemens&amp;rft.btitle=21st+Century+C&amp;rft.date=2013&amp;rft.genre=book&amp;rft.isbn=1-4493-2714-1&amp;rft.pub=O%27Reilly+Media&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-30"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation journal">Feuer, Alan R.; Gehani, Narain H. (March 1982). "Comparison of the Programming Languages C and Pascal". <i>ACM Computing Surveys</i>. <b>14</b> (1): 73–92. doi:10.1145/356869.356872. <span style="font-size:90%; color:#555">(Subscription required (<span title="The site requires a paid subscription to access this page." style="border-bottom:1px dotted;cursor:help">help</span>))</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.atitle=Comparison+of+the+Programming+Languages+C+and+Pascal&amp;rft.au=Gehani%2C+Narain+H.&amp;rft.aufirst=Alan+R.&amp;rft.aulast=Feuer&amp;rft.date=1982-03&amp;rft.genre=article&amp;rft.issue=1&amp;rft.jtitle=ACM+Computing+Surveys&amp;rft.pages=73-92&amp;rft.volume=14&amp;rft_id=info%3Adoi%2F10.1145%2F356869.356872&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Page 122 of K&amp;R2<sup id="cite_ref-k.26r2e_14-1" class="reference">[14]</sup></span></li>
+<li id="cite_note-AutoTX-10-32"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">For example, gcc provides _FORTIFY_SOURCE. <cite class="citation web">"Security Features: Compile Time Buffer Checks (FORTIFY_SOURCE)". fedoraproject.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-08-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.btitle=Security+Features%3A+Compile+Time+Buffer+Checks+%28FORTIFY_SOURCE%29&amp;rft.genre=unknown&amp;rft.pub=fedoraproject.org&amp;rft_id=http%3A%2F%2Ffedoraproject.org%2Fwiki%2FSecurity%2FFeatures&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Raymond1996-33"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Raymond, Eric S. (11 October 1996). <a><i>The New Hacker's Dictionary</i></a> (3rd ed.). MIT Press. p.&#160;432. ISBN&#160;978-0-262-68092-9<span class="reference-accessdate">. Retrieved <span class="nowrap">5 August</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.aufirst=Eric+S.&amp;rft.aulast=Raymond&amp;rft.btitle=The+New+Hacker%27s+Dictionary&amp;rft.date=1996-10-11&amp;rft.edition=3rd&amp;rft.genre=book&amp;rft.isbn=978-0-262-68092-9&amp;rft.pages=432&amp;rft.pub=MIT+Press&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3Dg80P_4v4QbIC%26pg%3DPA432&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-cfaq623-34"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Summit, Steve. "comp.lang.c Frequently Asked Questions 6.23"<span class="reference-accessdate">. Retrieved <span class="nowrap">March 6,</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.au=Summit%2C+Steve&amp;rft.btitle=comp.lang.c+Frequently+Asked+Questions+6.23&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.c-faq.com%2Faryptr%2Farraynels.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-cfaq728-35"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Summit, Steve. "comp.lang.c Frequently Asked Questions 7.28"<span class="reference-accessdate">. Retrieved <span class="nowrap">March 6,</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.au=Summit%2C+Steve&amp;rft.btitle=comp.lang.c+Frequently+Asked+Questions+7.28&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.c-faq.com%2Fmalloc%2Fsizeof.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-36"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"Man Page for lint (freebsd Section 1)". <i>unix.com</i>. 2001-05-24<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.atitle=Man+Page+for+lint+%28freebsd+Section+1%29&amp;rft.date=2001-05-24&amp;rft.genre=unknown&amp;rft.jtitle=unix.com&amp;rft_id=http%3A%2F%2Fwww.unix.com%2Fman-page%2FFreeBSD%2F1%2Flint&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-37"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">McMillan, Robert (2013-08-01). "Is Java Losing Its Mojo?". <i>Wired</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.aufirst=Robert&amp;rft.aulast=McMillan&amp;rft.btitle=Is+Java+Losing+Its+Mojo%3F&amp;rft.date=2013-08-01&amp;rft.genre=unknown&amp;rft.pub=%27%27Wired%27%27&amp;rft_id=https%3A%2F%2Fwww.wired.com%2F2013%2F01%2Fjava-no-longer-a-favorite%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-38"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Chip., Weems, (2014). <a><i>Programming and problem solving with C++&#160;: brief, sixth edition</i></a>. Jones &amp; Bartlett Learning. ISBN&#160;1449694284. OCLC&#160;894992484.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.aufirst=Weems%2C&amp;rft.aulast=Chip.&amp;rft.btitle=Programming+and+problem+solving+with+C%2B%2B+%3A+brief%2C+sixth+edition&amp;rft.date=2014&amp;rft.genre=book&amp;rft.isbn=1449694284&amp;rft.pub=Jones+%26+Bartlett+Learning&amp;rft_id=https%3A%2F%2Fwww.worldcat.org%2Foclc%2F894992484&amp;rft_id=info%3Aoclcnum%2F894992484&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoTX-11-39"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book"><i>Dr. Dobb's Sourcebook</i>. U.S.A.: Miller Freeman, Inc. November–December 1995.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.btitle=Dr.+Dobb%27s+Sourcebook&amp;rft.date=1995-11%2F1995-12&amp;rft.genre=book&amp;rft.place=U.S.A.&amp;rft.pub=Miller+Freeman%2C+Inc.&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoTX-12-40"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"Using C for CGI Programming". linuxjournal.com. 1 March 2005<span class="reference-accessdate">. Retrieved <span class="nowrap">4 January</span> 2010</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.btitle=Using+C+for+CGI+Programming&amp;rft.date=2005-03-01&amp;rft.genre=unknown&amp;rft.pub=linuxjournal.com&amp;rft_id=http%3A%2F%2Fwww.linuxjournal.com%2Farticle%2F6863&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-41"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Gerard),, O'Regan, Gerard (Cornelius. <a><i>Pillars of computing&#160;: a compendium of select, pivotal technology firms</i></a>. ISBN&#160;3319214640. OCLC&#160;922324121.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.aufirst=O%27Regan%2C+Gerard+%28Cornelius&amp;rft.aulast=Gerard%29%2C&amp;rft.btitle=Pillars+of+computing+%3A+a+compendium+of+select%2C+pivotal+technology+firms&amp;rft.genre=book&amp;rft.isbn=3319214640&amp;rft_id=https%3A%2F%2Fwww.worldcat.org%2Foclc%2F922324121&amp;rft_id=info%3Aoclcnum%2F922324121&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-42"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Lawrence., Rauchwerger, (2004). <a><i>Languages and compilers for parallel computing&#160;: 16th international workshop, LCPC 2003, College Station, TX, USA, October 2-4, 2003&#160;: revised papers</i></a>. Springer. ISBN&#160;3540246444. OCLC&#160;57965544.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.aufirst=Rauchwerger%2C&amp;rft.aulast=Lawrence.&amp;rft.btitle=Languages+and+compilers+for+parallel+computing+%3A+16th+international+workshop%2C+LCPC+2003%2C+College+Station%2C+TX%2C+USA%2C+October+2-4%2C+2003+%3A+revised+papers&amp;rft.date=2004&amp;rft.genre=book&amp;rft.isbn=3540246444&amp;rft.pub=Springer&amp;rft_id=https%3A%2F%2Fwww.worldcat.org%2Foclc%2F57965544&amp;rft_id=info%3Aoclcnum%2F57965544&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-AutoTX-4-43"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Stroustrup, Bjarne (1993). "A History of C++: 1979−1991" <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">9 June</span> 2011</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.aufirst=Bjarne&amp;rft.aulast=Stroustrup&amp;rft.btitle=A+History+of+C%2B%2B%3A+1979%E2%88%921991&amp;rft.date=1993&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.stroustrup.com%2Fhopl2.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Sources">Sources</span></h2>
+<ul>
+<li><cite id="CITEREFRitchie1993" class="citation conference">Ritchie, Dennis M. (1993). <a><i>The Development of the C Language</i></a>. <i>The second ACM SIGPLAN History of Programming Languages Conference (HOPL-II)</i>. Cambridge, MA, USA — April 20–23, 1993: ACM. pp.&#160;201–208. ISBN&#160;0-89791-570-4. doi:10.1145/154766.155580<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-11-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.atitle=The+Development+of+the+C+Language&amp;rft.aufirst=Dennis+M.&amp;rft.aulast=Ritchie&amp;rft.date=1993&amp;rft.genre=conference&amp;rft.isbn=0-89791-570-4&amp;rft.jtitle=The+second+ACM+SIGPLAN+History+of+Programming+Languages+Conference+%28HOPL-II%29&amp;rft.pages=201-208&amp;rft_id=http%3A%2F%2Fwww.bell-labs.com%2Fusr%2Fdmr%2Fwww%2Fchist.html&amp;rft_id=info%3Adoi%2F10.1145%2F154766.155580&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span></h2>
+<ul>
+<li><cite class="citation book">Banahan, M.; Brady, D.; Doran, M. (1991). <a><i>The C Book</i></a> (2nd ed.). Addison-Wesley.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.au=Brady%2C+D.&amp;rft.au=Doran%2C+M.&amp;rft.aufirst=M.&amp;rft.aulast=Banahan&amp;rft.btitle=The+C+Book&amp;rft.date=1991&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.pub=Addison-Wesley&amp;rft_id=http%3A%2F%2Fpublications.gbdirect.co.uk%2Fc_book%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">King, K. N. (April 2008). <i>C Programming: A Modern Approach</i> (2nd ed.). Norton. ISBN&#160;978-0-393-97950-3.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.aufirst=K.+N.&amp;rft.aulast=King&amp;rft.btitle=C+Programming%3A+A+Modern+Approach&amp;rft.date=2008-04&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.isbn=978-0-393-97950-3&amp;rft.pub=Norton&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Thompson, Ken. "A New C Compiler" <span style="font-size:85%;">(PDF)</span>. Murray Hill, New Jersey: AT&amp;T Bell Laboratories.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.atitle=A+New+C+Compiler&amp;rft.aufirst=Ken&amp;rft.aulast=Thompson&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fdoc.cat-v.org%2Fbell_labs%2Fnew_c_compilers%2Fnew_c_compiler.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Feuer, Alan R. (1998). <i>The C Puzzle Book</i> (1st, revised printing ed.). Addison-Wesley. ISBN&#160;978-0-201-60461-0.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.aufirst=Alan+R.&amp;rft.aulast=Feuer&amp;rft.btitle=The+C+Puzzle+Book&amp;rft.date=1998&amp;rft.edition=1st%2C+revised+printing&amp;rft.genre=book&amp;rft.isbn=978-0-201-60461-0&amp;rft.pub=Addison-Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span></h2>
+<div role="navigation" aria-labelledby="sister-projects" class="metadata plainlinks plainlist mbox-small" style="border:1px solid #aaa; padding:0.75em; background:#f9f9f9;">
+<div style="padding-bottom: 0.75em; text-align: center;">Find more about<b style="display:block;">C (programming language)</b>at Wikipedia's <a><span id="sister-projects">sister projects</span></a></div>
+<ul style="border-top:1px solid #aaa; padding-top: 0.75em;">
+<li style="min-height: 31px;"><span style="display: inline-block; width: 31px; line-height: 31px; vertical-align: middle; text-align: center;"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/20px-Commons-logo.svg.png" width="20" height="27" style="vertical-align: middle" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/40px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></span><span style="display: inline-block; margin-left: 4px; width: 182px; vertical-align: middle;">Media from Commons</span></li>
+<li style="min-height: 31px;"><span style="display: inline-block; width: 31px; line-height: 31px; vertical-align: middle; text-align: center;"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/27px-Wikinews-logo.svg.png" width="27" height="15" style="vertical-align: middle" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/41px-Wikinews-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/54px-Wikinews-logo.svg.png 2x" data-file-width="759" data-file-height="415" /></span><span style="display: inline-block; margin-left: 4px; width: 182px; vertical-align: middle;">News from Wikinews</span></li>
+<li style="min-height: 31px;"><span style="display: inline-block; width: 31px; line-height: 31px; vertical-align: middle; text-align: center;"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/23px-Wikiquote-logo.svg.png" width="23" height="27" style="vertical-align: middle" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/35px-Wikiquote-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/46px-Wikiquote-logo.svg.png 2x" data-file-width="300" data-file-height="355" /></span><span style="display: inline-block; margin-left: 4px; width: 182px; vertical-align: middle;">Quotations from Wikiquote</span></li>
+<li style="min-height: 31px;"><span style="display: inline-block; width: 31px; line-height: 31px; vertical-align: middle; text-align: center;"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/27px-Wikibooks-logo.svg.png" width="27" height="27" style="vertical-align: middle" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/41px-Wikibooks-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/54px-Wikibooks-logo.svg.png 2x" data-file-width="300" data-file-height="300" /></span><span style="display: inline-block; margin-left: 4px; width: 182px; vertical-align: middle;">Textbooks from Wikibooks</span></li>
+<li style="min-height: 31px;"><span style="display: inline-block; width: 31px; line-height: 31px; vertical-align: middle; text-align: center;"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Wikiversity-logo-en.svg/27px-Wikiversity-logo-en.svg.png" width="27" height="24" style="vertical-align: middle" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Wikiversity-logo-en.svg/41px-Wikiversity-logo-en.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Wikiversity-logo-en.svg/54px-Wikiversity-logo-en.svg.png 2x" data-file-width="1000" data-file-height="900" /></span><span style="display: inline-block; margin-left: 4px; width: 182px; vertical-align: middle;">Learning resources from Wikiversity</span></li>
+</ul>
+</div>
+<ul>
+<li>ISO C Working Group official website</li>
+<li>comp.lang.c Frequently Asked Questions</li>
+<li>ISO/IEC 9899, publicly available official C documents, including the C99 Rationale</li>
+<li><cite class="citation web">"C99 with Technical corrigenda TC1, TC2, and TC3 included" <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AC+%28programming+language%29&amp;rft.btitle=C99+with+Technical+corrigenda+TC1%2C+TC2%2C+and+TC3+included&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.open-std.org%2FJTC1%2FSC22%2FWG14%2Fwww%2Fdocs%2Fn1256.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span>&#160;<small>(3.61&#160;MB)</small></li>
+<li>A History of C, by Dennis Richie</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="C_programming_language" style="padding:3px">
+<table class="nowraplinks hlist collapsible expanded navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="C_programming_language" style="font-size:114%;margin:0 4em">C programming language</div>
+</th>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li>ANSI C
+<ul>
+<li>C89 and C90</li>
+</ul>
+</li>
+<li>C99</li>
+<li>C11</li>
+<li>Embedded C</li>
+<li>MISRA C</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Features</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Subroutine.html" title="Subroutine">Functions</a></li>
+<li>Header files</li>
+<li>Libraries</li>
+<li>Operators</li>
+<li>String</li>
+<li>Syntax</li>
+<li>Preprocessor</li>
+<li>Data types</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%"><a>Standard library<br />
+functions</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Char (ctype.h)</li>
+<li>File I/O (stdio.h)</li>
+<li>Math (math.h)</li>
+<li>Dynamic memory (stdlib.h)</li>
+<li>String (string.h)</li>
+<li>Time (time.h)</li>
+<li>Variadic (stdarg.h)</li>
+<li>POSIX</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%"><a>Standard<br />
+libraries</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Bionic
+<ul>
+<li>libhybris</li>
+</ul>
+</li>
+<li>dietlibc</li>
+<li>EGLIBC</li>
+<li>glibc</li>
+<li>klibc</li>
+<li>Microsoft Run-time Library</li>
+<li>musl</li>
+<li>Newlib</li>
+<li>uClibc</li>
+<li>BSD libc</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Compilers</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Comparison of compilers</li>
+<li>ACK</li>
+<li>Borland Turbo C</li>
+<li>Clang</li>
+<li><a href="GNU_Compiler_Collection.html" title="GNU Compiler Collection">GCC</a></li>
+<li>ICC</li>
+<li>LCC</li>
+<li>Pelles C</li>
+<li>PCC</li>
+<li>SDCC</li>
+<li>TCC</li>
+<li>Microsoft Visual Studio / Express / C++</li>
+<li>Watcom C/C++</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">IDEs</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Comparison of IDEs</li>
+<li>Anjuta</li>
+<li>Code::Blocks</li>
+<li>CodeLite</li>
+<li>Eclipse</li>
+<li>Geany</li>
+<li>Microsoft Visual Studio</li>
+<li>NetBeans</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%"><a>Comparison with<br />
+other languages</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Compatibility of C and C++</li>
+<li>Comparison with Embedded C</li>
+<li>Comparison with Pascal</li>
+<li><a href="Comparison_of_programming_languages.html" title="Comparison of programming languages">Comparison of programming languages</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Descendant<br />
+languages</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++.html" title="C++">C++</a></li>
+<li>C#</li>
+<li>D</li>
+<li>Objective-C</li>
+<li>Alef</li>
+<li>Limbo</li>
+<li>Go</li>
+<li>Vala</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b>Category</b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Integrated_development_environments" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="Integrated_development_environments" style="font-size:114%;margin:0 4em">Integrated development environments</div>
+</th>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">C and <a href="C++.html" title="C++">C++</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="width:1%"><a>Open<br />
+source</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Android Studio</li>
+<li>Anjuta</li>
+<li>Code::Blocks</li>
+<li>CodeLite</li>
+<li>Dev-C++</li>
+<li>Eclipse</li>
+<li>Geany</li>
+<li>GNAT Programming Studio</li>
+<li>GNOME Builder</li>
+<li>KDevelop</li>
+<li>Kuzya</li>
+<li>MonoDevelop</li>
+<li>NetBeans</li>
+<li>QDevelop</li>
+<li>Qt Creator</li>
+<li>SharpDevelop</li>
+<li>Ultimate++</li>
+<li>OpenWatcom</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Freeware</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Pelles C</li>
+<li>Philasmicos Entwickler Studio</li>
+<li>Oracle Developer Studio</li>
+<li>Visual Studio Community</li>
+<li>Xcode</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Retail</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>C++Builder</li>
+<li>Eclipse-based
+<ul>
+<li>CodeWarrior</li>
+<li>MyEclipse</li>
+</ul>
+</li>
+<li>Visual Studio</li>
+<li>By JetBrains
+<ul>
+<li>IntelliJ IDEA</li>
+<li>AppCode</li>
+<li>CLion</li>
+</ul>
+</li>
+<li>LabWindows/CVI</li>
+<li>LccWin32</li>
+<li>IBM Rational Software Architect</li>
+<li>Understand</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Discontinued</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>IBM VisualAge</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Java</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Open source</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>BlueJ</li>
+<li>DrJava</li>
+<li>Eclipse</li>
+<li>Geany</li>
+<li>Greenfoot</li>
+<li>IntelliJ IDEA Community Edition
+<ul>
+<li>Android Studio</li>
+</ul>
+</li>
+<li>NetBeans</li>
+<li>Servoy Community Edition</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Freeware</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>jGRASP</li>
+<li>JDeveloper</li>
+<li>Xcode</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Retail</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>JBuilder</li>
+<li>JCreator</li>
+<li>MyEclipse</li>
+<li>IBM
+<ul>
+<li>Rational Application Developer</li>
+<li>WebSphere Integration Developer</li>
+</ul>
+</li>
+<li>JetBrains IntelliJ IDEA</li>
+<li>Servoy Business Application Platform Edition</li>
+<li>Understand</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Discontinued</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Metrowerks CodeWarrior Pro for Java</li>
+<li>Sun Java Studio Creator (superseded by NetBeans)</li>
+<li>Visual Age (superseded by Eclipse)</li>
+<li>Visual Café (aka Espresso, superseded by JBuilder)</li>
+<li>Visual J++</li>
+<li>Xelfi (became NetBeans)</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">CLI</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>MonoDevelop</li>
+<li>SharpDevelop</li>
+<li>Visual Studio</li>
+<li>Visual Studio Code</li>
+<li>PascalABC.NET</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Flash</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Adobe Flash Builder</li>
+<li>FlashDevelop</li>
+<li>Powerflasher FDT</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">PHP</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Aptana</li>
+<li>NetBeans</li>
+<li>PhpStorm</li>
+<li>KDevelop</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%"><a href="Python_(programming_language).html" title="Python (programming language)">Python</a></th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Eric</li>
+<li>IntelliJ IDEA</li>
+<li>Light Table</li>
+<li>Ninja-IDE</li>
+<li>PyCharm</li>
+<li>PyDev</li>
+<li>Spyder</li>
+<li>Wing IDE</li>
+<li>KDevelop</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Pascal</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Delphi IDE</li>
+<li>Lazarus</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">R</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>RStudio</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><b>Category</b></li>
+<li><b>Comparison</b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Programming_languages" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="Programming_languages" style="font-size:114%;margin:0 4em"><a href="Programming_language.html" title="Programming language">Programming languages</a></div>
+</th>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><a href="Comparison_of_programming_languages.html" title="Comparison of programming languages">Comparison</a></li>
+<li>Timeline</li>
+<li>History</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Assembly_language.html" title="Assembly language">Assembly</a></li>
+<li>BASIC</li>
+<li>C</li>
+<li><a href="C++.html" title="C++">C++</a></li>
+<li>C#</li>
+<li><a href="COBOL.html" title="COBOL">COBOL</a></li>
+<li><a href="Fortran.html" title="Fortran">Fortran</a></li>
+<li>Go</li>
+<li>Haskell</li>
+<li><a href="Java_(programming_language).html" title="Java (programming language)">Java</a></li>
+<li><a href="JavaScript.html" title="JavaScript">JavaScript</a> (JS)</li>
+<li>Kotlin</li>
+<li><a href="Lisp_(programming_language).html" title="Lisp (programming language)">Lisp</a></li>
+<li>Lua</li>
+<li>Objective-C</li>
+<li>Pascal</li>
+<li>Perl</li>
+<li>PHP</li>
+<li><a href="Python_(programming_language).html" title="Python (programming language)">Python</a></li>
+<li>Ruby</li>
+<li>Shell</li>
+<li>Smalltalk</li>
+<li>Swift</li>
+<li>Visual Basic .NET (VB.NET)</li>
+<li><i><a href="List_of_programming_languages.html" title="List of programming languages">more...</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>
+<ul>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b>Category</b></li>
+<li><img alt="List-Class article" src="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" title="List-Class article" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <b>Lists</b>
+<ul>
+<li><a href="List_of_programming_languages.html" title="List of programming languages">Alphabetical</a></li>
+<li>Categorical</li>
+<li>Generational</li>
+<li>Non-English-based</li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-label="Navbox" style="padding:3px">
+<table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Authority control</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span class="nowrap">LCCN: <span class="uid">sh85018532</span></span></li>
+<li><span class="nowrap">GND: <span class="uid">4113195-2</span></span></li>
+<li><span class="nowrap">SUDOC: <span class="uid">027672441</span></span></li>
+<li><span class="nowrap">BNF: <span class="uid">cb119665180 (data)</span></span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1209
+Cached time: 20170919174105
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.880 seconds
+Real time usage: 1.046 seconds
+Preprocessor visited node count: 4586/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 161019/2097152 bytes
+Template argument size: 7405/2097152 bytes
+Highest expansion depth: 24/40
+Expensive parser function count: 8/500
+Lua time usage: 0.393/10.000 seconds
+Lua memory usage: 7.16 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  815.882      1 -total
+ 46.98%  383.340      2 Template:Reflist
+ 15.00%  122.363     15 Template:Cite_book
+ 12.70%  103.585      2 Template:Infobox
+ 12.44%  101.495     16 Template:Cite_web
+ 10.81%   88.194      1 Template:Infobox_programming_language
+  6.06%   49.445      1 Template:Pp-protect
+  5.40%   44.038      5 Template:Navbox
+  4.17%   34.024      4 Template:Cite_journal
+  3.54%   28.872      1 Template:Authority_control
+-->
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:6021-0!canonical and timestamp 20170919174104 and revision id 799760474
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "https://en.wikipedia.org/w/index.php?title=C_(programming_language)&amp;oldid=799760474"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks">Categories: <ul><li>American inventions</li><li>C (programming language)</li><li>C programming language family</li><li>Cross-platform software</li><li>Low-level programming languages</li><li>Procedural programming languages</li><li>Programming languages created in 1972</li><li>Programming languages with an ISO standard</li><li>Statically typed programming languages</li><li>Systems programming languages</li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li>Pages containing links to subscription-only content</li><li>Wikipedia semi-protected pages</li><li>All articles with unsourced statements</li><li>Articles with unsourced statements from April 2015</li><li>Articles needing additional references from October 2012</li><li>All articles needing additional references</li><li>Articles needing additional references from July 2014</li><li>Wikipedia articles with LCCN identifiers</li><li>Wikipedia articles with GND identifiers</li><li>Wikipedia articles with BNF identifiers</li><li>Articles with example code</li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk">Talk</li><li id="pt-anoncontribs">Contributions</li><li id="pt-createaccount">Create account</li><li id="pt-login">Log in</li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="C_(programming_language).html" title="View the content page [c]" accesskey="c">Article</a></span></li>
+							<li id="ca-talk"><span>Talk</span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="C_(programming_language).html">Read</a></span></li>
+							<li id="ca-viewsource"><span>View source</span></li>
+							<li id="ca-history" class="collapsible"><span>View history</span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description">Main page</li><li id="n-contents">Contents</li><li id="n-featuredcontent">Featured content</li><li id="n-currentevents">Current events</li><li id="n-randompage">Random article</li><li id="n-sitesupport">Donate to Wikipedia</li><li id="n-shoplink">Wikipedia store</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help">Help</li><li id="n-aboutsite">About Wikipedia</li><li id="n-portal">Community portal</li><li id="n-recentchanges">Recent changes</li><li id="n-contactpage">Contact page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere">What links here</li><li id="t-recentchangeslinked">Related changes</li><li id="t-upload">Upload file</li><li id="t-specialpages">Special pages</li><li id="t-permalink">Permanent link</li><li id="t-info">Page information</li><li id="t-wikibase">Wikidata item</li><li id="t-cite">Cite this page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book">Create a book</li><li id="coll-download-as-rdf2latex">Download as PDF</li><li id="t-print">Printable version</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons">Wikimedia Commons</li><li class="wb-otherproject-link wb-otherproject-wikibooks">Wikibooks</li><li class="wb-otherproject-link wb-otherproject-wikiquote">Wikiquote</li><li class="wb-otherproject-link wb-otherproject-wikiversity">Wikiversity</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-af">Afrikaans</li><li class="interlanguage-link interwiki-als">Alemannisch</li><li class="interlanguage-link interwiki-am">አማርኛ</li><li class="interlanguage-link interwiki-ar">العربية</li><li class="interlanguage-link interwiki-an">Aragonés</li><li class="interlanguage-link interwiki-as">অসমীয়া</li><li class="interlanguage-link interwiki-ast">Asturianu</li><li class="interlanguage-link interwiki-az">Azərbaycanca</li><li class="interlanguage-link interwiki-azb">تۆرکجه</li><li class="interlanguage-link interwiki-bn">বাংলা</li><li class="interlanguage-link interwiki-zh-min-nan">Bân-lâm-gú</li><li class="interlanguage-link interwiki-be">Беларуская</li><li class="interlanguage-link interwiki-be-x-old">Беларуская (тарашкевіца)‎</li><li class="interlanguage-link interwiki-bg">Български</li><li class="interlanguage-link interwiki-bs">Bosanski</li><li class="interlanguage-link interwiki-br">Brezhoneg</li><li class="interlanguage-link interwiki-ca">Català</li><li class="interlanguage-link interwiki-cv">Чӑвашла</li><li class="interlanguage-link interwiki-cs">Čeština</li><li class="interlanguage-link interwiki-co">Corsu</li><li class="interlanguage-link interwiki-cy">Cymraeg</li><li class="interlanguage-link interwiki-da">Dansk</li><li class="interlanguage-link interwiki-de">Deutsch</li><li class="interlanguage-link interwiki-et">Eesti</li><li class="interlanguage-link interwiki-el">Ελληνικά</li><li class="interlanguage-link interwiki-es">Español</li><li class="interlanguage-link interwiki-eo">Esperanto</li><li class="interlanguage-link interwiki-eu">Euskara</li><li class="interlanguage-link interwiki-fa">فارسی</li><li class="interlanguage-link interwiki-fr">Français</li><li class="interlanguage-link interwiki-ga">Gaeilge</li><li class="interlanguage-link interwiki-gl">Galego</li><li class="interlanguage-link interwiki-gu">ગુજરાતી</li><li class="interlanguage-link interwiki-hak">客家語/Hak-kâ-ngî</li><li class="interlanguage-link interwiki-ko">한국어</li><li class="interlanguage-link interwiki-hy">Հայերեն</li><li class="interlanguage-link interwiki-hi">हिन्दी</li><li class="interlanguage-link interwiki-hr">Hrvatski</li><li class="interlanguage-link interwiki-id">Bahasa Indonesia</li><li class="interlanguage-link interwiki-ia">Interlingua</li><li class="interlanguage-link interwiki-xh">IsiXhosa</li><li class="interlanguage-link interwiki-is">Íslenska</li><li class="interlanguage-link interwiki-it">Italiano</li><li class="interlanguage-link interwiki-he">עברית</li><li class="interlanguage-link interwiki-jv">Basa Jawa</li><li class="interlanguage-link interwiki-kn">ಕನ್ನಡ</li><li class="interlanguage-link interwiki-ka">ქართული</li><li class="interlanguage-link interwiki-kk">Қазақша</li><li class="interlanguage-link interwiki-ku">Kurdî</li><li class="interlanguage-link interwiki-ky">Кыргызча</li><li class="interlanguage-link interwiki-lo">ລາວ</li><li class="interlanguage-link interwiki-la badge-Q17437796 badge-featuredarticle" title="featured article">Latina</li><li class="interlanguage-link interwiki-lv">Latviešu</li><li class="interlanguage-link interwiki-lt">Lietuvių</li><li class="interlanguage-link interwiki-lmo">Lumbaart</li><li class="interlanguage-link interwiki-hu">Magyar</li><li class="interlanguage-link interwiki-mai">मैथिली</li><li class="interlanguage-link interwiki-mk">Македонски</li><li class="interlanguage-link interwiki-mg">Malagasy</li><li class="interlanguage-link interwiki-ml">മലയാളം</li><li class="interlanguage-link interwiki-mr">मराठी</li><li class="interlanguage-link interwiki-ms">Bahasa Melayu</li><li class="interlanguage-link interwiki-cdo">Mìng-dĕ̤ng-ngṳ̄</li><li class="interlanguage-link interwiki-mn">Монгол</li><li class="interlanguage-link interwiki-my">မြန်မာဘာသာ</li><li class="interlanguage-link interwiki-nl">Nederlands</li><li class="interlanguage-link interwiki-ne">नेपाली</li><li class="interlanguage-link interwiki-ja">日本語</li><li class="interlanguage-link interwiki-no">Norsk</li><li class="interlanguage-link interwiki-nn">Norsk nynorsk</li><li class="interlanguage-link interwiki-oc">Occitan</li><li class="interlanguage-link interwiki-or">ଓଡ଼ିଆ</li><li class="interlanguage-link interwiki-uz">Oʻzbekcha/ўзбекча</li><li class="interlanguage-link interwiki-pa">ਪੰਜਾਬੀ</li><li class="interlanguage-link interwiki-km">ភាសាខ្មែរ</li><li class="interlanguage-link interwiki-pl">Polski</li><li class="interlanguage-link interwiki-pt">Português</li><li class="interlanguage-link interwiki-ro">Română</li><li class="interlanguage-link interwiki-ru">Русский</li><li class="interlanguage-link interwiki-sah">Саха тыла</li><li class="interlanguage-link interwiki-sco">Scots</li><li class="interlanguage-link interwiki-sq">Shqip</li><li class="interlanguage-link interwiki-si">සිංහල</li><li class="interlanguage-link interwiki-simple">Simple English</li><li class="interlanguage-link interwiki-sk">Slovenčina</li><li class="interlanguage-link interwiki-sl">Slovenščina</li><li class="interlanguage-link interwiki-sr">Српски / srpski</li><li class="interlanguage-link interwiki-sh">Srpskohrvatski / српскохрватски</li><li class="interlanguage-link interwiki-fi">Suomi</li><li class="interlanguage-link interwiki-sv">Svenska</li><li class="interlanguage-link interwiki-tl">Tagalog</li><li class="interlanguage-link interwiki-ta">தமிழ்</li><li class="interlanguage-link interwiki-kab">Taqbaylit</li><li class="interlanguage-link interwiki-tt">Татарча/tatarça</li><li class="interlanguage-link interwiki-te">తెలుగు</li><li class="interlanguage-link interwiki-th">ไทย</li><li class="interlanguage-link interwiki-tr">Türkçe</li><li class="interlanguage-link interwiki-bug">ᨅᨔ ᨕᨘᨁᨗ</li><li class="interlanguage-link interwiki-uk">Українська</li><li class="interlanguage-link interwiki-ur">اردو</li><li class="interlanguage-link interwiki-vi">Tiếng Việt</li><li class="interlanguage-link interwiki-war">Winaray</li><li class="interlanguage-link interwiki-wuu">吴语</li><li class="interlanguage-link interwiki-yi">ייִדיש</li><li class="interlanguage-link interwiki-zh-yue">粵語</li><li class="interlanguage-link interwiki-bat-smg">Žemaitėška</li><li class="interlanguage-link interwiki-zh">中文</li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link">Edit links</span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 9 September 2017, at 17:54.</li>
+											<li id="footer-info-copyright">Text is available under the Creative Commons Attribution-ShareAlike License;
+additional terms may apply.  By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy">Privacy policy</li>
+											<li id="footer-places-about">About Wikipedia</li>
+											<li id="footer-places-disclaimer">Disclaimers</li>
+											<li id="footer-places-contact">Contact Wikipedia</li>
+											<li id="footer-places-developers">Developers</li>
+											<li id="footer-places-cookiestatement">Cookie statement</li>
+											<li id="footer-places-mobileview">Mobile view</li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.880","walltime":"1.046","ppvisitednodes":{"value":4586,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":161019,"limit":2097152},"templateargumentsize":{"value":7405,"limit":2097152},"expansiondepth":{"value":24,"limit":40},"expensivefunctioncount":{"value":8,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  815.882      1 -total"," 46.98%  383.340      2 Template:Reflist"," 15.00%  122.363     15 Template:Cite_book"," 12.70%  103.585      2 Template:Infobox"," 12.44%  101.495     16 Template:Cite_web"," 10.81%   88.194      1 Template:Infobox_programming_language","  6.06%   49.445      1 Template:Pp-protect","  5.40%   44.038      5 Template:Navbox","  4.17%   34.024      4 Template:Cite_journal","  3.54%   28.872      1 Template:Authority_control"]},"scribunto":{"limitreport-timeusage":{"value":"0.393","limit":"10.000"},"limitreport-memusage":{"value":7503071,"limit":52428800}},"cachereport":{"origin":"mw1209","timestamp":"20170919174105","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":1189,"wgHostname":"mw1209"});});</script>
+	</body>
+</html>

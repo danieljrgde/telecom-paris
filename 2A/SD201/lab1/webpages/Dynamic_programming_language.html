@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Dynamic programming language - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Dynamic_programming_language","wgTitle":"Dynamic programming language","wgCurRevisionId":800720641,"wgRevisionId":800720641,"wgArticleId":234079,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing expert attention with no reason or talk parameter","Articles needing unspecified expert attention","Articles needing expert attention from January 2015","All articles needing expert attention","Accuracy disputes from March 2012","All accuracy disputes","Wikipedia articles needing clarification from October 2009","All Wikipedia articles needing clarification","Articles to be expanded from October 2009","All articles to be expanded","Articles using small message boxes","Wikipedia articles needing clarification from September 2016","Evaluation strategy"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Dynamic_programming_language","wgRelevantArticleId":234079,"wgRequestId":"Wb3AXApAMF0AAGSFZG8AAABT","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":true,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q1268980","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.30.0-wmf.18"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Dynamic_programming_language"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Dynamic_programming_language&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Dynamic_programming_language&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Dynamic_programming_language"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Dynamic_programming_language rootpage-Dynamic_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Dynamic programming language</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					navigation, 					search
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div role="note" class="hatnote navigation-not-searchable">This article is about a class of programming languages. For the method for reducing the running time of algorithms, see dynamic programming.</div>
+<table class="plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<div class="mw-collapsible" style="width:95%; margin: 0.2em 0;"><span class="mbox-text-span"><b>This article has multiple issues.</b> Please help <b>improve it</b> or discuss these issues on the <b>talk page</b>. <small><i>(Learn how and when to remove these template messages)</i></small></span>
+<div class="mw-collapsible-content" style="margin-top: 0.3em;">
+<table class="plainlinks metadata ambox ambox-content" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs attention from an expert on the subject</b>. <span class="hide-when-compact">Please add a <i>reason</i> or a <i>talk</i> parameter to this template to explain the issue with the article. Consider associating this request with a WikiProject.</span> <small><i>(January 2015)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-content ambox-disputed" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="System-search.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/17/System-search.svg/45px-System-search.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/17/System-search.svg/68px-System-search.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/17/System-search.svg/90px-System-search.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article's <b>factual accuracy is disputed</b>. <span class="hide-when-compact">Relevant discussion may be found on the talk page. Please help to ensure that disputed statements are reliably sourced.</span> <small><i>(March 2012)</i></small> <small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-style ambox-confusing" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>may be confusing or unclear to readers</b>. <span class="hide-when-compact">Please help us clarify the article. There might be a discussion about this on the talk page.</span> <small><i>(October 2009)</i></small> <small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></span></td>
+</tr>
+</table>
+</div>
+</div>
+<small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></td>
+</tr>
+</table>
+<p><b>Dynamic programming language</b>, in <a href="Computer_science.html" title="Computer science">computer science</a>, is a class of <a href="High-level_programming_language.html" title="High-level programming language">high-level programming languages</a> which, at runtime, execute many common programming behaviors that static programming languages perform during <a href="Compiler.html" title="Compiler">compilation</a>. These behaviors could include extension of the program, by adding new <a href="Source_code.html" title="Source code">code</a>, by extending <a href="Object_(computer_science).html" title="Object (computer science)">objects</a> and definitions, or by modifying the <a href="Type_system.html" title="Type system">type system</a>. Although similar behaviours can be emulated in nearly any language, with varying degrees of difficulty, complexity and performance costs, dynamic languages provide direct tools to make use of them. Many of these features were first implemented as native features in the Lisp programming language.</p>
+<p>Most dynamic languages are also dynamically typed, but not all are. Dynamic languages are frequently (but not always) referred to as "<a href="Scripting_language.html" title="Scripting language">scripting languages</a>", although the term "scripting language" in its narrowest sense refers to languages specific to a given run-time environment.</p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a><span class="tocnumber">1</span> <span class="toctext">Implementation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a><span class="tocnumber">1.1</span> <span class="toctext">Eval</span></a></li>
+<li class="toclevel-2 tocsection-3"><a><span class="tocnumber">1.2</span> <span class="toctext">Object runtime alteration</span></a></li>
+<li class="toclevel-2 tocsection-4"><a><span class="tocnumber">1.3</span> <span class="toctext">Functional programming</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a><span class="tocnumber">1.3.1</span> <span class="toctext">Closures</span></a></li>
+<li class="toclevel-3 tocsection-6"><a><span class="tocnumber">1.3.2</span> <span class="toctext">Continuations</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-7"><a><span class="tocnumber">1.4</span> <span class="toctext">Reflection</span></a></li>
+<li class="toclevel-2 tocsection-8"><a><span class="tocnumber">1.5</span> <span class="toctext">Macros</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a><span class="tocnumber">2</span> <span class="toctext">Example code</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a><span class="tocnumber">2.1</span> <span class="toctext">Computation of code at runtime and late binding</span></a></li>
+<li class="toclevel-2 tocsection-11"><a><span class="tocnumber">2.2</span> <span class="toctext">Object runtime alteration</span></a></li>
+<li class="toclevel-2 tocsection-12"><a><span class="tocnumber">2.3</span> <span class="toctext">Assembling of code at runtime based on the class of instances</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a><span class="tocnumber">3</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-14"><a><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-15"><a><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-16"><a><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-17"><a><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Implementation">Implementation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<table class="plainlinks metadata ambox mbox-small-left ambox-content" role="presentation">
+<tr>
+<td class="mbox-image"><a><img alt="[icon]" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/20px-Wiki_letter_w_cropped.svg.png" width="20" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/30px-Wiki_letter_w_cropped.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/40px-Wiki_letter_w_cropped.svg.png 2x" data-file-width="44" data-file-height="31" /></a></td>
+<td class="mbox-text"><span class="mbox-text-span"><b>This section needs expansion</b>. <small>You can help by adding to it.</small> <small><i>(October 2009)</i></small></span></td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Eval">Eval</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Some dynamic languages offer an <i>eval</i> function. This function takes a string parameter containing source-code in the language, and executes it. If this code stands for an expression, the resulting value is returned. However, Erik Meijer and Peter Drayton suggest that programmers "use eval as a poor man's substitute for higher-order functions."<sup id="cite_ref-1" class="reference">[1]</sup></p>
+<h3><span class="mw-headline" id="Object_runtime_alteration">Object runtime alteration</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>A type or object system can typically be modified during runtime in a dynamic language. This can mean generating new objects from a runtime definition or based on mixins of existing types or objects. This can also refer to changing the inheritance or type tree, and thus altering the way that existing types behave (especially with respect to the invocation of methods).</p>
+<h3><span class="mw-headline" id="Functional_programming">Functional programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Functional programming concepts are a feature of many dynamic languages, and also derive from Lisp.</p>
+<h4><span class="mw-headline" id="Closures">Closures</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h4>
+<p>One of the most widely used aspects of functional programming in dynamic languages is the closure, which allows creating a new instance of a function which retains access to the context in which it was created. A simple example of this is generating a function for scanning text for a word:</p>
+<pre>
+<b>function</b> new_scanner (word)
+  temp_function = <b>function</b> (input)
+    scan_for_text (input, word)
+  <b>end function</b>
+  <b>return</b> temp_function
+<b>end function</b>
+</pre>
+<p>Note that the inner function has no name, and is instead <i>stored</i> in the variable <code>temp_function</code>. Each time <code>new_scanner</code> is executed, it will return a new function which remembers the value of the <code>word</code> parameter that was passed in when it was defined.</p>
+<p>Closures<sup id="cite_ref-2" class="reference">[2]</sup> are one of the core tools of functional programming, and many languages support at least this degree of functional programming.</p>
+<h4><span class="mw-headline" id="Continuations">Continuations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h4>
+<p>Another feature of some dynamic languages is the continuation. Continuations represent execution states that can be re-invoked. For example, a parser might return an intermediate result and a continuation that, when invoked, will continue to parse the input. Continuations interact in very complex ways with scoping, especially with respect to closures. For this reason, many dynamic languages do not provide continuations.</p>
+<h3><span class="mw-headline" id="Reflection">Reflection</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Reflection is common in many dynamic languages, and typically involves analysis of the types and metadata of generic or polymorphic data. It can, however, also include full evaluation and modification of a program's code as data, such as the features that Lisp provides in analyzing S-expressions.</p>
+<h3><span class="mw-headline" id="Macros">Macros</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>A limited number of dynamic programming languages provide features which combine code introspection (the ability to examine classes, functions and keywords to know what they are, what they do and what they know) and eval in a feature called macros. Most programmers today who are aware of the term <i>macro</i> have encountered them in <a href="C_(programming_language).html" title="C (programming language)">C</a> or <a href="C++.html" title="C++">C++</a>, where they are a static feature which are built in a small subset of the language, and are capable only of string substitutions on the text of the program. In dynamic languages, however, they provide access to the inner workings of the compiler, <i>and</i> full access to the interpreter, virtual machine, or runtime, allowing the definition of language-like constructs which can optimize code or modify the syntax or grammar of the language.</p>
+<p><a href="Assembly_language.html" title="Assembly language">Assembly</a>, <a href="C_(programming_language).html" title="C (programming language)">C</a>, <a href="C++.html" title="C++">C++</a>, early <a href="Java_(programming_language).html" title="Java (programming language)">Java</a>, and FORTRAN do not generally fit into this category.<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a><span title="The text near this tag may need clarification or removal of jargon. (September 2016)">clarification needed</span></a></i>]</sup></p>
+<h2><span class="mw-headline" id="Example_code">Example code</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following examples show dynamic features using the language Common Lisp and its Common Lisp Object System (CLOS).</p>
+<h3><span class="mw-headline" id="Computation_of_code_at_runtime_and_late_binding">Computation of code at runtime and late binding</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>The example shows how a function can be modified at runtime from computed source code</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">; the source code is stored as data in a variable</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">defparameter</span> <span class="vg">*best-guess-formula*</span> <span class="o">'</span><span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">x</span><span class="p">)</span> <span class="p">(</span><span class="nb">*</span> <span class="nv">x</span> <span class="nv">x</span> <span class="mf">2.5</span><span class="p">)))</span>
+<span class="vg">*BEST-GUESS-FORMULA*</span>
+
+<span class="c1">; a function is created from the code and compiled at runtime, the function is available under the name best-guess</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span>  <span class="p">(</span><span class="nb">compile</span> <span class="ss">'best-guess</span> <span class="vg">*best-guess-formula*</span><span class="p">)</span>
+<span class="err">#</span><span class="nv">&lt;Function</span> <span class="mi">15</span> <span class="nv">40600152F4&gt;</span>
+
+<span class="c1">; the function can be called</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nv">best-guess</span> <span class="mf">10.3</span><span class="p">)</span>
+<span class="mf">265.225</span>
+
+<span class="c1">; the source code might be improved at runtime</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">setf</span> <span class="vg">*best-guess-formula*</span> <span class="o">`</span><span class="p">(</span><span class="k">lambda</span> <span class="p">(</span><span class="nv">x</span><span class="p">)</span> <span class="o">,</span><span class="p">(</span><span class="nb">list</span> <span class="ss">'sqrt</span> <span class="p">(</span><span class="nb">third</span> <span class="vg">*best-guess-formula*</span><span class="p">))))</span>
+<span class="p">(</span><span class="nv">LAMBDA</span> <span class="p">(</span><span class="nv">X</span><span class="p">)</span> <span class="p">(</span><span class="nv">SQRT</span> <span class="p">(</span><span class="nb">*</span> <span class="nv">X</span> <span class="nv">X</span> <span class="mf">2.5</span><span class="p">)))</span>
+
+<span class="c1">; a new version of the function is being compiled</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">compile</span> <span class="ss">'best-guess</span> <span class="vg">*best-guess-formula*</span><span class="p">)</span>
+<span class="err">#</span><span class="nv">&lt;Function</span> <span class="mi">16</span> <span class="nv">406000085C&gt;</span>
+
+<span class="c1">; the next call will call the new function, a feature of late binding</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nv">best-guess</span> <span class="mf">10.3</span><span class="p">)</span>
+<span class="mf">16.28573</span>
+</pre></div>
+<h3><span class="mw-headline" id="Object_runtime_alteration_2">Object runtime alteration</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>This example shows how an existing instance can be changed to include a new slot when its class changes and that an existing method can be replaced with a new version.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">; a person class. The person has a name.</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">defclass</span> <span class="nv">person</span> <span class="p">()</span> <span class="p">((</span><span class="nv">name</span> <span class="ss">:initarg</span> <span class="ss">:name</span><span class="p">)))</span>
+<span class="err">#</span><span class="nv">&lt;STANDARD-CLASS</span> <span class="nv">PERSON</span> <span class="nv">4020081FB3&gt;</span>
+
+<span class="c1">; a custom printing method for the objects of class person</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">defmethod</span> <span class="nb">print-object</span> <span class="p">((</span><span class="nv">p</span> <span class="nv">person</span><span class="p">)</span> <span class="nc">stream</span><span class="p">)</span>
+            <span class="p">(</span><span class="nb">print-unreadable-object</span> <span class="p">(</span><span class="nv">p</span> <span class="nc">stream</span> <span class="ss">:type</span> <span class="no">t</span><span class="p">)</span>
+              <span class="p">(</span><span class="nb">format</span> <span class="nc">stream</span> <span class="s">"~a"</span> <span class="p">(</span><span class="nb">slot-value</span> <span class="nv">p</span> <span class="ss">'name</span><span class="p">))))</span>
+<span class="err">#</span><span class="nv">&lt;STANDARD-METHOD</span> <span class="nv">PRINT-OBJECT</span> <span class="no">NIL</span> <span class="p">(</span><span class="nv">PERSON</span> <span class="no">T</span><span class="p">)</span> <span class="nv">4020066E5B&gt;</span>
+
+<span class="c1">; one example person instance</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">setf</span> <span class="vg">*person-1*</span> <span class="p">(</span><span class="nb">make-instance</span> <span class="ss">'person</span> <span class="ss">:name</span> <span class="s">"Eva Luator"</span><span class="p">))</span>
+<span class="err">#</span><span class="nv">&lt;PERSON</span> <span class="nv">Eva</span> <span class="nv">Luator&gt;</span>
+
+<span class="c1">; the class person gets a second slot. It then has the slots name and age.</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">defclass</span> <span class="nv">person</span> <span class="p">()</span> <span class="p">((</span><span class="nv">name</span> <span class="ss">:initarg</span> <span class="ss">:name</span><span class="p">)</span> <span class="p">(</span><span class="nv">age</span> <span class="ss">:initarg</span> <span class="ss">:age</span> <span class="ss">:initform</span> <span class="ss">:unknown</span><span class="p">)))</span>
+<span class="err">#</span><span class="nv">&lt;STANDARD-CLASS</span> <span class="nv">PERSON</span> <span class="nv">4220333E23&gt;</span>
+
+<span class="c1">; updating the method to print the object</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">defmethod</span> <span class="nb">print-object</span> <span class="p">((</span><span class="nv">p</span> <span class="nv">person</span><span class="p">)</span> <span class="nc">stream</span><span class="p">)</span>
+            <span class="p">(</span><span class="nb">print-unreadable-object</span> <span class="p">(</span><span class="nv">p</span> <span class="nc">stream</span> <span class="ss">:type</span> <span class="no">t</span><span class="p">)</span>
+              <span class="p">(</span><span class="nb">format</span> <span class="nc">stream</span> <span class="s">"~a age: ~"</span> <span class="p">(</span><span class="nb">slot-value</span> <span class="nv">p</span> <span class="ss">'name</span><span class="p">)</span> <span class="p">(</span><span class="nb">slot-value</span> <span class="nv">p</span> <span class="ss">'age</span><span class="p">))))</span>
+<span class="err">#</span><span class="nv">&lt;STANDARD-METHOD</span> <span class="nv">PRINT-OBJECT</span> <span class="no">NIL</span> <span class="p">(</span><span class="nv">PERSON</span> <span class="no">T</span><span class="p">)</span> <span class="nv">402022ADE3&gt;</span>
+
+<span class="c1">; the existing object has now changed, it has an additional slot and a new print method</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="vg">*person-1*</span>
+<span class="err">#</span><span class="nv">&lt;PERSON</span> <span class="nv">Eva</span> <span class="nv">Luator</span> <span class="nv">age:</span> <span class="nv">UNKNOWN&gt;</span>
+
+<span class="c1">; we can set the new age slot of instance</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">setf</span> <span class="p">(</span><span class="nb">slot-value</span> <span class="vg">*person-1*</span> <span class="ss">'age</span><span class="p">)</span> <span class="mi">25</span><span class="p">)</span>
+<span class="mi">25</span>
+
+<span class="c1">; the object has been updated</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="vg">*person-1*</span>
+<span class="err">#</span><span class="nv">&lt;PERSON</span> <span class="nv">Eva</span> <span class="nv">Luator</span> <span class="nv">age:</span> <span class="nv">25&gt;</span>
+</pre></div>
+<h3><span class="mw-headline" id="Assembling_of_code_at_runtime_based_on_the_class_of_instances">Assembling of code at runtime based on the class of instances</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>In the next example the class person gets a new superclass. The print method gets redefined such that it assembles several methods into the effective method. The effective method gets assembled based on the class of the argument and the at runtime available and applicable methods.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="c1">; the class person</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">defclass</span> <span class="nv">person</span> <span class="p">()</span> <span class="p">((</span><span class="nv">name</span> <span class="ss">:initarg</span> <span class="ss">:name</span><span class="p">)))</span>
+<span class="err">#</span><span class="nv">&lt;STANDARD-CLASS</span> <span class="nv">PERSON</span> <span class="nv">4220333E23&gt;</span>
+
+<span class="c1">; a person just prints its name</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">defmethod</span> <span class="nb">print-object</span> <span class="p">((</span><span class="nv">p</span> <span class="nv">person</span><span class="p">)</span> <span class="nc">stream</span><span class="p">)</span>
+            <span class="p">(</span><span class="nb">print-unreadable-object</span> <span class="p">(</span><span class="nv">p</span> <span class="nc">stream</span> <span class="ss">:type</span> <span class="no">t</span><span class="p">)</span>
+              <span class="p">(</span><span class="nb">format</span> <span class="nc">stream</span> <span class="s">"~a"</span> <span class="p">(</span><span class="nb">slot-value</span> <span class="nv">p</span> <span class="ss">'name</span><span class="p">))))</span>
+<span class="err">#</span><span class="nv">&lt;STANDARD-METHOD</span> <span class="nv">PRINT-OBJECT</span> <span class="no">NIL</span> <span class="p">(</span><span class="nv">PERSON</span> <span class="no">T</span><span class="p">)</span> <span class="nv">40200605AB&gt;</span>
+
+<span class="c1">; a person instance</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">defparameter</span> <span class="vg">*person-1*</span> <span class="p">(</span><span class="nb">make-instance</span> <span class="ss">'person</span> <span class="ss">:name</span> <span class="s">"Eva Luator"</span><span class="p">))</span>
+<span class="vg">*PERSON-1*</span>
+
+<span class="c1">; displaying a person instance</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="vg">*person-1*</span>
+<span class="err">#</span><span class="nv">&lt;PERSON</span> <span class="nv">Eva</span> <span class="nv">Luator&gt;</span>
+
+<span class="c1">; now redefining the print method to be extensible</span>
+<span class="c1">; the around method creates the context for the print method and it calls the next method</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">defmethod</span> <span class="nb">print-object</span> <span class="ss">:around</span> <span class="p">((</span><span class="nv">p</span> <span class="nv">person</span><span class="p">)</span> <span class="nc">stream</span><span class="p">)</span>
+            <span class="p">(</span><span class="nb">print-unreadable-object</span> <span class="p">(</span><span class="nv">p</span> <span class="nc">stream</span> <span class="ss">:type</span> <span class="no">t</span><span class="p">)</span>
+              <span class="p">(</span><span class="nb">call-next-method</span><span class="p">)))</span>
+<span class="err">#</span><span class="nv">&lt;STANDARD-METHOD</span> <span class="nv">PRINT-OBJECT</span> <span class="p">(</span><span class="ss">:AROUND</span><span class="p">)</span> <span class="p">(</span><span class="nv">PERSON</span> <span class="no">T</span><span class="p">)</span> <span class="nv">4020263743&gt;</span>
+
+<span class="c1">; the primary method prints the name</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">defmethod</span> <span class="nb">print-object</span> <span class="p">((</span><span class="nv">p</span> <span class="nv">person</span><span class="p">)</span> <span class="nc">stream</span><span class="p">)</span>
+            <span class="p">(</span><span class="nb">format</span> <span class="nc">stream</span> <span class="s">"~a"</span> <span class="p">(</span><span class="nb">slot-value</span> <span class="nv">p</span> <span class="ss">'name</span><span class="p">)))</span>
+<span class="err">#</span><span class="nv">&lt;STANDARD-METHOD</span> <span class="nv">PRINT-OBJECT</span> <span class="no">NIL</span> <span class="p">(</span><span class="nv">PERSON</span> <span class="no">T</span><span class="p">)</span> <span class="nv">40202646BB&gt;</span>
+
+<span class="c1">; a new class id-mixin provides an id</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">defclass</span> <span class="nv">id-mixin</span> <span class="p">()</span> <span class="p">((</span><span class="nv">id</span> <span class="ss">:initarg</span> <span class="ss">:id</span><span class="p">)))</span>
+<span class="err">#</span><span class="nv">&lt;STANDARD-CLASS</span> <span class="nv">ID-MIXIN</span> <span class="nv">422034A7AB&gt;</span>
+
+<span class="c1">; the print method just prints the value of the id slot</span>
+<span class="nv">CL-USER</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">defmethod</span> <span class="nb">print-object</span> <span class="ss">:after</span> <span class="p">((</span><span class="nv">object</span> <span class="nv">id-mixin</span><span class="p">)</span> <span class="nc">stream</span><span class="p">)</span>
+          <span class="p">(</span><span class="nb">format</span> <span class="nc">stream</span> <span class="s">" ID: ~a"</span> <span class="p">(</span><span class="nb">slot-value</span> <span class="nv">object</span> <span class="ss">'id</span><span class="p">)))</span>
+<span class="err">#</span><span class="nv">&lt;STANDARD-METHOD</span> <span class="nv">PRINT-OBJECT</span> <span class="p">(</span><span class="ss">:AFTER</span><span class="p">)</span> <span class="p">(</span><span class="nv">ID-MIXIN</span> <span class="no">T</span><span class="p">)</span> <span class="nv">4020278E33&gt;</span>
+
+<span class="c1">; now we redefine the class person to include the mixin id-mixin</span>
+<span class="nv">CL-USER</span> <span class="mi">241</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">defclass</span> <span class="nv">person</span> <span class="p">(</span><span class="nv">id-mixin</span><span class="p">)</span> <span class="p">((</span><span class="nv">name</span> <span class="ss">:initarg</span> <span class="ss">:name</span><span class="p">)))</span>
+<span class="err">#</span><span class="nv">&lt;STANDARD-CLASS</span> <span class="nv">PERSON</span> <span class="nv">4220333E23&gt;</span>
+
+<span class="c1">; the existing instance *person-1* now has a new slot and we set it to 42</span>
+<span class="nv">CL-USER</span> <span class="mi">242</span> <span class="nb">&gt;</span> <span class="p">(</span><span class="nb">setf</span> <span class="p">(</span><span class="nb">slot-value</span> <span class="vg">*person-1*</span> <span class="ss">'id</span><span class="p">)</span> <span class="mi">42</span><span class="p">)</span>
+<span class="mi">42</span>
+
+<span class="c1">; displaying the object again. The print-object function now has an effective method, which calls three methods: an around method, the primary method and the after method.</span>
+<span class="nv">CL-USER</span> <span class="mi">243</span> <span class="nb">&gt;</span> <span class="vg">*person-1*</span>
+<span class="err">#</span><span class="nv">&lt;PERSON</span> <span class="nv">Eva</span> <span class="nv">Luator</span> <span class="nv">ID:</span> <span class="nv">42&gt;</span>
+</pre></div>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Popular dynamic programming languages include <a href="JavaScript.html" title="JavaScript">JavaScript</a>, <a href="Python_(programming_language).html" title="Python (programming language)">Python</a>, Ruby, PHP, Lua and Perl. The following are generally considered dynamic languages:</p>
+<ul>
+<li>ActionScript</li>
+<li>BeanShell<sup id="cite_ref-3" class="reference">[3]</sup></li>
+<li>C# (using Reflection)</li>
+<li>Cobolscript</li>
+<li>Clojure</li>
+<li>ColdFusion Markup Language</li>
+<li>Common Lisp and most other <a href="Lisp_(programming_language).html" title="Lisp (programming language)">Lisps</a></li>
+<li>Dylan</li>
+<li>E</li>
+<li>Elixir</li>
+<li>Erlang</li>
+<li>Gambas</li>
+<li>Groovy<sup id="cite_ref-4" class="reference">[4]</sup></li>
+<li><a href="Java_(programming_language).html" title="Java (programming language)">Java (using Reflection)</a></li>
+<li><a href="JavaScript.html" title="JavaScript">JavaScript</a></li>
+<li>Julia</li>
+<li>Lua</li>
+<li>MATLAB / Octave</li>
+<li>Objective-C</li>
+<li>Perl</li>
+<li>PHP</li>
+<li>PowerShell</li>
+<li>Prolog</li>
+<li><a href="Python_(programming_language).html" title="Python (programming language)">Python</a></li>
+<li>R</li>
+<li>Rebol</li>
+<li>Ruby</li>
+<li>Scala</li>
+<li>Smalltalk</li>
+<li>SuperCollider</li>
+<li>Tcl</li>
+<li>VBScript</li>
+<li>Wolfram Language</li>
+<li>GDScript</li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="Comparison_of_programming_languages.html" title="Comparison of programming languages">Comparison of programming languages</a></li>
+<li>Name binding</li>
+<li>Von Neumann architecture</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite id="CITEREFMeijer.2C_Erik_and_Peter_Drayton2005" class="citation">Meijer, Erik and Peter Drayton (2005), <i>Static Typing Where Possible, Dynamic Typing When Needed: The End of the Cold War Between Programming Languages</i>, Microsoft Corporation, CiteSeerX&#160;<span class="plainlinks">10.1.1.69.5966 <img alt="Freely accessible" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png" title="Freely accessible" width="9" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/14px-Lock-green.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/18px-Lock-green.svg.png 2x" data-file-width="512" data-file-height="813" /></span></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADynamic+programming+language&amp;rft.au=Meijer%2C+Erik+and+Peter+Drayton&amp;rft.btitle=Static+Typing+Where+Possible%2C+Dynamic+Typing+When+Needed%3A+The+End+of+the+Cold+War+Between+Programming+Languages&amp;rft.date=2005&amp;rft.genre=book&amp;rft.pub=Microsoft+Corporation&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.69.5966&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">See example of use on p.330 of Larry Wall's <i>Programming Perl</i> ISBN&#160;0-596-00027-8</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Chapter 24. Dynamic language support. Static.springsource.org. Retrieved on 2013-07-17.</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">&lt;<cite class="citation web">"Archived copy". Archived from the original on 2012-02-13<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-03-02</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ADynamic+programming+language&amp;rft.btitle=Archived+copy&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fgroovy.codehaus.org%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a>Laurence Tratt, <i>Dynamically Typed Languages</i>, Advances in Computers, vol. 77, pp. 149–184, July 2009</a></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p><i>(Many use the term "scripting languages".)</i></p>
+<ul>
+<li>Are Scripting Languages Any Good? A Validation of Perl, Python, Rexx, and Tcl against C, C++, and Java (PDF)&#160;–  a 2003 study</li>
+<li>A Slightly Skeptical View on Scripting Languages by Dr. Nikolai Bezroukov</li>
+<li>Programming is Hard, Let's Go Scripting...&#160;–  Perl.com transcript of Larry Wall's State of the Onion speech</li>
+<li>Scripting on the Java platform&#160;–  JavaWorld</li>
+</ul>
+<p><br /></p>
+<div role="navigation" class="navbox" aria-labelledby="Types_of_programming_languages" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="Types_of_programming_languages" style="font-size:114%;margin:0 4em">Types of programming languages</div>
+</th>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Actor-based</li>
+<li>Array</li>
+<li>Aspect-oriented</li>
+<li>Class-based</li>
+<li>Concatenative</li>
+<li>Concurrent</li>
+<li>Data-structured</li>
+<li>Dataflow</li>
+<li>Declarative</li>
+<li>Domain-specific</li>
+<li>Dynamic</li>
+<li>Esoteric</li>
+<li>Event-driven</li>
+<li>Extensible</li>
+<li>Functional</li>
+<li><a href="Imperative_programming.html" title="Imperative programming">Imperative</a></li>
+<li><a href="Logic_programming.html" title="Logic programming">Logic</a></li>
+<li>Macro</li>
+<li>Metaprogramming</li>
+<li>Multi-paradigm</li>
+<li>Object-based</li>
+<li><a href="Object-oriented_programming.html" title="Object-oriented programming">Object-oriented</a></li>
+<li>Pipeline</li>
+<li>Procedural</li>
+<li>Prototype-based</li>
+<li>Reflective</li>
+<li>Rule-based</li>
+<li><a href="Scripting_language.html" title="Scripting language">Scripting</a></li>
+<li>Synchronous</li>
+<li>Templating</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Assembly_language.html" title="Assembly language">Assembly</a></li>
+<li>Compiled</li>
+<li>Interpreted</li>
+<li>Machine</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Low-level_programming_language.html" title="Low-level programming language">Low-level</a></li>
+<li><a href="High-level_programming_language.html" title="High-level programming language">High-level</a></li>
+<li>Very high-level</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>First generation</li>
+<li>Second generation</li>
+<li>Third generation</li>
+<li>Fourth generation</li>
+<li>Fifth generation</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Non-English-based</li>
+<li>Visual</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1268
+Cached time: 20170915234050
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.168 seconds
+Real time usage: 0.236 seconds
+Preprocessor visited node count: 1115/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 49619/2097152 bytes
+Template argument size: 8843/2097152 bytes
+Highest expansion depth: 16/40
+Expensive parser function count: 6/500
+Lua time usage: 0.066/10.000 seconds
+Lua memory usage: 2.61 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  193.998      1 -total
+ 40.53%   78.629      5 Template:Ambox
+ 35.06%   68.006      1 Template:Reflist
+ 31.39%   60.899      1 Template:Multiple_issues
+ 17.28%   33.524      1 Template:Citation
+ 12.61%   24.460      1 Template:Expert-subject
+ 11.41%   22.126      1 Template:About
+ 10.43%   20.231      1 Template:ISBN
+ 10.14%   19.664      1 Template:Clarify
+  8.98%   17.417      1 Template:Fix-span
+-->
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:234079-0!canonical and timestamp 20170915234049 and revision id 800720641
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "https://en.wikipedia.org/w/index.php?title=Dynamic_programming_language&amp;oldid=800720641"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks">Categories: <ul><li>Evaluation strategy</li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li>Articles needing expert attention with no reason or talk parameter</li><li>Articles needing unspecified expert attention</li><li>Articles needing expert attention from January 2015</li><li>All articles needing expert attention</li><li>Accuracy disputes from March 2012</li><li>All accuracy disputes</li><li>Wikipedia articles needing clarification from October 2009</li><li>All Wikipedia articles needing clarification</li><li>Articles to be expanded from October 2009</li><li>All articles to be expanded</li><li>Articles using small message boxes</li><li>Wikipedia articles needing clarification from September 2016</li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk">Talk</li><li id="pt-anoncontribs">Contributions</li><li id="pt-createaccount">Create account</li><li id="pt-login">Log in</li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Dynamic_programming_language.html" title="View the content page [c]" accesskey="c">Article</a></span></li>
+							<li id="ca-talk"><span>Talk</span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="Dynamic_programming_language.html">Read</a></span></li>
+							<li id="ca-edit"><span>Edit</span></li>
+							<li id="ca-history" class="collapsible"><span>View history</span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description">Main page</li><li id="n-contents">Contents</li><li id="n-featuredcontent">Featured content</li><li id="n-currentevents">Current events</li><li id="n-randompage">Random article</li><li id="n-sitesupport">Donate to Wikipedia</li><li id="n-shoplink">Wikipedia store</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help">Help</li><li id="n-aboutsite">About Wikipedia</li><li id="n-portal">Community portal</li><li id="n-recentchanges">Recent changes</li><li id="n-contactpage">Contact page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere">What links here</li><li id="t-recentchangeslinked">Related changes</li><li id="t-upload">Upload file</li><li id="t-specialpages">Special pages</li><li id="t-permalink">Permanent link</li><li id="t-info">Page information</li><li id="t-wikibase">Wikidata item</li><li id="t-cite">Cite this page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book">Create a book</li><li id="coll-download-as-rdf2latex">Download as PDF</li><li id="t-print">Printable version</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-az">Azərbaycanca</li><li class="interlanguage-link interwiki-bn">বাংলা</li><li class="interlanguage-link interwiki-ca">Català</li><li class="interlanguage-link interwiki-cs">Čeština</li><li class="interlanguage-link interwiki-de">Deutsch</li><li class="interlanguage-link interwiki-el">Ελληνικά</li><li class="interlanguage-link interwiki-fr">Français</li><li class="interlanguage-link interwiki-ko">한국어</li><li class="interlanguage-link interwiki-id">Bahasa Indonesia</li><li class="interlanguage-link interwiki-he">עברית</li><li class="interlanguage-link interwiki-kk">Қазақша</li><li class="interlanguage-link interwiki-ja">日本語</li><li class="interlanguage-link interwiki-pl">Polski</li><li class="interlanguage-link interwiki-ru">Русский</li><li class="interlanguage-link interwiki-sr">Српски / srpski</li><li class="interlanguage-link interwiki-uk">Українська</li><li class="interlanguage-link interwiki-zh">中文</li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link">Edit links</span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 15 September 2017, at 07:51.</li>
+											<li id="footer-info-copyright">Text is available under the Creative Commons Attribution-ShareAlike License;
+additional terms may apply.  By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy">Privacy policy</li>
+											<li id="footer-places-about">About Wikipedia</li>
+											<li id="footer-places-disclaimer">Disclaimers</li>
+											<li id="footer-places-contact">Contact Wikipedia</li>
+											<li id="footer-places-developers">Developers</li>
+											<li id="footer-places-cookiestatement">Cookie statement</li>
+											<li id="footer-places-mobileview">Mobile view</li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.168","walltime":"0.236","ppvisitednodes":{"value":1115,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":49619,"limit":2097152},"templateargumentsize":{"value":8843,"limit":2097152},"expansiondepth":{"value":16,"limit":40},"expensivefunctioncount":{"value":6,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  193.998      1 -total"," 40.53%   78.629      5 Template:Ambox"," 35.06%   68.006      1 Template:Reflist"," 31.39%   60.899      1 Template:Multiple_issues"," 17.28%   33.524      1 Template:Citation"," 12.61%   24.460      1 Template:Expert-subject"," 11.41%   22.126      1 Template:About"," 10.43%   20.231      1 Template:ISBN"," 10.14%   19.664      1 Template:Clarify","  8.98%   17.417      1 Template:Fix-span"]},"scribunto":{"limitreport-timeusage":{"value":"0.066","limit":"10.000"},"limitreport-memusage":{"value":2741586,"limit":52428800}},"cachereport":{"origin":"mw1268","timestamp":"20170915234050","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":59,"wgHostname":"mw1258"});});</script>
+	</body>
+</html>

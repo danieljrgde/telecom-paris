@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Instruction set architecture - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Instruction_set_architecture","wgTitle":"Instruction set architecture","wgCurRevisionId":798311941,"wgRevisionId":798311941,"wgArticleId":47772,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["All articles with unsourced statements","Articles with unsourced statements from October 2012","All articles lacking reliable references","Articles lacking reliable references from July 2014","Wikipedia articles needing clarification from October 2012","All accuracy disputes","Articles with disputed statements from October 2012","Articles with unsourced statements from January 2010","Wikipedia articles with GND identifiers","Central processing unit","Instruction processing","Instruction set architectures","Microprocessors"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Instruction_set_architecture","wgRelevantArticleId":47772,"wgRequestId":"WcJLvApAAEIAADfnn0sAAAAE","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Instruction_set","wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":false,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgInternalRedirectTargetUrl":"/wiki/Instruction_set_architecture","wgWikibaseItemId":"Q272683","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["mediawiki.action.view.redirect","ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.30.0-wmf.18"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Instruction_set_architecture"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Instruction_set_architecture&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Instruction_set_architecture&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Instruction_set_architecture"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Instruction_set_architecture rootpage-Instruction_set_architecture skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Instruction set architecture</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">  (Redirected from Instruction set)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					navigation, 					search
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div role="note" class="hatnote navigation-not-searchable">For other uses of "ISA", see Isa (disambiguation).</div>
+<p>An <b>instruction set architecture</b> (<b>ISA</b>) is an abstract model of a <a href="Computer.html" title="Computer">computer</a>. It is also referred to as <b>architecture</b> or <b>computer architecture</b>. A realization of an ISA is called an <i>implementation</i>. An ISA permits multiple implementations that may vary in performance, physical size, and monetary cost (among other things); because the ISA serves as the interface between <a href="Software.html" title="Software">software</a> and <a href="Computer_hardware.html" title="Computer hardware">hardware</a>. Software that has been written for an ISA can run on different implementations of the same ISA. This has enabled binary compatibility between different generations of computers to be easily achieved, and the development of computer families. Both of these developments have helped to lower the cost of computers and to increase their applicability. For these reasons, the ISA is one of the most important abstractions in computing today.</p>
+<p>An ISA defines everything a machine language programmer needs to know in order to program a computer. What an ISA defines differs between ISAs; in general, ISAs define the supported <a href="Data_type.html" title="Data type">data types</a>, what state there is (such as the main memory and registers) and their semantics (such as the memory consistency and addressing modes), the <i>instruction set</i> (the set of machine instructions that comprises a computer's machine language), and the input/output model.</p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a><span class="tocnumber">2</span> <span class="toctext">Classification of ISAs</span></a></li>
+<li class="toclevel-1 tocsection-3"><a><span class="tocnumber">3</span> <span class="toctext">Machine language</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a><span class="tocnumber">3.1</span> <span class="toctext">Instruction types</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a><span class="tocnumber">3.1.1</span> <span class="toctext">Data handling and memory operations</span></a></li>
+<li class="toclevel-3 tocsection-6"><a><span class="tocnumber">3.1.2</span> <span class="toctext">Arithmetic and logic operations</span></a></li>
+<li class="toclevel-3 tocsection-7"><a><span class="tocnumber">3.1.3</span> <span class="toctext">Control flow operations</span></a></li>
+<li class="toclevel-3 tocsection-8"><a><span class="tocnumber">3.1.4</span> <span class="toctext">Coprocessor instructions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a><span class="tocnumber">3.2</span> <span class="toctext">Complex instructions</span></a></li>
+<li class="toclevel-2 tocsection-10"><a><span class="tocnumber">3.3</span> <span class="toctext">Parts of an instruction</span></a></li>
+<li class="toclevel-2 tocsection-11"><a><span class="tocnumber">3.4</span> <span class="toctext">Instruction length</span></a></li>
+<li class="toclevel-2 tocsection-12"><a><span class="tocnumber">3.5</span> <span class="toctext">Representation</span></a></li>
+<li class="toclevel-2 tocsection-13"><a><span class="tocnumber">3.6</span> <span class="toctext">Design</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a><span class="tocnumber">4</span> <span class="toctext">Instruction set implementation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a><span class="tocnumber">4.1</span> <span class="toctext">Code density</span></a></li>
+<li class="toclevel-2 tocsection-16"><a><span class="tocnumber">4.2</span> <span class="toctext">Number of operands</span></a></li>
+<li class="toclevel-2 tocsection-17"><a><span class="tocnumber">4.3</span> <span class="toctext">Register pressure</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-19"><a><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-20"><a><span class="tocnumber">7</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-21"><a><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>An instruction set architecture is distinguished from a microarchitecture, which is the set of processor design techniques used, in a particular processor, to implement the instruction set. Processors with different microarchitectures can share a common instruction set. For example, the Intel Pentium and the Advanced Micro Devices Athlon implement nearly identical versions of the x86 instruction set, but have radically different internal designs.</p>
+<p>The concept of an <i>architecture</i>, distinct from the design of a specific machine, was developed by Fred Brooks at IBM during the design phase of System/360.</p>
+<blockquote class="templatequote">
+<p>Prior to NPL [System/360], the company's computer designers had been free to honor cost objectives not only by selecting technologies but also by fashioning functional and architectural refinements. The SPREAD compatibility objective, in contrast, postulated a single architecture for a series of five processors spanning a wide range of cost and performance. None of the five engineering design teams could count on being able to bring about adjustments in architectural specifications as a way of easing difficulties in achieving cost and performance objectives.<sup id="cite_ref-Pugh_1-0" class="reference">[1]</sup><sup class="reference" style="white-space:nowrap;">:p.137</sup></p>
+</blockquote>
+<p>Some <a href="Virtual_machine.html" title="Virtual machine">virtual machines</a> that support <a href="Bytecode.html" title="Bytecode">bytecode</a> as their ISA such as Smalltalk, the Java virtual machine, and Microsoft's Common Language Runtime, implement this by translating the bytecode for commonly used code paths into native machine code. In addition, these virtual machines execute less frequently used code paths by interpretation (see: Just-in-time compilation). Transmeta implemented the x86 instruction set atop VLIW processors in this fashion.</p>
+<h2><span class="mw-headline" id="Classification_of_ISAs">Classification of ISAs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>An ISA may be classified in a number of different ways. A common classification is by architectural <i>complexity</i>. A complex instruction set computer (CISC) has many specialized instructions, some of which may only be rarely used in practical programs. A reduced instruction set computer (RISC) simplifies the processor by efficiently implementing only the instructions that are frequently used in programs, while the less common operations are implemented as subroutines, having their resulting additional processor execution time offset by infrequent use.<sup id="cite_ref-2" class="reference">[2]</sup></p>
+<p>Other types include very long instruction word (VLIW) architectures, and the closely related <i>long instruction word</i> (LIW) and <i>explicitly parallel instruction computing</i> (EPIC) architectures. These architectures seek to exploit instruction-level parallelism with less hardware than RISC and CISC by making the <a href="Compiler.html" title="Compiler">compiler</a> responsible for instruction issue and scheduling.</p>
+<p>Architectures with even less complexity have been studied, such as the minimal instruction set computer (MISC) and one instruction set computer (OISC). These are theoretically important types, but have not been commercialized.</p>
+<h2><span class="mw-headline" id="Machine_language"><span id="NATIVE"></span>Machine language</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Machine language is built up from discrete <i>statements</i> or <i>instructions</i>. On the processing architecture, a given instruction may specify:</p>
+<ul>
+<li>particular registers for arithmetic, addressing, or control functions</li>
+<li>particular memory locations or offsets</li>
+<li>particular addressing modes used to interpret the operands</li>
+</ul>
+<p>More complex operations are built up by combining these simple instructions, which are executed sequentially, or as otherwise directed by <a href="Control_flow.html" title="Control flow">control flow</a> instructions.</p>
+<h3><span class="mw-headline" id="Instruction_types">Instruction types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Examples of operations common to many instruction sets include:</p>
+<h4><span class="mw-headline" id="Data_handling_and_memory_operations">Data handling and memory operations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li><i>Set</i> a register to a fixed constant value.</li>
+<li><i>Copy</i> data from a memory location to a register, or vice versa (a machine instruction is often called <i>move</i>, however the term is misleading). Used to store the contents of a register, result of a computation, or to retrieve stored data to perform a computation on it later. Often called load and store operations.</li>
+<li><i>Read</i> and <i>write</i> data from hardware devices.</li>
+</ul>
+<h4><span class="mw-headline" id="Arithmetic_and_logic_operations">Arithmetic and logic operations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li><i>Add</i>, <i>subtract</i>, <i>multiply</i>, or <i>divide</i> the values of two registers, placing the result in a register, possibly setting one or more condition codes in a status register.
+<ul>
+<li><i><span id="increment">increment</span></i>, <i><span id="decrement">decrement</span></i> in some ISAs, saving operand fetch in trivial cases.</li>
+</ul>
+</li>
+<li>Perform bitwise operations, e.g., taking the <i>conjunction</i> and <i>disjunction</i> of corresponding bits in a pair of registers, taking the <i>negation</i> of each bit in a register.</li>
+<li><i>Compare</i> two values in registers (for example, to see if one is less, or if they are equal).</li>
+<li><i><span id="Floating-point_instruction">Floating-point instruction</span>s</i> for arithmetic on floating-point numbers.</li>
+</ul>
+<h4><span class="mw-headline" id="Control_flow_operations"><a href="Control_flow.html" title="Control flow">Control flow</a> operations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li><i>Branch</i> to another location in the program and execute instructions there.</li>
+<li><i>Conditionally branch</i> to another location if a certain condition holds.</li>
+<li><i>Indirectly branch</i> to another location.</li>
+<li><i><a href="Subroutine.html" title="Subroutine">Call</a></i> another block of code, while saving the location of the next instruction as a point to return to.</li>
+</ul>
+<h4><span class="mw-headline" id="Coprocessor_instructions">Coprocessor instructions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h4>
+<ul>
+<li>Load/store data to and from a coprocessor, or exchanging with CPU registers.</li>
+<li>Perform coprocessor operations.</li>
+</ul>
+<h3><span class="mw-headline" id="Complex_instructions">Complex instructions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Processors may include "complex" instructions in their instruction set. A single "complex" instruction does something that may take many instructions on other computers.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (October 2012)">citation needed</span></a></i>]</sup> Such instructions are typified by instructions that take multiple steps, control multiple functional units, or otherwise appear on a larger scale than the bulk of simple instructions implemented by the given processor. Some examples of "complex" instructions include:</p>
+<ul>
+<li>transferring multiple registers to or from memory (especially the stack) at once</li>
+<li>moving large blocks of memory (e.g. string copy or DMA transfer)</li>
+<li>complicated integer and floating-point arithmetic (e.g. square root, or transcendental functions such as logarithm, sine, cosine, etc.)</li>
+<li><i><span id="SIMD_instruction"></span><span id=".5B.5BSIMD.5D.5D_instruction">SIMD instruction</span>s</i>, a single instruction performing an operation on many homogeneous values in parallel, possibly in dedicated SIMD registers</li>
+<li>performing an atomic test-and-set instruction or other read-modify-write atomic instruction</li>
+<li>instructions that perform ALU operations with an operand from memory rather than a register</li>
+</ul>
+<p>Complex instructions are more common in CISC instruction sets than in RISC instruction sets, but RISC instruction sets may include them as well. RISC instruction sets generally do not include ALU operations with memory operands, or instructions to move large blocks of memory, but most RISC instruction sets include SIMD or vector instructions that perform the same arithmetic operation on multiple pieces of data at the same time. SIMD instructions have the ability of manipulating large vectors and matrices in minimal time. SIMD instructions allow easy parallelization of algorithms commonly involved in sound, image, and video processing. Various SIMD implementations have been brought to market under trade names such as MMX, 3DNow!, and AltiVec.</p>
+<h3><span class="mw-headline" id="Parts_of_an_instruction">Parts of an instruction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:372px;"><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mips32_addi.svg/370px-Mips32_addi.svg.png" width="370" height="133" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mips32_addi.svg/555px-Mips32_addi.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mips32_addi.svg/740px-Mips32_addi.svg.png 2x" data-file-width="500" data-file-height="180" /></a>
+<div class="thumbcaption">
+<div class="magnify"></div>
+One instruction may have several fields, which identify the logical operation, and may also include source and destination addresses and constant values. This is the MIPS "Add Immediate" instruction, which allows selection of source and destination registers and inclusion of a small constant.</div>
+</div>
+</div>
+<p>On traditional architectures, an instruction includes an opcode that specifies the operation to perform, such as <i>add contents of memory to register</i>—and zero or more operand specifiers, which may specify registers, memory locations, or literal data. The operand specifiers may have addressing modes determining their meaning or may be in fixed fields. In very long instruction word (VLIW) architectures, which include many microcode architectures, multiple simultaneous opcodes and operands are specified in a single instruction.</p>
+<p>Some exotic instruction sets do not have an opcode field, such as transport triggered architectures (TTA), only operand(s).</p>
+<p>The Forth virtual machine and other "0-operand" instruction sets lack any operand specifier fields, such as some stack machines including NOSC.<sup id="cite_ref-3" class="reference">[3]</sup><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="Not reliable. Just some random mailing list. (July 2014)">better&#160;source&#160;needed</span></a></i>]</sup></p>
+<p>Conditional instructions often have a predicate field—a few bits that encode the specific condition to cause the operation to be performed rather than not performed. For example, a conditional branch instruction will be executed, and the branch taken, if the condition is true, so that execution proceeds to a different part of the program, and not executed, and the branch not taken, if the condition is false, so that execution continues sequentially. Some instruction sets also have conditional moves, so that the move will be executed, and the data stored in the target location, if the condition is true, and not executed, and the target location not modified, if the condition is false. Similarly, IBM z/Architecture has a conditional store instruction. A few instruction sets include a predicate field in every instruction; this is called branch predication.</p>
+<h3><span class="mw-headline" id="Instruction_length"><span id="Fixed_length"></span><span id="Fixed_width"></span><span id="Variable_length"></span><span id="Variable_width"></span>Instruction length</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>The size or length of an instruction varies widely, from as little as four bits in some microcontrollers to many hundreds of bits in some VLIW systems. Processors used in personal computers, mainframes, and supercomputers have instruction sizes between 8 and 64 bits. The longest possible instruction on x86 is 15 bytes (120 bits).<sup id="cite_ref-4" class="reference">[4]</sup> Within an instruction set, different instructions may have different lengths. In some architectures, notably most reduced instruction set computers (RISC), <span id="FIXED_LENGTH_INSTRUCTIONS"></span><span id="instructions_are_a_fixed_length">instructions are a fixed length</span>, typically corresponding with that architecture's word size. In other architectures, instructions have variable length, typically integral multiples of a byte or a halfword. Some, such as the ARM with <i>Thumb-extension</i> have <i>mixed</i> variable encoding, that is two fixed, usually 32-bit and 16-bit encodings, where instructions can not be mixed freely but must be switched between on a branch (or exception boundary in ARMv8).</p>
+<p>A RISC instruction set normally has a fixed instruction width (often 4 bytes = 32 bits), whereas a typical CISC instruction set may have instructions of widely varying length (1 to 15 bytes for x86). Fixed-width instructions are less complicated to handle than variable-width instructions for several reasons (not having to check whether an instruction straddles a cache line or virtual memory page boundary<sup id="cite_ref-Cocke_5-0" class="reference">[5]</sup> for instance), and are therefore somewhat easier to optimize for speed.</p>
+<h3><span class="mw-headline" id="Representation">Representation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>The instructions constituting a program are rarely specified using their internal, numeric form (machine code); they may be specified by programmers using an <a href="Assembly_language.html" title="Assembly language">assembly language</a> or, more commonly, may be generated from <a href="Programming_language.html" title="Programming language">programming languages</a> by <a href="Compiler.html" title="Compiler">compilers</a>.</p>
+<h3><span class="mw-headline" id="Design">Design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>The design of instruction sets is a complex issue. There were two stages in history for the microprocessor. The first was the CISC (Complex Instruction Set Computer), which had many different instructions. In the 1970s, however, places like IBM did research and found that many instructions in the set could be eliminated. The result was the RISC (Reduced Instruction Set Computer), an architecture that uses a smaller set of instructions. A simpler instruction set may offer the potential for higher speeds, reduced processor size, and reduced power consumption. However, a more complex set may optimize common operations, improve memory and cache efficiency, or simplify programming.</p>
+<p>Some instruction set designers reserve one or more opcodes for some kind of system call or software interrupt. For example, MOS Technology 6502 uses 00<sub>H</sub>, Zilog Z80 uses the eight codes C7,CF,D7,DF,E7,EF,F7,FF<sub>H</sub><sup id="cite_ref-6" class="reference">[6]</sup> while Motorola 68000 use codes in the range A000..AFFF<sub>H</sub>.</p>
+<p>Fast virtual machines are much easier to implement if an instruction set meets the Popek and Goldberg virtualization requirements.<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a><span title="The text near this tag may need clarification or removal of jargon. (October 2012)">clarification needed</span></a></i>]</sup></p>
+<p>The NOP slide used in immunity-aware programming is much easier to implement if the "unprogrammed" state of the memory is interpreted as a NOP.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="The material near this tag is possibly inaccurate or nonfactual. (October 2012)">dubious</span></a> <span class="metadata">– discuss</span></i>]</sup></p>
+<p>On systems with multiple processors, non-blocking synchronization algorithms are much easier to implement<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="Opinion unsupported by a textbook (October 2012)">citation needed</span></a></i>]</sup> if the instruction set includes support for something such as "fetch-and-add", "load-link/store-conditional" (LL/SC), or "atomic compare-and-swap".</p>
+<h2><span class="mw-headline" id="Instruction_set_implementation">Instruction set implementation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Any given instruction set can be implemented in a variety of ways. All ways of implementing a particular instruction set provide the same programming model, and all implementations of that instruction set are able to run the same executables. The various ways of implementing an instruction set give different tradeoffs between cost, performance, power consumption, size, etc.</p>
+<p>When designing the microarchitecture of a processor, engineers use blocks of "hard-wired" electronic circuitry (often designed separately) such as adders, multiplexers, counters, registers, ALUs, etc. Some kind of register transfer language is then often used to describe the decoding and sequencing of each instruction of an ISA using this physical microarchitecture. There are two basic ways to build a control unit to implement this description (although many designs use middle ways or compromises):</p>
+<ol>
+<li>Some computer designs "hardwire" the complete instruction set decoding and sequencing (just like the rest of the microarchitecture).</li>
+<li>Other designs employ microcode routines or tables (or both) to do this—typically as on-chip ROMs or PLAs or both (although separate RAMs and ROMs have been used historically). The Western Digital MCP-1600 is an older example, using a dedicated, separate ROM for microcode.</li>
+</ol>
+<p>Some designs use a combination of hardwired design and microcode for the control unit.</p>
+<p>Some CPU designs use a writable control store—they compile the instruction set to a writable RAM or flash inside the CPU (such as the Rekursiv processor and the Imsys Cjip),<sup id="cite_ref-7" class="reference">[7]</sup> or an FPGA (reconfigurable computing).</p>
+<p>An ISA can also be emulated in software by an interpreter. Naturally, due to the interpretation overhead, this is slower than directly running programs on the emulated hardware, unless the hardware running the emulator is an order of magnitude faster. Today, it is common practice for vendors of new ISAs or microarchitectures to make software emulators available to software developers before the hardware implementation is ready.</p>
+<p>Often the details of the implementation have a strong influence on the particular instructions selected for the instruction set. For example, many implementations of the instruction pipeline only allow a single memory load or memory store per instruction, leading to a load-store architecture (RISC). For another example, some early ways of implementing the instruction pipeline led to a delay slot.</p>
+<p>The demands of high-speed digital signal processing have pushed in the opposite direction—forcing instructions to be implemented in a particular way. For example, to perform digital filters fast enough, the MAC instruction in a typical digital signal processor (DSP) must use a kind of Harvard architecture that can fetch an instruction and two data words simultaneously, and it requires a single-cycle multiply–accumulate multiplier.</p>
+<h3><span class="mw-headline" id="Code_density">Code density</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>In early computers, memory was expensive, so minimizing the size of a program to make sure it would fit in the limited memory was often central. Thus the combined size of all the instructions needed to perform a particular task, the <i>code density</i>, was an important characteristic of any instruction set. Computers with high code density often have complex instructions for procedure entry, parameterized returns, loops, etc. (therefore retroactively named <i>Complex Instruction Set Computers</i>, CISC). However, more typical, or frequent, "CISC" instructions merely combine a basic ALU operation, such as "add", with the access of one or more operands in memory (using addressing modes such as direct, indirect, indexed, etc.). Certain architectures may allow two or three operands (including the result) directly in memory or may be able to perform functions such as automatic pointer increment, etc. Software-implemented instruction sets may have even more complex and powerful instructions.</p>
+<p><i>Reduced instruction-set computers</i>, RISC, were first widely implemented during a period of rapidly growing memory subsystems. They sacrifice code density to simplify implementation circuitry, and try to increase performance via higher clock frequencies and more registers. A single RISC instruction typically performs only a single operation, such as an "add" of registers or a "load" from a memory location into a register. A RISC instruction set normally has a fixed instruction width, whereas a typical CISC instruction set has instructions of widely varying length. However, as RISC computers normally require more and often longer instructions to implement a given task, they inherently make less optimal use of bus bandwidth and cache memories.</p>
+<p>Certain embedded RISC ISAs like Thumb and AVR32 typically exhibit very high density owing to a technique called code compression. This technique packs two 16-bit instructions into one 32-bit instruction, which is then unpacked at the decode stage and executed as two instructions.<sup id="cite_ref-weaver_8-0" class="reference">[8]</sup></p>
+<p>Minimal instruction set computers (MISC) are a form of stack machine, where there are few separate instructions (16-64), so that multiple instructions can be fit into a single machine word. These type of cores often take little silicon to implement, so they can be easily realized in an FPGA or in a multi-core form. The code density of MISC is similar to the code density of RISC; the increased instruction density is offset by requiring more of the primitive instructions to do a task.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (January 2010)">citation needed</span></a></i>]</sup></p>
+<p>There has been research into executable compression as a mechanism for improving code density. The mathematics of Kolmogorov complexity describes the challenges and limits of this.</p>
+<h3><span class="mw-headline" id="Number_of_operands">Number of operands</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Instruction sets may be categorized by the maximum number of operands <i>explicitly</i> specified in instructions.</p>
+<p>(In the examples that follow, <i>a</i>, <i>b</i>, and <i>c</i> are (direct or calculated) addresses referring to memory cells, while <i>reg1</i> and so on refer to machine registers.)</p>
+<pre>
+C = A+B
+</pre>
+<ul>
+<li>0-operand (<i>zero-address machines</i>), so called stack machines: All arithmetic operations take place using the top one or two positions on the stack: <code>push a</code>, <code>push b</code>, <i>add</i>, <code>pop c</code>.
+<ul>
+<li><code>C = A+B</code> needs <i>four instructions</i>. For stack machines, the terms "0-operand" and "zero-address" apply to arithmetic instructions, but not to all instructions, as 1-operand push and pop instructions are used to access memory.</li>
+</ul>
+</li>
+<li>1-operand (<i>one-address machines</i>), so called accumulator machines, include early computers and many small microcontrollers: most instructions specify a single right operand (that is, constant, a register, or a memory location), with the implicit accumulator as the left operand (and the destination if there is one): <code>load a</code>, <code>add b</code>, <code>store c</code>.
+<ul>
+<li><code>C = A+B</code> needs <i>three instructions</i>.</li>
+</ul>
+</li>
+<li>2-operand — many CISC and RISC machines fall under this category:
+<ul>
+<li>CISC — <code>move A</code> to <i>C</i>; then <code>add B</code> to <i>C</i>.
+<ul>
+<li><code>C = A+B</code> needs <i>two instructions</i>. This effectively 'stores' the result without an explicit <i>store</i> instruction.</li>
+</ul>
+</li>
+<li>CISC — Often machines are limited to one memory operand per instruction: <code>load a,reg1</code>; <code>add b,reg1</code>; <code>store reg1,c</code>; This requires a load/store pair for any memory movement regardless of whether the <i>add</i> result is an augmentation stored to a different place, as in <code>C = A+B</code>, or the same memory location: <code>A = A+B</code>.
+<ul>
+<li><code>C = A+B</code> needs <i>three instructions</i>.</li>
+</ul>
+</li>
+<li>RISC — Requiring explicit memory loads, the instructions would be: <code>load a,reg1</code>; <code>load b,reg2</code>; <code>add reg1,reg2</code>; <code>store reg2,c</code>.
+<ul>
+<li><code>C = A+B</code> needs <i>four instructions</i>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>3-operand, allowing better reuse of data:<sup id="cite_ref-Cocke_5-1" class="reference">[5]</sup>
+<ul>
+<li>CISC — It becomes either a single instruction: <code>add a,b,c</code>
+<ul>
+<li><code>C = A+B</code> needs <i>one instruction</i>.</li>
+</ul>
+</li>
+<li>CISC — Or, on machines limited to two memory operands per instruction, <code>move a,reg1</code>; <code>add reg1,b,c</code>;
+<ul>
+<li><code>C = A+B</code> needs <i>two instructions</i>.</li>
+</ul>
+</li>
+<li>RISC — arithmetic instructions use registers only, so explicit 2-operand load/store instructions are needed: <code>load a,reg1</code>; <code>load b,reg2</code>; <code>add reg1+reg2-&gt;reg3</code>; <code>store reg3,c</code>;
+<ul>
+<li><code>C = A+B</code> needs <i>four instructions</i>.</li>
+<li>Unlike 2-operand or 1-operand, this leaves all three values a, b, and c in registers available for further reuse.<sup id="cite_ref-Cocke_5-2" class="reference">[5]</sup></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>more operands—some CISC machines permit a variety of addressing modes that allow more than 3 operands (registers or memory accesses), such as the VAX "POLY" polynomial evaluation instruction.</li>
+</ul>
+<p>Due to the large number of bits needed to encode the three registers of a 3-operand instruction, RISC architectures that have 16-bit instructions are invariably 2-operand designs, such as the Atmel AVR, TI MSP430, and some versions of ARM Thumb. RISC architectures that have 32-bit instructions are usually 3-operand designs, such as the ARM, AVR32, MIPS, Power ISA, and SPARC architectures.</p>
+<p>Each instruction specifies some number of operands (registers, memory locations, or immediate values) <i>explicitly</i>. Some instructions give one or both operands implicitly, such as by being stored on top of the stack or in an implicit register. If some of the operands are given implicitly, fewer operands need be specified in the instruction. When a "destination operand" explicitly specifies the destination, an additional operand must be supplied. Consequently, the number of operands encoded in an instruction may differ from the mathematically necessary number of arguments for a logical or arithmetic operation (the arity). Operands are either encoded in the "opcode" representation of the instruction, or else are given as values or addresses following the instruction.</p>
+<h3><span class="mw-headline" id="Register_pressure"><span id="REGISTER-PRESSURE"></span>Register pressure</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p><i>Register pressure</i> measures the availability of free registers at any point in time during the program execution. Register pressure is high when a large number of the available registers are in use; thus, the higher the register pressure, the more often the register contents must be spilled into memory. Increasing the number of registers in an architecture decreases register pressure but increases the cost.<sup id="cite_ref-9" class="reference">[9]</sup></p>
+<p>While embedded instruction sets such as Thumb suffer from extremely high register pressure because they have small register sets, general-purpose RISC ISAs like MIPS and Alpha enjoy low register pressure. CISC ISAs like x86-64 offer low register pressure despite having smaller register sets. This is due to the many addressing modes and optimizations (such as sub-register addressing, memory operands in ALU instructions, absolute addressing, PC-relative addressing, and register-to-register spills) that CISC ISAs offer.<sup id="cite_ref-10" class="reference">[10]</sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><a><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/28px-Internet_map_1024.jpg" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/42px-Internet_map_1024.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/56px-Internet_map_1024.jpg 2x" data-file-width="1280" data-file-height="1280" /></a></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle">Computer science portal</span></li>
+</ul>
+</div>
+<ul>
+<li>Comparison of instruction set architectures</li>
+<li>Computer architecture</li>
+<li>CPU design</li>
+<li>Emulator</li>
+<li>Simulator</li>
+<li>List of instruction sets</li>
+<li>Instruction set simulator</li>
+<li>OVPsim full systems simulator providing ability to create/model/emulate any instruction set using C and standard APIs</li>
+<li>Register transfer language (RTL)</li>
+<li>Micro-operation</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Pugh-1"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Pugh, Emerson W.; Johnson, Lyle R.; Palmer, John H. (1991). <a><i>IBM's 360 and Early 370 Systems</i></a>. MIT Press. ISBN&#160;0-262-16123-0.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInstruction+set+architecture&amp;rft.au=Johnson%2C+Lyle+R.&amp;rft.au=Palmer%2C+John+H.&amp;rft.aufirst=Emerson+W.&amp;rft.aulast=Pugh&amp;rft.btitle=IBM%27s+360+and+Early+370+Systems&amp;rft.date=1991&amp;rft.genre=book&amp;rft.isbn=0-262-16123-0&amp;rft.pub=MIT+Press&amp;rft_id=https%3A%2F%2Fwww.amazon.com%2FIBMs-Early-Systems-History-Computing%2Fdp%2F0262161230&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Crystal Chen; Greg Novick; Kirk Shimano (December 16, 2006). "RISC Architecture: RISC vs. CISC". <i>cs.stanford.edu</i><span class="reference-accessdate">. Retrieved <span class="nowrap">February 21,</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInstruction+set+architecture&amp;rft.atitle=RISC+Architecture%3A+RISC+vs.+CISC&amp;rft.au=Crystal+Chen&amp;rft.au=Greg+Novick&amp;rft.au=Kirk+Shimano&amp;rft.date=2006-12-16&amp;rft.genre=unknown&amp;rft.jtitle=cs.stanford.edu&amp;rft_id=http%3A%2F%2Fcs.stanford.edu%2Fpeople%2Feroberts%2Fcourses%2Fsoco%2Fprojects%2Frisc%2Frisccisc%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"Forth Resources: NOSC Mail List Archive". <i>strangegizmo.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-25</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInstruction+set+architecture&amp;rft.atitle=Forth+Resources%3A+NOSC+Mail+List+Archive&amp;rft.genre=unknown&amp;rft.jtitle=strangegizmo.com&amp;rft_id=http%3A%2F%2Fstrangegizmo.com%2Fforth%2FNOSC%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"Intel® 64 and IA-32 Architectures Software Developer’s Manual". Intel Corporation<span class="reference-accessdate">. Retrieved <span class="nowrap">12 July</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInstruction+set+architecture&amp;rft.btitle=Intel%C2%AE+64+and+IA-32+Architectures+Software+Developer%E2%80%99s+Manual&amp;rft.genre=unknown&amp;rft.pub=Intel+Corporation&amp;rft_id=http%3A%2F%2Fwww.intel.com%2Fcontent%2Fwww%2Fus%2Fen%2Fprocessors%2Farchitectures-software-developer-manuals.html%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Cocke-5"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a> <a><sup><i><b>c</b></i></sup></a></span> <span class="reference-text">The evolution of RISC technology at IBM by John Cocke – IBM Journal of R&amp;D, Volume 44, Numbers 1/2, p.48 (2000)</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Ganssle, Jack. "Proactive Debugging". Published February 26, 2001.</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"Great Microprocessors of the Past and Present (V 13.4.0)". <i>cpushack.net</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2014-07-25</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInstruction+set+architecture&amp;rft.atitle=Great+Microprocessors+of+the+Past+and+Present+%28V+13.4.0%29&amp;rft.genre=unknown&amp;rft.jtitle=cpushack.net&amp;rft_id=http%3A%2F%2Fcpushack.net%2FCPU%2Fcpu7.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-weaver-8"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation conference">Weaver, Vincent M.; McKee, Sally A. (2009). <a><i>Code density concerns for new architectures</i></a>. IEEE International Conference on Computer Design.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInstruction+set+architecture&amp;rft.au=McKee%2C+Sally+A.&amp;rft.aufirst=Vincent+M.&amp;rft.aulast=Weaver&amp;rft.btitle=Code+density+concerns+for+new+architectures&amp;rft.date=2009&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5413117%26tag%3D1&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Page, Daniel (2009). "11. Compilers". <i>A Practical Introduction to Computer Architecture</i>. Springer. p.&#160;464. ISBN&#160;978-1-84882-255-9.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInstruction+set+architecture&amp;rft.atitle=11.+Compilers&amp;rft.aufirst=Daniel&amp;rft.aulast=Page&amp;rft.btitle=A+Practical+Introduction+to+Computer+Architecture&amp;rft.date=2009&amp;rft.genre=bookitem&amp;rft.isbn=978-1-84882-255-9&amp;rft.pages=464&amp;rft.pub=Springer&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation conference">Venkat, Ashish; Tullsen, Dean M. (2014). <a><i>Harnessing ISA Diversity: Design of a Heterogeneous-ISA Chip Multiprocessor</i></a>. 41st Annual International Symposium on Computer Architecture.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInstruction+set+architecture&amp;rft.au=Tullsen%2C+Dean+M.&amp;rft.aufirst=Ashish&amp;rft.aulast=Venkat&amp;rft.btitle=Harnessing+ISA+Diversity%3A+Design+of+a+Heterogeneous-ISA+Chip+Multiprocessor&amp;rft.date=2014&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fdl.acm.org%2Fcitation.cfm%3Fid%3D2665692&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite class="citation journal">Bowen, Jonathan P. (July–August 1985). "Standard Microprocessor Programming Cards". <b>9</b> (6): 274–290. doi:10.1016/0141-9331(85)90116-4.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInstruction+set+architecture&amp;rft.atitle=Standard+Microprocessor+Programming+Cards&amp;rft.aufirst=Jonathan+P.&amp;rft.aulast=Bowen&amp;rft.date=1985-07%2F1985-08&amp;rft.genre=article&amp;rft.issue=6&amp;rft.pages=274-290&amp;rft.volume=9&amp;rft_id=info%3Adoi%2F10.1016%2F0141-9331%2885%2990116-4&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="background-color:#f9f9f9;border:1px solid #aaa;color:#000">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></td>
+<td class="mbox-text plainlist">The Wikibook <i>Microprocessor Design</i> has a page on the topic of: <i><b>Code Density</b></i></td>
+</tr>
+</table>
+<ul>
+<li>Programming Textfiles: Bowen's Instruction Summary Cards</li>
+<li>Mark Smotherman's Historical Computer Designs Page</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="CPU_technologies" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="CPU_technologies" style="font-size:114%;margin:0 4em">CPU technologies</div>
+</th>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Architecture</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Turing machine</li>
+<li>Post–Turing machine</li>
+<li>Universal Turing machine</li>
+<li>Quantum Turing machine</li>
+<li>Belt machine</li>
+<li>Stack machine</li>
+<li>Register machine</li>
+<li>Counter machine</li>
+<li>Pointer machine</li>
+<li>Random access machine</li>
+<li>Random access stored program machine</li>
+<li>Finite-state machine</li>
+<li>Queue automaton</li>
+<li>Von Neumann</li>
+<li>Harvard (modified)</li>
+<li>Dataflow</li>
+<li>TTA</li>
+<li>Cellular</li>
+<li>Artificial neural network
+<ul>
+<li>Machine learning</li>
+<li>Deep learning</li>
+<li>Neural processing unit (NPU)</li>
+</ul>
+</li>
+<li>Convolutional neural network</li>
+<li>Load/store architecture</li>
+<li>Register memory architecture</li>
+<li>Register register architecture</li>
+<li>Endianness</li>
+<li>FIFO</li>
+<li>Zero-copy</li>
+<li>NUMA</li>
+<li>HUMA</li>
+<li>HSA</li>
+<li>Heterogeneous computing</li>
+<li>Parallel computing</li>
+<li>Amorphous computing</li>
+<li>Reconfigurable computing</li>
+<li>Cognitive computing</li>
+<li>DNA computing</li>
+<li>Peptide computing</li>
+<li>Chemical computing</li>
+<li>Organic computing</li>
+<li>Wetware computer</li>
+<li>Quantum computing</li>
+<li>Neuromorphic computing</li>
+<li>Optical computing</li>
+<li>Reversible computing</li>
+<li>Unconventional computing</li>
+<li>Hypercomputation</li>
+<li>Ternary computer</li>
+<li>Symmetric multiprocessing (SMP)</li>
+<li>Asymmetric multiprocessing (AMP)</li>
+<li>Cache hierarchy</li>
+<li>Memory hierarchy</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">ISA types</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>ASIP</li>
+<li>CISC</li>
+<li>RISC</li>
+<li>EDGE (TRIPS)</li>
+<li>VLIW (EPIC)</li>
+<li>MISC</li>
+<li>OISC</li>
+<li>NISC</li>
+<li>ZISC</li>
+<li>Comparison</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">ISAs</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>x86</li>
+<li>z/Architecture</li>
+<li>ARM</li>
+<li>MIPS</li>
+<li>Power Architecture (PowerPC)</li>
+<li>SPARC</li>
+<li>VISC</li>
+<li>Mill</li>
+<li>Itanium (IA-64)</li>
+<li>Alpha</li>
+<li>Prism</li>
+<li>SuperH</li>
+<li>Clipper</li>
+<li>VAX</li>
+<li>Unicore</li>
+<li>PA-RISC</li>
+<li>MicroBlaze</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Word size</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>1-bit</li>
+<li>2-bit</li>
+<li>4-bit</li>
+<li>8-bit</li>
+<li>9-bit</li>
+<li>10-bit</li>
+<li>12-bit</li>
+<li>15-bit</li>
+<li>16-bit</li>
+<li>18-bit</li>
+<li>22-bit</li>
+<li>24-bit</li>
+<li>25-bit</li>
+<li>26-bit</li>
+<li>27-bit</li>
+<li>31-bit</li>
+<li>32-bit</li>
+<li>33-bit</li>
+<li>34-bit</li>
+<li>36-bit</li>
+<li>39-bit</li>
+<li>40-bit</li>
+<li>48-bit</li>
+<li>50-bit</li>
+<li>60-bit</li>
+<li>64-bit</li>
+<li>128-bit</li>
+<li>256-bit</li>
+<li>512-bit</li>
+<li>Variable</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Execution</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Instruction pipelining
+<ul>
+<li>Bubble</li>
+<li>Operand forwarding</li>
+</ul>
+</li>
+<li>Out-of-order execution
+<ul>
+<li>Register renaming</li>
+</ul>
+</li>
+<li>Speculative execution
+<ul>
+<li>Branch predictor</li>
+<li>Memory dependence prediction</li>
+</ul>
+</li>
+<li>Hazards</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Parallel level</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Bit
+<ul>
+<li>Bit-serial</li>
+<li>Word</li>
+</ul>
+</li>
+<li>Instruction</li>
+<li>Pipelining
+<ul>
+<li>Scalar</li>
+<li>Superscalar</li>
+</ul>
+</li>
+<li>Task
+<ul>
+<li>Thread</li>
+<li>Process</li>
+</ul>
+</li>
+<li>Data
+<ul>
+<li>Vector</li>
+</ul>
+</li>
+<li>Memory</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Multithreading</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Temporal</li>
+<li>Simultaneous (SMT) (Hyper-threading)</li>
+<li>Speculative (SpMT)</li>
+<li>Preemptive</li>
+<li>Cooperative</li>
+<li>Clustered Multi-Thread (CMT)</li>
+<li>Hardware scout</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Flynn's taxonomy</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>SISD</li>
+<li>SIMD (SWAR)</li>
+<li>SIMT</li>
+<li>MISD</li>
+<li>MIMD
+<ul>
+<li>SPMD</li>
+</ul>
+</li>
+<li>Addressing mode</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">CPU performance</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Instructions per second (IPS)</li>
+<li>Instructions per clock (IPC)</li>
+<li>Cycles per instruction (CPI)</li>
+<li>Floating-point operations per second (FLOPS)</li>
+<li>Transactions per second (TPS)</li>
+<li>SUPS</li>
+<li>Performance per watt</li>
+<li>Orders of magnitude (computing)</li>
+<li>Cache performance measurement and metric</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Core count</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Single-core processor</li>
+<li>Multi-core processor</li>
+<li>Manycore processor</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Types</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Central processing unit (CPU)</li>
+<li>GPGPU</li>
+<li>AI accelerator</li>
+<li>Vision processing unit (VPU)</li>
+<li>Vector processor</li>
+<li>Barrel processor</li>
+<li>Stream processor</li>
+<li>Digital signal processor (DSP)</li>
+<li>I/O processor/DMA controller</li>
+<li>Network processor</li>
+<li>Baseband processor</li>
+<li>Physics processing unit (PPU)</li>
+<li>Coprocessor</li>
+<li>Secure cryptoprocessor</li>
+<li>ASIC</li>
+<li>FPGA</li>
+<li>FPOA</li>
+<li>CPLD</li>
+<li>Microcontroller</li>
+<li>Microprocessor</li>
+<li>Mobile processor</li>
+<li>Notebook processor</li>
+<li>Ultra-low-voltage processor</li>
+<li>Multi-core processor</li>
+<li>Manycore processor</li>
+<li>Tile processor</li>
+<li>Multi-chip module (MCM)</li>
+<li>Chip stack multi-chip modules</li>
+<li>System on a chip (SoC)</li>
+<li>Network on a chip (NoC)</li>
+<li>Multiprocessor system-on-chip (MPSoC)</li>
+<li><a href="Computer_program.html" title="Computer program">Programmable</a> System-on-Chip (PSoC)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Components</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Execution unit (EU)</li>
+<li>Arithmetic logic unit (ALU)</li>
+<li>Address generation unit (AGU)</li>
+<li>Floating-point unit (FPU)</li>
+<li>Load-store unit (LSU)</li>
+<li>Fixed-point unit (FXU)</li>
+<li>Vector unit (VU)</li>
+<li>Branch predictor</li>
+<li>Branch execution unit (BEU)</li>
+<li>Instruction Decoder</li>
+<li>Instruction Scheduler</li>
+<li>Instruction Fetch Unit</li>
+<li>Instruction Dispatch Unit</li>
+<li>Instruction Sequencing Unit</li>
+<li>Unified Reservation Station</li>
+<li>Barrel shifter</li>
+<li>Uncore</li>
+<li>Sum addressed decoder (SAD)</li>
+<li>Front-side bus</li>
+<li>Back-side bus</li>
+<li>Northbridge (computing)</li>
+<li>Southbridge (computing)</li>
+<li>Adder (electronics)</li>
+<li>Binary multiplier</li>
+<li>Binary decoder</li>
+<li>Address decoder</li>
+<li>Multiplexer</li>
+<li>Demultiplexer</li>
+<li>Registers</li>
+<li>Cache</li>
+<li>Memory management unit (MMU)</li>
+<li>Input–output memory management unit (IOMMU)</li>
+<li>Integrated Memory Controller (IMC)</li>
+<li>Power Management Unit (PMU)</li>
+<li>Translation lookaside buffer (TLB)</li>
+<li>Stack engine</li>
+<li>Register file</li>
+<li>Processor register</li>
+<li>Hardware register</li>
+<li>Memory buffer register (MBR)</li>
+<li>Program counter</li>
+<li>Microcode ROM</li>
+<li>Datapath</li>
+<li>Control unit</li>
+<li>Instruction unit</li>
+<li>Re-order buffer</li>
+<li>Data buffer</li>
+<li>Write buffer</li>
+<li>Coprocessor</li>
+<li>Electronic switch</li>
+<li>Electronic circuit</li>
+<li>Integrated circuit</li>
+<li>Three-dimensional integrated circuit</li>
+<li>Boolean circuit</li>
+<li>Digital circuit</li>
+<li>Analog circuit</li>
+<li>Mixed-signal integrated circuit</li>
+<li>Power management integrated circuit</li>
+<li>Quantum circuit</li>
+<li>Logic gate
+<ul>
+<li>Combinational logic</li>
+<li>Sequential logic</li>
+<li>Emitter-coupled logic (ECL)</li>
+<li>Transistor–transistor logic (TTL)</li>
+<li>Glue logic</li>
+</ul>
+</li>
+<li>Quantum gate</li>
+<li>Gate array</li>
+<li>Counter (digital)</li>
+<li>Bus (computing)</li>
+<li>Semiconductor device</li>
+<li>Clock rate</li>
+<li>CPU multiplier</li>
+<li>Vision chip</li>
+<li>Memristor</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%"><a>Power<br />
+management</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>APM</li>
+<li>ACPI</li>
+<li>Dynamic frequency scaling</li>
+<li>Dynamic voltage scaling</li>
+<li>Clock gating</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Hardware<br />
+security</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Non-executable memory (NX bit)</li>
+<li>Bounds checking (Intel MPX)</li>
+<li>Intel Secure Key</li>
+<li>Hardware restriction (firmware)</li>
+<li>Software Guard Extensions (Intel SGX)</li>
+<li>Trusted Execution Technology</li>
+<li>OmniShield</li>
+<li>Trusted Platform Module (TPM)</li>
+<li>Secure cryptoprocessor</li>
+<li>Hardware security module</li>
+<li>Hengzhi chip</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Related</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>History of general-purpose CPUs</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-label="Navbox" style="padding:3px">
+<table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Authority control</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span class="nowrap">GND: <span class="uid">4129931-0</span></span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1269
+Cached time: 20170904225601
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.264 seconds
+Real time usage: 0.351 seconds
+Preprocessor visited node count: 1986/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 76316/2097152 bytes
+Template argument size: 4765/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 5/500
+Lua time usage: 0.117/10.000 seconds
+Lua memory usage: 4.48 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  263.678      1 -total
+ 27.75%   73.172      1 Template:Reflist
+ 24.44%   64.431      5 Template:Fix
+ 21.02%   55.417      3 Template:Citation_needed
+ 13.24%   34.919      6 Template:Delink
+ 12.93%   34.094      2 Template:Cite_book
+ 12.37%   32.614     10 Template:Category_handler
+  8.43%   22.241      1 Template:Authority_control
+  7.57%   19.953      1 Template:Other_uses_of
+  5.64%   14.878      1 Template:Clarify
+-->
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:47772-0!canonical and timestamp 20170904225600 and revision id 798311941
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "https://en.wikipedia.org/w/index.php?title=Instruction_set_architecture&amp;oldid=798311941"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks">Categories: <ul><li>Central processing unit</li><li>Instruction processing</li><li>Instruction set architectures</li><li>Microprocessors</li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li>All articles with unsourced statements</li><li>Articles with unsourced statements from October 2012</li><li>All articles lacking reliable references</li><li>Articles lacking reliable references from July 2014</li><li>Wikipedia articles needing clarification from October 2012</li><li>All accuracy disputes</li><li>Articles with disputed statements from October 2012</li><li>Articles with unsourced statements from January 2010</li><li>Wikipedia articles with GND identifiers</li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk">Talk</li><li id="pt-anoncontribs">Contributions</li><li id="pt-createaccount">Create account</li><li id="pt-login">Log in</li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span>Article</span></li>
+							<li id="ca-talk"><span>Talk</span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span>Read</span></li>
+							<li id="ca-edit"><span>Edit</span></li>
+							<li id="ca-history" class="collapsible"><span>View history</span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description">Main page</li><li id="n-contents">Contents</li><li id="n-featuredcontent">Featured content</li><li id="n-currentevents">Current events</li><li id="n-randompage">Random article</li><li id="n-sitesupport">Donate to Wikipedia</li><li id="n-shoplink">Wikipedia store</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help">Help</li><li id="n-aboutsite">About Wikipedia</li><li id="n-portal">Community portal</li><li id="n-recentchanges">Recent changes</li><li id="n-contactpage">Contact page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere">What links here</li><li id="t-recentchangeslinked">Related changes</li><li id="t-upload">Upload file</li><li id="t-specialpages">Special pages</li><li id="t-permalink">Permanent link</li><li id="t-info">Page information</li><li id="t-wikibase">Wikidata item</li><li id="t-cite">Cite this page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book">Create a book</li><li id="coll-download-as-rdf2latex">Download as PDF</li><li id="t-print">Printable version</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar">العربية</li><li class="interlanguage-link interwiki-bg">Български</li><li class="interlanguage-link interwiki-ca">Català</li><li class="interlanguage-link interwiki-cs">Čeština</li><li class="interlanguage-link interwiki-da">Dansk</li><li class="interlanguage-link interwiki-de">Deutsch</li><li class="interlanguage-link interwiki-et">Eesti</li><li class="interlanguage-link interwiki-el">Ελληνικά</li><li class="interlanguage-link interwiki-es">Español</li><li class="interlanguage-link interwiki-fa">فارسی</li><li class="interlanguage-link interwiki-fr">Français</li><li class="interlanguage-link interwiki-ga">Gaeilge</li><li class="interlanguage-link interwiki-ko">한국어</li><li class="interlanguage-link interwiki-id">Bahasa Indonesia</li><li class="interlanguage-link interwiki-it">Italiano</li><li class="interlanguage-link interwiki-he">עברית</li><li class="interlanguage-link interwiki-lv">Latviešu</li><li class="interlanguage-link interwiki-hu">Magyar</li><li class="interlanguage-link interwiki-mk">Македонски</li><li class="interlanguage-link interwiki-mn">Монгол</li><li class="interlanguage-link interwiki-nl">Nederlands</li><li class="interlanguage-link interwiki-ja">日本語</li><li class="interlanguage-link interwiki-no">Norsk</li><li class="interlanguage-link interwiki-pl">Polski</li><li class="interlanguage-link interwiki-pt">Português</li><li class="interlanguage-link interwiki-ro">Română</li><li class="interlanguage-link interwiki-ru">Русский</li><li class="interlanguage-link interwiki-simple">Simple English</li><li class="interlanguage-link interwiki-sk">Slovenčina</li><li class="interlanguage-link interwiki-ckb">کوردی</li><li class="interlanguage-link interwiki-sr">Српски / srpski</li><li class="interlanguage-link interwiki-sv">Svenska</li><li class="interlanguage-link interwiki-th">ไทย</li><li class="interlanguage-link interwiki-tr">Türkçe</li><li class="interlanguage-link interwiki-uk">Українська</li><li class="interlanguage-link interwiki-ur">اردو</li><li class="interlanguage-link interwiki-vi">Tiếng Việt</li><li class="interlanguage-link interwiki-zh">中文</li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link">Edit links</span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 1 September 2017, at 05:05.</li>
+											<li id="footer-info-copyright">Text is available under the Creative Commons Attribution-ShareAlike License;
+additional terms may apply.  By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy">Privacy policy</li>
+											<li id="footer-places-about">About Wikipedia</li>
+											<li id="footer-places-disclaimer">Disclaimers</li>
+											<li id="footer-places-contact">Contact Wikipedia</li>
+											<li id="footer-places-developers">Developers</li>
+											<li id="footer-places-cookiestatement">Cookie statement</li>
+											<li id="footer-places-mobileview">Mobile view</li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.264","walltime":"0.351","ppvisitednodes":{"value":1986,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":76316,"limit":2097152},"templateargumentsize":{"value":4765,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":5,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  263.678      1 -total"," 27.75%   73.172      1 Template:Reflist"," 24.44%   64.431      5 Template:Fix"," 21.02%   55.417      3 Template:Citation_needed"," 13.24%   34.919      6 Template:Delink"," 12.93%   34.094      2 Template:Cite_book"," 12.37%   32.614     10 Template:Category_handler","  8.43%   22.241      1 Template:Authority_control","  7.57%   19.953      1 Template:Other_uses_of","  5.64%   14.878      1 Template:Clarify"]},"scribunto":{"limitreport-timeusage":{"value":"0.117","limit":"10.000"},"limitreport-memusage":{"value":4692606,"limit":52428800}},"cachereport":{"origin":"mw1269","timestamp":"20170904225601","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":93,"wgHostname":"mw1271"});});</script>
+	</body>
+</html>

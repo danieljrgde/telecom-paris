@@ -29,9 +29,15 @@ Hope it helps some lost students haha
 - MODS203: *Data Analysis in Economics I: Collection and Visualization*
 - MODS206: *Data Analysis in Economics II: Applied Econometrics*
 
+🎲 SD projects: 
+
+- SD201: *Mining of large Datasets*
+- SD202: *Databases*
+- SD-TSIA214: *Machine Learning for Text Mining*
+
 💻 Créneau D projects:
 
 - MDI210: *Optimization and Numerical Analysis*
 - MDI220: *Statistics*
 - INF203: *Web Development*
-- SD202: *Databases*
+- INF280: *Programming Contest Training*

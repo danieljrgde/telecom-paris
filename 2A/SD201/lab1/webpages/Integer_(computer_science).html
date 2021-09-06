@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Integer (computer science) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Integer_(computer_science)","wgTitle":"Integer (computer science)","wgCurRevisionId":801051444,"wgRevisionId":801051444,"wgArticleId":14794,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Data types","Computer arithmetic","Primitive types"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Integer_(computer_science)","wgRelevantArticleId":14794,"wgRequestId":"WcJb@QpAMFkAAFoMniMAAABD","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":false,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q729138","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.30.0-wmf.18"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Integer_(computer_science)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Integer_(computer_science)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Integer_(computer_science)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Integer_(computer_science)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Integer_computer_science rootpage-Integer_computer_science skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Integer (computer science)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					navigation, 					search
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>In computer science, an <b>integer</b> is a datum of <b>integral data type</b>, a <a href="Data_type.html" title="Data type">data type</a> that represents some range of mathematical integers. Integral data types may be of different sizes and may or may not be allowed to contain negative values. Integers are commonly represented in a computer as a group of binary digits (bits). The size of the grouping varies so the set of integer sizes available varies between different types of computers. Computer hardware, including <a href="Virtual_machine.html" title="Virtual machine">virtual machines</a>, nearly always provide a way to represent a processor register or memory address as an integer.</p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a><span class="tocnumber">1</span> <span class="toctext">Value and representation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a><span class="tocnumber">2</span> <span class="toctext">Common integral data types</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a><span class="tocnumber">2.1</span> <span class="toctext">Bytes and octets</span></a></li>
+<li class="toclevel-2 tocsection-4"><a><span class="tocnumber">2.2</span> <span class="toctext">Words</span></a></li>
+<li class="toclevel-2 tocsection-5"><a><span class="tocnumber">2.3</span> <span class="toctext">Short integer</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a><span class="tocnumber">2.3.1</span> <span class="toctext">Common short integer sizes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-7"><a><span class="tocnumber">2.4</span> <span class="toctext">Long integer</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a><span class="tocnumber">2.4.1</span> <span class="toctext">Common long integer sizes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a><span class="tocnumber">2.5</span> <span class="toctext">Long long</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-11"><a><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-12"><a><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Value_and_representation">Value and representation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <i>value</i> of an item with an integral type is the mathematical integer that it corresponds to. Integral types may be <i>unsigned</i> (capable of representing only non-negative integers) or <i>signed</i> (capable of representing negative integers as well).<sup id="cite_ref-1" class="reference">[1]</sup></p>
+<p>An integer value is typically specified in the <a href="Source_code.html" title="Source code">source code</a> of a program as a sequence of digits optionally prefixed with + or −. Some programming languages allow other notations, such as hexadecimal (base 16) or octal (base 8). Some programming languages also permit digit group separators.<sup id="cite_ref-2" class="reference">[2]</sup></p>
+<p>The <i>internal representation</i> of this datum is the way the value is stored in the computer's memory. Unlike mathematical integers, a typical datum in a computer has some minimal and maximum possible value.</p>
+<p>The most common representation of a positive integer is a string of bits, using the binary numeral system. The order of the memory bytes storing the bits varies; see endianness. The <i>width</i> or <i>precision</i> of an integral type is the number of bits in its representation. An integral type with <i>n</i> bits can encode 2<sup><i>n</i></sup> numbers; for example an unsigned type typically represents the non-negative values 0 through 2<sup><i>n</i></sup>−1. Other encodings of integer values to bit patterns are sometimes used, for example Binary-coded decimal or Gray code, or as printed character codes such as ASCII.</p>
+<p>There are four well-known ways to represent signed numbers in a binary computing system. The most common is two's complement, which allows a signed integral type with <i>n</i> bits to represent numbers from −2<sup>(<i>n</i>−1)</sup> through 2<sup>(<i>n</i>−1)</sup>−1. Two's complement arithmetic is convenient because there is a perfect one-to-one correspondence between representations and values (in particular, no separate +0 and −0), and because addition, subtraction and multiplication do not need to distinguish between signed and unsigned types. Other possibilities include offset binary, sign-magnitude, and ones' complement.</p>
+<p>Some computer languages define integer sizes in a machine-independent way; others have varying definitions depending on the underlying processor word size. Not all language implementations define variables of all integer sizes, and defined sizes may not even be distinct in a particular implementation. An integer in one <a href="Programming_language.html" title="Programming language">programming language</a> may be a different size in a different language or on a different processor.</p>
+<h2><span class="mw-headline" id="Common_integral_data_types">Common integral data types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<table class="wikitable">
+<tr>
+<th rowspan="2">Bits</th>
+<th rowspan="2">Name</th>
+<th rowspan="2">Range (assuming two's complement for signed)</th>
+<th rowspan="2">Decimal Digits (approx.)</th>
+<th rowspan="2">Uses</th>
+<th scope="col" colspan="5">Implementations</th>
+</tr>
+<tr>
+<th><a href="C_(programming_language).html" title="C (programming language)">C</a>/<a href="C++.html" title="C++">C++</a></th>
+<th>C#</th>
+<th>Pascal and Delphi</th>
+<th><a href="Java_(programming_language).html" title="Java (programming language)">Java</a></th>
+<th>SQL<sup id="ref_a_grp_notesql_1" class="reference">[a]</sup></th>
+</tr>
+<tr>
+<td rowspan="2">
+<div align="right">4</div>
+</td>
+<td rowspan="2">nibble, semioctet</td>
+<td><i>Signed:</i> From −8 to 7, from −(2<sup>3</sup>) to 2<sup>3</sup>&#160;−&#160;1</td>
+<td>
+<div align="right">1</div>
+</td>
+<td rowspan="2">Binary-coded decimal, single decimal digit representation.</td>
+<td rowspan="2">n/a</td>
+<td rowspan="2">n/a</td>
+<td rowspan="2">n/a</td>
+<td rowspan="2">n/a</td>
+<td rowspan="2">n/a</td>
+</tr>
+<tr>
+<td><i>Unsigned:</i> From 0 to 15, which equals 2<sup>4</sup>&#160;−&#160;1</td>
+<td>
+<div align="right">2</div>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<div align="right">8</div>
+</td>
+<td rowspan="2">byte, octet</td>
+<td><i>Signed:</i> From −128 to 127, from −(2<sup>7</sup>) to 2<sup>7</sup>&#160;−&#160;1</td>
+<td>
+<div align="right">3</div>
+</td>
+<td rowspan="2">ASCII characters</td>
+<td><tt>int8_t</tt>, <tt>char</tt><sup id="ref_b_grp_notesc_8_char" class="reference">[b]</sup></td>
+<td><tt>sbyte</tt></td>
+<td><tt>Shortint</tt></td>
+<td><tt>byte</tt></td>
+<td><tt>tinyint</tt></td>
+</tr>
+<tr>
+<td><i>Unsigned:</i> From 0 to 255, which equals 2<sup>8</sup>&#160;−&#160;1</td>
+<td>
+<div align="right">3</div>
+</td>
+<td><tt>uint8_t</tt>, <tt>char</tt><sup id="ref_b_grp_notesc_8_char" class="reference">[b]</sup></td>
+<td><tt>byte</tt></td>
+<td><tt>Byte</tt></td>
+<td>n/a</td>
+<td><tt>unsigned tinyint</tt></td>
+</tr>
+<tr>
+<td rowspan="2">
+<div align="right">16</div>
+</td>
+<td rowspan="2">halfword, word, short</td>
+<td><i>Signed:</i> From −32,768 to 32,767, from −(2<sup>15</sup>) to 2<sup>15</sup>&#160;−&#160;1</td>
+<td>
+<div align="right">5</div>
+</td>
+<td rowspan="2">UCS-2 characters</td>
+<td><tt>int16_t</tt>, <tt>short</tt><sup id="ref_b_grp_notesc_16_short" class="reference">[b]</sup>, <tt>int</tt><sup id="ref_b_grp_notesc_16_int" class="reference">[b]</sup></td>
+<td><tt>short</tt></td>
+<td><tt>Smallint</tt></td>
+<td><tt>short</tt></td>
+<td><tt>smallint</tt></td>
+</tr>
+<tr>
+<td><i>Unsigned:</i> From 0 to 65,535, which equals 2<sup>16</sup>&#160;−&#160;1</td>
+<td>
+<div align="right">5</div>
+</td>
+<td><tt>uint16_t</tt></td>
+<td><tt>ushort</tt></td>
+<td><tt>Word</tt></td>
+<td><tt>char<sup id="ref_d_grp_notejava_1" class="reference">[d]</sup></tt></td>
+<td><tt>unsigned smallint</tt></td>
+</tr>
+<tr>
+<td rowspan="2">
+<div align="right">32</div>
+</td>
+<td rowspan="2">word, long, doubleword, longword, int</td>
+<td><i>Signed:</i> From −2,147,483,648 to 2,147,483,647, from −(2<sup>31</sup>) to 2<sup>31</sup>&#160;−&#160;1</td>
+<td>
+<div align="right">10</div>
+</td>
+<td rowspan="2">UTF-32 characters, True color with alpha, FourCC, pointers in 32-bit computing</td>
+<td><tt>int32_t</tt>, <tt>int</tt><sup id="ref_b_grp_notesc_32_int" class="reference">[b]</sup>, <tt>long</tt><sup id="ref_b_grp_notesc_32_long" class="reference">[b]</sup></td>
+<td><tt>int</tt></td>
+<td><tt>LongInt</tt>; <tt>Integer</tt><sup id="ref_c_grp_notedelphi_signed" class="reference">[c]</sup></td>
+<td><tt>int</tt></td>
+<td><tt>int</tt></td>
+</tr>
+<tr>
+<td><i>Unsigned:</i> From 0 to 4,294,967,295, which equals 2<sup>32</sup>&#160;−&#160;1</td>
+<td>
+<div align="right">10</div>
+</td>
+<td><tt>uint32_t</tt></td>
+<td><tt>uint</tt></td>
+<td><tt>LongWord</tt>; <tt>DWord</tt>; <tt>Cardinal</tt><sup id="ref_c_grp_notedelphi_unsigned" class="reference">[c]</sup></td>
+<td>n/a</td>
+<td><tt>unsigned int</tt></td>
+</tr>
+<tr>
+<td rowspan="2">
+<div align="right">64</div>
+</td>
+<td rowspan="2">word, doubleword, longword, long long, quad, quadword, qword, int64</td>
+<td><i>Signed:</i> From −9,223,372,036,854,775,808 to 9,223,372,036,854,775,807, from −(2<sup>63</sup>) to 2<sup>63</sup>&#160;−&#160;1</td>
+<td>
+<div align="right">19</div>
+</td>
+<td rowspan="2">Time (milliseconds since the Unix epoch), pointers in 64-bit computing</td>
+<td><tt>int64_t</tt>, <tt>long</tt><sup id="ref_b_grp_notesc_64_long" class="reference">[b]</sup>, <tt>long long</tt><sup id="ref_b_grp_notesc_64_long_long" class="reference">[b]</sup></td>
+<td><tt>long</tt></td>
+<td><tt>Int64</tt></td>
+<td><tt>long</tt></td>
+<td><tt>bigint</tt></td>
+</tr>
+<tr>
+<td><i>Unsigned:</i> From 0 to 18,446,744,073,709,551,615, which equals 2<sup>64</sup>&#160;−&#160;1</td>
+<td>
+<div align="right">20</div>
+</td>
+<td><tt>uint64_t</tt></td>
+<td><tt>ulong</tt></td>
+<td><tt>UInt64</tt>; <tt>QWord</tt></td>
+<td>n/a</td>
+<td><tt>unsigned bigint</tt></td>
+</tr>
+<tr>
+<td rowspan="2">
+<div align="right">128</div>
+</td>
+<td rowspan="2">octaword, double quadword</td>
+<td><i>Signed:</i> From −170,141,183,460,469,231,731,687,303,715,884,105,728 to 170,141,183,460,469,231,731,687,303,715,884,105,727, from −(2<sup>127</sup>) to 2<sup>127</sup>&#160;−&#160;1</td>
+<td>
+<div align="right">39</div>
+</td>
+<td rowspan="2">Complicated scientific calculations
+<p>IPv6 addresses GUIDs</p>
+</td>
+<td rowspan="2">C: only available as non-standard compiler-specific extension</td>
+<td rowspan="2">n/a</td>
+<td rowspan="2">n/a</td>
+<td rowspan="2">n/a</td>
+<td rowspan="2">n/a</td>
+</tr>
+<tr>
+<td><i>Unsigned:</i> From 0 to 340,282,366,920,938,463,463,374,607,431,768,211,455, which equals 2<sup>128</sup>&#160;−&#160;1</td>
+<td>
+<div align="right">39</div>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<div align="right"><i>n</i></div>
+</td>
+<td rowspan="2"><i>n</i>-bit integer<br />
+(general case)</td>
+<td><i>Signed:</i> (−(2<sup><i>n</i>−1</sup>)) to (2<sup><i>n</i>−1</sup>&#160;−&#160;1)</td>
+<td colspan="2">⌈(<i>n</i>&#160;−&#160;1) log<sub>10</sub>&#160;2⌉</td>
+<td colspan="5">Ada: <tt>range -2**(n-1)..2**(n-1)-1</tt></td>
+</tr>
+<tr>
+<td><i>Unsigned:</i> 0 to (2<sup><i>n</i></sup>−1)</td>
+<td colspan="2">⌈<i>n</i> log<sub>10</sub>&#160;2⌉</td>
+<td colspan="5">Ada: <tt>range 0..2**n-1</tt>, <tt>mod 2**n</tt>; standard libraries' or third-party arbitrary arithmetic libraries' BigDecimal or Decimal classes in many languages such as Python, C++, etc.</td>
+</tr>
+</table>
+<div style="">
+<ol class="references" style="list-style-type:lower-alpha;">
+<li id="cnote_a_grp_notesql"><b>^</b> Not all SQL dialects have unsigned datatypes.<sup id="cite_ref-SybDT_3-0" class="reference">[3]</sup><sup id="cite_ref-MySQLDT_4-0" class="reference">[4]</sup></li>
+<li id="cnote_b_grp_notesc">The sizes of <tt>char</tt>, <tt>short</tt>, <tt>int</tt>, <tt>long</tt> and <tt>long long</tt> in C/C++ are dependent upon the implementation of the language.</li>
+<li id="cnote_c_grp_notedelphi">The sizes of Delphi's <tt>Integer</tt> and <tt>Cardinal</tt> are not guaranteed, varying from platform to platform; usually defined as <tt>LongInt</tt> and <tt>LongWord</tt> respectively.</li>
+<li id="cnote_d_grp_notejava"><b>^</b> Java does not directly support arithmetic on <tt>char</tt> types. The results must be cast back into <tt>char</tt> from an <tt>int</tt>.</li>
+</ol>
+</div>
+<p>Different CPUs support different integral data types. Typically, hardware will support both signed and unsigned types, but only a small, fixed set of widths.</p>
+<p>The table above lists integral type widths that are supported in hardware by common processors. High level programming languages provide more possibilities. It is common to have a 'double width' integral type that has twice as many bits as the biggest hardware-supported type. Many languages also have <i>bit-field</i> types (a specified number of bits, usually constrained to be less than the maximum hardware-supported width) and <i>range</i> types (that can represent only the integers in a specified range).</p>
+<p>Some languages, such as Lisp, Smalltalk, REXX, Haskell, <a href="Python_(programming_language).html" title="Python (programming language)">Python</a>, and Perl 6 support <i>arbitrary precision</i> integers (also known as <i>infinite precision integers</i> or <i>bignums</i>). Other languages that do not support this concept as a top-level construct may have libraries available to represent very large numbers using arrays of smaller variables, such as Java's <tt>BigInteger</tt> class or Perl 5's "<tt>bigint</tt>" package.<sup id="cite_ref-5" class="reference">[5]</sup> These use as much of the computer's memory as is necessary to store the numbers; however, a computer has only a finite amount of storage, so they too can only represent a finite subset of the mathematical integers. These schemes support very large numbers, for example one kilobyte of memory could be used to store numbers up to 2466 decimal digits long.</p>
+<p>A Boolean or Flag type is a type that can represent only two values: 0 and 1, usually identified with <i>false</i> and <i>true</i> respectively. This type can be stored in memory using a single bit, but is often given a full byte for convenience of addressing and speed of access.</p>
+<p>A four-bit quantity is known as a <i>nibble</i> (when eating, being smaller than a <i>bite</i>) or <i>nybble</i> (being a pun on the form of the word <i>byte</i>). One nibble corresponds to one digit in hexadecimal and holds one digit or a sign code in binary-coded decimal.</p>
+<h3><span class="mw-headline" id="Bytes_and_octets">Bytes and octets</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Byte</div>
+<p>The term <i>byte</i> initially meant 'the smallest addressable unit of memory'. In the past, 5-, 6-, 7-, 8-, and 9-bit bytes have all been used. There have also been computers that could address individual bits ('bit-addressed machine'), or that could only address 16- or 32-bit quantities ('word-addressed machine'). The term <i>byte</i> was usually not used at all in connection with bit- and word-addressed machines.</p>
+<p>The term <i>octet</i> always refers to an 8-bit quantity. It is mostly used in the field of computer networking, where computers with different byte widths might have to communicate.</p>
+<p>In modern usage <i>byte</i> almost invariably means eight bits, since all other sizes have fallen into disuse; thus <i>byte</i> has come to be synonymous with <i>octet</i>.</p>
+<h3><span class="mw-headline" id="Words">Words</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Word (data type)</div>
+<p>The term 'word' is used for a small group of bits that are handled simultaneously by processors of a particular architecture. The size of a word is thus CPU-specific. Many different word sizes have been used, including 6-, 8-, 12-, 16-, 18-, 24-, 32-, 36-, 39-, 40-, 48-, 60-, and 64-bit. Since it is architectural, the size of a <i>word</i> is usually set by the first CPU in a family, rather than the characteristics of a later compatible CPU. The meanings of terms derived from <i>word</i>, such as <i>longword</i>, <i>doubleword</i>, <i>quadword</i>, and <i>halfword</i>, also vary with the CPU and OS.<sup id="cite_ref-agnerfog_6-0" class="reference">[6]</sup></p>
+<p>Practically all new desktop processors are capable of using 64-bit words, though embedded processors with 8- and 16-bit word size are still common. The 36-bit word length was common in the early days of computers.</p>
+<p>One important cause of non-portability of software is the incorrect assumption that all computers have the same word size as the computer used by the programmer. For example, if a programmer using the C language incorrectly declares as <tt>int</tt> a variable that will be used to store values greater than 2<sup>15</sup>−1, the program will fail on computers with 16-bit integers. That variable should have been declared as <tt>long</tt>, which has at least 32 bits on any computer. Programmers may also incorrectly assume that a pointer can be converted to an integer without loss of information, which may work on (some) 32-bit computers, but fail on 64-bit computers with 64-bit pointers and 32-bit integers.</p>
+<h3><span class="mw-headline" id="Short_integer">Short integer</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>A <i>short integer</i> can represent a whole number that may take less storage, while having a smaller range, compared with a standard integer on the same machine.</p>
+<p>In <a href="C_(programming_language).html" title="C (programming language)">C</a>, it is denoted by <tt>short</tt>. It is required to be at least 16 bits, and is often smaller than a standard integer, but this is not required.<sup id="cite_ref-c99_7-0" class="reference">[7]</sup><sup id="cite_ref-drdobbsinteger_8-0" class="reference">[8]</sup> A conforming program can assume that it can safely store values between −(2<sup>15</sup>−1)<sup id="cite_ref-c-std-6.2.6.2p2_9-0" class="reference">[9]</sup> and 2<sup>15</sup>−1,<sup id="cite_ref-c-std-5.2.4.2.1_10-0" class="reference">[10]</sup> but it may not assume that the range isn't larger. In <a href="Java_(programming_language).html" title="Java (programming language)">Java</a>, a <tt>short</tt> is <i>always</i> a 16-bit integer. In the Windows API, the datatype <tt>SHORT</tt> is defined as a 16-bit signed integer on all machines.<sup id="cite_ref-agnerfog_6-1" class="reference">[6]</sup></p>
+<h4><span class="mw-headline" id="Common_short_integer_sizes">Common short integer sizes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h4>
+<table class="wikitable">
+<tr>
+<th><a href="Programming_language.html" title="Programming language">Programming language</a></th>
+<th>Platforms</th>
+<th>Data type name</th>
+<th>Signedness</th>
+<th>Storage in bytes</th>
+<th>Minimum value</th>
+<th>Maximum value</th>
+</tr>
+<tr>
+<td rowspan="2"><a href="C_(programming_language).html" title="C (programming language)">C</a> and <a href="C++.html" title="C++">C++</a></td>
+<td rowspan="2">common implementations</td>
+<td><tt>short</tt></td>
+<td>signed</td>
+<td>
+<div align="right">2</div>
+</td>
+<td>
+<div align="right">−32,767</div>
+<sup id="cite_ref-11" class="reference">[notes 1]</sup></td>
+<td>
+<div align="right">+32,767</div>
+</td>
+</tr>
+<tr>
+<td><tt>unsigned short</tt></td>
+<td>unsigned</td>
+<td>
+<div align="right">2</div>
+</td>
+<td>
+<div align="right">0</div>
+</td>
+<td>
+<div align="right">65,535</div>
+</td>
+</tr>
+<tr>
+<td rowspan="2">C#</td>
+<td rowspan="2">.NET CLR/CTS</td>
+<td><tt>short</tt></td>
+<td>signed</td>
+<td>
+<div align="right">2</div>
+</td>
+<td>
+<div align="right">−32,768</div>
+</td>
+<td>
+<div align="right">+32,767</div>
+</td>
+</tr>
+<tr>
+<td><tt>ushort</tt></td>
+<td>unsigned</td>
+<td>
+<div align="right">2</div>
+</td>
+<td>
+<div align="right">0</div>
+</td>
+<td>
+<div align="right">65,535</div>
+</td>
+</tr>
+<tr>
+<td><a href="Java_(programming_language).html" title="Java (programming language)">Java</a></td>
+<td>Java platform</td>
+<td><tt>short</tt></td>
+<td>signed</td>
+<td>
+<div align="right">2</div>
+</td>
+<td>
+<div align="right">−32,768</div>
+</td>
+<td>
+<div align="right">+32,767</div>
+</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Long_integer">Long integer</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>A <i>long integer</i> can represent a whole integer whose range is greater than or equal to that of a standard integer on the same machine.</p>
+<p>In <a href="C_(programming_language).html" title="C (programming language)">C</a>, it is denoted by <tt>long</tt>. It is required to be at least 32 bits, and may or may not be larger than a standard integer. A conforming program can assume that it can safely store values between −(2<sup>31</sup>−1)<sup id="cite_ref-c-std-6.2.6.2p2_9-2" class="reference">[9]</sup> and 2<sup>31</sup>−1,<sup id="cite_ref-c-std-5.2.4.2.1_10-1" class="reference">[10]</sup> but it may not assume that the range isn't larger.</p>
+<h4><span class="mw-headline" id="Common_long_integer_sizes">Common long integer sizes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h4>
+<table class="wikitable">
+<tr>
+<th><a href="Programming_language.html" title="Programming language">Programming language</a></th>
+<th>Approval Type</th>
+<th>Platforms</th>
+<th>Data type name</th>
+<th>Storage in bytes</th>
+<th>Signed range</th>
+<th>Unsigned range</th>
+</tr>
+<tr>
+<td>C ISO/ANSI C99</td>
+<td>International Standard</td>
+<td><a href="Unix.html" title="Unix">Unix</a>,16/32-bit systems<sup id="cite_ref-agnerfog_6-2" class="reference">[6]</sup><br />
+Windows,16/32/64-bit systems<sup id="cite_ref-agnerfog_6-3" class="reference">[6]</sup></td>
+<td><tt>long</tt><sup>†</sup></td>
+<td>4<br />
+(minimum requirement 4)</td>
+<td>−2,147,483,647 to +2,147,483,647</td>
+<td>0 to 4,294,967,295<br />
+(minimum requirement)</td>
+</tr>
+<tr>
+<td>C ISO/ANSI C99</td>
+<td>International Standard</td>
+<td><a href="Unix.html" title="Unix">Unix</a>,<br />
+64-bit systems<sup id="cite_ref-agnerfog_6-4" class="reference">[6]</sup><sup id="cite_ref-drdobbsinteger_8-1" class="reference">[8]</sup></td>
+<td><tt>long</tt><sup>†</sup></td>
+<td>8<br />
+(minimum requirement 4)</td>
+<td>−9,223,372,036,854,775,807 to +9,223,372,036,854,775,807</td>
+<td>0 to 18,446,744,073,709,551,615</td>
+</tr>
+<tr>
+<td><a href="C++.html" title="C++">C++</a> ISO/ANSI</td>
+<td>International Standard</td>
+<td><a href="Unix.html" title="Unix">Unix</a>, Windows,<br />
+16/32-bit system</td>
+<td><tt>long</tt><sup>†</sup></td>
+<td>4 <sup id="cite_ref-12" class="reference">[11]</sup><br />
+(minimum requirement 4)</td>
+<td>−2,147,483,648 to +2,147,483,647<br /></td>
+<td>0 to 4,294,967,295<br />
+(minimum requirement)</td>
+</tr>
+<tr>
+<td>C++/CLI</td>
+<td>International Standard<br />
+ECMA-372</td>
+<td><a href="Unix.html" title="Unix">Unix</a>, Windows,<br />
+16/32-bit systems</td>
+<td><tt>long</tt><sup>†</sup></td>
+<td>4 <sup id="cite_ref-13" class="reference">[12]</sup><br />
+(minimum requirement 4)</td>
+<td>−2,147,483,648 to +2,147,483,647<br /></td>
+<td>0 to 4,294,967,295<br />
+(minimum requirement)</td>
+</tr>
+<tr>
+<td>VB</td>
+<td>Company Standard</td>
+<td>Windows</td>
+<td><tt>Long</tt></td>
+<td>4 <sup id="cite_ref-14" class="reference">[13]</sup></td>
+<td>−2,147,483,648 to +2,147,483,647</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>VBA</td>
+<td>Company Standard</td>
+<td>Windows, Mac OS X</td>
+<td><tt>Long</tt></td>
+<td>4 <sup id="cite_ref-15" class="reference">[14]</sup></td>
+<td>−2,147,483,648 to +2,147,483,647</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>SQL Server</td>
+<td>Company Standard</td>
+<td>Windows</td>
+<td><tt>BigInt</tt></td>
+<td>8</td>
+<td>−9,223,372,036,854,775,808 to +9,223,372,036,854,775,807</td>
+<td>0 to 18,446,744,073,709,551,615</td>
+</tr>
+<tr>
+<td>C#/ VB.NET</td>
+<td>ECMA International Standard</td>
+<td>Microsoft .NET</td>
+<td><tt>long</tt> or <tt>Int64</tt></td>
+<td>8</td>
+<td>−9,223,372,036,854,775,808 to +9,223,372,036,854,775,807</td>
+<td>0 to 18,446,744,073,709,551,615</td>
+</tr>
+<tr>
+<td><a href="Java_(programming_language).html" title="Java (programming language)">Java</a></td>
+<td>International/Company Standard</td>
+<td>Java platform</td>
+<td><tt>long</tt></td>
+<td>8</td>
+<td>−9,223,372,036,854,775,808 to +9,223,372,036,854,775,807</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Pascal</td>
+<td>&#160;?</td>
+<td>Windows, UNIX</td>
+<td><tt>int64</tt></td>
+<td>8</td>
+<td>−9,223,372,036,854,775,808 to +9,223,372,036,854,775,807</td>
+<td>0 to 18,446,744,073,709,551,615(Qword type)</td>
+</tr>
+</table>
+<p><sup>†</sup> the term <tt>long int</tt> is equivalent<sup id="cite_ref-16" class="reference">[15]</sup></p>
+<h3><span class="mw-headline" id="Long_long">Long long</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>In the C99 version of the <a href="C_(programming_language).html" title="C (programming language)">C programming language</a> and the C++11 version of <a href="C++.html" title="C++">C++</a>, a <code>long long</code> type is supported that has double the minimum capacity of the standard <code>long</code>. This type is not supported by compilers that require C code to be compliant with the previous C++ standard, C++03, because the <tt>long long</tt> type did not exist in C++03. For an ANSI/ISO compliant compiler, the minimum requirements for the specified ranges, that is, −(2<sup>63</sup>−1)<sup id="cite_ref-c-std-6.2.6.2p2_9-3" class="reference">[9]</sup> to 2<sup>63</sup>−1 for signed and 0 to 2<sup>64</sup>−1 for unsigned,<sup id="cite_ref-c-std-5.2.4.2.1_10-2" class="reference">[10]</sup> must be fulfilled; however, extending this range is permitted.<sup id="cite_ref-17" class="reference">[16]</sup><sup id="cite_ref-18" class="reference">[17]</sup> This can be an issue when exchanging code and data between platforms, or doing direct hardware access. Thus, there are several sets of headers providing platform independent exact width types. The C standard library provides <i>stdint.h</i>; this was introduced in C99 and C++11.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Signed number representations</li>
+<li>Binary-coded decimal, a representation of integers commonly used in mainframe financial applications and in databases</li>
+<li>Integer overflow</li>
+<li>C data types</li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap">
+<ol class="references">
+<li id="cite_note-11"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">The ISO C standard allows implementations to reserve the value with sign bit 1 and all other bits 0 (for sign–magnitude and two's complement representation) or with all bits 1 (for ones' complement) for use as a "trap" value, used to indicate (for example) an overflow.<sup id="cite_ref-c-std-6.2.6.2p2_9-1" class="reference">[9]</sup></span></li>
+</ol>
+</div>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Cheever, Eric. "Representation of numbers". Swarthmore College<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-09-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.aufirst=Eric&amp;rft.aulast=Cheever&amp;rft.btitle=Representation+of+numbers&amp;rft.genre=unknown&amp;rft.pub=Swarthmore+College&amp;rft_id=http%3A%2F%2Fwww.swarthmore.edu%2FNatSci%2Fecheeve1%2FRef%2FBinaryMath%2FNumSys.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Madhusudhan Konda (2011-09-02). "A look at Java 7's new features - O'Reilly Radar". Radar.oreilly.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-10-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.au=Madhusudhan+Konda&amp;rft.btitle=A+look+at+Java+7%27s+new+features+-+O%27Reilly+Radar&amp;rft.date=2011-09-02&amp;rft.genre=unknown&amp;rft.pub=Radar.oreilly.com&amp;rft_id=http%3A%2F%2Fradar.oreilly.com%2F2011%2F09%2Fjava7-features.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-SybDT-3"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"Sybase Adaptive Server Enterprise 15.5&#160;: Exact Numeric Datatypes".</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.btitle=Sybase+Adaptive+Server+Enterprise+15.5+%3A+Exact+Numeric+Datatypes&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Finfocenter.sybase.com%2Fhelp%2Findex.jsp%3Ftopic%3D%2Fcom.sybase.infocenter.dc36271.1550%2Fhtml%2Fblocks%2Fblocks20.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-MySQLDT-4"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"MySQL 5.6 Numeric Datatypes".</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.btitle=MySQL+5.6+Numeric+Datatypes&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.6%2Fen%2Fnumeric-types.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"BigInteger (Java Platform SE 6)". Oracle<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-09-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.btitle=BigInteger+%28Java+Platform+SE+6%29&amp;rft.genre=unknown&amp;rft.pub=Oracle&amp;rft_id=http%3A%2F%2Fdownload.oracle.com%2Fjavase%2F6%2Fdocs%2Fapi%2Fjava%2Fmath%2FBigInteger.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-agnerfog-6"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a> <a><sup><i><b>c</b></i></sup></a> <a><sup><i><b>d</b></i></sup></a> <a><sup><i><b>e</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Fog, Agner (2010-02-16). "Calling conventions for different C++ compilers and operating systems: Chapter 3, Data Representation" <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">2010-08-30</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.aufirst=Agner&amp;rft.aulast=Fog&amp;rft.btitle=Calling+conventions+for+different+C%2B%2B+compilers+and+operating+systems%3A+Chapter+3%2C+Data+Representation&amp;rft.date=2010-02-16&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.agner.org%2Foptimize%2Fcalling_conventions.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-c99-7"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Giguere, Eric (1987-12-18). "The ANSI Standard: A Summary for the C Programmer"<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-09-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.aufirst=Eric&amp;rft.aulast=Giguere&amp;rft.btitle=The+ANSI+Standard%3A+A+Summary+for+the+C+Programmer&amp;rft.date=1987-12-18&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ericgiguere.com%2Farticles%2Fansi-c-summary.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-drdobbsinteger-8"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Meyers, Randy (2000-12-01). "The New C: Integers in C99, Part 1". drdobbs.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-09-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.aufirst=Randy&amp;rft.aulast=Meyers&amp;rft.btitle=The+New+C%3A+Integers+in+C99%2C+Part+1&amp;rft.date=2000-12-01&amp;rft.genre=unknown&amp;rft.pub=drdobbs.com&amp;rft_id=http%3A%2F%2Fwww.drdobbs.com%2F184401323&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-c-std-6.2.6.2p2-9"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a> <a><sup><i><b>c</b></i></sup></a> <a><sup><i><b>d</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">"ISO/IEC 9899:201x" <span style="font-size:85%;">(PDF)</span>. open-std.org. section 6.2.6.2, paragraph 2<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-06-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.btitle=ISO%2FIEC+9899%3A201x&amp;rft.genre=unknown&amp;rft.pages=section+6.2.6.2%2C+paragraph+2&amp;rft.pub=open-std.org&amp;rft_id=http%3A%2F%2Fwww.open-std.org%2FJTC1%2FSC22%2FWG14%2Fwww%2Fdocs%2Fn1570.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-c-std-5.2.4.2.1-10"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a> <a><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">"ISO/IEC 9899:201x" <span style="font-size:85%;">(PDF)</span>. open-std.org. section 5.2.4.2.1<span class="reference-accessdate">. Retrieved <span class="nowrap">2016-06-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.btitle=ISO%2FIEC+9899%3A201x&amp;rft.genre=unknown&amp;rft.pages=section+5.2.4.2.1&amp;rft.pub=open-std.org&amp;rft_id=http%3A%2F%2Fwww.open-std.org%2FJTC1%2FSC22%2FWG14%2Fwww%2Fdocs%2Fn1570.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"Fundamental types in C++". cppreference.com<span class="reference-accessdate">. Retrieved <span class="nowrap">5 December</span> 2010</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.btitle=Fundamental+types+in+C%2B%2B&amp;rft.genre=unknown&amp;rft.pub=cppreference.com&amp;rft_id=http%3A%2F%2Fcppreference.com%2Fwiki%2Flanguage%2Ftypes&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"Chapter 8.6.2 on page 12" <span style="font-size:85%;">(PDF)</span>. ecma-international.org.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.btitle=Chapter+8.6.2+on+page+12&amp;rft.genre=unknown&amp;rft.pub=ecma-international.org&amp;rft_id=http%3A%2F%2Fwww.ecma-international.org%2Fpublications%2Ffiles%2FECMA-ST%2FECMA-372.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">VB 6.0 help file</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"The Integer, Long, and Byte Data Types (VBA)". microsoft.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2006-12-19</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.btitle=The+Integer%2C+Long%2C+and+Byte+Data+Types+%28VBA%29&amp;rft.genre=unknown&amp;rft.pub=microsoft.com&amp;rft_id=http%3A%2F%2Fmsdn2.microsoft.com%2Fen-us%2Flibrary%2Faa164754%28office.10%29.aspx&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"ISO/IEC 9899:201x" <span style="font-size:85%;">(PDF)</span>. open-std.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2013-03-27</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.btitle=ISO%2FIEC+9899%3A201x&amp;rft.genre=unknown&amp;rft.pub=open-std.org&amp;rft_id=http%3A%2F%2Fwww.open-std.org%2FJTC1%2FSC22%2FWG14%2Fwww%2Fdocs%2Fn1570.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Giguere, Eric (December 18, 1987). "The ANSI Standard: A Summary for the C Programmer"<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-09-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.aufirst=Eric&amp;rft.aulast=Giguere&amp;rft.btitle=The+ANSI+Standard%3A+A+Summary+for+the+C+Programmer&amp;rft.date=1987-12-18&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.ericgiguere.com%2Farticles%2Fansi-c-summary.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"American National Standard Programming Language C specifies the syntax and semantics of programs written in the C programming language."<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-09-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AInteger+%28computer+science%29&amp;rft.btitle=American+National+Standard+Programming+Language+C+specifies+the+syntax+and+semantics+of+programs+written+in+the+C+programming+language.&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fflash-gordon.me.uk%2Fansi.c.txt&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Data_types" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="Data_types" style="font-size:114%;margin:0 4em"><a href="Data_type.html" title="Data type">Data types</a></div>
+</th>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Uninterpreted</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Bit</li>
+<li>Byte</li>
+<li>Trit</li>
+<li>Tryte</li>
+<li>Word</li>
+<li>Bit array</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Numeric</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Arbitrary-precision or bignum</li>
+<li>Complex</li>
+<li>Decimal</li>
+<li>Fixed point</li>
+<li>Floating point
+<ul>
+<li>Double precision</li>
+<li>Extended precision</li>
+<li>Half precision</li>
+<li>Long double</li>
+<li>Minifloat</li>
+<li>Octuple precision</li>
+<li>Quadruple precision</li>
+<li>Single precision</li>
+</ul>
+</li>
+<li>Integer
+<ul>
+<li>signedness</li>
+</ul>
+</li>
+<li>Interval</li>
+<li>Rational</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%"><a href="Pointer_(computer_programming).html" title="Pointer (computer programming)">Pointer</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Memory_address.html" title="Memory address">Address</a>
+<ul>
+<li>physical</li>
+<li>virtual</li>
+</ul>
+</li>
+<li>Reference</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Text</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Character</li>
+<li>String
+<ul>
+<li>null-terminated</li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Composite</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Algebraic data type
+<ul>
+<li>generalized</li>
+</ul>
+</li>
+<li>Array</li>
+<li>Associative array</li>
+<li>Class</li>
+<li>Dependent</li>
+<li>Equality</li>
+<li>Inductive</li>
+<li>List</li>
+<li><a href="Object_(computer_science).html" title="Object (computer science)">Object</a>
+<ul>
+<li>metaobject</li>
+</ul>
+</li>
+<li>Option type</li>
+<li>Product</li>
+<li>Record</li>
+<li>Set</li>
+<li>Union
+<ul>
+<li>tagged</li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Other</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Boolean_data_type.html" title="Boolean data type">Boolean</a></li>
+<li>Bottom type</li>
+<li>Collection</li>
+<li>Enumerated type</li>
+<li>Exception</li>
+<li>Function type</li>
+<li>Opaque data type</li>
+<li>Recursive data type</li>
+<li>Semaphore</li>
+<li>Stream</li>
+<li>Top type</li>
+<li>Type class</li>
+<li>Unit type</li>
+<li>Void</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Related<br />
+topics</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Abstract data type</li>
+<li>Data structure</li>
+<li>Generic</li>
+<li>Kind
+<ul>
+<li>metaclass</li>
+</ul>
+</li>
+<li>Parametric polymorphism</li>
+<li>Primitive data type</li>
+<li>Protocol
+<ul>
+<li>interface</li>
+</ul>
+</li>
+<li>Subtyping</li>
+<li>Type constructor</li>
+<li>Type conversion</li>
+<li><a href="Type_system.html" title="Type system">Type system</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>See also platform-dependent and independent units of information</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1221
+Cached time: 20170917104100
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.344 seconds
+Real time usage: 0.787 seconds
+Preprocessor visited node count: 1536/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 42388/2097152 bytes
+Template argument size: 1915/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Lua time usage: 0.130/10.000 seconds
+Lua memory usage: 3 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  604.338      1 -total
+ 54.77%  331.000      2 Template:Reflist
+ 39.26%  237.257     16 Template:Cite_web
+ 14.07%   85.020      2 Template:Main_article
+  8.06%   48.724      1 Template:Data_types
+  7.17%   43.347      1 Template:Navbox
+  6.10%   36.879      1 Template:Cnote2_begin
+  4.00%   24.146     12 Template:Cref2
+  3.90%   23.587      1 Template:Cnote2_end
+  3.31%   20.000      4 Template:Cnote2
+-->
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:14794-0!canonical and timestamp 20170917104136 and revision id 801051444
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "https://en.wikipedia.org/w/index.php?title=Integer_(computer_science)&amp;oldid=801051444"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks">Categories: <ul><li>Data types</li><li>Computer arithmetic</li><li>Primitive types</li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk">Talk</li><li id="pt-anoncontribs">Contributions</li><li id="pt-createaccount">Create account</li><li id="pt-login">Log in</li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Integer_(computer_science).html" title="View the content page [c]" accesskey="c">Article</a></span></li>
+							<li id="ca-talk"><span>Talk</span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="Integer_(computer_science).html">Read</a></span></li>
+							<li id="ca-edit"><span>Edit</span></li>
+							<li id="ca-history" class="collapsible"><span>View history</span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description">Main page</li><li id="n-contents">Contents</li><li id="n-featuredcontent">Featured content</li><li id="n-currentevents">Current events</li><li id="n-randompage">Random article</li><li id="n-sitesupport">Donate to Wikipedia</li><li id="n-shoplink">Wikipedia store</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help">Help</li><li id="n-aboutsite">About Wikipedia</li><li id="n-portal">Community portal</li><li id="n-recentchanges">Recent changes</li><li id="n-contactpage">Contact page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere">What links here</li><li id="t-recentchangeslinked">Related changes</li><li id="t-upload">Upload file</li><li id="t-specialpages">Special pages</li><li id="t-permalink">Permanent link</li><li id="t-info">Page information</li><li id="t-wikibase">Wikidata item</li><li id="t-cite">Cite this page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book">Create a book</li><li id="coll-download-as-rdf2latex">Download as PDF</li><li id="t-print">Printable version</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-az">Azərbaycanca</li><li class="interlanguage-link interwiki-bg">Български</li><li class="interlanguage-link interwiki-ca">Català</li><li class="interlanguage-link interwiki-cs">Čeština</li><li class="interlanguage-link interwiki-da">Dansk</li><li class="interlanguage-link interwiki-de">Deutsch</li><li class="interlanguage-link interwiki-et">Eesti</li><li class="interlanguage-link interwiki-es">Español</li><li class="interlanguage-link interwiki-eu">Euskara</li><li class="interlanguage-link interwiki-fa">فارسی</li><li class="interlanguage-link interwiki-fr">Français</li><li class="interlanguage-link interwiki-ko">한국어</li><li class="interlanguage-link interwiki-hi">हिन्दी</li><li class="interlanguage-link interwiki-id">Bahasa Indonesia</li><li class="interlanguage-link interwiki-is">Íslenska</li><li class="interlanguage-link interwiki-it">Italiano</li><li class="interlanguage-link interwiki-hu">Magyar</li><li class="interlanguage-link interwiki-mk">Македонски</li><li class="interlanguage-link interwiki-ml">മലയാളം</li><li class="interlanguage-link interwiki-nl">Nederlands</li><li class="interlanguage-link interwiki-ja">日本語</li><li class="interlanguage-link interwiki-pl">Polski</li><li class="interlanguage-link interwiki-pt">Português</li><li class="interlanguage-link interwiki-ru">Русский</li><li class="interlanguage-link interwiki-sq">Shqip</li><li class="interlanguage-link interwiki-simple">Simple English</li><li class="interlanguage-link interwiki-sv">Svenska</li><li class="interlanguage-link interwiki-uk">Українська</li><li class="interlanguage-link interwiki-vi">Tiếng Việt</li><li class="interlanguage-link interwiki-zh">中文</li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link">Edit links</span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 10:41.</li>
+											<li id="footer-info-copyright">Text is available under the Creative Commons Attribution-ShareAlike License;
+additional terms may apply.  By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy">Privacy policy</li>
+											<li id="footer-places-about">About Wikipedia</li>
+											<li id="footer-places-disclaimer">Disclaimers</li>
+											<li id="footer-places-contact">Contact Wikipedia</li>
+											<li id="footer-places-developers">Developers</li>
+											<li id="footer-places-cookiestatement">Cookie statement</li>
+											<li id="footer-places-mobileview">Mobile view</li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.344","walltime":"0.787","ppvisitednodes":{"value":1536,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":42388,"limit":2097152},"templateargumentsize":{"value":1915,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  604.338      1 -total"," 54.77%  331.000      2 Template:Reflist"," 39.26%  237.257     16 Template:Cite_web"," 14.07%   85.020      2 Template:Main_article","  8.06%   48.724      1 Template:Data_types","  7.17%   43.347      1 Template:Navbox","  6.10%   36.879      1 Template:Cnote2_begin","  4.00%   24.146     12 Template:Cref2","  3.90%   23.587      1 Template:Cnote2_end","  3.31%   20.000      4 Template:Cnote2"]},"scribunto":{"limitreport-timeusage":{"value":"0.130","limit":"10.000"},"limitreport-memusage":{"value":3149917,"limit":52428800}},"cachereport":{"origin":"mw1221","timestamp":"20170917104100","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":64,"wgHostname":"mw1254"});});</script>
+	</body>
+</html>

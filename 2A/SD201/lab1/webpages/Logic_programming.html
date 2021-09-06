@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Logic programming - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Logic_programming","wgTitle":"Logic programming","wgCurRevisionId":798875333,"wgRevisionId":798875333,"wgArticleId":17927,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["All articles with unsourced statements","Articles with unsourced statements from July 2013","All articles with minor POV problems","Articles with minor POV problems from August 2014","Articles lacking in-text citations from February 2012","All articles lacking in-text citations","Wikipedia articles with LCCN identifiers","Wikipedia articles with GND identifiers","Wikipedia articles with BNF identifiers","Computer-related introductions in 1972","Logic programming","Programming paradigms"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Logic_programming","wgRelevantArticleId":17927,"wgRequestId":"WcJczgpAMF0AADmAaAYAAAAO","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":false,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q275603","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.30.0-wmf.18"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Logic_programming"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Logic_programming&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Logic_programming&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Logic_programming"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Logic_programming rootpage-Logic_programming skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Logic programming</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					navigation, 					search
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div role="note" class="hatnote navigation-not-searchable">"Rule-Based" redirects here. For the method of machine translation, see Rule-based machine translation. For methods of machine learning, see Rule-based machine learning.</div>
+<table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%">
+<tr>
+<th style="padding:0.2em 0.4em 0.2em;font-size:145%;line-height:1.2em">Programming paradigms</th>
+</tr>
+<tr>
+<td style="padding:0 0.1em 0.4em;text-align: left">
+<ul>
+<li>Action</li>
+<li>Agent-oriented</li>
+<li>Array-oriented</li>
+<li>Automata-based</li>
+<li>Concept</li>
+<li>Concurrent computing
+<ul>
+<li>Relativistic programming</li>
+</ul>
+</li>
+<li>Data-driven</li>
+<li>Declarative (contrast: <a href="Imperative_programming.html" title="Imperative programming">Imperative</a>)
+<ul>
+<li>Constraint
+<ul>
+<li>Constraint logic
+<ul>
+<li>Concurrent constraint logic</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Dataflow
+<ul>
+<li>Flow-based</li>
+<li>Cell-oriented (spreadsheets)</li>
+<li>Reactive</li>
+</ul>
+</li>
+<li>Functional
+<ul>
+<li>Functional logic</li>
+<li>Purely functional</li>
+</ul>
+</li>
+<li>Logic
+<ul>
+<li>Abductive logic</li>
+<li>Answer set</li>
+<li>Concurrent logic</li>
+<li>Functional logic</li>
+<li>Inductive logic</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="Dynamic_programming_language.html" title="Dynamic programming language">Dynamic</a></li>
+<li>End-user programming</li>
+<li>Event-driven
+<ul>
+<li>Service-oriented</li>
+<li>Time-driven</li>
+</ul>
+</li>
+<li>Expression-oriented</li>
+<li>Feature-oriented</li>
+<li>Function-level (contrast: Value-level)</li>
+<li>Generic</li>
+<li><a href="Imperative_programming.html" title="Imperative programming">Imperative</a> (contrast: Declarative)
+<ul>
+<li>Literate</li>
+<li>Procedural</li>
+</ul>
+</li>
+<li>Language-oriented
+<ul>
+<li>Natural language programming</li>
+<li>Discipline-specific</li>
+<li>Domain-specific</li>
+<li>Grammar-oriented
+<ul>
+<li>Dialecting</li>
+</ul>
+</li>
+<li>Intentional</li>
+</ul>
+</li>
+<li>Metaprogramming
+<ul>
+<li>Automatic
+<ul>
+<li>Inductive programming</li>
+</ul>
+</li>
+<li>Reflective
+<ul>
+<li>Attribute-oriented</li>
+</ul>
+</li>
+<li>Homoiconic</li>
+<li>Macro</li>
+<li>Template
+<ul>
+<li>Policy-based</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Non-structured (contrast: Structured)
+<ul>
+<li>Array</li>
+</ul>
+</li>
+<li>Nondeterministic</li>
+<li>Parallel computing
+<ul>
+<li>Process-oriented</li>
+</ul>
+</li>
+<li>Point-free style
+<ul>
+<li>Concatenative</li>
+</ul>
+</li>
+<li>Probabilistic</li>
+<li>Semantic</li>
+<li>Structured (contrast: Non-structured)
+<ul>
+<li>Block-structured</li>
+<li>Modular (contrast: Monolithic)</li>
+<li><a href="Object-oriented_programming.html" title="Object-oriented programming">Object-oriented</a>
+<ul>
+<li>Actor-based</li>
+<li>Class-based</li>
+<li>Concurrent</li>
+<li>Prototype-based</li>
+<li>By separation of concerns:
+<ul>
+<li>Aspect-oriented</li>
+<li>Role-oriented</li>
+<li>Subject-oriented</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Recursive</li>
+</ul>
+</li>
+<li>Value-level (contrast: Function-level)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;font-size:115%">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p><b>Logic programming</b> is a type of programming paradigm which is largely based on formal logic. Any program written in a logic <a href="Programming_language.html" title="Programming language">programming language</a> is a set of sentences in logical form, expressing facts and rules about some problem domain. Major logic programming language families include Prolog, Answer set programming (ASP) and Datalog. In all of these languages, rules are written in the form of <i>clauses</i>:</p>
+<dl>
+<dd><tt>H&#160;:- B<sub>1</sub>, …, B<sub>n</sub>.</tt></dd>
+</dl>
+<p>and are read declaratively as logical implications:</p>
+<dl>
+<dd><tt>H if B<sub>1</sub> and … and B<sub>n</sub>.</tt></dd>
+</dl>
+<p><tt>H</tt> is called the <i>head</i> of the rule and <tt>B<sub>1</sub></tt>, …, <tt>B<sub>n</sub></tt> is called the <i>body</i>. Facts are rules that have no body, and are written in the simplified form:</p>
+<dl>
+<dd><tt>H.</tt></dd>
+</dl>
+<p>In the simplest case in which <tt>H</tt>, <tt>B<sub>1</sub></tt>, …, <tt>B<sub>n</sub></tt> are all atomic formulae, these clauses are called definite clauses or Horn clauses. However, there exist many extensions of this simple case, the most important one being the case in which conditions in the body of a clause can also be negations of atomic formulae. Logic programming languages that include this extension have the knowledge representation capabilities of a non-monotonic logic.</p>
+<p>In ASP and Datalog, logic programs have only a declarative reading, and their execution is performed by means of a proof procedure or model generator whose behaviour is not meant to be under the control of the programmer. However, in the Prolog family of languages, logic programs also have a procedural interpretation as goal-reduction procedures:</p>
+<dl>
+<dd>to solve <tt>H</tt>, solve <tt>B<sub>1</sub></tt>, and ... and solve <tt>B<sub>n</sub></tt>.</dd>
+</dl>
+<p>Consider, for example, the following clause:</p>
+<dl>
+<dd><tt>fallible(X)&#160;:- human(X).</tt></dd>
+</dl>
+<p>based on an example used by Terry Winograd<sup id="cite_ref-Winograd_1-0" class="reference">[1]</sup> to illustrate the programming language Planner. As a clause in a logic program, it can be used both as a procedure to test whether <tt>X</tt> is <tt>fallible</tt> by testing whether <tt>X</tt> is <tt>human</tt>, and as a procedure to find an <tt>X</tt> that is <tt>fallible</tt> by finding an <tt>X</tt> that is <tt>human</tt>. Even facts have a procedural interpretation. For example, the clause:</p>
+<dl>
+<dd><tt>human(socrates).</tt></dd>
+</dl>
+<p>can be used both as a procedure to show that <tt>socrates</tt> is <tt>human</tt>, and as a procedure to find an <tt>X</tt> that is <tt>human</tt> by "assigning" <tt>socrates</tt> to <tt>X</tt>.</p>
+<p>The declarative reading of logic programs can be used by a programmer to verify their correctness. Moreover, logic-based program transformation techniques can also be used to transform logic programs into logically equivalent programs that are more efficient. In the Prolog family of logic programming languages, the programmer can also use the known problem-solving behaviour of the execution mechanism to improve the efficiency of programs.</p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a><span class="tocnumber">2</span> <span class="toctext">Concepts</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a><span class="tocnumber">2.1</span> <span class="toctext">Logic and control</span></a></li>
+<li class="toclevel-2 tocsection-4"><a><span class="tocnumber">2.2</span> <span class="toctext">Problem solving</span></a></li>
+<li class="toclevel-2 tocsection-5"><a><span class="tocnumber">2.3</span> <span class="toctext">Negation as failure</span></a></li>
+<li class="toclevel-2 tocsection-6"><a><span class="tocnumber">2.4</span> <span class="toctext">Knowledge representation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a><span class="tocnumber">3</span> <span class="toctext">Variants and extensions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a><span class="tocnumber">3.1</span> <span class="toctext">Prolog</span></a></li>
+<li class="toclevel-2 tocsection-9"><a><span class="tocnumber">3.2</span> <span class="toctext">Abductive logic programming</span></a></li>
+<li class="toclevel-2 tocsection-10"><a><span class="tocnumber">3.3</span> <span class="toctext">Metalogic programming</span></a></li>
+<li class="toclevel-2 tocsection-11"><a><span class="tocnumber">3.4</span> <span class="toctext">Constraint logic programming</span></a></li>
+<li class="toclevel-2 tocsection-12"><a><span class="tocnumber">3.5</span> <span class="toctext">Concurrent logic programming</span></a></li>
+<li class="toclevel-2 tocsection-13"><a><span class="tocnumber">3.6</span> <span class="toctext">Concurrent constraint logic programming</span></a></li>
+<li class="toclevel-2 tocsection-14"><a><span class="tocnumber">3.7</span> <span class="toctext">Inductive logic programming</span></a></li>
+<li class="toclevel-2 tocsection-15"><a><span class="tocnumber">3.8</span> <span class="toctext">Higher-order logic programming</span></a></li>
+<li class="toclevel-2 tocsection-16"><a><span class="tocnumber">3.9</span> <span class="toctext">Linear logic programming</span></a></li>
+<li class="toclevel-2 tocsection-17"><a><span class="tocnumber">3.10</span> <span class="toctext">Object-oriented logic programming</span></a></li>
+<li class="toclevel-2 tocsection-18"><a><span class="tocnumber">3.11</span> <span class="toctext">Transaction logic programming</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-20"><a><span class="tocnumber">5</span> <span class="toctext">References</span></a>
+<ul>
+<li class="toclevel-2 tocsection-21"><a><span class="tocnumber">5.1</span> <span class="toctext">General introductions</span></a></li>
+<li class="toclevel-2 tocsection-22"><a><span class="tocnumber">5.2</span> <span class="toctext">Other sources</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-23"><a><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-24"><a><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>The use of mathematical logic to represent and execute computer programs is also a feature of the lambda calculus, developed by Alonzo Church in the 1930s. However, the first proposal to use the clausal form of logic for representing computer programs was made by Cordell Green.<sup id="cite_ref-2" class="reference">[2]</sup> This used an axiomatization of a subset of LISP, together with a representation of an input-output relation, to compute the relation by simulating the execution of the program in LISP. Foster and Elcock's Absys, on the other hand, employed a combination of equations and lambda calculus in an assertional programming language which places no constraints on the order in which operations are performed.<sup id="cite_ref-3" class="reference">[3]</sup></p>
+<p>Logic programming in its present form can be traced back to debates in the late 1960s and early 1970s about declarative versus procedural representations of knowledge in Artificial Intelligence. Advocates of declarative representations were notably working at Stanford, associated with John McCarthy, Bertram Raphael and Cordell Green, and in Edinburgh, with John Alan Robinson (an academic visitor from Syracuse University), Pat Hayes, and Robert Kowalski. Advocates of procedural representations were mainly centered at MIT, under the leadership of Marvin Minsky and Seymour Papert.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (July 2013)">citation needed</span></a></i>]</sup></p>
+<p>Although it was based on the proof methods of logic, Planner, developed at MIT, was the first language to emerge within this proceduralist paradigm.<sup id="cite_ref-4" class="reference">[4]</sup> Planner featured pattern-directed invocation of procedural plans from goals (i.e. goal-reduction or backward chaining) and from assertions (i.e. forward chaining). The most influential implementation of Planner was the subset of Planner, called Micro-Planner, implemented by Gerry Sussman, Eugene Charniak and Terry Winograd. It was used to implement Winograd's natural-language understanding program SHRDLU, which was a landmark at that time.<sup id="cite_ref-Winograd_1-1" class="reference">[1]</sup> To cope with the very limited memory systems at the time, Planner used a backtracking control structure so that only one possible computation path had to be stored at a time. Planner gave rise to the programming languages QA-4, Popler, Conniver, QLISP, and the concurrent language Ether.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (July 2013)">citation needed</span></a></i>]</sup></p>
+<p>Hayes and Kowalski in Edinburgh tried to reconcile the logic-based declarative approach to knowledge representation with Planner's procedural approach. Hayes (1973) developed an equational language, Golux, in which different procedures could be obtained by altering the behavior of the theorem prover.<sup id="cite_ref-5" class="reference">[5]</sup> Kowalski, on the other hand, developed SLD resolution,<sup id="cite_ref-Kowalski_6-0" class="reference">[6]</sup> a variant of SL-resolution,<sup id="cite_ref-7" class="reference">[7]</sup> and showed how it treats implications as goal-reduction procedures. Kowalski collaborated with Colmerauer in Marseille, who developed these ideas in the design and implementation of the programming language Prolog.</p>
+<p>The Association for Logic Programming was founded to promote Logic Programming in 1986.</p>
+<p>Prolog gave rise to the programming languages ALF, Fril, Gödel, Mercury, Oz, Ciao, Visual Prolog, XSB, and λProlog, as well as a variety of concurrent logic programming languages,<sup id="cite_ref-8" class="reference">[8]</sup> constraint logic programming languages and datalog.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (July 2013)">citation needed</span></a></i>]</sup></p>
+<h2><span class="mw-headline" id="Concepts">Concepts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Logic_and_control">Logic and control</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Declarative programming</div>
+<p>Logic programming can be viewed as controlled deduction. An important concept in logic programming is the separation of programs into their logic component and their control component. With pure logic programming languages, the logic component alone determines the solutions produced. The control component can be varied to provide alternative ways of executing a logic program. This notion is captured by the slogan</p>
+<dl>
+<dd>Algorithm = Logic + Control</dd>
+</dl>
+<p>where "Logic" represents a logic program and "Control" represents different theorem-proving strategies.<sup id="cite_ref-9" class="reference">[9]</sup></p>
+<h3><span class="mw-headline" id="Problem_solving">Problem solving</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>In the simplified, propositional case in which a logic program and a top-level atomic goal contain no variables, backward reasoning determines an and-or tree, which constitutes the search space for solving the goal. The top-level goal is the root of the tree. Given any node in the tree and any clause whose head matches the node, there exists a set of child nodes corresponding to the sub-goals in the body of the clause. These child nodes are grouped together by an "and". The alternative sets of children corresponding to alternative ways of solving the node are grouped together by an "or".</p>
+<p>Any search strategy can be used to search this space. Prolog uses a sequential, last-in-first-out, backtracking strategy, in which only one alternative and one sub-goal is considered at a time. Other search strategies, such as parallel search, intelligent backtracking, or best-first search to find an optimal solution, are also possible.</p>
+<p>In the more general case, where sub-goals share variables, other strategies can be used, such as choosing the subgoal that is most highly instantiated or that is sufficiently instantiated so that only one procedure applies. Such strategies are used, for example, in concurrent logic programming.</p>
+<h3><span class="mw-headline" id="Negation_as_failure">Negation as failure</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Negation as failure</div>
+<p>For most practical applications, as well as for applications that require non-monotonic reasoning in artificial intelligence, Horn clause logic programs need to be extended to normal logic programs, with negative conditions. A <i>clause</i> in a normal logic program has the form:</p>
+<dl>
+<dd><tt>H&#160;:- A<sub>1</sub>, …, A<sub>n</sub>, not B<sub>1</sub>, …, not B<sub>n</sub>.</tt></dd>
+</dl>
+<p>and is read declaratively as a logical implication:</p>
+<dl>
+<dd><tt>H if A<sub>1</sub> and … and A<sub>n</sub> and not B<sub>1</sub> and … and not B<sub>n</sub>.</tt></dd>
+</dl>
+<p>where <tt>H</tt> and all the <tt>A<sub>i</sub></tt> and <tt>B<sub>i</sub></tt> are atomic formulas. The negation in the negative literals <tt>not B<sub>i</sub></tt> is commonly referred to as "negation as failure", because in most implementations, a negative condition <tt>not B<sub>i</sub></tt> is shown to hold by showing that the positive condition <tt>B<sub>i</sub></tt> fails to hold. For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">canfly</span><span class="p">(</span><span class="nv">X</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">bird</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="o">not</span> <span class="nf">abnormal</span><span class="p">(</span><span class="nv">X</span><span class="p">).</span>
+<span class="nf">abnormal</span><span class="p">(</span><span class="nv">X</span><span class="p">)</span> <span class="p">:-</span>  <span class="nf">wounded</span><span class="p">(</span><span class="nv">X</span><span class="p">).</span>
+<span class="nf">bird</span><span class="p">(</span><span class="s s-Atom">john</span><span class="p">).</span>
+<span class="nf">bird</span><span class="p">(</span><span class="s s-Atom">mary</span><span class="p">).</span>
+<span class="nf">wounded</span><span class="p">(</span><span class="s s-Atom">john</span><span class="p">).</span>
+</pre></div>
+<p>Given the goal of finding something that can fly:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">:-</span> <span class="nf">canfly</span><span class="p">(</span><span class="nv">X</span><span class="p">).</span>
+</pre></div>
+<p>there are two candidate solutions, which solve the first subgoal <tt>bird(X)</tt>, namely <tt>X = john</tt> and <tt>X = mary</tt>. The second subgoal <tt>not abnormal(john)</tt> of the first candidate solution fails, because <tt>wounded(john)</tt> succeeds and therefore <tt>abnormal(john)</tt> succeeds. However, The second subgoal <tt>not abnormal(mary)</tt> of the second candidate solution succeeds, because <tt>wounded(mary)</tt> fails and therefore <tt>abnormal(mary)</tt> fails. Therefore, <tt>X = mary</tt> is the only solution of the goal.</p>
+<p>Micro-Planner had a construct, called "thnot", which when applied to an expression returns the value true if (and only if) the evaluation of the expression fails. An equivalent operator is normally built-in in modern Prolog's implementations. It is normally written as <code>not(<i>Goal</i>)</code> or <code>\+ <i>Goal</i></code>, where <code><i>Goal</i></code> is some goal (proposition) to be proved by the program. This operator differs from negation in first-order logic: a negation such as <code>\+ X == 1</code> fails when the variable <code>X</code> has been bound to the atom <code>1</code>, but it succeeds in all other cases, including when <code>X</code> is unbound. This makes Prolog's reasoning non-monotonic: <code>X = 1, \+ X == 1</code> always fails, while <code>\+ X == 1, X = 1</code> can succeed, binding <code>X</code> to <code>1</code>, depending on whether <code>X</code> was initially bound (note that standard Prolog executes goals in left-to-right order).</p>
+<p>The logical status of negation as failure was unresolved until Keith Clark [1978] showed that, under certain natural conditions, it is a correct (and sometimes complete) implementation of classical negation with respect to the completion of the program. Completion amounts roughly to regarding the set of all the program clauses with the same predicate on the left hand side, say</p>
+<dl>
+<dd><tt>H&#160;:- Body<sub>1</sub>.</tt></dd>
+<dd><tt>…</tt></dd>
+<dd><tt>H&#160;:- Body<sub>k</sub>.</tt></dd>
+</dl>
+<p>as a definition of the predicate</p>
+<dl>
+<dd><tt>H iff (Body<sub>1</sub> or … or Body<sub>k</sub>)</tt></dd>
+</dl>
+<p>where "iff" means "if and only if". Writing the completion also requires explicit use of the equality predicate and the inclusion of a set of appropriate axioms for equality. However, the implementation of negation by failure needs only the if-halves of the definitions without the axioms of equality.</p>
+<p>For example, the completion of the program above is:</p>
+<dl>
+<dd><tt>canfly(X) iff bird(X), not abnormal(X).</tt></dd>
+<dd><tt>abnormal(X) iff wounded(X).</tt></dd>
+<dd><tt>bird(X) iff X = john or X = mary.</tt></dd>
+<dd><tt>X = X.</tt></dd>
+<dd><tt>not john = mary.</tt></dd>
+<dd><tt>not mary = john.</tt></dd>
+</dl>
+<p>The notion of completion is closely related to McCarthy's circumscription semantics for default reasoning, and to the closed world assumption.</p>
+<p>As an alternative to the completion semantics, negation as failure can also be interpreted epistemically, as in the stable model semantics of answer set programming. In this interpretation not(B<sub>i</sub>) means literally that B<sub>i</sub> is not known or not believed. The epistemic interpretation has the advantage that it can be combined very simply with classical negation, as in "extended logic programming", to formalise such phrases as "the contrary can not be shown", where "contrary" is classical negation and "can not be shown" is the epistemic interpretation of negation as failure.</p>
+<h3><span class="mw-headline" id="Knowledge_representation">Knowledge representation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>The fact that Horn clauses can be given a procedural interpretation and, vice versa, that goal-reduction procedures can be understood as Horn clauses + backward reasoning means that logic programs combine declarative and procedural representations of knowledge. The inclusion of negation as failure means that logic programming is a kind of non-monotonic logic.</p>
+<p>Despite its simplicity compared with classical logic, this combination of Horn clauses and negation as failure has proved to be surprisingly expressive. For example, it provides a natural representation for the common-sense laws of cause and effect, as formalised by both the situation calculus and event calculus. It has also been shown to correspond quite naturally to the semi-formal language of legislation. In particular, Prakken and Sartor<sup id="cite_ref-10" class="reference">[10]</sup> credit the representation of the British Nationality Act as a logic program<sup id="cite_ref-11" class="reference">[11]</sup> with being "hugely influential for the development of computational representations of legislation, showing how logic programming enables intuitively appealing representations that can be directly deployed to generate automatic inferences".</p>
+<h2><span class="mw-headline" id="Variants_and_extensions">Variants and extensions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Prolog">Prolog</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Prolog</div>
+<p>The programming language Prolog was developed in 1972 by Alain Colmerauer. It emerged from a collaboration between Colmerauer in Marseille and Robert Kowalski in Edinburgh. Colmerauer was working on natural language understanding, using logic to represent semantics and using resolution for question-answering. During the summer of 1971, Colmerauer and Kowalski discovered that the clausal form of logic could be used to represent formal grammars and that resolution theorem provers could be used for parsing. They observed that some theorem provers, like hyper-resolution, behave as bottom-up parsers and others, like SL-resolution (1971), behave as top-down parsers.</p>
+<p>It was in the following summer of 1972, that Kowalski, again working with Colmerauer, developed the procedural interpretation of implications. This dual declarative/procedural interpretation later became formalised in the Prolog notation</p>
+<dl>
+<dd><tt>H&#160;:- B<sub>1</sub>, …, B<sub>n</sub>.</tt></dd>
+</dl>
+<p>which can be read (and used) both declaratively and procedurally. It also became clear that such clauses could be restricted to definite clauses or Horn clauses, where <tt>H</tt>, <tt>B<sub>1</sub></tt>, …, <tt>B<sub>n</sub></tt> are all atomic predicate logic formulae, and that SL-resolution could be restricted (and generalised) to LUSH or SLD-resolution. Kowalski's procedural interpretation and LUSH were described in a 1973 memo, published in 1974.<sup id="cite_ref-Kowalski_6-1" class="reference">[6]</sup></p>
+<p>Colmerauer, with Philippe Roussel, used this dual interpretation of clauses as the basis of Prolog, which was implemented in the summer and autumn of 1972. The first Prolog program, also written in 1972 and implemented in Marseille, was a French question-answering system. The use of Prolog as a practical programming language was given great momentum by the development of a compiler by David Warren in Edinburgh in 1977. Experiments demonstrated that Edinburgh Prolog could compete with the processing speed of other symbolic programming languages such as <a href="Lisp_(programming_language).html" title="Lisp (programming language)">Lisp</a>. Edinburgh Prolog became the <i>de facto</i> standard and strongly influenced the definition of ISO standard Prolog.</p>
+<h3><span class="mw-headline" id="Abductive_logic_programming">Abductive logic programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Abductive logic programming is an extension of normal Logic Programming that allows some predicates, declared as abducible predicates, to be "open" or undefined. A clause in an abductive logic program has the form:</p>
+<dl>
+<dd><tt>H&#160;:- B<sub>1</sub>, …, B<sub>n</sub>, A<sub>1</sub>, …, A<sub>n</sub>.</tt></dd>
+</dl>
+<p>where <tt>H</tt> is an atomic formula that is not abducible, all the <tt>B<sub>i</sub></tt> are literals whose predicates are not abducible, and the <tt>A<sub>i</sub></tt> are atomic formulas whose predicates are abducible. The abducible predicates can be constrained by integrity constraints, which can have the form:</p>
+<dl>
+<dd><tt>false&#160;:- B<sub>1</sub>, …, B<sub>n</sub>.</tt></dd>
+</dl>
+<p>where the <tt>B<sub>i</sub></tt> are arbitrary literals (defined or abducible, and atomic or negated). For example:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">canfly</span><span class="p">(</span><span class="nv">X</span><span class="p">)</span> <span class="p">:-</span> <span class="nf">bird</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nf">normal</span><span class="p">(</span><span class="nv">X</span><span class="p">).</span>
+<span class="nf">false</span> <span class="o">:-</span>  <span class="nf">normal</span><span class="p">(</span><span class="nv">X</span><span class="p">),</span> <span class="nf">wounded</span><span class="p">(</span><span class="nv">X</span><span class="p">).</span>
+<span class="nf">bird</span><span class="p">(</span><span class="s s-Atom">john</span><span class="p">).</span>
+<span class="nf">bird</span><span class="p">(</span><span class="s s-Atom">mary</span><span class="p">).</span>
+<span class="nf">wounded</span><span class="p">(</span><span class="s s-Atom">john</span><span class="p">).</span>
+</pre></div>
+<p>where the predicate <tt>normal</tt> is abducible.</p>
+<p>Problem solving is achieved by deriving hypotheses expressed in terms of the abducible predicates as solutions of problems to be solved. These problems can be either observations that need to be explained (as in classical abductive reasoning) or goals to be solved (as in normal logic programming). For example, the hypothesis <tt>normal(mary)</tt> explains the observation <tt>canfly(mary)</tt>. Moreover, the same hypothesis entails the only solution <tt>X = mary</tt> of the goal of finding something that can fly:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="p">:-</span> <span class="nf">canfly</span><span class="p">(</span><span class="nv">X</span><span class="p">).</span>
+</pre></div>
+<p>Abductive logic programming has been used for fault diagnosis, planning, natural language processing and machine learning. It has also been used to interpret Negation as Failure as a form of abductive reasoning.</p>
+<h3><span class="mw-headline" id="Metalogic_programming">Metalogic programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Because mathematical logic has a long tradition of distinguishing between object language and metalanguage, logic programming also allows metalevel programming. The simplest metalogic program is the so-called "vanilla" meta-interpreter:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+    <span class="nf">solve</span><span class="p">(</span><span class="s s-Atom">true</span><span class="p">).</span>
+    <span class="nf">solve</span><span class="p">((</span><span class="nv">A</span><span class="p">,</span><span class="nv">B</span><span class="p">)):-</span> <span class="nf">solve</span><span class="p">(</span><span class="nv">A</span><span class="p">),</span><span class="nf">solve</span><span class="p">(</span><span class="nv">B</span><span class="p">).</span>
+    <span class="nf">solve</span><span class="p">(</span><span class="nv">A</span><span class="p">):-</span> <span class="nf">clause</span><span class="p">(</span><span class="nv">A</span><span class="p">,</span><span class="nv">B</span><span class="p">),</span><span class="nf">solve</span><span class="p">(</span><span class="nv">B</span><span class="p">).</span>
+</pre></div>
+<p>where true represents an empty conjunction, and clause(A,B) means there is an object-level clause of the form A&#160;:- B.</p>
+<p>Metalogic programming allows object-level and metalevel representations to be combined, as in natural language. It can also be used to implement any logic that is specified by means of inference rules. Metalogic is used in logic programming to implement metaprograms, which manipulate other programs, databases, knowledge bases or axiomatic theories as data.</p>
+<h3><span class="mw-headline" id="Constraint_logic_programming">Constraint logic programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Constraint logic programming</div>
+<p>Constraint logic programming combines Horn clause logic programming with constraint solving. It extends Horn clauses by allowing some predicates, declared as constraint predicates, to occur as literals in the body of clauses. A constraint logic program is a set of clauses of the form:</p>
+<dl>
+<dd><tt>H&#160;:- C<sub>1</sub>, …, C<sub>n</sub> ◊ B<sub>1</sub>, …, B<sub>n</sub>.</tt></dd>
+</dl>
+<p>where <tt>H</tt> and all the <tt>B<sub>i</sub></tt> are atomic formulas, and the <tt>C<sub>i</sub></tt> are constraints. Declaratively, such clauses are read as ordinary logical implications:</p>
+<dl>
+<dd><tt>H if C<sub>1</sub> and … and C<sub>n</sub> and B<sub>1</sub> and … and B<sub>n</sub>.</tt></dd>
+</dl>
+<p>However, whereas the predicates in the heads of clauses are defined by the constraint logic program, the predicates in the constraints are predefined by some domain-specific model-theoretic structure or theory.</p>
+<p>Procedurally, subgoals whose predicates are defined by the program are solved by goal-reduction, as in ordinary logic programming, but constraints are checked for satisfiability by a domain-specific constraint-solver, which implements the semantics of the constraint predicates. An initial problem is solved by reducing it to a satisfiable conjunction of constraints.</p>
+<p>The following constraint logic program represents a toy temporal database of <tt>john's</tt> history as a teacher:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">teaches</span><span class="p">(</span><span class="s s-Atom">john</span><span class="p">,</span> <span class="s s-Atom">hardware</span><span class="p">,</span> <span class="nv">T</span><span class="p">)</span> <span class="p">:-</span> <span class="mi">1990</span> <span class="s s-Atom">≤</span> <span class="nv">T</span><span class="p">,</span> <span class="nv">T</span> <span class="o">&lt;</span> <span class="mf">1999.</span>
+<span class="nf">teaches</span><span class="p">(</span><span class="s s-Atom">john</span><span class="p">,</span> <span class="s s-Atom">software</span><span class="p">,</span> <span class="nv">T</span><span class="p">)</span> <span class="p">:-</span> <span class="mi">1999</span> <span class="s s-Atom">≤</span> <span class="nv">T</span><span class="p">,</span> <span class="nv">T</span> <span class="o">&lt;</span> <span class="mf">2005.</span>
+<span class="nf">teaches</span><span class="p">(</span><span class="s s-Atom">john</span><span class="p">,</span> <span class="s s-Atom">logic</span><span class="p">,</span> <span class="nv">T</span><span class="p">)</span> <span class="p">:-</span> <span class="mi">2005</span> <span class="s s-Atom">≤</span> <span class="nv">T</span><span class="p">,</span> <span class="nv">T</span> <span class="s s-Atom">≤</span> <span class="mf">2012.</span>
+<span class="nf">rank</span><span class="p">(</span><span class="s s-Atom">john</span><span class="p">,</span> <span class="s s-Atom">instructor</span><span class="p">,</span> <span class="nv">T</span><span class="p">)</span> <span class="p">:-</span> <span class="mi">1990</span> <span class="s s-Atom">≤</span> <span class="nv">T</span><span class="p">,</span> <span class="nv">T</span> <span class="o">&lt;</span> <span class="mf">2010.</span>
+<span class="nf">rank</span><span class="p">(</span><span class="s s-Atom">john</span><span class="p">,</span> <span class="s s-Atom">professor</span><span class="p">,</span> <span class="nv">T</span><span class="p">)</span> <span class="p">:-</span> <span class="mi">2010</span> <span class="s s-Atom">≤</span> <span class="nv">T</span><span class="p">,</span> <span class="nv">T</span> <span class="o">&lt;</span> <span class="mf">2014.</span>
+</pre></div>
+<p>Here <tt>≤</tt> and <tt>&lt;</tt> are constraint predicates, with their usual intended semantics. The following goal clause queries the database to find out when <tt>john</tt> both taught <tt>logic</tt> and was a <tt>professor</tt>:</p>
+<dl>
+<dd><tt>:- teaches(john, logic, T), rank(john, professor, T).</tt></dd>
+</dl>
+<p>The solution is <tt>2010 ≤ T, T ≤ 2012</tt>.</p>
+<p>Constraint logic programming has been used to solve problems in such fields as civil engineering, mechanical engineering, digital circuit verification, automated timetabling, air traffic control, and finance. It is closely related to abductive logic programming.</p>
+<h3><span class="mw-headline" id="Concurrent_logic_programming">Concurrent logic programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Concurrent logic programming</div>
+<p>Concurrent logic programming integrates concepts of logic programming with concurrent programming. Its development was given a big impetus in the 1980s by its choice for the systems programming language of the Japanese Fifth Generation Project (FGCS).<sup id="cite_ref-12" class="reference">[12]</sup></p>
+<p>A concurrent logic program is a set of guarded Horn clauses of the form:</p>
+<dl>
+<dd>
+<dl>
+<dd><tt>H&#160;:- G<sub>1</sub>, …, G<sub>n</sub> | B<sub>1</sub>, …, B<sub>n</sub>.</tt></dd>
+</dl>
+</dd>
+</dl>
+<p>The conjunction <tt>G<sub>1</sub>, … , G<sub>n</sub></tt> is called the guard of the clause, and <tt>|</tt> is the commitment operator. Declaratively, guarded Horn clauses are read as ordinary logical implications:</p>
+<dl>
+<dd>
+<dl>
+<dd><tt>H if G<sub>1</sub> and … and G<sub>n</sub> and B<sub>1</sub> and … and B<sub>n</sub>.</tt></dd>
+</dl>
+</dd>
+</dl>
+<p>However, procedurally, when there are several clauses whose heads <tt>H</tt> match a given goal, then all of the clauses are executed in parallel, checking whether their guards <tt>G<sub>1</sub>, … , G<sub>n</sub></tt> hold. If the guards of more than one clause hold, then a committed choice is made to one of the clauses, and execution proceedes with the subgoals <tt>B<sub>1</sub>, …, B<sub>n</sub></tt> of the chosen clause. These subgoals can also be executed in parallel. Thus concurrent logic programming implements a form of "don't care nondeterminism", rather than "don't know nondeterminism".</p>
+<p>For example, the following concurrent logic program defines a predicate <tt>shuffle(Left, Right, Merge)</tt> , which can be used to shuffle two lists <tt>Left</tt> and <tt>Right</tt>, combining them into a single list <tt>Merge</tt> that preserves the ordering of the two lists <tt>Left</tt> and <tt>Right</tt>:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">shuffle</span><span class="p">([],</span> <span class="p">[],</span> <span class="p">[]).</span>
+<span class="nf">shuffle</span><span class="p">(</span><span class="nv">Left</span><span class="p">,</span> <span class="nv">Right</span><span class="p">,</span> <span class="nv">Merge</span><span class="p">)</span> <span class="p">:-</span>
+    <span class="nv">Left</span> <span class="o">=</span> <span class="p">[</span><span class="nv">First</span> <span class="p">|</span> <span class="nv">Rest</span><span class="p">]</span> <span class="p">|</span>
+    <span class="nv">Merge</span> <span class="o">=</span> <span class="p">[</span><span class="nv">First</span> <span class="p">|</span> <span class="nv">ShortMerge</span><span class="p">],</span>
+    <span class="nf">shuffle</span><span class="p">(</span><span class="nv">Rest</span><span class="p">,</span> <span class="nv">Right</span><span class="p">,</span> <span class="nv">ShortMerge</span><span class="p">).</span>
+<span class="nf">shuffle</span><span class="p">(</span><span class="nv">Left</span><span class="p">,</span> <span class="nv">Right</span><span class="p">,</span> <span class="nv">Merge</span><span class="p">)</span> <span class="p">:-</span>
+    <span class="nv">Right</span> <span class="o">=</span> <span class="p">[</span><span class="nv">First</span> <span class="p">|</span> <span class="nv">Rest</span><span class="p">]</span> <span class="p">|</span>
+    <span class="nv">Merge</span> <span class="o">=</span> <span class="p">[</span><span class="nv">First</span> <span class="p">|</span> <span class="nv">ShortMerge</span><span class="p">],</span>
+    <span class="nf">shuffle</span><span class="p">(</span><span class="nv">Left</span><span class="p">,</span> <span class="nv">Rest</span><span class="p">,</span> <span class="nv">ShortMerge</span><span class="p">).</span>
+</pre></div>
+<p>Here, <tt>[]</tt> represents the empty list, and <tt>[Head | Tail]</tt> represents a list with first element <tt>Head</tt> followed by list <tt>Tail</tt>, as in Prolog. (Notice that the first occurrence of <tt>|</tt> in the second and third clauses is the list constructor, whereas the second occurrence of <tt>|</tt> is the commitment operator.) The program can be used, for example, to shuffle the lists <tt>[ace, queen, king]</tt> and <tt>[1, 4, 2]</tt> by invoking the goal clause:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nf">shuffle</span><span class="p">([</span><span class="s s-Atom">ace</span><span class="p">,</span> <span class="s s-Atom">queen</span><span class="p">,</span> <span class="s s-Atom">king</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="nv">Merge</span><span class="p">).</span>
+</pre></div>
+<p>The program will non-deterministically generate a single solution, for example <tt>Merge = [ace, queen, 1, king, 4, 2]</tt>.</p>
+<p>Arguably, concurrent logic programming is based on message passing and consequently is subject to the same indeterminacy as other concurrent message-passing systems, such as Actors (see Indeterminacy in concurrent computation). Carl Hewitt has argued that, concurrent logic programming is not based on logic in his sense that computational steps cannot be logically deduced.<sup id="cite_ref-Hewitt_13-0" class="reference">[13]</sup> However, in concurrent logic programming, any result of a terminating computation is a logical consequence of the program, and any partial result of a partial computation is a logical consequence of the program and the residual goal (process network). Consequently, the indeterminacy of computations implies that not all logical consequences of the program can be deduced.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="This statement is possibly biased. (August 2014)">neutrality</span></a> is disputed</i>]</sup></p>
+<h3><span class="mw-headline" id="Concurrent_constraint_logic_programming">Concurrent constraint logic programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Concurrent constraint logic programming</div>
+<p>Concurrent constraint logic programming combines concurrent logic programming and constraint logic programming, using constraints to control concurrency. A clause can contain a guard, which is a set of constraints that may block the applicability of the clause. When the guards of several clauses are satisfied, concurrent constraint logic programming makes a committed choice to the use of only one.</p>
+<h3><span class="mw-headline" id="Inductive_logic_programming">Inductive logic programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Inductive logic programming</div>
+<p>Inductive logic programming is concerned with generalizing positive and negative examples in the context of background knowledge: machine learning of logic programs. Recent work in this area, combining logic programming, learning and probability, has given rise to the new field of statistical relational learning and probabilistic inductive logic programming.</p>
+<h3><span class="mw-headline" id="Higher-order_logic_programming">Higher-order logic programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Several researchers have extended logic programming with higher-order programming features derived from higher-order logic, such as predicate variables. Such languages include the Prolog extensions HiLog and λProlog.</p>
+<h3><span class="mw-headline" id="Linear_logic_programming">Linear logic programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Basing logic programming within linear logic has resulted in the design of logic programming languages that are considerably more expressive than those based on classical logic. Horn clause programs can only represent state change by the change in arguments to predicates. In linear logic programming, one can use the ambient linear logic to support state change. Some early designs of logic programming languages based on linear logic include LO [Andreoli &amp; Pareschi, 1991], Lolli,<sup id="cite_ref-14" class="reference">[14]</sup> ACL,<sup id="cite_ref-15" class="reference">[15]</sup> and Forum [Miller, 1996]. Forum provides a goal-directed interpretation of all of linear logic.</p>
+<h3><span class="mw-headline" id="Object-oriented_logic_programming">Object-oriented logic programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>F-logic extends logic programming with objects and the frame syntax.</p>
+<p>Logtalk extends the Prolog programming language with support for objects, protocols, and other OOP concepts. Highly portable, it supports most standard-complaint Prolog systems as backend compilers.</p>
+<h3><span class="mw-headline" id="Transaction_logic_programming">Transaction logic programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Transaction logic is an extension of logic programming with a logical theory of state-modifying updates. It has both a model-theoretic semantics and a procedural one. An implementation of a subset of Transaction logic is available in the Flora-2 system. Other prototypes are also available.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Boolean satisfiability problem</li>
+<li>Constraint logic programming</li>
+<li>Datalog</li>
+<li>Fril</li>
+<li>Functional programming</li>
+<li>Fuzzy logic</li>
+<li>Inductive logic programming</li>
+<li>Logic in computer science (includes Formal methods)</li>
+<li>Logic programming languages</li>
+<li>Programming paradigm</li>
+<li>R++</li>
+<li>Reasoning system</li>
+<li>Rule-based machine learning</li>
+<li>Satisfiability</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<table class="plainlinks metadata ambox ambox-style ambox-More_footnotes" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article includes a list of references, but <b>its sources remain unclear</b> because it has <b>insufficient inline citations</b>. <span class="hide-when-compact">Please help to improve this article by introducing more precise citations.</span> <small><i>(February 2012)</i></small> <small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></span></td>
+</tr>
+</table>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns">
+<ol class="references">
+<li id="cite_note-Winograd-1"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">T. Winograd (1972). "Understanding natural language". <i>Cognitive Psychology</i>. <b>3</b> (1): 1–191. doi:10.1016/0010-0285(72)90002-3.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALogic+programming&amp;rft.atitle=Understanding+natural+language&amp;rft.au=T.+Winograd&amp;rft.date=1972&amp;rft.genre=article&amp;rft.issue=1&amp;rft.jtitle=Cognitive+Psychology&amp;rft.pages=1-191&amp;rft.volume=3&amp;rft_id=info%3Adoi%2F10.1016%2F0010-0285%2872%2990002-3&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Cordell Green. <b>Application of Theorem Proving to Problem Solving</b> IJCAI 1969.</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">J.M. Foster and E.W. Elcock. ABSYS 1: An Incremental Compiler for Assertions: an Introduction, Machine Intelligence 4, Edinburgh U Press, 1969, pp.&#160;423–429</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Carl Hewitt. <b>Planner: A Language for Proving Theorems in Robots</b> IJCAI 1969.</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Pat Hayes. Computation and Deduction. In Proceedings of the 2nd MFCS Symposium. Czechoslovak Academy of Sciences, 1973, pp.&#160;105–118.</span></li>
+<li id="cite_note-Kowalski-6"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Robert Kowalski <a><b>Predicate Logic as a Programming Language</b></a> Memo 70, Department of Artificial Intelligence, Edinburgh University. 1973. Also in Proceedings IFIP Congress, Stockholm, North Holland Publishing Co., 1974, pp.&#160;569–574.</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Robert Kowalski and Donald and Kuehner <a><b>Linear Resolution with Selection Function</b></a> Artificial Intelligence, Vol. 2, 1971, pp.&#160;227–60.</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation conference">Shapiro, Ehud (1989). <a><i>The family of concurrent logic programming languages</i></a> <span style="font-size:85%;">(PDF)</span>. International Summer School on Logic, Algebra and Computation.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALogic+programming&amp;rft.aufirst=Ehud&amp;rft.aulast=Shapiro&amp;rft.btitle=The+family+of+concurrent+logic+programming+languages&amp;rft.date=1989&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fwww.dtic.mil%2Fdtic%2Ftr%2Ffulltext%2Fu2%2Fa213958.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> Also appeared in <cite class="citation journal">Shapiro, E. (1989). "The family of concurrent logic programming languages". <i>ACM Computing Surveys</i>. <b>21</b> (3): 413–510. doi:10.1145/72551.72555.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALogic+programming&amp;rft.atitle=The+family+of+concurrent+logic+programming+languages&amp;rft.aufirst=E.&amp;rft.aulast=Shapiro&amp;rft.date=1989&amp;rft.genre=article&amp;rft.issue=3&amp;rft.jtitle=ACM+Computing+Surveys&amp;rft.pages=413-510&amp;rft.volume=21&amp;rft_id=info%3Adoi%2F10.1145%2F72551.72555&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation journal">R.A.Kowalski (July 1979). "Algorithm=Logic + Control". <i>Communications of the ACM</i>. <b>22</b> (7): 424–436. doi:10.1145/359131.359136.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALogic+programming&amp;rft.atitle=Algorithm%3DLogic+%2B+Control&amp;rft.au=R.A.Kowalski&amp;rft.date=1979-07&amp;rft.genre=article&amp;rft.issue=7&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.pages=424-436&amp;rft.volume=22&amp;rft_id=info%3Adoi%2F10.1145%2F359131.359136&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Prakken, H. and Sartor, G., 2015. Law and logic: a review from an argumentation perspective. Artificial Intelligence, 227, 214–245.</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Sergot, M.J., Sadri, F., Kowalski, R.A., Kriwaczek, F., Hammond, P. and Cory, H.T., 1986. The British Nationality Act as a logic program. Communications of the ACM, 29(5), 370–386.</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Shunichi Uchida and Kazuhiro Fuchi <b>Proceedings of the FGCS Project Evaluation Workshop</b> Institute for New Generation Computer Technology (ICOT). 1992.</span></li>
+<li id="cite_note-Hewitt-13"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Hewitt, Carl (27 April 2016). "Inconsistency Robustness for Logic Programs". Hal Archives. pp.&#160;21–26<span class="reference-accessdate">. Retrieved <span class="nowrap">7 November</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALogic+programming&amp;rft.au=Hewitt%2C+Carl&amp;rft.btitle=Inconsistency+Robustness+for+Logic+Programs&amp;rft.date=2016-04-27&amp;rft.genre=unknown&amp;rft.pages=21-26&amp;rft.pub=Hal+Archives&amp;rft_id=https%3A%2F%2Fhal.archives-ouvertes.fr%2Fhal-01148496v6%2Fdocument&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Joshua Hodas and Dale Miller. <b>Logic Programming in a Fragment of Intuitionistic Linear Logic</b>, Information and Computation, 1994, 110(2), 327–365.</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Naoki Kobayashi and Akinori Yonezawa. <b>Asynchronous communication model based on linear logic</b>, Formal Aspects of Computing, 1994, 279–294.</span></li>
+</ol>
+</div>
+</div>
+<h3><span class="mw-headline" id="General_introductions">General introductions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><cite class="citation journal">Baral, C.; Gelfond, M. (1994). "Logic programming and knowledge representation" <span style="font-size:85%;">(PDF)</span>. <i>The Journal of Logic Programming</i>. 19–20: 73–148. doi:10.1016/0743-1066(94)90025-6.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALogic+programming&amp;rft.atitle=Logic+programming+and+knowledge+representation&amp;rft.au=Gelfond%2C+M.&amp;rft.aufirst=C.&amp;rft.aulast=Baral&amp;rft.date=1994&amp;rft.genre=article&amp;rft.jtitle=The+Journal+of+Logic+Programming&amp;rft.pages=73-148&amp;rft.volume=19%E2%80%9320&amp;rft_id=http%3A%2F%2Fredwood.cs.ttu.edu%2F~mgelfond%2FPAPERS%2Fsurvey.pdf&amp;rft_id=info%3Adoi%2F10.1016%2F0743-1066%2894%2990025-6&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li>Robert Kowalski. <a><b>The Early Years of Logic Programming</b></a> <cite class="citation journal">Kowalski, R. A. (1988). "The early years of logic programming" <span style="font-size:85%;">(PDF)</span>. <i>Communications of the ACM</i>. <b>31</b>: 38–43. doi:10.1145/35043.35046.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALogic+programming&amp;rft.atitle=The+early+years+of+logic+programming&amp;rft.aufirst=R.+A.&amp;rft.aulast=Kowalski&amp;rft.date=1988&amp;rft.genre=article&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.pages=38-43&amp;rft.volume=31&amp;rft_id=http%3A%2F%2Fwww.doc.ic.ac.uk%2F~rak%2Fpapers%2Fthe%2520early%2520years.pdf&amp;rft_id=info%3Adoi%2F10.1145%2F35043.35046&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Lloyd, J. W. (1987). <i>Foundations of Logic Programming</i>. <i>(2nd edition)</i>. Springer-Verlag.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALogic+programming&amp;rft.aufirst=J.+W.&amp;rft.aulast=Lloyd&amp;rft.btitle=Foundations+of+Logic+Programming&amp;rft.date=1987&amp;rft.genre=book&amp;rft.pub=Springer-Verlag&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+<h3><span class="mw-headline" id="Other_sources">Other sources</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>John McCarthy. <b>Programs with common sense</b> Symposium on Mechanization of Thought Processes. National Physical Laboratory. Teddington, England. 1958.</li>
+<li>D. Miller, G. Nadathur, F. Pfenning, A. Scedrov. <b>Uniform proofs as a foundation for logic programming</b>, Annals of Pure and Applied Logic, vol. 51, pp 125–157, 1991.</li>
+<li>Ehud Shapiro (Editor). <b>Concurrent Prolog</b> MIT Press. 1987.</li>
+<li>James Slagle. <b>Experiments with a Deductive Question-Answering Program</b> CACM. December 1965.</li>
+</ul>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Carl Hewitt. <b>Procedural Embedding of Knowledge In Planner</b> IJCAI 1971.</li>
+<li>Carl Hewitt. <b>The repeated demise of logic programming and why it will be reincarnated</b></li>
+<li>Evgeny Dantsin, Thomas Eiter, Georg Gottlob, Andrei Voronkov: Complexity and expressive power of logic programming. ACM Comput. Surv. 33(3): 374–425 (2001)</li>
+<li>Ulf Nilsson and Jan Maluszynski, Logic, Programming and Prolog</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a><i>Logic Programming</i> Virtual Library entry</a></li>
+<li>Bibliographies on Logic Programming</li>
+<li>Association for Logic Programming (ALP)</li>
+<li>Theory and Practice of Logic Programming journal</li>
+<li>Logic programming in C++ with Castor</li>
+<li>Logic programming in Oz</li>
+<li>Prolog Development Center</li>
+<li>Racklog: Logic Programming in Racket</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Types_of_programming_languages" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="Types_of_programming_languages" style="font-size:114%;margin:0 4em">Types of programming languages</div>
+</th>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Actor-based</li>
+<li>Array</li>
+<li>Aspect-oriented</li>
+<li>Class-based</li>
+<li>Concatenative</li>
+<li>Concurrent</li>
+<li>Data-structured</li>
+<li>Dataflow</li>
+<li>Declarative</li>
+<li>Domain-specific</li>
+<li><a href="Dynamic_programming_language.html" title="Dynamic programming language">Dynamic</a></li>
+<li>Esoteric</li>
+<li>Event-driven</li>
+<li>Extensible</li>
+<li>Functional</li>
+<li><a href="Imperative_programming.html" title="Imperative programming">Imperative</a></li>
+<li>Logic</li>
+<li>Macro</li>
+<li>Metaprogramming</li>
+<li>Multi-paradigm</li>
+<li>Object-based</li>
+<li><a href="Object-oriented_programming.html" title="Object-oriented programming">Object-oriented</a></li>
+<li>Pipeline</li>
+<li>Procedural</li>
+<li>Prototype-based</li>
+<li>Reflective</li>
+<li>Rule-based</li>
+<li><a href="Scripting_language.html" title="Scripting language">Scripting</a></li>
+<li>Synchronous</li>
+<li>Templating</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Assembly_language.html" title="Assembly language">Assembly</a></li>
+<li>Compiled</li>
+<li>Interpreted</li>
+<li>Machine</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Low-level_programming_language.html" title="Low-level programming language">Low-level</a></li>
+<li><a href="High-level_programming_language.html" title="High-level programming language">High-level</a></li>
+<li>Very high-level</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>First generation</li>
+<li>Second generation</li>
+<li>Third generation</li>
+<li>Fourth generation</li>
+<li>Fifth generation</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Non-English-based</li>
+<li>Visual</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Computable_knowledge" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="Computable_knowledge" style="font-size:114%;margin:0 4em">Computable knowledge</div>
+</th>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Topics and<br />
+concepts</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Alphabet of human thought</li>
+<li>Authority control</li>
+<li>Automated reasoning</li>
+<li>Commonsense knowledge</li>
+<li>Commonsense reasoning</li>
+<li>Computability</li>
+<li>Formal system</li>
+<li>Inference engine</li>
+<li>Knowledge base</li>
+<li>Knowledge-based systems</li>
+<li>Knowledge engineering</li>
+<li>Knowledge extraction</li>
+<li>Knowledge representation</li>
+<li>Knowledge retrieval</li>
+<li>Library classification</li>
+<li>Logic programming</li>
+<li>Ontology</li>
+<li>Personal knowledge base</li>
+<li>Question answering</li>
+<li>Semantic reasoner</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Proposals and<br />
+implementations</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Zairja</li>
+<li><i>Ars Magna</i><span class="nowrap">&#160;</span>(1300)</li>
+<li><i>An Essay towards a Real Character and a Philosophical Language</i><span class="nowrap">&#160;</span>(1688)</li>
+<li>Calculus ratiocinator &amp; Characteristica universalis<span class="nowrap">&#160;</span>(1700)</li>
+<li>Dewey Decimal Classification<span class="nowrap">&#160;</span>(1876)</li>
+<li>Begriffsschrift<span class="nowrap">&#160;</span>(1879)</li>
+<li>Mundaneum<span class="nowrap">&#160;</span>(1910)</li>
+<li>Logical atomism<span class="nowrap">&#160;</span>(1918)</li>
+<li><i>Tractatus Logico-Philosophicus</i><span class="nowrap">&#160;</span>(1921)</li>
+<li>Hilbert's program<span class="nowrap">&#160;</span>(1920s)</li>
+<li>Incompleteness theorem<span class="nowrap">&#160;</span>(1931)</li>
+<li><i>World Brain</i><span class="nowrap">&#160;</span>(1938)</li>
+<li>Memex<span class="nowrap">&#160;</span>(1945)</li>
+<li>General Problem Solver<span class="nowrap">&#160;</span>(1959)</li>
+<li>Prolog<span class="nowrap">&#160;</span>(1972)</li>
+<li>Cyc<span class="nowrap">&#160;</span>(1984)</li>
+<li>Semantic Web<span class="nowrap">&#160;</span>(2001)</li>
+<li>Evi<span class="nowrap">&#160;</span>(2007)</li>
+<li>Wolfram Alpha<span class="nowrap">&#160;</span>(2009)</li>
+<li>Watson<span class="nowrap">&#160;</span>(2011)</li>
+<li>Siri<span class="nowrap">&#160;</span>(2011)</li>
+<li>Knowledge Graph<span class="nowrap">&#160;</span>(2012)</li>
+<li>Wikidata<span class="nowrap">&#160;</span>(2012)</li>
+<li>Cortana<span class="nowrap">&#160;</span>(2014)</li>
+<li>Viv<span class="nowrap">&#160;</span>(2016)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">In fiction</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>The Engine (<i>Gulliver's Travels</i>, 1726)</li>
+<li>Joe ("A Logic Named Joe", 1946)</li>
+<li>The Librarian (<i>Snow Crash</i>, 1992)</li>
+<li>Dr. Know (<i>A.I. Artificial Intelligence</i>, 2001)</li>
+<li>Waterhouse (<i>The Baroque Cycle</i>, 2003)</li>
+</ul>
+<p><i>See also: Logic machines in fiction and List of fictional computers</i></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-label="Navbox" style="padding:3px">
+<table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Authority control</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span class="nowrap">LCCN: <span class="uid">sh86003454</span></span></li>
+<li><span class="nowrap">GND: <span class="uid">4195096-3</span></span></li>
+<li><span class="nowrap">BNF: <span class="uid">cb12067891q (data)</span></span></li>
+<li><span class="nowrap">BNE: <span class="uid">XX550687</span></span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1246
+Cached time: 20170919054417
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.244 seconds
+Real time usage: 0.316 seconds
+Preprocessor visited node count: 1596/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 69097/2097152 bytes
+Template argument size: 2135/2097152 bytes
+Highest expansion depth: 11/40
+Expensive parser function count: 4/500
+Lua time usage: 0.116/10.000 seconds
+Lua memory usage: 4.66 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  245.509      1 -total
+ 23.43%   57.514      4 Template:Fix
+ 22.66%   55.635      1 Template:Reflist
+ 22.42%   55.055      3 Template:Citation_needed
+ 16.75%   41.127      5 Template:Cite_journal
+ 11.57%   28.400      4 Template:Delink
+ 10.28%   25.232      7 Template:Category_handler
+  8.93%   21.931      1 Template:Authority_control
+  8.16%   20.023      1 Template:Redirect
+  7.36%   18.062      2 Template:Navbox
+-->
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:17927-0!canonical and timestamp 20170919054416 and revision id 798875333
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "https://en.wikipedia.org/w/index.php?title=Logic_programming&amp;oldid=798875333"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks">Categories: <ul><li>Computer-related introductions in 1972</li><li>Logic programming</li><li>Programming paradigms</li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li>All articles with unsourced statements</li><li>Articles with unsourced statements from July 2013</li><li>All articles with minor POV problems</li><li>Articles with minor POV problems from August 2014</li><li>Articles lacking in-text citations from February 2012</li><li>All articles lacking in-text citations</li><li>Wikipedia articles with LCCN identifiers</li><li>Wikipedia articles with GND identifiers</li><li>Wikipedia articles with BNF identifiers</li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk">Talk</li><li id="pt-anoncontribs">Contributions</li><li id="pt-createaccount">Create account</li><li id="pt-login">Log in</li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Logic_programming.html" title="View the content page [c]" accesskey="c">Article</a></span></li>
+							<li id="ca-talk"><span>Talk</span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="Logic_programming.html">Read</a></span></li>
+							<li id="ca-edit"><span>Edit</span></li>
+							<li id="ca-history" class="collapsible"><span>View history</span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description">Main page</li><li id="n-contents">Contents</li><li id="n-featuredcontent">Featured content</li><li id="n-currentevents">Current events</li><li id="n-randompage">Random article</li><li id="n-sitesupport">Donate to Wikipedia</li><li id="n-shoplink">Wikipedia store</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help">Help</li><li id="n-aboutsite">About Wikipedia</li><li id="n-portal">Community portal</li><li id="n-recentchanges">Recent changes</li><li id="n-contactpage">Contact page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere">What links here</li><li id="t-recentchangeslinked">Related changes</li><li id="t-upload">Upload file</li><li id="t-specialpages">Special pages</li><li id="t-permalink">Permanent link</li><li id="t-info">Page information</li><li id="t-wikibase">Wikidata item</li><li id="t-cite">Cite this page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book">Create a book</li><li id="coll-download-as-rdf2latex">Download as PDF</li><li id="t-print">Printable version</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar">العربية</li><li class="interlanguage-link interwiki-bn">বাংলা</li><li class="interlanguage-link interwiki-bg">Български</li><li class="interlanguage-link interwiki-bs">Bosanski</li><li class="interlanguage-link interwiki-cs">Čeština</li><li class="interlanguage-link interwiki-de">Deutsch</li><li class="interlanguage-link interwiki-et">Eesti</li><li class="interlanguage-link interwiki-es">Español</li><li class="interlanguage-link interwiki-fa">فارسی</li><li class="interlanguage-link interwiki-fr">Français</li><li class="interlanguage-link interwiki-ga">Gaeilge</li><li class="interlanguage-link interwiki-gl">Galego</li><li class="interlanguage-link interwiki-ko">한국어</li><li class="interlanguage-link interwiki-hr">Hrvatski</li><li class="interlanguage-link interwiki-io">Ido</li><li class="interlanguage-link interwiki-it">Italiano</li><li class="interlanguage-link interwiki-he">עברית</li><li class="interlanguage-link interwiki-ms">Bahasa Melayu</li><li class="interlanguage-link interwiki-nl">Nederlands</li><li class="interlanguage-link interwiki-ja">日本語</li><li class="interlanguage-link interwiki-pl">Polski</li><li class="interlanguage-link interwiki-pt">Português</li><li class="interlanguage-link interwiki-rue">Русиньскый</li><li class="interlanguage-link interwiki-ru">Русский</li><li class="interlanguage-link interwiki-sq">Shqip</li><li class="interlanguage-link interwiki-simple">Simple English</li><li class="interlanguage-link interwiki-sr">Српски / srpski</li><li class="interlanguage-link interwiki-fi">Suomi</li><li class="interlanguage-link interwiki-sv">Svenska</li><li class="interlanguage-link interwiki-th">ไทย</li><li class="interlanguage-link interwiki-tr">Türkçe</li><li class="interlanguage-link interwiki-uk">Українська</li><li class="interlanguage-link interwiki-vi">Tiếng Việt</li><li class="interlanguage-link interwiki-zh">中文</li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link">Edit links</span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 4 September 2017, at 09:33.</li>
+											<li id="footer-info-copyright">Text is available under the Creative Commons Attribution-ShareAlike License;
+additional terms may apply.  By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy">Privacy policy</li>
+											<li id="footer-places-about">About Wikipedia</li>
+											<li id="footer-places-disclaimer">Disclaimers</li>
+											<li id="footer-places-contact">Contact Wikipedia</li>
+											<li id="footer-places-developers">Developers</li>
+											<li id="footer-places-cookiestatement">Cookie statement</li>
+											<li id="footer-places-mobileview">Mobile view</li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.244","walltime":"0.316","ppvisitednodes":{"value":1596,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":69097,"limit":2097152},"templateargumentsize":{"value":2135,"limit":2097152},"expansiondepth":{"value":11,"limit":40},"expensivefunctioncount":{"value":4,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  245.509      1 -total"," 23.43%   57.514      4 Template:Fix"," 22.66%   55.635      1 Template:Reflist"," 22.42%   55.055      3 Template:Citation_needed"," 16.75%   41.127      5 Template:Cite_journal"," 11.57%   28.400      4 Template:Delink"," 10.28%   25.232      7 Template:Category_handler","  8.93%   21.931      1 Template:Authority_control","  8.16%   20.023      1 Template:Redirect","  7.36%   18.062      2 Template:Navbox"]},"scribunto":{"limitreport-timeusage":{"value":"0.116","limit":"10.000"},"limitreport-memusage":{"value":4887352,"limit":52428800}},"cachereport":{"origin":"mw1246","timestamp":"20170919054417","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":66,"wgHostname":"mw1258"});});</script>
+	</body>
+</html>

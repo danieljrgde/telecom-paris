@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Scripting language - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Scripting_language","wgTitle":"Scripting language","wgCurRevisionId":801585783,"wgRevisionId":801585783,"wgArticleId":21490336,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: Extra text: authors list","Articles to be merged from July 2017","All articles to be merged","Articles needing additional references from March 2007","All articles needing additional references","All articles with unsourced statements","Articles with unsourced statements from May 2017","Pages using columns with the default column width","CS1 errors: dates","Webarchive template wayback links","Scripting languages","Programming paradigms"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Scripting_language","wgRelevantArticleId":21490336,"wgRequestId":"WcKRUwpAAD0AAEVKX2IAAABU","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":false,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q187432","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.30.0-wmf.18"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Scripting_language"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Scripting_language&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Scripting_language&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Scripting_language"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Scripting_language rootpage-Scripting_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Scripting language</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					navigation, 					search
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="plainlinks metadata ambox ambox-move" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mergefrom.svg/50px-Mergefrom.svg.png" width="50" height="20" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mergefrom.svg/75px-Mergefrom.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mergefrom.svg/100px-Mergefrom.svg.png 2x" data-file-width="50" data-file-height="20" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">It has been suggested that <i>Interpreted language</i> be merged into this article. (Discuss) <small><i>Proposed since July 2017.</i></small></span></td>
+</tr>
+</table>
+<p>A <b>scripting</b> or <b>script language</b> is a <a href="Programming_language.html" title="Programming language">programming language</a> that supports <b>scripts:</b> programs written for a special run-time environment that automate the execution of tasks that could alternatively be executed one-by-one by a human operator. Scripting languages are often interpreted (rather than <a href="Compiler.html" title="Compiler">compiled</a>). Primitives are usually the elementary tasks or API calls, and the language allows them to be combined into more complex programs. Environments that can be automated through scripting include software applications, web pages within a web browser, the shells of <a href="Operating_system.html" title="Operating system">operating systems</a> (OS), embedded systems, as well as numerous games. A scripting language can be viewed as a domain-specific language for a particular environment; in the case of scripting an application, this is also known as an <b>extension language</b>. Scripting languages are also sometimes referred to as very high-level programming languages, as they operate at a high level of abstraction, or as <b>control languages</b>, particularly for job control languages on mainframes.</p>
+<p>The term "scripting language" is also used loosely to refer to <a href="Dynamic_programming_language.html" title="Dynamic programming language">dynamic</a> high-level general-purpose languages, such as Perl,<sup id="cite_ref-sheppard00_1-0" class="reference">[1]</sup> Tcl, and <a href="Python_(programming_language).html" title="Python (programming language)">Python</a>,<sup id="cite_ref-2" class="reference">[2]</sup> with the term "script" often used for small programs (up to a few thousand lines of code) in such languages, or in domain-specific languages such as the text-processing languages sed and AWK. Some of these languages were originally developed for use within a particular environment, and later developed into portable domain-specific or general-purpose languages. Conversely, many general-purpose languages have dialects that are used as scripting languages. This article discusses scripting languages in the narrow sense of languages for a specific environment.</p>
+<p>The spectrum of scripting languages ranges from very small and highly domain-specific languages to general-purpose programming languages used for scripting. Standard examples of scripting languages for specific environments include: Bash, for the <a href="Unix.html" title="Unix">Unix</a> or Unix-like <a href="Operating_system.html" title="Operating system">operating systems</a>; ECMAScript (<a href="JavaScript.html" title="JavaScript">JavaScript</a>), for web browsers; and Visual Basic for Applications, for Microsoft Office applications. Lua is a language designed and widely used as an extension language. <a href="Python_(programming_language).html" title="Python (programming language)">Python</a> is a general-purpose language that is also commonly used as an extension language, while ECMAScript is still primarily a scripting language for web browsers, but is also used as a general-purpose language. The Emacs Lisp dialect of <a href="Lisp_(programming_language).html" title="Lisp (programming language)">Lisp</a> (for the Emacs editor) and the Visual Basic for Applications dialect of Visual Basic are examples of scripting language dialects of general-purpose languages. Some game systems, notably the Second Life virtual world and the Trainz franchise of Railroad simulators have been extensively extended in functionality by scripting extensions. In other games like Wesnoth, the variety of actual games played by players are scripts written by other users.</p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a><span class="tocnumber">1</span> <span class="toctext">Characteristics</span></a></li>
+<li class="toclevel-1 tocsection-2"><a><span class="tocnumber">2</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-3"><a><span class="tocnumber">3</span> <span class="toctext">Types</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a><span class="tocnumber">3.1</span> <span class="toctext">Glue languages</span></a></li>
+<li class="toclevel-2 tocsection-5"><a><span class="tocnumber">3.2</span> <span class="toctext">Job control languages and shells</span></a></li>
+<li class="toclevel-2 tocsection-6"><a><span class="tocnumber">3.3</span> <span class="toctext">GUI scripting</span></a></li>
+<li class="toclevel-2 tocsection-7"><a><span class="tocnumber">3.4</span> <span class="toctext">Application-specific languages</span></a></li>
+<li class="toclevel-2 tocsection-8"><a><span class="tocnumber">3.5</span> <span class="toctext">Extension/embeddable languages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-10"><a><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-11"><a><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-12"><a><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Characteristics">Characteristics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Typically scripting languages are intended to be very fast to learn and write in, either as short source code files or interactively in a read–eval–print loop (REPL, language shell).<sup id="cite_ref-3" class="reference">[3]</sup> This generally implies relatively simple syntax and semantics; typically a "script" (code written in the scripting language) is executed from start to finish, as a "script", with no explicit entry point.</p>
+<p>For example, it is uncommon to characterise <a href="Java_(programming_language).html" title="Java (programming language)">Java</a> as a scripting language because of its lengthy syntax and rules about which classes exist in which files, and it is not directly possible to execute Java interactively, because source files can only contain definitions that must be invoked externally by a host application or application launcher.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloWorld</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">printHelloWorld</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>This piece of code intended to print "Hello World" does nothing as <i>main()</i> is <i>not declared</i> in <b>HelloWorld</b> class.</p>
+<p>In contrast, Python allows definition of some functions in a single file, or to avoid functions altogether and use <a href="Imperative_programming.html" title="Imperative programming">imperative programming</a> style, or even use it interactively.</p>
+<p><code>print ("Hello World")</code></p>
+<p>This one line of python code prints "Hello World"; no <i>declarative</i> statement like <i>main()</i> is required here.</p>
+<p>A scripting language is usually interpreted from source code or <a href="Bytecode.html" title="Bytecode">bytecode</a>.<sup id="cite_ref-4" class="reference">[4]</sup> By contrast, the software environment the scripts are written for is typically written in a compiled language and distributed in machine code form.</p>
+<p>Scripting languages may be designed for use by end users of a program—end-user development—or may be only for internal use by developers, so they can write portions of the program in the scripting language. Scripting languages typically use abstraction, a form of information hiding, to spare users the details of internal variable types, data storage, and memory management.</p>
+<p>Scripts are often created or modified by the person executing them,<sup id="cite_ref-5" class="reference">[5]</sup> but they are also often distributed, such as when large portions of games are written in a scripting language.</p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Early mainframe computers (in the 1950s) were non-interactive, instead using batch processing. IBM's Job Control Language (JCL) is the archetype of languages used to control batch processing.<sup id="cite_ref-6" class="reference">[6]</sup></p>
+<p>The first interactive shells were developed in the 1960s to enable remote operation of the first time-sharing systems, and these used shell scripts, which controlled running computer programs within a computer program, the shell. Calvin Mooers in his TRAC language is generally credited with inventing <i>command substitution</i>, the ability to embed commands in scripts that when interpreted insert a character string into the script.<sup id="cite_ref-7" class="reference">[7]</sup> Multics calls these <i>active functions</i>.<sup id="cite_ref-8" class="reference">[8]</sup> Louis Pouzin wrote an early processor for command scripts called RUNCOM for CTSS around 1964. Stuart Madnick at MIT wrote a scripting language for IBM's CP/CMS in 1966. He originally called this processor COMMAND, later named EXEC.<sup id="cite_ref-9" class="reference">[9]</sup> Multics included an offshoot of CTSS RUNCOM, also called RUNCOM.<sup id="cite_ref-10" class="reference">[10]</sup> EXEC was eventually replaced by EXEC 2 and REXX.</p>
+<p>Languages such as Tcl and Lua were specifically designed as general-purpose scripting languages that could be embedded in any application. Other languages such as Visual Basic for Applications (VBA) provided strong integration with the automation facilities of an underlying system. Embedding of such general-purpose scripting languages instead of developing a new language for each application also had obvious benefits, relieving the application developer of the need to code a language translator from scratch and allowing the user to apply skills learned elsewhere.</p>
+<p>Some software incorporates several different scripting languages. Modern web browsers typically provide a language for writing extensions to the browser itself, and several standard embedded languages for controlling the browser, including <a href="JavaScript.html" title="JavaScript">JavaScript</a> (a dialect of ECMAScript) or XUL.</p>
+<h2><span class="mw-headline" id="Types">Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Glue_languages">Glue languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<table class="plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>does not cite any sources</b>. <span class="hide-when-compact">Please help improve this section by adding citations to reliable sources. Unsourced material may be challenged and removed.</span> <small><i>(March 2007)</i></small> <small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></span></td>
+</tr>
+</table>
+<p>Scripting is often contrasted with system programming, as in Ousterhout's dichotomy or "programming in the large and programming in the small". In this view, scripting is particularly glue code, connecting software components, and a language specialized for this purpose is a <i>glue language</i>. Pipelines and shell scripting are archetypal examples of glue languages, and Perl was initially developed to fill this same role. Web development can be considered a use of glue languages, interfacing between a <a href="Database.html" title="Database">database</a> and web server. But if a substantial amount of logic is written in script, it is better characterized as simply another software component, not "glue".</p>
+<p>Glue languages are especially useful for writing and maintaining:</p>
+<ul>
+<li>custom commands for a command shell;</li>
+<li>smaller programs than those that are better implemented in a compiled language;<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (May 2017)">citation needed</span></a></i>]</sup></li>
+<li>"wrapper" programs for executables, like a batch file that moves or manipulates files and does other things with the operating system before or after running an application like a word processor, spreadsheet, data base, assembler, compiler, etc.;</li>
+<li>scripts that may change;</li>
+<li>rapid prototypes of a solution eventually implemented in another, usually compiled, language.</li>
+</ul>
+<p>Glue language examples:</p>
+<table class="multicol" style=";border-spacing:0;background:transparent;" role="presentation">
+<tr style="vertical-align:top;">
+<td style="width:15.0em;;{{{col1style}}};">
+<ul>
+<li>AppleScript</li>
+<li>ColdFusion</li>
+<li>DCL</li>
+<li>Embeddable Common Lisp</li>
+<li>ecl</li>
+<li>Erlang</li>
+<li>JCL</li>
+<li>CoffeeScript</li>
+<li>JScript and <a href="JavaScript.html" title="JavaScript">JavaScript</a></li>
+<li>Lua</li>
+</ul>
+</td>
+<td style="width:1.25em;"></td>
+<td style="width:15.0em;;{{{col2style}}};">
+<ul>
+<li>m4</li>
+<li>Modern Pascal</li>
+<li>Perl</li>
+<li>PHP</li>
+<li>PowerShell</li>
+<li>Pure</li>
+<li><a href="Python_(programming_language).html" title="Python (programming language)">Python</a></li>
+<li>Rebol</li>
+<li>Red</li>
+<li>Rexx</li>
+</ul>
+</td>
+<td style="width:1.25em;"></td>
+<td style="width:15.0em;;{{{col3style}}};">
+<ul>
+<li>Ruby</li>
+<li>Scheme</li>
+<li>Tcl</li>
+<li><a href="Unix.html" title="Unix">Unix</a> Shell scripts (ksh, csh, bash, sh and others)</li>
+<li>VBScript</li>
+<li>Work Flow Language</li>
+<li>XSLT</li>
+<li>x</li>
+</ul>
+</td>
+</tr>
+</table>
+<p>Macro languages exposed to operating system or application components can serve as glue languages. These include Visual Basic for Applications, WordBasic, LotusScript, CorelScript, Hummingbird Basic, QuickScript, SaxBasic, and WinWrap Basic. Other tools like AWK can also be considered glue languages, as can any language implemented by an Windows Script Host engine (VBScript, JScript and VBA by default in Windows and third-party engines including implementations of Rexx, Perl, Tcl, Python, XSLT, Ruby, Modern Pascal, Delphi, &amp; C). A majority of applications can access and use operating system components via the object models or its own functions.</p>
+<p>Other devices like programmable calculators may also have glue languages; the operating systems of PDAs such as Windows CE may have available native or third-party macro tools that glue applications together, in addition to implementations of common glue languages—including Windows NT, MS-DOS and some Unix shells, Rexx, Modern Pascal, PHP, and Perl. Depending upon the OS version, WSH and the default script engines (VBScript and JScript) are available.</p>
+<p>Programmable calculators can be programmed in glue languages in three ways. For example, the Texas Instruments TI-92, by factory default can be programmed with a command script language. Inclusion of the scripting and glue language Lua in the TI-NSpire series of calculators could be seen as a successor to this. The primary on-board high-level programming languages of most graphing calculators (most often Basic variants, sometimes Lisp derivatives, and more uncommonly, C derivatives) in many cases can glue together calculator functions—such as graphs, lists, matrices, etc. Third-party implementations of more comprehensive Basic version that may be closer to variants listed as glue languages in this article are available—and attempts to implement Perl, Rexx, or various operating system shells on the TI and HP graphing calculators are also mentioned. PC-based C cross-compilers for some of the TI and HP machines used in conjunction with tools that convert between C and Perl, Rexx, AWK, as well as shell scripts to Perl, Modern Pascal, VBScript to and from Perl make it possible to write a program in a glue language for eventual implementation (as a compiled program) on the calculator.</p>
+<h3><span class="mw-headline" id="Job_control_languages_and_shells">Job control languages and shells</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Shell script</div>
+<p>A major class of scripting languages has grown out of the automation of job control, which relates to starting and controlling the behavior of system programs. (In this sense, one might think of shells as being descendants of IBM's JCL, or Job Control Language, which was used for exactly this purpose.) Many of these languages' interpreters double as command-line interpreters such as the Unix shell or the MS-DOS <code>COMMAND.COM</code>. Others, such as AppleScript offer the use of English-like commands to build scripts.</p>
+<h3><span class="mw-headline" id="GUI_scripting">GUI scripting</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>With the advent of graphical user interfaces, a specialized kind of scripting language emerged for controlling a computer. These languages interact with the same graphic windows, menus, buttons, and so on that a human user would. They do this by simulating the actions of a user. These languages are typically used to automate user actions. Such languages are also called "macros" when control is through simulated key presses or mouse clicks, as well as tapping or pressing on a touch-activated screen.</p>
+<p>These languages could in principle be used to control any GUI application; but, in practice their use is limited because their use needs support from the application and from the <a href="Operating_system.html" title="Operating system">operating system</a>. There are a few exceptions to this limitation. Some GUI scripting languages are based on recognizing graphical objects from their display screen pixels. These GUI scripting languages do not depend on support from the operating system or application.</p>
+<h3><span class="mw-headline" id="Application-specific_languages">Application-specific languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Application specific languages can be split in many different categories, i.e. standalone based app languages (executable) or internal application specific languages (postscript, xml, gscript as some of the widely distributed scripts, respectively implemented by Adobe, MS and Google) among others include an idiomatic scripting language tailored to the needs of the application user. Likewise, many computer game systems use a custom scripting language to express the programmed actions of non-player characters and the game environment. Languages of this sort are designed for a single application; and, while they may superficially resemble a specific general-purpose language (e.g. QuakeC, modeled after C), they have custom features that distinguish them. Emacs Lisp, while a fully formed and capable dialect of <a href="Lisp_(programming_language).html" title="Lisp (programming language)">Lisp</a>, contains many special features that make it most useful for extending the editing functions of Emacs. An application-specific scripting language can be viewed as a domain-specific programming language specialized to a single application.</p>
+<h3><span id="Extension/embeddable_languages"></span><span class="mw-headline" id="Extension.2Fembeddable_languages">Extension/embeddable languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>A number of languages have been designed for the purpose of replacing application-specific scripting languages by being embeddable in application programs. The application programmer (working in C or another systems language) includes "hooks" where the scripting language can control the application. These languages may be technically equivalent to an application-specific extension language but when an application embeds a "common" language, the user gets the advantage of being able to transfer skills from application to application. A more generic alternative is simply to provide a library (often a C library) that a general-purpose language can use to control the application, without modifying the language for the specific domain.</p>
+<p>JavaScript began as and primarily still is a language for scripting inside web browsers; however, the standardization of the language as ECMAScript has made it popular as a general-purpose embeddable language. In particular, the Mozilla implementation SpiderMonkey is embedded in several environments such as the Yahoo! Widget Engine. Other applications embedding ECMAScript implementations include the Adobe products Adobe Flash (ActionScript) and Adobe Acrobat (for scripting PDF files).</p>
+<p>Tcl was created as an extension language but has come to be used more frequently as a general-purpose language in roles similar to <a href="Python_(programming_language).html" title="Python (programming language)">Python</a>, Perl, and Ruby. On the other hand, Rexx was originally created as a job control language, but is widely used as an extension language as well as a general-purpose language. Perl is a general-purpose language, but had the Oraperl (1990) dialect, consisting of a Perl 4 binary with Oracle Call Interface compiled in. This has however since been replaced by a library (Perl Module), DBD::Oracle.<sup id="cite_ref-11" class="reference">[11]</sup><sup id="cite_ref-12" class="reference">[12]</sup></p>
+<p>Other complex and task-oriented applications may incorporate and expose an embedded programming language to allow their users more control and give them more functionality than can be available through a user interface, no matter how sophisticated. For example, Autodesk Maya 3D authoring tools embed the MEL scripting language, or Blender which uses <a href="Python_(programming_language).html" title="Python (programming language)">Python</a> to fill this role.</p>
+<p>Some other types of applications that need faster feature addition or tweak-and-run cycles (e.g. game engines) also use an embedded language. During the development, this allows them to prototype features faster and tweak more freely, without the need for the user to have intimate knowledge of the inner workings of the application or to rebuild it after each tweak (which can take a significant amount of time). The scripting languages used for this purpose range from the more common and more famous Lua and <a href="Python_(programming_language).html" title="Python (programming language)">Python</a> to lesser-known ones such as AngelScript and Squirrel.</p>
+<p>Ch is another C compatible scripting option for the industry to embed into C/C++ application programs.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>List of scripting languages</li>
+<li>Architecture description language</li>
+<li>Authoring language</li>
+<li>Build automation<sup id="cite_ref-13" class="reference">[13]</sup></li>
+<li>Configuration file</li>
+<li>Interpreter directive / Shebang (Unix)</li>
+<li>Templating language</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns">
+<ol class="references">
+<li id="cite_note-sheppard00-1"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Sheppard, Doug (2000-10-16). "Beginner's Introduction to Perl". dev.perl.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-01-08</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AScripting+language&amp;rft.aufirst=Doug&amp;rft.aulast=Sheppard&amp;rft.btitle=Beginner%27s+Introduction+to+Perl&amp;rft.date=2000-10-16&amp;rft.genre=unknown&amp;rft.pub=dev.perl.org&amp;rft_id=http%3A%2F%2Fwww.perl.com%2Fpub%2F2000%2F10%2Fbegperl1.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Programming is Hard, Let's Go Scripting…, Larry Wall, December 6, 2007</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Hey, Tony; Pápay, Gyuri (2014). <i>The Computing Universe: A Journey through a Revolution</i>. Cambridge University Press. p.&#160;76. ISBN&#160;978-1-31612322-5, "A major characteristic of modern scripting languages is their interactivity, sometimes referred to as a <i>REPL</i> programming environment. […] The characteristics of ease of use and immediate execution with a REPL environment are sometimes taken as the definition of a scripting language."</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AScripting+language&amp;rft.au=P%C3%A1pay%2C+Gyuri&amp;rft.aufirst=Tony&amp;rft.aulast=Hey&amp;rft.btitle=The+Computing+Universe%3A+A+Journey+through+a+Revolution&amp;rft.date=2014&amp;rft.genre=book&amp;rft.isbn=978-1-31612322-5&amp;rft.pages=76&amp;rft.pub=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Brown, Vicki. "Scripting Languages"<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-07-22</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AScripting+language&amp;rft.aufirst=Vicki&amp;rft.aulast=Brown&amp;rft.btitle=Scripting+Languages&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.mactech.com%2Farticles%2Fmactech%2FVol.15%2F15.09%2FScriptingLanguages%2Findex.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Loui, Ronald (2008). "In praise of scripting". IEEE Computer.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AScripting+language&amp;rft.aufirst=Ronald&amp;rft.aulast=Loui&amp;rft.btitle=In+praise+of+scripting&amp;rft.date=2008&amp;rft.genre=unknown&amp;rft.pub=IEEE+Computer&amp;rft_id=http%3A%2F%2Fwww.cse.wustl.edu%2F~loui%2Fpraiseieee.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">IBM Corporation (1967). <a><i>IBM System/360 Operating System Job Control Language (C28-6529-4)</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AScripting+language&amp;rft.au=IBM+Corporation&amp;rft.btitle=IBM+System%2F360+Operating+System+Job+Control+Language+%28C28-6529-4%29&amp;rft.date=1967&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.bitsavers.org%2Fpdf%2Fibm%2F360%2Fos%2FR01-08%2FC28-6539-4_OS_JCL_Mar67.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Mooers, Calvin. "TRAC, A Procedure-Describing Language for the Reactive Typewriter". Archived from the original on 2001-04-25<span class="reference-accessdate">. Retrieved <span class="nowrap">March 9,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AScripting+language&amp;rft.aufirst=Calvin&amp;rft.aulast=Mooers&amp;rft.btitle=TRAC%2C+A+Procedure-Describing+Language+for+the+Reactive+Typewriter&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Ftracfoundation.org%2Ftrac64%2Fprocedure.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Van Vleck(ed.), Thomas. "Multics Glossary -A- (active function)"<span class="reference-accessdate">. Retrieved <span class="nowrap">March 9,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AScripting+language&amp;rft.aufirst=Thomas&amp;rft.aulast=Van+Vleck%28ed.%29&amp;rft.btitle=Multics+Glossary+-A-+%28active+function%29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.multicians.org%2Fmga.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span><span class="citation-comment" style="display:none; color:#33aa33; margin-left:0.3em">CS1 maint: Extra text: authors list (link)</span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Varian, Melinda. "VM AND THE VM COMMUNITY: Past, Present, and Future" <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">March 9,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AScripting+language&amp;rft.aufirst=Melinda&amp;rft.aulast=Varian&amp;rft.btitle=VM+AND+THE+VM+COMMUNITY%3A+Past%2C+Present%2C+and+Future&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fweb.me.com%2Fmelinda.varian%2FSite%2FMelinda_Varians_Home_Page_files%2Fneuvm.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Van Vleck, Thomas(ed.). "Multics Glossary -R- (RUNCOM)"<span class="reference-accessdate">. Retrieved <span class="nowrap">March 9,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AScripting+language&amp;rft.aufirst=Thomas%28ed.%29&amp;rft.aulast=Van+Vleck&amp;rft.btitle=Multics+Glossary+-R-+%28RUNCOM%29&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.multicians.org%2Fmgr.html%23runcom&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span><span class="citation-comment" style="display:none; color:#33aa33; margin-left:0.3em">CS1 maint: Extra text: authors list (link)</span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Oraperl, CPAN]</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Perl, <i>Underground Oracle FAQ</i></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Van Rossum, Guido (January 6–8, 1998). "Glue it all together". <i>Glue It All Together With Python</i>. python.org.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AScripting+language&amp;rft.atitle=Glue+it+all+together&amp;rft.aufirst=Guido&amp;rft.aulast=Van+Rossum&amp;rft.date=1998-01-06%2F1998-01-08&amp;rft.genre=unknown&amp;rft.jtitle=Glue+It+All+Together+With+Python&amp;rft_id=https%3A%2F%2Fwww.python.org%2Fdoc%2Fessays%2Fomg-darpa-mcc-position%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite class="citation book">Barron, David William (2001`). <i>The World of Scripting Languages</i>. ISBN&#160;0-471-99886-9.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AScripting+language&amp;rft.aufirst=David+William&amp;rft.aulast=Barron&amp;rft.btitle=The+World+of+Scripting+Languages&amp;rft.genre=book&amp;rft.isbn=0-471-99886-9&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> <span style="font-size:100%" class="error citation-comment">Check date values in: <code style="color:inherit; border:inherit; padding:inherit;">|date=</code> (help)</span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Patterns for Scripted Applications at the Wayback Machine (archived October 10, 2004)</li>
+<li><span class="url">Common Development Scenarios</span></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Types_of_programming_languages" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="Types_of_programming_languages" style="font-size:114%;margin:0 4em">Types of programming languages</div>
+</th>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Actor-based</li>
+<li>Array</li>
+<li>Aspect-oriented</li>
+<li>Class-based</li>
+<li>Concatenative</li>
+<li>Concurrent</li>
+<li>Data-structured</li>
+<li>Dataflow</li>
+<li>Declarative</li>
+<li>Domain-specific</li>
+<li><a href="Dynamic_programming_language.html" title="Dynamic programming language">Dynamic</a></li>
+<li>Esoteric</li>
+<li>Event-driven</li>
+<li>Extensible</li>
+<li>Functional</li>
+<li><a href="Imperative_programming.html" title="Imperative programming">Imperative</a></li>
+<li><a href="Logic_programming.html" title="Logic programming">Logic</a></li>
+<li>Macro</li>
+<li>Metaprogramming</li>
+<li>Multi-paradigm</li>
+<li>Object-based</li>
+<li><a href="Object-oriented_programming.html" title="Object-oriented programming">Object-oriented</a></li>
+<li>Pipeline</li>
+<li>Procedural</li>
+<li>Prototype-based</li>
+<li>Reflective</li>
+<li>Rule-based</li>
+<li>Scripting</li>
+<li>Synchronous</li>
+<li>Templating</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Assembly_language.html" title="Assembly language">Assembly</a></li>
+<li>Compiled</li>
+<li>Interpreted</li>
+<li>Machine</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Low-level_programming_language.html" title="Low-level programming language">Low-level</a></li>
+<li><a href="High-level_programming_language.html" title="High-level programming language">High-level</a></li>
+<li>Very high-level</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>First generation</li>
+<li>Second generation</li>
+<li>Third generation</li>
+<li>Fourth generation</li>
+<li>Fifth generation</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Non-English-based</li>
+<li>Visual</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1289
+Cached time: 20170920155639
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.216 seconds
+Real time usage: 0.310 seconds
+Preprocessor visited node count: 1194/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 42722/2097152 bytes
+Template argument size: 2379/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 3/500
+Lua time usage: 0.100/10.000 seconds
+Lua memory usage: 4.58 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  258.313      1 -total
+ 45.19%  116.728      1 Template:Reflist
+ 31.88%   82.355      8 Template:Cite_web
+ 24.42%   63.084      1 Template:Merge_from
+ 12.12%   31.298      1 Template:Mbox
+  7.39%   19.097      1 Template:Citation_needed
+  6.68%   17.248      1 Template:Fix
+  6.27%   16.186      3 Template:Cite_book
+  4.82%   12.446      1 Template:Main_article
+  4.57%   11.795      1 Template:Programming_language
+-->
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:21490336-0!canonical and timestamp 20170920155650 and revision id 801585783
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "https://en.wikipedia.org/w/index.php?title=Scripting_language&amp;oldid=801585783"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks">Categories: <ul><li>Scripting languages</li><li>Programming paradigms</li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li>CS1 maint: Extra text: authors list</li><li>Articles to be merged from July 2017</li><li>All articles to be merged</li><li>Articles needing additional references from March 2007</li><li>All articles needing additional references</li><li>All articles with unsourced statements</li><li>Articles with unsourced statements from May 2017</li><li>Pages using columns with the default column width</li><li>CS1 errors: dates</li><li>Webarchive template wayback links</li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk">Talk</li><li id="pt-anoncontribs">Contributions</li><li id="pt-createaccount">Create account</li><li id="pt-login">Log in</li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Scripting_language.html" title="View the content page [c]" accesskey="c">Article</a></span></li>
+							<li id="ca-talk"><span>Talk</span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="Scripting_language.html">Read</a></span></li>
+							<li id="ca-edit"><span>Edit</span></li>
+							<li id="ca-history" class="collapsible"><span>View history</span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description">Main page</li><li id="n-contents">Contents</li><li id="n-featuredcontent">Featured content</li><li id="n-currentevents">Current events</li><li id="n-randompage">Random article</li><li id="n-sitesupport">Donate to Wikipedia</li><li id="n-shoplink">Wikipedia store</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help">Help</li><li id="n-aboutsite">About Wikipedia</li><li id="n-portal">Community portal</li><li id="n-recentchanges">Recent changes</li><li id="n-contactpage">Contact page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere">What links here</li><li id="t-recentchangeslinked">Related changes</li><li id="t-upload">Upload file</li><li id="t-specialpages">Special pages</li><li id="t-permalink">Permanent link</li><li id="t-info">Page information</li><li id="t-wikibase">Wikidata item</li><li id="t-cite">Cite this page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book">Create a book</li><li id="coll-download-as-rdf2latex">Download as PDF</li><li id="t-print">Printable version</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons">Wikimedia Commons</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar">العربية</li><li class="interlanguage-link interwiki-az">Azərbaycanca</li><li class="interlanguage-link interwiki-be-x-old">Беларуская (тарашкевіца)‎</li><li class="interlanguage-link interwiki-bg">Български</li><li class="interlanguage-link interwiki-ca">Català</li><li class="interlanguage-link interwiki-cs">Čeština</li><li class="interlanguage-link interwiki-da">Dansk</li><li class="interlanguage-link interwiki-de">Deutsch</li><li class="interlanguage-link interwiki-et">Eesti</li><li class="interlanguage-link interwiki-el">Ελληνικά</li><li class="interlanguage-link interwiki-fa">فارسی</li><li class="interlanguage-link interwiki-fr">Français</li><li class="interlanguage-link interwiki-ko">한국어</li><li class="interlanguage-link interwiki-hi">हिन्दी</li><li class="interlanguage-link interwiki-id">Bahasa Indonesia</li><li class="interlanguage-link interwiki-it">Italiano</li><li class="interlanguage-link interwiki-he">עברית</li><li class="interlanguage-link interwiki-kk">Қазақша</li><li class="interlanguage-link interwiki-ky">Кыргызча</li><li class="interlanguage-link interwiki-lv">Latviešu</li><li class="interlanguage-link interwiki-hu">Magyar</li><li class="interlanguage-link interwiki-ml">മലയാളം</li><li class="interlanguage-link interwiki-ms">Bahasa Melayu</li><li class="interlanguage-link interwiki-cdo">Mìng-dĕ̤ng-ngṳ̄</li><li class="interlanguage-link interwiki-mwl">Mirandés</li><li class="interlanguage-link interwiki-nl">Nederlands</li><li class="interlanguage-link interwiki-ne">नेपाली</li><li class="interlanguage-link interwiki-ja">日本語</li><li class="interlanguage-link interwiki-no">Norsk</li><li class="interlanguage-link interwiki-pl">Polski</li><li class="interlanguage-link interwiki-pt">Português</li><li class="interlanguage-link interwiki-ru">Русский</li><li class="interlanguage-link interwiki-simple">Simple English</li><li class="interlanguage-link interwiki-sk">Slovenčina</li><li class="interlanguage-link interwiki-sr">Српски / srpski</li><li class="interlanguage-link interwiki-fi">Suomi</li><li class="interlanguage-link interwiki-sv">Svenska</li><li class="interlanguage-link interwiki-ta">தமிழ்</li><li class="interlanguage-link interwiki-te">తెలుగు</li><li class="interlanguage-link interwiki-tr">Türkçe</li><li class="interlanguage-link interwiki-uk">Українська</li><li class="interlanguage-link interwiki-vi">Tiếng Việt</li><li class="interlanguage-link interwiki-zh-yue">粵語</li><li class="interlanguage-link interwiki-zh">中文</li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link">Edit links</span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 20 September 2017, at 15:56.</li>
+											<li id="footer-info-copyright">Text is available under the Creative Commons Attribution-ShareAlike License;
+additional terms may apply.  By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy">Privacy policy</li>
+											<li id="footer-places-about">About Wikipedia</li>
+											<li id="footer-places-disclaimer">Disclaimers</li>
+											<li id="footer-places-contact">Contact Wikipedia</li>
+											<li id="footer-places-developers">Developers</li>
+											<li id="footer-places-cookiestatement">Cookie statement</li>
+											<li id="footer-places-mobileview">Mobile view</li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.216","walltime":"0.310","ppvisitednodes":{"value":1194,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":42722,"limit":2097152},"templateargumentsize":{"value":2379,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  258.313      1 -total"," 45.19%  116.728      1 Template:Reflist"," 31.88%   82.355      8 Template:Cite_web"," 24.42%   63.084      1 Template:Merge_from"," 12.12%   31.298      1 Template:Mbox","  7.39%   19.097      1 Template:Citation_needed","  6.68%   17.248      1 Template:Fix","  6.27%   16.186      3 Template:Cite_book","  4.82%   12.446      1 Template:Main_article","  4.57%   11.795      1 Template:Programming_language"]},"scribunto":{"limitreport-timeusage":{"value":"0.100","limit":"10.000"},"limitreport-memusage":{"value":4800475,"limit":52428800}},"cachereport":{"origin":"mw1289","timestamp":"20170920155639","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":89,"wgHostname":"mw1266"});});</script>
+	</body>
+</html>

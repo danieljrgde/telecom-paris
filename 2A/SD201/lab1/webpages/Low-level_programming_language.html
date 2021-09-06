@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Low-level programming language - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Low-level_programming_language","wgTitle":"Low-level programming language","wgCurRevisionId":800214810,"wgRevisionId":800214810,"wgArticleId":189845,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles that may contain original research from March 2017","All articles that may contain original research","Articles needing additional references from July 2015","All articles needing additional references","All articles with unsourced statements","Articles with unsourced statements from March 2017","Programming language classification"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Low-level_programming_language","wgRelevantArticleId":189845,"wgRequestId":"WbdVWApAME4AAH0jctEAAAAM","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":true,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q558937","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.30.0-wmf.17"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Low-level_programming_language"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Low-level_programming_language&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Low-level_programming_language&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Low-level_programming_language"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Low-level_programming_language rootpage-Low-level_programming_language skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Low-level programming language</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					navigation, 					search
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<div class="mw-collapsible" style="width:95%; margin: 0.2em 0;"><span class="mbox-text-span"><b>This article has multiple issues.</b> Please help <b>improve it</b> or discuss these issues on the <b>talk page</b>. <small><i>(Learn how and when to remove these template messages)</i></small></span>
+<div class="mw-collapsible-content" style="margin-top: 0.3em;">
+<table class="plainlinks metadata ambox ambox-content ambox-Original_research" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>possibly contains original research</b>. <span class="hide-when-compact">Please improve it by verifying the claims made and adding inline citations. Statements consisting only of original research should be removed.</span> <small><i>(March 2017)</i></small> <small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for verification</b>. <span class="hide-when-compact">Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.</span> <small><i>(July 2015)</i></small> <small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></span></td>
+</tr>
+</table>
+</div>
+</div>
+<small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></td>
+</tr>
+</table>
+<p>A <b>low-level programming language</b> is a <a href="Programming_language.html" title="Programming language">programming language</a> that provides little or no abstraction from a computer's instruction set architecture—commands or functions in the language map closely to processor instructions. Generally this refers to either machine code or <a href="Assembly_language.html" title="Assembly language">assembly language</a>. The word "low" refers to the small or nonexistent amount of abstraction between the language and machine language; because of this, low-level languages are sometimes described as being "close to the hardware". Programs written in low-level languages tend to be relatively <a href="Software_portability.html" title="Software portability">non-portable</a>, mainly because of the close relationship between the language and the hardware architecture.</p>
+<p>Low-level languages can convert to machine code without a compiler or interpreter— second-generation programming languages use a simpler processor called an assembler— and the resulting code runs directly on the processor. A program written in a low-level language can be made to run very quickly, with a small memory footprint. An equivalent program in a high-level language can be less efficient and use more memory. Low-level languages are simple, but considered difficult to use, due to numerous technical details that the programmer must remember. By comparison, a <a href="High-level_programming_language.html" title="High-level programming language">high-level programming language</a> isolates execution semantics of a computer architecture from the specification of the program, which simplifies development.</p>
+<p>Low-level programming languages are sometimes divided into two categories: <i>first generation</i> and <i>second generation</i>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (March 2017)">citation needed</span></a></i>]</sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a><span class="tocnumber">1</span> <span class="toctext">Machine code</span></a></li>
+<li class="toclevel-1 tocsection-2"><a><span class="tocnumber">2</span> <span class="toctext">Assembly</span></a></li>
+<li class="toclevel-1 tocsection-3"><a><span class="tocnumber">3</span> <span class="toctext">Low-level programming in high-level languages</span></a></li>
+<li class="toclevel-1 tocsection-4"><a><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Machine_code">Machine code</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Digital_pdp8-e2.jpg/220px-Digital_pdp8-e2.jpg" width="220" height="103" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Digital_pdp8-e2.jpg/330px-Digital_pdp8-e2.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Digital_pdp8-e2.jpg/440px-Digital_pdp8-e2.jpg 2x" data-file-width="4636" data-file-height="2173" /></a>
+<div class="thumbcaption">
+<div class="magnify"></div>
+Front panel of a PDP-8/E minicomputer. The row of switches at the bottom can be used to toggle in a machine language program</div>
+</div>
+</div>
+<p>Machine code is the only language a computer can process directly without a previous transformation. Currently, programmers almost never write programs directly in machine code, because it requires attention to numerous details that a high-level language handles automatically. Furthermore it requires memorizing or looking up numerical codes for every instruction, and is extremely difficult to modify.</p>
+<p>True <i>machine code</i> is a stream of raw, usually binary, data. A programmer coding in "machine code" normally codes instructions and data in a more readable form such as decimal, octal, or hexadecimal which is translated to internal format by a program called a loader or toggled into the computer's memory from a front panel.</p>
+<p>Although few programs are written in machine language, programmers often become adept at reading it through working with core dumps or debugging from the front panel.</p>
+<p>Example: A function in hexadecimal representation of 32-bit x86 machine code to calculate the <i>n</i>th Fibonacci number:</p>
+<pre>
+8B542408 83FA0077 06B80000 0000C383
+FA027706 B8010000 00C353BB 01000000
+B9010000 008D0419 83FA0376 078BD989
+C14AEBF1 5BC3
+</pre>
+<h2><span class="mw-headline" id="Assembly">Assembly</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Second-generation languages provide one abstraction level on top of the machine code. In the early days of coding on computers like the TX-0 and PDP-1, the first thing MIT hackers did was write assemblers.<sup id="cite_ref-1" class="reference">[1]</sup> <a href="Assembly_language.html" title="Assembly language">Assembly language</a> has little semantics or formal specification, being only a mapping of human-readable symbols, including symbolic addresses, to opcodes, <a href="Memory_address.html" title="Memory address">addresses</a>, numeric constants, strings and so on. Typically, one machine instruction is represented as one line of assembly code. Assemblers produce object files that can link with other object files or be loaded on their own.</p>
+<p>Most assemblers provide macros to generate common sequences of instructions.</p>
+<p>Example: The same Fibonacci number calculator as above, but in x86 assembly language using MASM syntax:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nl">fib:</span>
+    <span class="nf">mov</span> <span class="nb">edx</span><span class="p">,</span> <span class="p">[</span><span class="nb">esp</span><span class="o">+</span><span class="mi">8</span><span class="p">]</span>
+    <span class="nf">cmp</span> <span class="nb">edx</span><span class="p">,</span> <span class="mi">0</span>
+    <span class="nf">ja</span> <span class="err">@</span><span class="nv">f</span>
+    <span class="nf">mov</span> <span class="nb">eax</span><span class="p">,</span> <span class="mi">0</span>
+    <span class="nf">ret</span>
+    
+    <span class="err">@@:</span>
+    <span class="nf">cmp</span> <span class="nb">edx</span><span class="p">,</span> <span class="mi">2</span>
+    <span class="nf">ja</span> <span class="err">@</span><span class="nv">f</span>
+    <span class="nf">mov</span> <span class="nb">eax</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="nf">ret</span>
+    
+    <span class="err">@@:</span>
+    <span class="nf">push</span> <span class="nb">ebx</span>
+    <span class="nf">mov</span> <span class="nb">ebx</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="nf">mov</span> <span class="nb">ecx</span><span class="p">,</span> <span class="mi">1</span>
+    
+    <span class="err">@@:</span>
+        <span class="nf">lea</span> <span class="nb">eax</span><span class="p">,</span> <span class="p">[</span><span class="nb">ebx</span><span class="o">+</span><span class="nb">ecx</span><span class="p">]</span>
+        <span class="nf">cmp</span> <span class="nb">edx</span><span class="p">,</span> <span class="mi">3</span>
+        <span class="nf">jbe</span> <span class="err">@</span><span class="nv">f</span>
+        <span class="nf">mov</span> <span class="nb">ebx</span><span class="p">,</span> <span class="nb">ecx</span>
+        <span class="nf">mov</span> <span class="nb">ecx</span><span class="p">,</span> <span class="nb">eax</span>
+        <span class="nf">dec</span> <span class="nb">edx</span>
+    <span class="nf">jmp</span> <span class="err">@</span><span class="nv">b</span>
+    
+    <span class="err">@@:</span>
+    <span class="nf">pop</span> <span class="nb">ebx</span>
+    <span class="nf">ret</span>
+</pre></div>
+<p>In this code example, hardware features of the x86 processor (its registers) are named and manipulated directly. The function loads its input from a precise location in the stack (8 bytes higher than the location stored in the <b>ESP</b> stack pointer) and performs its calculation by manipulating values in the <b>EAX</b>, <b>EBX</b>, <b>ECX</b> and <b>EDX</b> registers until it has finished and returns. Note that in this assembly language, there is no concept of returning a value. The result having been stored in the <b>EAX</b> register, the <b>RET</b> command simply moves code processing to the code location stored on the stack (usually the instruction immediately after the one that called this function) and it is up to the author of the calling code to know that this function stores its result in <b>EAX</b> and to retrieve it from there. x86 assembly language imposes no standard for returning values from a function (and so, in fact, has no concept of a function); it is up to the calling code to examine state after the procedure returns if it needs to extract a value.</p>
+<p>Compare this with the same function in C:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">unsigned</span> <span class="kt">int</span> <span class="nf">fib</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">else</span> <span class="p">{</span>
+        <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">;</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">)</span> <span class="k">return</span> <span class="n">c</span><span class="p">;</span>
+            <span class="n">a</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
+            <span class="n">b</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+            <span class="n">n</span><span class="o">--</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+<p>This code is very similar in structure to the assembly language example but there are significant differences in terms of abstraction:</p>
+<ul>
+<li>While the input (parameter <b>n</b>) is loaded from the stack, its precise position on the stack is not specified. The C compiler calculates this based on the calling conventions of the target architecture.</li>
+<li>The assembly language version loads the input parameter from the stack into a register and in each iteration of the loop decrements the value in the register, never altering the value in the memory location on the stack. The C compiler could do the same or could update the value in the stack. Which one it chooses is an implementation decision completely hidden from the code author (and one with no side effects, thanks to C language standards).</li>
+<li>The local variables a, b and c are abstractions that do not specify any specific storage location on the hardware. The C compiler decides how to actually store them for the target architecture.</li>
+<li>The return function specifies the value to return, but does not dictate <i>how</i> it is returned. The C compiler for any specific architecture implements a <b>standard</b> mechanism for returning the value. Compilers for the x86 architecture typically (but not always) use the EAX register to return a value, as in the assembly language example (the author of the assembly language example has <i>chosen</i> to copy the C convention but assembly language does not require this).</li>
+</ul>
+<p>These abstractions make the C code compilable without modification on any architecture for which a C compiler has been written. The x86 assembly language code is specific to the x86 architecture.</p>
+<h2><span class="mw-headline" id="Low-level_programming_in_high-level_languages">Low-level programming in high-level languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>In the late 1960s, high-level languages such as PL/S, BLISS, BCPL, extended ALGOL (for Burroughs large systems) and <a href="C_(programming_language).html" title="C (programming language)">C</a> included some degree of access to low-level programming functions. One method for this is Inline assembly, in which assembly code is embedded in a high-level language that supports this feature. Some of these languages also allow architecture-dependent compiler optimization directives to adjust the way a compiler uses the target processor architecture.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Levy, Stephen (1994). Hackers: Heroes of the Computer Revolution, Penguin Books. p. 32. ISBN&#160;0-14-100051-1</span></li>
+</ol>
+</div>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="Types_of_programming_languages" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="Types_of_programming_languages" style="font-size:114%;margin:0 4em">Types of programming languages</div>
+</th>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Actor-based</li>
+<li>Array</li>
+<li>Aspect-oriented</li>
+<li>Class-based</li>
+<li>Concatenative</li>
+<li>Concurrent</li>
+<li>Data-structured</li>
+<li>Dataflow</li>
+<li>Declarative</li>
+<li>Domain-specific</li>
+<li><a href="Dynamic_programming_language.html" title="Dynamic programming language">Dynamic</a></li>
+<li>Esoteric</li>
+<li>Event-driven</li>
+<li>Extensible</li>
+<li>Functional</li>
+<li><a href="Imperative_programming.html" title="Imperative programming">Imperative</a></li>
+<li><a href="Logic_programming.html" title="Logic programming">Logic</a></li>
+<li>Macro</li>
+<li>Metaprogramming</li>
+<li>Multi-paradigm</li>
+<li>Object-based</li>
+<li><a href="Object-oriented_programming.html" title="Object-oriented programming">Object-oriented</a></li>
+<li>Pipeline</li>
+<li>Procedural</li>
+<li>Prototype-based</li>
+<li>Reflective</li>
+<li>Rule-based</li>
+<li><a href="Scripting_language.html" title="Scripting language">Scripting</a></li>
+<li>Synchronous</li>
+<li>Templating</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Assembly_language.html" title="Assembly language">Assembly</a></li>
+<li>Compiled</li>
+<li>Interpreted</li>
+<li>Machine</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Low-level</li>
+<li><a href="High-level_programming_language.html" title="High-level programming language">High-level</a></li>
+<li>Very high-level</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>First generation</li>
+<li>Second generation</li>
+<li>Third generation</li>
+<li>Fourth generation</li>
+<li>Fifth generation</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Non-English-based</li>
+<li>Visual</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-labelledby="x86_assembly_topics" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="x86_assembly_topics" style="font-size:114%;margin:0 4em">x86 assembly topics</div>
+</th>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Topics</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Assembly_language.html" title="Assembly language">Assembly language</a></li>
+<li>Comparison of assemblers</li>
+<li>Disassembler</li>
+<li><a href="Instruction_set.html" class="mw-redirect" title="Instruction set">Instruction set</a></li>
+<li>Low-level programming language</li>
+<li>Machine code</li>
+<li>Microassembler</li>
+<li>x86 assembly language</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Assemblers</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>A86/A386</li>
+<li>Flat Assembler (FASM)</li>
+<li>GNU Assembler (GAS)</li>
+<li>High Level Assembly (HLA)</li>
+<li>Microsoft Macro Assembler (MASM)</li>
+<li>Netwide Assembler (NASM)</li>
+<li>Turbo Assembler (TASM)</li>
+<li>Open Watcom Assembler (WASM)</li>
+<li>Yasm</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Programming<br />
+issues</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Call stack</li>
+<li>Flags
+<ul>
+<li>Carry flag</li>
+<li>Direction flag</li>
+<li>Interrupt flag</li>
+<li>Overflow flag</li>
+<li>Zero flag</li>
+</ul>
+</li>
+<li>Opcode</li>
+<li>Program counter</li>
+<li>Processor register</li>
+<li>Calling conventions</li>
+<li>Instruction listings</li>
+<li>Registers</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1231
+Cached time: 20170912033210
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.156 seconds
+Real time usage: 0.220 seconds
+Preprocessor visited node count: 792/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 44528/2097152 bytes
+Template argument size: 7023/2097152 bytes
+Highest expansion depth: 16/40
+Expensive parser function count: 3/500
+Lua time usage: 0.056/10.000 seconds
+Lua memory usage: 1.71 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  167.328      1 -total
+ 61.86%  103.515      3 Template:Ambox
+ 52.27%   87.465      1 Template:Multiple_issues
+ 19.25%   32.205      1 Template:Reflist
+ 15.00%   25.099      1 Template:ISBN
+ 14.88%   24.897      1 Template:Cn
+ 14.83%   24.821      1 Template:Original_research
+ 12.76%   21.344      1 Template:Fix
+  9.04%   15.134      2 Template:Navbox
+  8.05%   13.467      1 Template:Programming_language
+-->
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:189845-0!canonical and timestamp 20170912033218 and revision id 800214810
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "https://en.wikipedia.org/w/index.php?title=Low-level_programming_language&amp;oldid=800214810"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks">Categories: <ul><li>Programming language classification</li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li>Articles that may contain original research from March 2017</li><li>All articles that may contain original research</li><li>Articles needing additional references from July 2015</li><li>All articles needing additional references</li><li>All articles with unsourced statements</li><li>Articles with unsourced statements from March 2017</li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk">Talk</li><li id="pt-anoncontribs">Contributions</li><li id="pt-createaccount">Create account</li><li id="pt-login">Log in</li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Low-level_programming_language.html" title="View the content page [c]" accesskey="c">Article</a></span></li>
+							<li id="ca-talk"><span>Talk</span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="Low-level_programming_language.html">Read</a></span></li>
+							<li id="ca-edit"><span>Edit</span></li>
+							<li id="ca-history" class="collapsible"><span>View history</span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description">Main page</li><li id="n-contents">Contents</li><li id="n-featuredcontent">Featured content</li><li id="n-currentevents">Current events</li><li id="n-randompage">Random article</li><li id="n-sitesupport">Donate to Wikipedia</li><li id="n-shoplink">Wikipedia store</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help">Help</li><li id="n-aboutsite">About Wikipedia</li><li id="n-portal">Community portal</li><li id="n-recentchanges">Recent changes</li><li id="n-contactpage">Contact page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere">What links here</li><li id="t-recentchangeslinked">Related changes</li><li id="t-upload">Upload file</li><li id="t-specialpages">Special pages</li><li id="t-permalink">Permanent link</li><li id="t-info">Page information</li><li id="t-wikibase">Wikidata item</li><li id="t-cite">Cite this page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book">Create a book</li><li id="coll-download-as-rdf2latex">Download as PDF</li><li id="t-print">Printable version</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar">العربية</li><li class="interlanguage-link interwiki-az">Azərbaycanca</li><li class="interlanguage-link interwiki-ca">Català</li><li class="interlanguage-link interwiki-cs">Čeština</li><li class="interlanguage-link interwiki-el">Ελληνικά</li><li class="interlanguage-link interwiki-es">Español</li><li class="interlanguage-link interwiki-fa">فارسی</li><li class="interlanguage-link interwiki-fr">Français</li><li class="interlanguage-link interwiki-ga">Gaeilge</li><li class="interlanguage-link interwiki-ko">한국어</li><li class="interlanguage-link interwiki-hr">Hrvatski</li><li class="interlanguage-link interwiki-it">Italiano</li><li class="interlanguage-link interwiki-he">עברית</li><li class="interlanguage-link interwiki-ka">ქართული</li><li class="interlanguage-link interwiki-ku">Kurdî</li><li class="interlanguage-link interwiki-lv">Latviešu</li><li class="interlanguage-link interwiki-lmo">Lumbaart</li><li class="interlanguage-link interwiki-hu">Magyar</li><li class="interlanguage-link interwiki-mk">Македонски</li><li class="interlanguage-link interwiki-mn">Монгол</li><li class="interlanguage-link interwiki-ja">日本語</li><li class="interlanguage-link interwiki-no">Norsk</li><li class="interlanguage-link interwiki-mhr">Олык марий</li><li class="interlanguage-link interwiki-pl">Polski</li><li class="interlanguage-link interwiki-pt">Português</li><li class="interlanguage-link interwiki-ru">Русский</li><li class="interlanguage-link interwiki-sl">Slovenščina</li><li class="interlanguage-link interwiki-sr">Српски / srpski</li><li class="interlanguage-link interwiki-sh">Srpskohrvatski / српскохрватски</li><li class="interlanguage-link interwiki-sv">Svenska</li><li class="interlanguage-link interwiki-th">ไทย</li><li class="interlanguage-link interwiki-tr">Türkçe</li><li class="interlanguage-link interwiki-uk">Українська</li><li class="interlanguage-link interwiki-vi">Tiếng Việt</li><li class="interlanguage-link interwiki-zh">中文</li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link">Edit links</span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 12 September 2017, at 03:32.</li>
+											<li id="footer-info-copyright">Text is available under the Creative Commons Attribution-ShareAlike License;
+additional terms may apply.  By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy">Privacy policy</li>
+											<li id="footer-places-about">About Wikipedia</li>
+											<li id="footer-places-disclaimer">Disclaimers</li>
+											<li id="footer-places-contact">Contact Wikipedia</li>
+											<li id="footer-places-developers">Developers</li>
+											<li id="footer-places-cookiestatement">Cookie statement</li>
+											<li id="footer-places-mobileview">Mobile view</li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.156","walltime":"0.220","ppvisitednodes":{"value":792,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":44528,"limit":2097152},"templateargumentsize":{"value":7023,"limit":2097152},"expansiondepth":{"value":16,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  167.328      1 -total"," 61.86%  103.515      3 Template:Ambox"," 52.27%   87.465      1 Template:Multiple_issues"," 19.25%   32.205      1 Template:Reflist"," 15.00%   25.099      1 Template:ISBN"," 14.88%   24.897      1 Template:Cn"," 14.83%   24.821      1 Template:Original_research"," 12.76%   21.344      1 Template:Fix","  9.04%   15.134      2 Template:Navbox","  8.05%   13.467      1 Template:Programming_language"]},"scribunto":{"limitreport-timeusage":{"value":"0.056","limit":"10.000"},"limitreport-memusage":{"value":1788348,"limit":52428800}},"cachereport":{"origin":"mw1231","timestamp":"20170912033210","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":85,"wgHostname":"mw1243"});});</script>
+	</body>
+</html>

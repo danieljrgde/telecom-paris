@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Boolean data type - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Boolean_data_type","wgTitle":"Boolean data type","wgCurRevisionId":799640491,"wgRevisionId":799640491,"wgArticleId":1162065,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with example ALGOL 68 code","Boolean algebra","Data types","Primitive types"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Boolean_data_type","wgRelevantArticleId":1162065,"wgRequestId":"Wb1TcApAADsAAGOuKbUAAACW","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":true,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q520777","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.math.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.cite.a11y","ext.math.scripts","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.30.0-wmf.18"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Boolean_data_type"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Boolean_data_type&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Boolean_data_type&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Boolean_data_type"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Boolean_data_type rootpage-Boolean_data_type skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Boolean data type</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					navigation, 					search
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>In <a href="Computer_science.html" title="Computer science">computer science</a>, the <b>Boolean data type</b> is a <a href="Data_type.html" title="Data type">data type</a>, having two values (usually denoted <i>true</i> and <i>false</i>), intended to represent the truth values of logic and Boolean algebra. It is named after George Boole, who first defined an algebraic system of logic in the mid 19th century. The Boolean data type is primarily associated with conditional statements, which allow different actions and change <a href="Control_flow.html" title="Control flow">control flow</a> depending on whether a programmer-specified Boolean <i>condition</i> evaluates to true or false. It is a special case of a more general <i>logical data type</i>; logic need not always be Boolean.</p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a><span class="tocnumber">1</span> <span class="toctext">Generalities</span></a></li>
+<li class="toclevel-1 tocsection-2"><a><span class="tocnumber">2</span> <span class="toctext">ALGOL and the built-in boolean type</span></a></li>
+<li class="toclevel-1 tocsection-3"><a><span class="tocnumber">3</span> <span class="toctext">Fortran</span></a></li>
+<li class="toclevel-1 tocsection-4"><a><span class="tocnumber">4</span> <span class="toctext">Lisp and Scheme</span></a></li>
+<li class="toclevel-1 tocsection-5"><a><span class="tocnumber">5</span> <span class="toctext">Pascal, Ada, and Haskell</span></a></li>
+<li class="toclevel-1 tocsection-6"><a><span class="tocnumber">6</span> <span class="toctext">C, C++, Objective-C, AWK</span></a></li>
+<li class="toclevel-1 tocsection-7"><a><span class="tocnumber">7</span> <span class="toctext">Perl and Lua</span></a></li>
+<li class="toclevel-1 tocsection-8"><a><span class="tocnumber">8</span> <span class="toctext">Python, Ruby, and JavaScript</span></a></li>
+<li class="toclevel-1 tocsection-9"><a><span class="tocnumber">9</span> <span class="toctext">SQL</span></a></li>
+<li class="toclevel-1 tocsection-10"><a><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-11"><a><span class="tocnumber">11</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Generalities">Generalities</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>In <a href="Programming_language.html" title="Programming language">programming languages</a> with a built-in Boolean data type, such as Pascal and <a href="Java_(programming_language).html" title="Java (programming language)">Java</a>, the comparison operators such as <code>&gt;</code> and <code>≠</code> are usually defined to return a Boolean value. Conditional and iterative commands may be defined to test Boolean-valued expressions.</p>
+<p>Languages with no explicit Boolean data type, like C90 and <a href="Lisp_(programming_language).html" title="Lisp (programming language)">Lisp</a>, may still represent truth values by some other data type. Common Lisp uses an empty list for false, and any other value for true. C uses an <a href="Integer_(computer_science).html" title="Integer (computer science)">integer</a> type, where relational expressions like <code>i &gt; j</code> and logical expressions connected by <code>&amp;&amp;</code> and <code>||</code> are defined to have value 1 if true and 0 if false, whereas the test parts of <code>if</code>, <code>while</code>, <code>for</code>, etc., treat any non-zero value as true.<sup id="cite_ref-k.26r1e_1-0" class="reference">[1]</sup><sup id="cite_ref-2" class="reference">[2]</sup> Indeed, a Boolean variable may be regarded (and implemented) as a numerical variable with one binary digit (bit), which can store only two values. The implementation of Booleans in computers are most likely represented as a full word, rather than a bit; this is usually due to the ways computers transfer blocks of information.</p>
+<p>Most programming languages, even those with no explicit Boolean type, have support for Boolean algebraic operations such as conjunction (<code>AND</code>, <code>&amp;</code>, <code>*</code>), disjunction (<code>OR</code>, <code>|</code>, <code>+</code>), equivalence (<code>EQV</code>, <code>=</code>, <code>==</code>), exclusive or/non-equivalence (<code>XOR</code>, <code>NEQV</code>, <code>^</code>, <code>!=</code>), and negation (<code>NOT</code>, <code>~</code>, <code>!</code>).</p>
+<p>In some languages, like Ruby, Smalltalk, and Alice the <i>true</i> and <i>false</i> values belong to separate classes, i.e., <code>True</code> and <code>False</code>, respectively, so there is no one Boolean <i>type</i>.</p>
+<p>In SQL, which uses a three-valued logic for explicit comparisons because of its special treatment of Nulls, the Boolean data type (introduced in SQL:1999) is also defined to include more than two truth values, so that SQL <i>Booleans</i> can store all logical values resulting from the evaluation of predicates in SQL. A column of Boolean type can also be restricted to just <code>TRUE</code> and <code>FALSE</code> though.</p>
+<h2><span class="mw-headline" id="ALGOL_and_the_built-in_boolean_type">ALGOL and the built-in boolean type</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>One of the earliest programming languages to provide an explicit <i>boolean</i> data type was ALGOL 60 (1960) with values <i>true</i> and <i>false</i> and logical operators denoted by symbols '<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x2227;<!-- ∧ --></mo>
+      </mstyle>
+    </mrow>
+    <a>{\displaystyle \wedge }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1caa4004cb216ef2930bb12fe805a76870caed94" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.561ex; height:2.009ex;" alt="\wedge " /></span>' (and), '<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x2228;<!-- ∨ --></mo>
+      </mstyle>
+    </mrow>
+    <a>{\displaystyle \vee }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b76220c6805c9b465d6efbc7686c624f49f3023" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.561ex; height:2.009ex;" alt="\vee " /></span>' (or), '<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x2283;<!-- ⊃ --></mo>
+      </mstyle>
+    </mrow>
+    <a>{\displaystyle \supset }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/27bfe0828a2ed4c9c6b70987a85c02a1f005843c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.819ex; height:1.843ex;" alt="\supset " /></span>' (implies), '<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x2261;<!-- ≡ --></mo>
+      </mstyle>
+    </mrow>
+    <a>{\displaystyle \equiv }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4c5c34250859b6f6d2a77b4e8a2ceaa90638076d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: 0.06ex; margin-bottom: -0.232ex; width:1.819ex; height:1.509ex;" alt="\equiv " /></span>' (equivalence), and '<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">&#x00AC;<!-- ¬ --></mi>
+      </mstyle>
+    </mrow>
+    <a>{\displaystyle \neg }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fa78fd02085d39aa58c9e47a6d4033ce41e02fad" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: 0.183ex; margin-bottom: -0.355ex; width:1.561ex; height:1.343ex;" alt="\neg " /></span>' (not). Due to input device and character set limits on many computers of the time, however, most compilers used alternative representations for many of the operators, such as <code>AND</code> or <code>'AND'</code>.</p>
+<p>This approach with <i>boolean</i> as a built-in (either primitive or otherwise predefined) <a href="Data_type.html" title="Data type">data type</a> was adopted by many later programming languages, such as Simula 67 (1967), ALGOL 68 (1970),<sup id="cite_ref-3" class="reference">[3]</sup> Pascal (1970), Ada (1980), <a href="Java_(programming_language).html" title="Java (programming language)">Java</a> (1995), and C# (2000), among others.</p>
+<h2><span class="mw-headline" id="Fortran">Fortran</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>The first version of <a href="Fortran.html" title="Fortran">FORTRAN</a> (1957) and its successor FORTRAN II (1958) had no logical values or operations; even the conditional <code>IF</code> statement took an arithmetic expression and branched to one of three locations according to its sign; see arithmetic IF. FORTRAN IV (1962), however, followed the ALGOL 60 example by providing a Boolean data type (<code>LOGICAL</code>), truth literals (<code>.TRUE.</code> and <code>.FALSE.</code>), Boolean-valued numeric comparison operators (<code>.EQ.</code>, <code>.GT.</code>, etc.), and logical operators (<code>.NOT.</code>, <code>.AND.</code>, <code>.OR.</code>). In <code>FORMAT</code> statements, a specific control character ('<code>L</code>') was provided for the parsing or formatting of logical values.<sup id="cite_ref-4" class="reference">[4]</sup></p>
+<h2><span class="mw-headline" id="Lisp_and_Scheme">Lisp and Scheme</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>The language <a href="Lisp_(programming_language).html" title="Lisp (programming language)">Lisp</a> (1958) never had a built-in Boolean data type. Instead, conditional constructs like <code>cond</code> assume that the logical value <i>false</i> is represented by the empty list <code>()</code>, which is defined to be the same as the special atom <code>nil</code> or <code>NIL</code>; whereas any other s-expression is interpreted as <i>true</i>. For convenience, most modern dialects of Lisp predefine the atom <code>t</code> to have value <code>t</code>, so that <code>t</code> can be used as a mnemonic notation for <i>true</i>.</p>
+<p>This approach (<i>any value can be used as a Boolean value</i>) was retained in most Lisp dialects (Common Lisp, Scheme, Emacs Lisp), and similar models were adopted by many <a href="Scripting_language.html" title="Scripting language">scripting languages</a>, even ones having a distinct Boolean type or Boolean values; although which values are interpreted as <i>false</i> and which are <i>true</i> vary from language to language. In Scheme, for example, the <i>false</i> value is an atom distinct from the empty list, so the latter is interpreted as <i>true</i>.</p>
+<h2><span class="mw-headline" id="Pascal.2C_Ada.2C_and_Haskell">Pascal, Ada, and Haskell</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>The language Pascal (1970) introduced the concept of programmer-defined enumerated types. A built-in <code>Boolean</code> data type was then provided as a predefined enumerated type with values <code>FALSE</code> and <code>TRUE</code>. By definition, all comparisons, logical operations, and conditional statements applied to and/or yielded <code>Boolean</code> values. Otherwise, the <code>Boolean</code> type had all the facilities which were available for enumerated types in general, such as ordering and use as indices. In contrast, converting between <code>Boolean</code>s and integers (or any other types) still required explicit tests or function calls, as in ALGOL 60. This approach (<i>Boolean is an enumerated type</i>) was adopted by most later languages which had enumerated types, such as Modula, Ada, and Haskell.</p>
+<h2><span class="mw-headline" id="C.2C_C.2B.2B.2C_Objective-C.2C_AWK">C, C++, Objective-C, AWK</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Initial implementations of the language <a href="C_(programming_language).html" title="C (programming language)">C</a> (1972) provided no Boolean type, and to this day Boolean values are commonly represented by integers (<code>int</code>s) in C programs. The comparison operators (<code>&gt;</code>, <code>==</code>, etc.) are defined to return a signed integer (<code>int</code>) result, either 0 (for false) or 1 (for true). Logical operators (<code>&amp;&amp;</code>, <code>||</code>, <code>!</code>, etc.) and condition-testing statements (<code>if</code>, <code>while</code>) assume that zero is false and all other values are true.</p>
+<p>After enumerated types (<code>enum</code>s) were added to the American National Standards Institute version of C, ANSI C (1989), many C programmers got used to defining their own Boolean types as such, for readability reasons. However, enumerated types are equivalent to integers according to the language standards; so the effective identity between Booleans and integers is still valid for C programs.</p>
+<p>Standard <a href="C_(programming_language).html" title="C (programming language)">C</a> (since C99) provides a boolean type, called <code>_Bool</code>. By including the header <code>stdbool.h</code> one can use the more intuitive name <code>bool</code> and the constants <code>true</code> and <code>false</code>. The language guarantees that any two true values will compare equal (which was impossible to achieve before the introduction of the type). Boolean values still behave as integers, can be stored in integer variables, and used anywhere integers would be valid, including in indexing, arithmetic, parsing, and formatting. This approach (<i>Boolean values are just integers</i>) has been retained in all later versions of C.</p>
+<p><a href="C++.html" title="C++">C++</a> has a separate Boolean data type <code>bool</code>, but with automatic conversions from scalar and pointer values that are very similar to those of C. This approach was adopted also by many later languages, especially by some <a href="Scripting_language.html" title="Scripting language">scripting languages</a> such as AWK.</p>
+<p>Objective-C also has a separate Boolean data type <code>BOOL</code>, with possible values being <code>YES</code> or <code>NO</code>, equivalents of true and false respectively.<sup id="cite_ref-5" class="reference">[5]</sup> Also, in Objective-C compilers that support C99, C's <code>_Bool</code> type can be used, since Objective-C is a superset of C.</p>
+<h2><span class="mw-headline" id="Perl_and_Lua">Perl and Lua</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Perl has no boolean data type. Instead, any value can behave as boolean in boolean context (condition of <code>if</code> or <code>while</code> statement, argument of <code>&amp;&amp;</code> or <code>||</code>, etc.). The number <code>0</code>, the strings <code>"0"</code> and <code>""</code>, the empty list <code>()</code>, and the special value <code>undef</code> evaluate to false.<sup id="cite_ref-6" class="reference">[6]</sup> All else evaluates to true.</p>
+<p>Lua has a boolean data type, but non-boolean value can also behave as boolean. The non-value <code>nil</code> evaluate to false, whereas every other data type always evaluates to true, regardless of value.</p>
+<h2><span class="mw-headline" id="Python.2C_Ruby.2C_and_JavaScript">Python, Ruby, and JavaScript</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p><a href="Python_(programming_language).html" title="Python (programming language)">Python</a>, from version 2.3 forward, has a <code>bool</code> type which is a subclass of <code>int</code>, the standard integer type.<sup id="cite_ref-7" class="reference">[7]</sup> It has two possible values: <code>True</code> and <code>False</code>, which are <i>special versions</i> of 1 and 0 respectively and behave as such in arithmetic contexts. Also, a numeric value of zero (integer or fractional), the null value (<code>None</code>), the empty string, and empty containers (i.e. lists, sets, etc.) are considered Boolean false; all other values are considered Boolean true by default.<sup id="cite_ref-8" class="reference">[8]</sup> Classes can define how their instances are treated in a Boolean context through the special method <code>__nonzero__</code> (Python 2) or <code>__bool__</code> (Python 3). For containers, <code>__len__</code> (the special method for determining the length of containers) is used if the explicit Boolean conversion method is not defined.</p>
+<p>In Ruby, in contrast, only <code>nil</code> (Ruby's null value) and a special <code>false</code> object are <i>false</i>, all else (including the integer 0 and empty arrays) is <i>true</i>.</p>
+<p>In <a href="JavaScript.html" title="JavaScript">JavaScript</a>, the empty string (<code>""</code>), <code>null</code>, <code>undefined</code>, <code>NaN</code>, +0, −0 and <code>false</code><sup id="cite_ref-9" class="reference">[9]</sup> are sometimes called <i>falsy</i>, and their complement, <i>truthy</i>, to distinguish between strictly type-checked and coerced Booleans.<sup id="cite_ref-10" class="reference">[10]</sup> Languages such as PHP also use this approach.</p>
+<h2><span class="mw-headline" id="SQL">SQL</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>The SQL:1999 standard introduced a BOOLEAN data type as an optional feature (T031). When restricted by a <code>NOT NULL</code> constraint, a SQL BOOLEAN behaves like Booleans in other languages. However, in SQL the BOOLEAN type is nullable by default like all other SQL data types, meaning it can have the special null value also. Although the SQL standard defines three literals for the BOOLEAN type – TRUE, FALSE, and UNKNOWN – it also says that the NULL BOOLEAN and UNKNOWN "may be used interchangeably to mean exactly the same thing".<sup id="cite_ref-Date2011_11-0" class="reference">[11]</sup><sup id="cite_ref-12" class="reference">[12]</sup> This has caused some controversy because the identification subjects UNKNOWN to the equality comparison rules for NULL. More precisely UNKNOWN = UNKNOWN is not TRUE but UNKNOWN/NULL.<sup id="cite_ref-Prigmore2007_13-0" class="reference">[13]</sup> As of 2012 few major SQL systems implement the T031 feature.<sup id="cite_ref-14" class="reference">[14]</sup> PostgreSQL is a notable exception, although it implements no UNKNOWN literal; NULL can be used instead.<sup id="cite_ref-15" class="reference">[15]</sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>true and false (commands), for shell scripting</li>
+<li>Shannon's expansion</li>
+<li>stdbool.h, C99 definitions for boolean</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Data_types" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="Data_types" style="font-size:114%;margin:0 4em"><a href="Data_type.html" title="Data type">Data types</a></div>
+</th>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Uninterpreted</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Bit</li>
+<li>Byte</li>
+<li>Trit</li>
+<li>Tryte</li>
+<li>Word</li>
+<li>Bit array</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Numeric</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Arbitrary-precision or bignum</li>
+<li>Complex</li>
+<li>Decimal</li>
+<li>Fixed point</li>
+<li>Floating point
+<ul>
+<li>Double precision</li>
+<li>Extended precision</li>
+<li>Half precision</li>
+<li>Long double</li>
+<li>Minifloat</li>
+<li>Octuple precision</li>
+<li>Quadruple precision</li>
+<li>Single precision</li>
+</ul>
+</li>
+<li><a href="Integer_(computer_science).html" title="Integer (computer science)">Integer</a>
+<ul>
+<li>signedness</li>
+</ul>
+</li>
+<li>Interval</li>
+<li>Rational</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%"><a href="Pointer_(computer_programming).html" title="Pointer (computer programming)">Pointer</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Memory_address.html" title="Memory address">Address</a>
+<ul>
+<li>physical</li>
+<li>virtual</li>
+</ul>
+</li>
+<li>Reference</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Text</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Character</li>
+<li>String
+<ul>
+<li>null-terminated</li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Composite</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Algebraic data type
+<ul>
+<li>generalized</li>
+</ul>
+</li>
+<li>Array</li>
+<li>Associative array</li>
+<li>Class</li>
+<li>Dependent</li>
+<li>Equality</li>
+<li>Inductive</li>
+<li>List</li>
+<li><a href="Object_(computer_science).html" title="Object (computer science)">Object</a>
+<ul>
+<li>metaobject</li>
+</ul>
+</li>
+<li>Option type</li>
+<li>Product</li>
+<li>Record</li>
+<li>Set</li>
+<li>Union
+<ul>
+<li>tagged</li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Other</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Boolean</li>
+<li>Bottom type</li>
+<li>Collection</li>
+<li>Enumerated type</li>
+<li>Exception</li>
+<li>Function type</li>
+<li>Opaque data type</li>
+<li>Recursive data type</li>
+<li>Semaphore</li>
+<li>Stream</li>
+<li>Top type</li>
+<li>Type class</li>
+<li>Unit type</li>
+<li>Void</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Related<br />
+topics</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Abstract data type</li>
+<li>Data structure</li>
+<li>Generic</li>
+<li>Kind
+<ul>
+<li>metaclass</li>
+</ul>
+</li>
+<li>Parametric polymorphism</li>
+<li>Primitive data type</li>
+<li>Protocol
+<ul>
+<li>interface</li>
+</ul>
+</li>
+<li>Subtyping</li>
+<li>Type constructor</li>
+<li>Type conversion</li>
+<li><a href="Type_system.html" title="Type system">Type system</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>See also platform-dependent and independent units of information</div>
+</td>
+</tr>
+</table>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-k.26r1e-1"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Kernighan, Brian W; Ritchie, Dennis M (1978). <i>The C Programming Language</i> (1st ed.). Englewood Cliffs, NJ: Prentice Hall. p.&#160;41. ISBN&#160;0-13-110163-3.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoolean+data+type&amp;rft.au=Ritchie%2C+Dennis+M&amp;rft.aufirst=Brian+W&amp;rft.aulast=Kernighan&amp;rft.btitle=The+C+Programming+Language&amp;rft.date=1978&amp;rft.edition=1st&amp;rft.genre=book&amp;rft.isbn=0-13-110163-3&amp;rft.pages=41&amp;rft.place=Englewood+Cliffs%2C+NJ&amp;rft.pub=Prentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Plauger, PJ; Brodie, Jim (1992) [1989]. <i>ANSI and ISO Standard C Programmer's reference</i>. Microsoft Press. pp.&#160;86–93. ISBN&#160;1-55615-359-7.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoolean+data+type&amp;rft.au=Brodie%2C+Jim&amp;rft.aufirst=PJ&amp;rft.aulast=Plauger&amp;rft.btitle=ANSI+and+ISO+Standard+C+Programmer%27s+reference&amp;rft.date=1992&amp;rft.genre=book&amp;rft.isbn=1-55615-359-7&amp;rft.pages=86-93&amp;rft.pub=Microsoft+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"Report on the Algorithmic Language ALGOL 68, Section 10.2.2." <span style="font-size:85%;">(PDF)</span>. August 1968<span class="reference-accessdate">. Retrieved <span class="nowrap">30 April</span> 2007</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoolean+data+type&amp;rft.btitle=Report+on+the+Algorithmic+Language+ALGOL+68%2C+Section+10.2.2.&amp;rft.date=1968-08&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.fh-jena.de%2F~kleine%2Fhistory%2Flanguages%2FAlgol68-Report.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Digital Equipment Corporation, <i>DECSystem10 FORTRAN IV Programmers Reference Manual</i>. Reprinted in <i>Mathematical Languages Handbook</i>. Online version accessed 2011-11-16.</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">https://developer.apple.com/library/ios/#documentation/cocoa/conceptual/ProgrammingWithObjectiveC/FoundationTypesandCollections/FoundationTypesandCollections.html</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"perlsyn - Perl Syntax / Truth and Falsehood"<span class="reference-accessdate">. Retrieved <span class="nowrap">10 September</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoolean+data+type&amp;rft.btitle=perlsyn+-+Perl+Syntax+%2F+Truth+and+Falsehood&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fperldoc.perl.org%2Fperlsyn.html%23Truth-and-Falsehood&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Van Rossum, Guido (3 April 2002). "PEP 285 -- Adding a bool type"<span class="reference-accessdate">. Retrieved <span class="nowrap">15 May</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoolean+data+type&amp;rft.aufirst=Guido&amp;rft.aulast=Van+Rossum&amp;rft.btitle=PEP+285+--+Adding+a+bool+type&amp;rft.date=2002-04-03&amp;rft.genre=unknown&amp;rft_id=https%3A%2F%2Fwww.python.org%2Fdev%2Fpeps%2Fpep-0285%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"Expressions". <i>Python v3.3.2 documentation</i><span class="reference-accessdate">. Retrieved <span class="nowrap">15 May</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoolean+data+type&amp;rft.atitle=Expressions&amp;rft.genre=unknown&amp;rft.jtitle=Python+v3.3.2+documentation&amp;rft_id=https%3A%2F%2Fdocs.python.org%2F3.3%2Freference%2Fexpressions.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"ECMAScript Language Specification" <span style="font-size:85%;">(PDF)</span>. p.&#160;43.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoolean+data+type&amp;rft.btitle=ECMAScript+Language+Specification&amp;rft.genre=unknown&amp;rft.pages=43&amp;rft_id=http%3A%2F%2Fwww.ecma-international.org%2Fpublications%2Ffiles%2FECMA-ST%2FECMA-262.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"The Elements of JavaScript Style". Douglas Crockford<span class="reference-accessdate">. Retrieved <span class="nowrap">5 March</span> 2011</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoolean+data+type&amp;rft.btitle=The+Elements+of+JavaScript+Style&amp;rft.genre=unknown&amp;rft.pub=Douglas+Crockford&amp;rft_id=http%3A%2F%2Fjavascript.crockford.com%2Fstyle2.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Date2011-11"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">C. Date (2011). <a><i>SQL and Relational Theory: How to Write Accurate SQL Code</i></a>. O'Reilly Media, Inc. p.&#160;83. ISBN&#160;978-1-4493-1640-2.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoolean+data+type&amp;rft.au=C.+Date&amp;rft.btitle=SQL+and+Relational+Theory%3A+How+to+Write+Accurate+SQL+Code&amp;rft.date=2011&amp;rft.genre=book&amp;rft.isbn=978-1-4493-1640-2&amp;rft.pages=83&amp;rft.pub=O%27Reilly+Media%2C+Inc.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DEw06OZtjuJEC%26pg%3DPA83&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">ISO/IEC 9075-2:2011 §4.5</span></li>
+<li id="cite_note-Prigmore2007-13"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Martyn Prigmore (2007). <a><i>Introduction to Databases With Web Applications</i></a>. Pearson Education Canada. p.&#160;197. ISBN&#160;978-0-321-26359-9.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoolean+data+type&amp;rft.au=Martyn+Prigmore&amp;rft.btitle=Introduction+to+Databases+With+Web+Applications&amp;rft.date=2007&amp;rft.genre=book&amp;rft.isbn=978-0-321-26359-9&amp;rft.pages=197&amp;rft.pub=Pearson+Education+Canada&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DPKggKqIZnN0C%26pg%3DPA197&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Troels Arvin, Survey of BOOLEAN data type implementation</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">http://www.postgresql.org/docs/current/static/datatype-boolean.html</span></li>
+</ol>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1284
+Cached time: 20170908232612
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.172 seconds
+Real time usage: 0.267 seconds
+Preprocessor visited node count: 690/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 30615/2097152 bytes
+Template argument size: 98/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Lua time usage: 0.065/10.000 seconds
+Lua memory usage: 2.75 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  127.805      1 -total
+ 75.87%   96.962      1 Template:Reflist
+ 32.76%   41.873      4 Template:Cite_book
+ 24.02%   30.698      1 Template:Data_types
+ 23.60%   30.161      6 Template:Cite_web
+ 21.84%   27.918      1 Template:Navbox
+  1.44%    1.839      1 Template:Main_other
+  1.19%    1.527      1 Template:Column-width
+-->
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1162065-0!canonical!math=5 and timestamp 20170908232612 and revision id 799640491
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "https://en.wikipedia.org/w/index.php?title=Boolean_data_type&amp;oldid=799640491"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks">Categories: <ul><li>Boolean algebra</li><li>Data types</li><li>Primitive types</li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li>Articles with example ALGOL 68 code</li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk">Talk</li><li id="pt-anoncontribs">Contributions</li><li id="pt-createaccount">Create account</li><li id="pt-login">Log in</li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Boolean_data_type.html" title="View the content page [c]" accesskey="c">Article</a></span></li>
+							<li id="ca-talk"><span>Talk</span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="Boolean_data_type.html">Read</a></span></li>
+							<li id="ca-edit"><span>Edit</span></li>
+							<li id="ca-history" class="collapsible"><span>View history</span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description">Main page</li><li id="n-contents">Contents</li><li id="n-featuredcontent">Featured content</li><li id="n-currentevents">Current events</li><li id="n-randompage">Random article</li><li id="n-sitesupport">Donate to Wikipedia</li><li id="n-shoplink">Wikipedia store</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help">Help</li><li id="n-aboutsite">About Wikipedia</li><li id="n-portal">Community portal</li><li id="n-recentchanges">Recent changes</li><li id="n-contactpage">Contact page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere">What links here</li><li id="t-recentchangeslinked">Related changes</li><li id="t-upload">Upload file</li><li id="t-specialpages">Special pages</li><li id="t-permalink">Permanent link</li><li id="t-info">Page information</li><li id="t-wikibase">Wikidata item</li><li id="t-cite">Cite this page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book">Create a book</li><li id="coll-download-as-rdf2latex">Download as PDF</li><li id="t-print">Printable version</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar">العربية</li><li class="interlanguage-link interwiki-az">Azərbaycanca</li><li class="interlanguage-link interwiki-bg">Български</li><li class="interlanguage-link interwiki-cs">Čeština</li><li class="interlanguage-link interwiki-de">Deutsch</li><li class="interlanguage-link interwiki-et">Eesti</li><li class="interlanguage-link interwiki-el">Ελληνικά</li><li class="interlanguage-link interwiki-es">Español</li><li class="interlanguage-link interwiki-fa">فارسی</li><li class="interlanguage-link interwiki-fr">Français</li><li class="interlanguage-link interwiki-ko">한국어</li><li class="interlanguage-link interwiki-it">Italiano</li><li class="interlanguage-link interwiki-ms">Bahasa Melayu</li><li class="interlanguage-link interwiki-nl">Nederlands</li><li class="interlanguage-link interwiki-ja">日本語</li><li class="interlanguage-link interwiki-no">Norsk</li><li class="interlanguage-link interwiki-mhr">Олык марий</li><li class="interlanguage-link interwiki-pl">Polski</li><li class="interlanguage-link interwiki-pt">Português</li><li class="interlanguage-link interwiki-ro">Română</li><li class="interlanguage-link interwiki-ru">Русский</li><li class="interlanguage-link interwiki-sr">Српски / srpski</li><li class="interlanguage-link interwiki-sv">Svenska</li><li class="interlanguage-link interwiki-th">ไทย</li><li class="interlanguage-link interwiki-tr">Türkçe</li><li class="interlanguage-link interwiki-uk">Українська</li><li class="interlanguage-link interwiki-zh">中文</li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link">Edit links</span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 8 September 2017, at 23:26.</li>
+											<li id="footer-info-copyright">Text is available under the Creative Commons Attribution-ShareAlike License;
+additional terms may apply.  By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy">Privacy policy</li>
+											<li id="footer-places-about">About Wikipedia</li>
+											<li id="footer-places-disclaimer">Disclaimers</li>
+											<li id="footer-places-contact">Contact Wikipedia</li>
+											<li id="footer-places-developers">Developers</li>
+											<li id="footer-places-cookiestatement">Cookie statement</li>
+											<li id="footer-places-mobileview">Mobile view</li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.172","walltime":"0.267","ppvisitednodes":{"value":690,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":30615,"limit":2097152},"templateargumentsize":{"value":98,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  127.805      1 -total"," 75.87%   96.962      1 Template:Reflist"," 32.76%   41.873      4 Template:Cite_book"," 24.02%   30.698      1 Template:Data_types"," 23.60%   30.161      6 Template:Cite_web"," 21.84%   27.918      1 Template:Navbox","  1.44%    1.839      1 Template:Main_other","  1.19%    1.527      1 Template:Column-width"]},"scribunto":{"limitreport-timeusage":{"value":"0.065","limit":"10.000"},"limitreport-memusage":{"value":2885659,"limit":52428800}},"cachereport":{"origin":"mw1284","timestamp":"20170908232612","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":76,"wgHostname":"mw1264"});});</script>
+	</body>
+</html>

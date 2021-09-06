@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Type system - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Type_system","wgTitle":"Type system","wgCurRevisionId":796819550,"wgRevisionId":796819550,"wgArticleId":199701,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles lacking in-text citations from October 2010","All articles lacking in-text citations","Wikipedia articles needing style editing from July 2016","All articles needing style editing","All articles with unsourced statements","Articles with unsourced statements from June 2014","Articles with unsourced statements from July 2016","All articles with specifically marked weasel-worded phrases","Articles with specifically marked weasel-worded phrases from July 2017","Articles with specifically marked weasel-worded phrases from November 2015","Articles with unsourced statements from November 2015","All Wikipedia articles needing clarification","Wikipedia articles needing clarification from July 2017","Wikipedia articles needing clarification from July 2016","Wikipedia articles needing clarification from November 2015","Articles needing more detailed references","All articles lacking reliable references","Articles lacking reliable references from March 2014","Articles with unsourced statements from January 2011","Articles with example Java code","Type systems","Data types","Program analysis","Type theory"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Type_system","wgRelevantArticleId":199701,"wgRequestId":"Wb1qtwpAAEEAACPmQ38AAACS","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":true,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q865760","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","ext.math.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.cite.a11y","ext.math.scripts","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.30.0-wmf.18"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Type_system"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Type_system&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Type_system&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Type_system"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Type_system rootpage-Type_system skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Type system</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					navigation, 					search
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div role="note" class="hatnote navigation-not-searchable">This article is about type systems from the point-of-view of computer programming. For a theoretical formulation, see type theory.</div>
+<table class="plainlinks metadata ambox ambox-content ambox-multiple_issues compact-ambox" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/60px-Ambox_important.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ambox_important.svg/80px-Ambox_important.svg.png 2x" data-file-width="40" data-file-height="40" /></div>
+</td>
+<td class="mbox-text">
+<div class="mw-collapsible" style="width:95%; margin: 0.2em 0;"><span class="mbox-text-span"><b>This article has multiple issues.</b> Please help <b>improve it</b> or discuss these issues on the <b>talk page</b>. <small><i>(Learn how and when to remove these template messages)</i></small></span>
+<div class="mw-collapsible-content" style="margin-top: 0.3em;">
+<table class="plainlinks metadata ambox ambox-style ambox-More_footnotes" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article includes a list of references, but <b>its sources remain unclear</b> because it has <b>insufficient inline citations</b>. <span class="hide-when-compact">Please help to improve this article by introducing more precise citations.</span> <small><i>(October 2010)</i></small> <small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></span></td>
+</tr>
+</table>
+<table class="plainlinks metadata ambox ambox-style ambox-essay-like" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x" data-file-width="48" data-file-height="48" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>is written like a&#160;personal reflection or opinion essay</b> that states a Wikipedia editor's personal feelings about a topic. <span class="hide-when-compact">Please help improve it by rewriting it in an encyclopedic style.</span> <small><i>(July 2016)</i></small> <small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></span></td>
+</tr>
+</table>
+</div>
+</div>
+<small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></td>
+</tr>
+</table>
+<table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;margin-top: 0.5em;">
+<tr>
+<th style="background-color: rgba(51, 153, 255, 0.15);;padding:0.2em 0.4em 0.2em;font-size:145%;line-height:1.2em">Type systems</th>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: rgba(51, 153, 255, 0.15);">General concepts</th>
+</tr>
+<tr>
+<td style="padding:0 0.1em 0.4em;text-align: left;">
+<ul>
+<li>Type safety</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: rgba(51, 153, 255, 0.15);">Major categories</th>
+</tr>
+<tr>
+<td style="padding:0 0.1em 0.4em;text-align: left;">
+<ul>
+<li>Static vs. dynamic</li>
+<li>Manifest vs. inferred</li>
+<li>Nominal vs. structural</li>
+<li>Duck typing</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: rgba(51, 153, 255, 0.15);">Minor categories</th>
+</tr>
+<tr>
+<td style="padding:0 0.1em 0.4em;text-align: left;">
+<ul>
+<li>Dependent</li>
+<li>Flow-sensitive</li>
+<li>Gradual</li>
+<li>Latent</li>
+<li>Substructural</li>
+<li>Unique</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: rgba(51, 153, 255, 0.15);">See also</th>
+</tr>
+<tr>
+<td style="padding:0 0.1em 0.4em;text-align: left;">
+<ul>
+<li><a href="Strong_and_weak_typing.html" title="Strong and weak typing">Strong and weak typing</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p>In <a href="Programming_language.html" title="Programming language">programming languages</a>, a <b>type system</b> is a set of rules that assigns a property called type to the various constructs of a <a href="Computer_program.html" title="Computer program">computer program</a>, such as variables, expressions, functions or modules.<sup id="cite_ref-FOOTNOTEPierce20021_1-0" class="reference">[1]</sup> These types formalize and enforce the otherwise implicit categories the programmer uses for data structures and components (e.g. "string", "array of float", "function returning boolean"). The main purpose of a type system is to reduce possibilities for bugs in computer programs<sup id="cite_ref-FOOTNOTECardelli20041_2-0" class="reference">[2]</sup> by defining interfaces between different parts of a computer program, and then checking that the parts have been connected in a consistent way. This checking can happen statically (at compile time), dynamically (at run time), or as a combination of static and dynamic checking. Type systems have other purposes as well, such as expressing business rules, enabling certain compiler optimizations, allowing for multiple dispatch, providing a form of documentation, etc.</p>
+<p>A type system associates a type with each computed value and, by examining the flow of these values, attempts to ensure or prove that no type errors can occur. The given type system in question determines exactly what constitutes a type error, but in general the aim is to prevent operations expecting a certain kind of value from being used with values for which that operation does not make sense (logic errors); memory errors will also be prevented. Type systems are often specified as part of <a href="Programming_language.html" title="Programming language">programming languages</a>, and built into the interpreters and compilers for them; although the type system of a language can be extended by optional tools that perform added kinds of checks using the language's original type syntax and grammar.</p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a><span class="tocnumber">1</span> <span class="toctext">Usage overview</span></a></li>
+<li class="toclevel-1 tocsection-2"><a><span class="tocnumber">2</span> <span class="toctext">Fundamentals</span></a></li>
+<li class="toclevel-1 tocsection-3"><a><span class="tocnumber">3</span> <span class="toctext">Type checking</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a><span class="tocnumber">3.1</span> <span class="toctext">Static type checking</span></a></li>
+<li class="toclevel-2 tocsection-5"><a><span class="tocnumber">3.2</span> <span class="toctext">Dynamic type checking and runtime type information</span></a></li>
+<li class="toclevel-2 tocsection-6"><a><span class="tocnumber">3.3</span> <span class="toctext">Combining static and dynamic type checking</span></a></li>
+<li class="toclevel-2 tocsection-7"><a><span class="tocnumber">3.4</span> <span class="toctext">Static and dynamic type checking in practice</span></a></li>
+<li class="toclevel-2 tocsection-8"><a><span class="tocnumber">3.5</span> <span class="toctext">Strong and weak type systems</span></a></li>
+<li class="toclevel-2 tocsection-9"><a><span class="tocnumber">3.6</span> <span class="toctext">Type safety and memory safety</span></a></li>
+<li class="toclevel-2 tocsection-10"><a><span class="tocnumber">3.7</span> <span class="toctext">Variable levels of type checking</span></a></li>
+<li class="toclevel-2 tocsection-11"><a><span class="tocnumber">3.8</span> <span class="toctext">Optional type systems</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a><span class="tocnumber">4</span> <span class="toctext">Polymorphism and types</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a><span class="tocnumber">4.1</span> <span class="toctext">Duck typing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a><span class="tocnumber">5</span> <span class="toctext">Specialized type systems</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a><span class="tocnumber">5.1</span> <span class="toctext">Dependent types</span></a></li>
+<li class="toclevel-2 tocsection-16"><a><span class="tocnumber">5.2</span> <span class="toctext">Linear types</span></a></li>
+<li class="toclevel-2 tocsection-17"><a><span class="tocnumber">5.3</span> <span class="toctext">Intersection types</span></a></li>
+<li class="toclevel-2 tocsection-18"><a><span class="tocnumber">5.4</span> <span class="toctext">Union types</span></a></li>
+<li class="toclevel-2 tocsection-19"><a><span class="tocnumber">5.5</span> <span class="toctext">Existential types</span></a></li>
+<li class="toclevel-2 tocsection-20"><a><span class="tocnumber">5.6</span> <span class="toctext">Gradual typing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a><span class="tocnumber">6</span> <span class="toctext">Explicit or implicit declaration and inference</span></a></li>
+<li class="toclevel-1 tocsection-22"><a><span class="tocnumber">7</span> <span class="toctext">Unified type system</span></a></li>
+<li class="toclevel-1 tocsection-23"><a><span class="tocnumber">8</span> <span class="toctext">Compatibility: equivalence and subtyping</span></a></li>
+<li class="toclevel-1 tocsection-24"><a><span class="tocnumber">9</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-25"><a><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-26"><a><span class="tocnumber">11</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-27"><a><span class="tocnumber">12</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-28"><a><span class="tocnumber">13</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Usage_overview">Usage overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>An example of a simple type system is that of the <a href="C_(programming_language).html" title="C (programming language)">C language</a>. The portions of a C program are the <a href="Subroutine.html" title="Subroutine">function</a> definitions. One function is invoked by another function. The interface of a function states the name of the function and a list of values that are passed to the function's code. The code of an invoking function states the name of the invoked, along with the names of variables that hold values to pass to it. During execution, the values are placed into temporary storage, then execution jumps to the code of the invoked function. The invoked function's code accesses the values and makes use of them. If the instructions inside the function are written with the assumption of receiving an integer value, but the calling code passed a floating-point value, then the wrong result will be computed by the invoked function. The C compiler checks the type declared for each variable sent, against the type declared for each variable in the interface of the invoked function. If the types do not match, the compiler throws a compile-time error.</p>
+<p>A <a href="Compiler.html" title="Compiler">compiler</a> may also use the static type of a value to optimize the storage it needs and the choice of algorithms for operations on the value. In many <a href="C_(programming_language).html" title="C (programming language)">C</a> compilers the <i>float</i> <a href="Data_type.html" title="Data type">data type</a>, for example, is represented in 32 bits, in accord with the IEEE specification for single-precision floating point numbers. They will thus use floating-point-specific <a href="Instruction_set.html" class="mw-redirect" title="Instruction set">microprocessor operations</a> on those values (floating-point addition, multiplication, etc.).</p>
+<p>The depth of type constraints and the manner of their evaluation affect the <i>typing</i> of the language. A <a href="Programming_language.html" title="Programming language">programming language</a> may further associate an operation with varying concrete algorithms on each type in the case of type polymorphism. Type theory is the study of type systems, although the concrete type systems of programming languages originate from practical issues of computer architecture, compiler implementation, and language design.</p>
+<h2><span class="mw-headline" id="Fundamentals">Fundamentals</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Formally, type theory studies type systems. A programming language must have occurrence to type check using the <i>type system</i> whether at compile time or runtime, manually annotated or automatically inferred. As Mark Manasse concisely put it:<sup id="cite_ref-FOOTNOTEPierce2002208_3-0" class="reference">[3]</sup></p>
+<blockquote class="templatequote">
+<p>The fundamental problem addressed by a type theory is to ensure that programs have meaning. The fundamental problem caused by a type theory is that meaningful programs may not have meanings ascribed to them. The quest for richer type systems results from this tension.</p>
+</blockquote>
+<p>Assigning a data type, termed <i>typing</i>, gives meaning to a sequence of bits such as a value in <a href="Computer_memory.html" title="Computer memory">memory</a> or some <a href="Object_(computer_science).html" title="Object (computer science)">object</a> such as a variable. The hardware of a general purpose computer is unable to discriminate between for example a <a href="Memory_address.html" title="Memory address">memory address</a> and an instruction code, or between a character, an integer, or a floating-point number, because it makes no intrinsic distinction between any of the possible values that a sequence of bits might <i>mean</i>.<sup id="cite_ref-Burroughs_4-0" class="reference">[note 1]</sup> Associating a sequence of bits with a type conveys that meaning to the programmable hardware to form a <i>symbolic system</i> composed of that hardware and some program.</p>
+<p>A program associates each value with at least one specific type, but it also can occur that one value is associated with many subtypes. Other entities, such as <a href="Object_(computer_science).html" title="Object (computer science)">objects</a>, modules, communication channels, dependencies can become associated with a type. Even a type can become associated with a type. An implementation of a <i>type system</i> could in theory associate identifications called <i><a href="Data_type.html" title="Data type">data type</a></i> (a type of a value), <i>class</i> (a type of an object), and <i>kind</i> (a <i>type of a type</i>, or metatype). These are the abstractions that typing can go through, on a hierarchy of levels contained in a system.</p>
+<p>When a programming language evolves a more elaborate type system, it gains a more finely grained rule set than basic type checking, but this comes at a price when the type inferences (and other properties) become undecidable, and when more attention must be paid by the programmer to annotate code or to consider computer-related operations and functioning. It is challenging to find a sufficiently expressive type system that satisfies all programming practices in a type safe manner.</p>
+<p>The more type restrictions that are imposed by the compiler, the more <i>strongly typed</i> a programming language is. Strongly typed languages often require the programmer to make explicit conversions in contexts where an implicit conversion would cause no harm. Pascal's type system has been described as "too strong" because, for example, the size of an array or string is part of its type, making some programming tasks difficult.<sup id="cite_ref-5" class="reference">[4]</sup><sup id="cite_ref-6" class="reference">[5]</sup> Haskell is also strongly typed but its types are automatically inferred so that explicit conversions are often (but not always) unnecessary.</p>
+<p>A programming language compiler can also implement a <i>dependent type</i> or an <i>effect system</i>, which enables even more program specifications to be verified by a type checker. Beyond simple value-type pairs, a virtual "region" of code is associated with an "effect" component describing <i>what</i> is being done <i>with what</i>, and enabling for example to "throw" an error report. Thus the symbolic system may be a <i>type and effect system</i>, which endows it with more safety checking than type checking alone.</p>
+<p>Whether automated by the compiler or specified by a programmer, a type system makes program behavior illegal that is outside the type-system rules. Advantages provided by programmer-specified type systems include:</p>
+<ul>
+<li><i>Abstraction</i> (or <i>modularity</i>) – Types enable programmers to think at a higher level than the bit or byte, not bothering with low-level implementation. For example, programmers can begin to think of a string as a set of character values instead of as a mere array of bytes. Higher still, types enable programmers to think about and express interfaces between two of <i>any</i>-sized subsystems. This enables more levels of localization so that the definitions required for interoperability of the subsystems remain consistent when those two subsystems communicate.</li>
+<li><i>Documentation</i> – In more expressive type systems, types can serve as a form of documentation clarifying the intent of the programmer. For example, if a programmer declares a function as returning a timestamp type, this documents the function when the timestamp type can be explicitly declared deeper in the code to be an integer type.</li>
+</ul>
+<p>Advantages provided by compiler-specified type systems include:</p>
+<ul>
+<li><i>Optimization</i> – Static type-checking may provide useful compile-time information. For example, if a type requires that a value must align in memory at a multiple of four bytes, the compiler may be able to use more efficient machine instructions.</li>
+<li><i>Safety</i> – A type system enables the <a href="Compiler.html" title="Compiler">compiler</a> to detect meaningless or probably invalid code. For example, we can identify an expression <code>3 / "Hello, World"</code> as invalid, when the rules do not specify how to divide an integer by a string. Strong typing offers more safety, but cannot guarantee complete <i>type safety</i>.</li>
+</ul>
+<p>Type safety contributes to program correctness, but can only guarantee correctness at the cost of making the type checking itself an undecidable problem.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (June 2014)">citation needed</span></a></i>]</sup> In a <i>type system</i> with automated type checking a program may prove to run incorrectly yet be safely typed, and produce no compiler errors. Division by zero is an unsafe and incorrect operation, but a type checker running at compile time only doesn't scan for division by zero in most languages, and then it is left as a runtime error. To prove the absence of these more-general-than-types defects, other kinds of formal methods, collectively known as program analyses, are in common use. Alternatively, a sufficiently expressive type system, such as in dependently typed languages, can prevent these kinds of errors (for example, expressing <i>the type of non-zero numbers</i>). In addition software testing is an empirical method for finding errors that the type checker cannot detect.</p>
+<h2><span class="mw-headline" id="Type_checking">Type checking</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>The process of verifying and enforcing the constraints of types—<i>type checking</i>—may occur either at compile-time (a static check) or at run-time. If a language specification requires its typing rules strongly (i.e., more or less allowing only those automatic type conversions that do not lose information), one can refer to the process as <i>strongly typed</i>, if not, as <i>weakly typed</i>. The terms are not usually used in a strict sense.</p>
+<h3><span class="mw-headline" id="Static_type_checking"><span id="STATIC"></span><span id="Static_typing"></span>Static type checking</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Static type checking is the process of verifying the type safety of a program based on analysis of a program's text (source code). If a program passes a static type checker, then the program is guaranteed to satisfy some set of type safety properties for all possible inputs.</p>
+<p>Static type checking can be considered a limited form of program verification (see type safety), and in a type-safe language, can be considered also an optimization. If a compiler can prove that a program is well-typed, then it does not need to emit dynamic safety checks, allowing the resulting compiled binary to run faster and to be smaller.</p>
+<p>Static type checking for Turing-complete languages is inherently conservative. That is, if a type system is both <i>sound</i> (meaning that it rejects all incorrect programs) and <i>decidable</i> (meaning that it is possible to write an algorithm that determines whether a program is well-typed), then it will always be possible to define an unsound program that is poorly-typed , thereby defeating the type system, but which does not encounter runtime errors: "... any sound, decidable type system must be incomplete" —D. Remy (2017) <sup id="cite_ref-7" class="reference">[6]</sup> For example, consider a program containing the code:</p>
+<p><code>if &lt;complex test&gt; then &lt;do something&gt; else &lt;generate type error&gt;</code></p>
+<p>Even if the expression <code>&lt;complex test&gt;</code> always evaluates to <code>true</code> at run-time, most type checkers will reject the program as ill-typed, because it is difficult (if not impossible) for a static analyzer to determine that the <code>else</code> branch will not be taken.<sup id="cite_ref-FOOTNOTEPierce2002_8-0" class="reference">[7]</sup> Conversely, a static type checker will quickly detect type errors in rarely used code paths. Without static type checking, even code coverage tests with 100% coverage may be unable to find such type errors. The tests may fail to detect such type errors, because the combination of all places where values are created and all places where a certain value is used must be taken into account.</p>
+<p>A number of useful and common programming language features cannot be checked statically, such as downcasting. Thus, many languages will have both static and dynamic type checking; the static type checker verifies what it can, and dynamic checks verify the rest.</p>
+<p>Many languages with static type checking provide a way to bypass the type checker. Some languages allow programmers to choose between static and dynamic type safety. For example, C# distinguishes between <i>statically-typed</i> and <i>dynamically-typed</i> variables. Uses of the former are checked statically, whereas uses of the latter are checked dynamically. Other languages allow writing code that is not type-safe. For example, in <a href="C_(programming_language).html" title="C (programming language)">C</a>, programmers can freely cast a value between any two types that have the same size.</p>
+<p>For a list of languages with static type checking, see the category for statically typed languages.</p>
+<h3><span class="mw-headline" id="Dynamic_type_checking_and_runtime_type_information"><span id="DYNAMIC"></span>Dynamic type checking and runtime type information</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Dynamic type checking is the process of verifying the type safety of a program at runtime. Implementations of dynamically type-checked languages generally associate each runtime object with a <i>type tag</i> (i.e., a reference to a type) containing its type information. This runtime type information (RTTI) can also be used to implement dynamic dispatch, late binding, downcasting, reflection, and similar features.</p>
+<p>Most type-safe languages include some form of dynamic type checking, even if they also have a static type checker.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (July 2016)">citation needed</span></a></i>]</sup> The reason for this is that many useful features or properties are difficult or impossible to verify statically. For example, suppose that a program defines two types, A and B, where B is a subtype of A. If the program tries to convert a value of type A to type B, which is known as downcasting, then the operation is legal only if the value being converted is actually a value of type B. Thus, a dynamic check is needed to verify that the operation is safe. This requirement is one of the criticisms of downcasting.</p>
+<p>By definition, dynamic type checking may cause a program to fail at runtime. In some programming languages, it is possible to anticipate and recover from these failures. In others, type-checking errors are considered fatal.</p>
+<p>Programming languages that include dynamic type checking but not static type checking are often called "dynamically typed programming languages". For a list of such languages, see the category for dynamically typed programming languages.</p>
+<h3><span class="mw-headline" id="Combining_static_and_dynamic_type_checking"><span id="COMBINED"></span>Combining static and dynamic type checking</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Some languages allow both static and dynamic typing (type checking), sometimes called <i>soft</i> typing. For example, Java and some other ostensibly statically typed languages support downcasting types to their subtypes, querying an object to discover its dynamic type, and other type operations that depend on runtime type information. More generally, most programming languages include mechanisms for dispatching over different 'kinds' of data, such as disjoint unions, subtype polymorphism, and variant types. Even when not interacting with type annotations or type checking, such mechanisms are materially similar to dynamic typing implementations. See <a href="Programming_language.html" title="Programming language">programming language</a> for more discussion of the interactions between static and dynamic typing.</p>
+<p>Objects in object oriented languages are usually accessed by a reference whose static target type (or manifest type) is equal to either the object's run-time type (its latent type) or a supertype thereof. This is conformant with the Liskov substitution principle, which states that all operations performed on an instance of a given type can also be performed on an instance of a subtype. This concept is also known as subsumption. In some languages subtypes may also possess covariant or contravariant return types and argument types respectively.</p>
+<p>Certain languages, for example Clojure, Common Lisp, or Cython are dynamically type-checked by default, but allow programs to opt into static type checking by providing optional annotations. One reason to use such hints would be to optimize the performance of critical sections of a program. This is formalized by gradual typing. The programming environment <i>DrScheme</i>, a pedagogic environment based on Lisp, and a precursor of the language Racket was also soft-typed.</p>
+<p>Conversely, as of version 4.0, the C# language provides a way to indicate that a variable should not be statically type-checked. A variable whose type is <code>dynamic</code> will not be subject to static type checking. Instead, the program relies on runtime type information to determine how the variable may be used.<sup id="cite_ref-9" class="reference">[8]</sup></p>
+<h3><span class="mw-headline" id="Static_and_dynamic_type_checking_in_practice">Static and dynamic type checking in practice</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>The choice between static and dynamic typing requires certain trade-offs.</p>
+<p>Static typing can find type errors reliably at compile time, which should increase the reliability of the delivered program. However, programmers disagree over how commonly type errors occur, resulting in further disagreements over the proportion of those bugs that are coded that would be caught by appropriately representing the designed types in code.<sup id="cite_ref-10" class="reference">[9]</sup><sup id="cite_ref-11" class="reference">[10]</sup> Static typing advocates<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="The material near this tag possibly uses too-vague attribution or weasel words. (July 2017)">who?</span></a></i>]</sup> believe programs are more reliable when they have been well type-checked, whereas dynamic-typing advocates<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="The material near this tag possibly uses too-vague attribution or weasel words. (November 2015)">who?</span></a></i>]</sup> point to distributed code that has proven reliable and to small bug databases.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (November 2015)">citation needed</span></a></i>]</sup> The value of static typing, then, presumably<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="This information is too vague. (July 2017)">vague</span></a></i>]</sup> increases as the strength of the type system is increased. Advocates of dependent typing,<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="The material near this tag possibly uses too-vague attribution or weasel words. (July 2017)">who?</span></a></i>]</sup> implemented in languages such as Dependent ML and Epigram, have suggested that almost all bugs can be considered type errors, if the types used in a program are properly declared by the programmer or correctly inferred by the compiler.<sup id="cite_ref-12" class="reference">[11]</sup></p>
+<p>Static typing usually results in compiled code that executes faster. When the compiler knows the exact data types that are in use, it can produce optimized machine code. Further, compilers for statically typed languages can find assembler shortcuts more easily.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="This information is too vague. (July 2016)">vague</span></a></i>]</sup> Some dynamically typed languages such as Common Lisp allow optional type declarations for optimization for this reason. Static typing makes this<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a><span title="The text near this tag may need clarification or removal of jargon. (November 2015)">clarification needed</span></a></i>]</sup> pervasive.<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a><span title="The text near this tag may need clarification or removal of jargon. (November 2015)">clarification needed</span></a></i>]</sup></p>
+<p>By contrast, dynamic typing may allow compilers to run faster and interpreters to dynamically load new code, because changes to source code in dynamically typed languages may result in less checking to perform and less code to revisit.<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a><span title="The text near this tag may need clarification or removal of jargon. (November 2015)">clarification needed</span></a></i>]</sup> This too may reduce the edit-compile-test-debug cycle.</p>
+<p>Statically typed languages that lack type inference (such as <a href="C_(programming_language).html" title="C (programming language)">C</a> and <a href="Java_(programming_language).html" title="Java (programming language)">Java</a>) require that programmers declare the types that a method or function must use. This can serve as added program documentation, that is active and dynamic, instead of static. This allows a compiler to prevent it from drifting out of synchrony, and from being ignored by programmers. However, a language can be statically typed without requiring type declarations (examples include Haskell, Scala, OCaml, F#, and to a lesser extent C# and <a href="C++.html" title="C++">C++</a>), so explicit type declaration is not a necessary requirement for static typing in all languages.</p>
+<p>Dynamic typing allows constructs that some static type checking would reject as illegal. For example, <i>eval</i> functions, which execute arbitrary data as code, become possible. An <i>eval</i> function is possible with static typing, but requires advanced uses of algebraic data types. Further, dynamic typing better accommodates transitional code and prototyping, such as allowing a placeholder data structure (mock object) to be transparently used in place of a full data structure (usually for the purposes of experimentation and testing).</p>
+<p>Dynamic typing typically allows duck typing (which enables easier code reuse). Many<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="Statement needs to be more specific about the content to which it refers. (July 2017)">specify</span></a></i>]</sup> languages with static typing also feature duck typing or other mechanisms like generic programming that also enable easier code reuse.</p>
+<p>Dynamic typing typically makes metaprogramming easier to use. For example, <a href="C++.html" title="C++">C++</a> templates are typically more cumbersome to write than the equivalent Ruby or <a href="Python_(programming_language).html" title="Python (programming language)">Python</a> code since <a href="C++.html" title="C++">C++</a> has stronger rules regarding type definitions (for both functions and variables). This forces a developer to write more boilerplate code for a template than a Python developer would need to. More advanced run-time constructs such as metaclasses and introspection are often harder to use in statically typed languages. In some languages, such features may also be used e.g. to generate new types and behaviors on the fly, based on run-time data. Such advanced constructs are often provided by <a href="Dynamic_programming_language.html" title="Dynamic programming language">dynamic programming languages</a>; many of these are dynamically typed, although <i>dynamic typing</i> need not be related to <i>dynamic programming languages</i>.</p>
+<h3><span class="mw-headline" id="Strong_and_weak_type_systems">Strong and weak type systems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="Strong_and_weak_typing.html" title="Strong and weak typing">Strong and weak typing</a></div>
+<p>Languages are often colloquially referred to as <i>strongly typed</i> or <i>weakly typed</i>. In fact, there is no universally accepted definition of what these terms mean. In general, there are more precise terms to represent the differences between type systems that lead people to call them "strong" or "weak".</p>
+<h3><span class="mw-headline" id="Type_safety_and_memory_safety">Type safety and memory safety</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Type safety</div>
+<p>A third way of categorizing the type system of a programming language uses the safety of typed operations and conversions. Computer scientists consider a language "type-safe" if it does not allow operations or conversions that violate the rules of the type system.</p>
+<p>Some observers use the term <i>memory-safe language</i> (or just <i>safe language</i>) to describe languages that do not allow programs to access memory that has not been assigned for their use. For example, a memory-safe language will check array bounds, or else statically guarantee (i.e., at compile time before execution) that array accesses out of the array boundaries will cause compile-time and perhaps runtime errors.</p>
+<p>Consider the following program of a language that is both type-safe and memory-safe:<sup id="cite_ref-13" class="reference">[12]</sup></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span>var x := 5;     
+<span class="lineno">2 </span>var y := "37";  
+<span class="lineno">3 </span>var z := x + y;
+</pre></div>
+<p>In this example, the variable <code class="mw-highlight" id="" style="" dir="ltr">z</code> will have the value 42. Although this may not be what the programmer anticipated, it is a well-defined result. If <code class="mw-highlight" id="" style="" dir="ltr">y</code> were a different string, one that could not be converted to a number (e.g. "Hello World"), the result would be well-defined as well. Note that a program can be type-safe or memory-safe and still crash on an invalid operation; in fact, if a program encounters an operation that is not type-safe, terminating the program is often the only option.</p>
+<p>Now consider a similar example in C:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="lineno">2 </span><span class="kt">char</span> <span class="n">y</span><span class="p">[]</span> <span class="o">=</span> <span class="s">"37"</span><span class="p">;</span>
+<span class="lineno">3 </span><span class="kt">char</span><span class="o">*</span> <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span>
+</pre></div>
+<p>In this example <code class="mw-highlight" dir="ltr"><span class="n">z</span></code> will point to a memory address five characters beyond <code class="mw-highlight" dir="ltr"><span class="n">y</span></code>, equivalent to three characters after the terminating zero character of the string pointed to by <code class="mw-highlight" dir="ltr"><span class="n">y</span></code>. This is memory that the program is not expected to access. It may contain garbage data, and it certainly doesn't contain anything useful. As this example shows, C is neither a memory-safe nor a type-safe language.</p>
+<p>In general, type-safety and memory-safety go hand in hand. For example, a language that supports pointer arithmetic and number-to-pointer conversions (like C) is neither memory-safe nor type-safe, because it allows arbitrary memory to be accessed as if it were valid memory of any type.</p>
+<p>For more information, see memory safety.</p>
+<h3><span class="mw-headline" id="Variable_levels_of_type_checking">Variable levels of type checking</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Some languages allow different levels of checking to apply to different regions of code. Examples include:</p>
+<ul>
+<li>The <code>use strict</code> directive in <a href="JavaScript.html" title="JavaScript">JavaScript</a><sup id="cite_ref-14" class="reference">[13]</sup><sup id="cite_ref-15" class="reference">[14]</sup><sup id="cite_ref-16" class="reference">[15]</sup> and Perl applies stronger checking.</li>
+<li>The <code>declare(strict_types=1)</code> in PHP<sup id="cite_ref-17" class="reference">[16]</sup> on a per-file basis allows only a variable of exact type of the type declaration will be accepted, or a <code>TypeError</code> will be thrown.</li>
+<li>The <code lang="vb" xml:lang="vb">Option Strict On</code> in VB.NET allows the compiler to require a conversion between objects.</li>
+</ul>
+<p>Additional tools such as lint and IBM Rational Purify can also be used to achieve a higher level of strictness.</p>
+<h3><span class="mw-headline" id="Optional_type_systems">Optional type systems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>It has been proposed, chiefly by Gilad Bracha, that the choice of type system be made independent of choice of language; that a type system should be a module that can be <i>plugged</i> into a language as needed. He believes this is advantageous, because what he calls mandatory type systems make languages less expressive and code more fragile.<sup id="cite_ref-18" class="reference">[17]</sup> The requirement that types do not affect the semantics of the language is difficult to fulfill.</p>
+<p>Optional typing is related to gradual typing, but still distinct from it.<sup id="cite_ref-19" class="reference">[18]</sup><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to better sources. (March 2014)">better&#160;source&#160;needed</span></a></i>]</sup></p>
+<h2><span class="mw-headline" id="Polymorphism_and_types">Polymorphism and types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Polymorphism (computer science)</div>
+<p>The term <i>polymorphism</i> refers to the ability of code (especially, functions or classes) to act on values of multiple types, or to the ability of different instances of the same data structure to contain elements of different types. Type systems that allow polymorphism generally do so in order to improve the potential for code re-use: in a language with polymorphism, programmers need only implement a data structure such as a list or an associative array once, rather than once for each type of element with which they plan to use it. For this reason computer scientists sometimes call the use of certain forms of polymorphism <i>generic programming</i>. The type-theoretic foundations of polymorphism are closely related to those of abstraction, modularity and (in some cases) subtyping.</p>
+<h3><span class="mw-headline" id="Duck_typing">Duck typing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Duck typing</div>
+<p>In <i>duck typing</i>,<sup id="cite_ref-20" class="reference">[19]</sup> a statement calling a method <code>m</code> on an object does not rely on the declared type of the object; only that the object, of whatever type, must supply an implementation of the method called, when called, at run-time.</p>
+<p>Duck typing differs from structural typing in that, if the <i>part</i> (of the whole module structure) needed for a given local computation is present <i>at runtime</i>, the duck type system is satisfied in its type identity analysis. On the other hand, a structural type system would require the analysis of the whole module structure at compile time to determine type identity or type dependence.</p>
+<p>Duck typing differs from a nominative type system in a number of aspects. The most prominent ones are that for duck typing, type information is determined at runtime (as contrasted to compile time), and the name of the type is irrelevant to determine type identity or type dependence; only partial structure information is required for that for a given point in the program execution.</p>
+<p>Duck typing uses the premise that (referring to a value) "if it walks like a duck, and quacks like a duck, then it is a duck" (this is a reference to the duck test that is attributed to James Whitcomb Riley). The term may have been coined<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (January 2011)">citation needed</span></a></i>]</sup> by Alex Martelli in a 2000 message<sup id="cite_ref-21" class="reference">[20]</sup> to the comp.lang.python newsgroup (see <a href="Python_(programming_language).html" title="Python (programming language)">Python</a>).</p>
+<p>While one controlled experiment showed an increase in developer productivity for duck typing in single developer projects,<sup id="cite_ref-22" class="reference">[21]</sup> other controlled experiments on API usability show the opposite.<sup id="cite_ref-23" class="reference">[22]</sup><sup id="cite_ref-24" class="reference">[23]</sup></p>
+<h2><span class="mw-headline" id="Specialized_type_systems">Specialized type systems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Many type systems have been created that are specialized for use in certain environments with certain types of data, or for out-of-band static program analysis. Frequently, these are based on ideas from formal type theory and are only available as part of prototype research systems.</p>
+<h3><span class="mw-headline" id="Dependent_types">Dependent types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Dependent type</div>
+<p>Dependent types are based on the idea of using scalars or values to more precisely describe the type of some other value. For example, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">m</mi>
+          <mi mathvariant="normal">a</mi>
+          <mi mathvariant="normal">t</mi>
+          <mi mathvariant="normal">r</mi>
+          <mi mathvariant="normal">i</mi>
+          <mi mathvariant="normal">x</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo>,</mo>
+        <mn>3</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <a>{\displaystyle \mathrm {matrix} (3,3)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/04b6df3034e02a45990859737da4794e846b8c08" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.072ex; height:2.843ex;" alt="{\displaystyle \mathrm {matrix} (3,3)}" /></span> might be the type of a <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>3</mn>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mn>3</mn>
+      </mstyle>
+    </mrow>
+    <a>{\displaystyle 3\times 3}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ddc0d4d6106875f8006be1d898512ca5843bad8e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.197ex; height:2.176ex;" alt="3 \times 3" /></span> matrix. We can then define typing rules such as the following rule for matrix multiplication:</p>
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="normal">m</mi>
+            <mi mathvariant="normal">a</mi>
+            <mi mathvariant="normal">t</mi>
+            <mi mathvariant="normal">r</mi>
+            <mi mathvariant="normal">i</mi>
+            <mi mathvariant="normal">x</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi mathvariant="normal">m</mi>
+              <mi mathvariant="normal">u</mi>
+              <mi mathvariant="normal">l</mi>
+              <mi mathvariant="normal">t</mi>
+              <mi mathvariant="normal">i</mi>
+              <mi mathvariant="normal">p</mi>
+              <mi mathvariant="normal">l</mi>
+              <mi mathvariant="normal">y</mi>
+            </mrow>
+          </mrow>
+        </msub>
+        <mo>:</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">m</mi>
+          <mi mathvariant="normal">a</mi>
+          <mi mathvariant="normal">t</mi>
+          <mi mathvariant="normal">r</mi>
+          <mi mathvariant="normal">i</mi>
+          <mi mathvariant="normal">x</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>,</mo>
+        <mi>m</mi>
+        <mo stretchy="false">)</mo>
+        <mo>&#x00D7;<!-- × --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">m</mi>
+          <mi mathvariant="normal">a</mi>
+          <mi mathvariant="normal">t</mi>
+          <mi mathvariant="normal">r</mi>
+          <mi mathvariant="normal">i</mi>
+          <mi mathvariant="normal">x</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>m</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">&#x2192;<!-- → --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi mathvariant="normal">m</mi>
+          <mi mathvariant="normal">a</mi>
+          <mi mathvariant="normal">t</mi>
+          <mi mathvariant="normal">r</mi>
+          <mi mathvariant="normal">i</mi>
+          <mi mathvariant="normal">x</mi>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>k</mi>
+        <mo>,</mo>
+        <mi>n</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <a>{\displaystyle \mathrm {matrix} _{\mathrm {multiply} }:\mathrm {matrix} (k,m)\times \mathrm {matrix} (m,n)\to \mathrm {matrix} (k,n)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a9b5ca3ad745c07126727667fefc60055f0549ff" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:60.177ex; height:3.009ex;" alt="{\displaystyle \mathrm {matrix} _{\mathrm {multiply} }:\mathrm {matrix} (k,m)\times \mathrm {matrix} (m,n)\to \mathrm {matrix} (k,n)}" /></span></p>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <a>{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.222ex; height:2.176ex;" alt="k" /></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+      </mstyle>
+    </mrow>
+    <a>{\displaystyle m}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a07d98bb302f3856cbabc47b2b9016692e3f7bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.051ex; height:1.676ex;" alt="m" /></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <a>{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.405ex; height:1.676ex;" alt="n" /></span> are arbitrary positive integer values. A variant of ML called Dependent ML has been created based on this type system, but because type checking for conventional dependent types is undecidable, not all programs using them can be type-checked without some kind of limits. Dependent ML limits the sort of equality it can decide to Presburger arithmetic.</p>
+<p>Other languages such as Epigram make the value of all expressions in the language decidable so that type checking can be decidable. However, in general proof of decidability is undecidable, so many programs require hand-written annotations that may be very non-trivial. As this impedes the development process, many language implementations provide an easy way out in the form of an option to disable this condition. This, however, comes at the cost of making the type-checker run in an infinite loop when fed programs that do not type-check, causing the compilation to fail.</p>
+<h3><span class="mw-headline" id="Linear_types">Linear types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Linear type</div>
+<p>Linear types, based on the theory of linear logic, and closely related to uniqueness types, are types assigned to values having the property that they have one and only one reference to them at all times. These are valuable for describing large immutable values such as files, strings, and so on, because any operation that simultaneously destroys a linear object and creates a similar object (such as '<code>str= str + "a"</code>') can be optimized "under the hood" into an in-place mutation. Normally this is not possible, as such mutations could cause side effects on parts of the program holding other references to the object, violating referential transparency. They are also used in the prototype operating system Singularity for interprocess communication, statically ensuring that processes cannot share objects in shared memory in order to prevent race conditions. The Clean language (a Haskell-like language) uses this type system in order to gain a lot of speed (compared to performing a deep copy) while remaining safe.</p>
+<h3><span class="mw-headline" id="Intersection_types">Intersection types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Intersection type</div>
+<p>Intersection types are types describing values that belong to <i>both</i> of two other given types with overlapping value sets. For example, in most implementations of C the signed char has range -128 to 127 and the unsigned char has range 0 to 255, so the intersection type of these two types would have range 0 to 127. Such an intersection type could be safely passed into functions expecting <i>either</i> signed or unsigned chars, because it is compatible with both types.</p>
+<p>Intersection types are useful for describing overloaded function types: For example, if "<code class="mw-highlight" dir="ltr"><span class="kt">int</span></code> → <code class="mw-highlight" dir="ltr"><span class="kt">int</span></code>" is the type of functions taking an integer argument and returning an integer, and "<code class="mw-highlight" dir="ltr"><span class="kt">float</span></code> → <code class="mw-highlight" dir="ltr"><span class="kt">float</span></code>" is the type of functions taking a float argument and returning a float, then the intersection of these two types can be used to describe functions that do one or the other, based on what type of input they are given. Such a function could be passed into another function expecting an "<code class="mw-highlight" dir="ltr"><span class="kt">int</span></code> → <code class="mw-highlight" dir="ltr"><span class="kt">int</span></code>" function safely; it simply would not use the "<code class="mw-highlight" dir="ltr"><span class="kt">float</span></code> → <code class="mw-highlight" dir="ltr"><span class="kt">float</span></code>" functionality.</p>
+<p>In a subclassing hierarchy, the intersection of a type and an ancestor type (such as its parent) is the most derived type. The intersection of sibling types is empty.</p>
+<p>The Forsythe language includes a general implementation of intersection types. A restricted form is refinement types.</p>
+<h3><span class="mw-headline" id="Union_types">Union types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Union type</div>
+<p>Union types are types describing values that belong to <i>either</i> of two types. For example, in C, the signed char has a -128 to 127 range, and the unsigned char has a 0 to 255 range, so the union of these two types would have an overall "virtual" range of -128 to 255 that may be used partially depending on which union member is accessed. Any function handling this union type would have to deal with integers in this complete range. More generally, the only valid operations on a union type are operations that are valid on <i>both</i> types being unioned. C's "union" concept is similar to union types, but is not typesafe, as it permits operations that are valid on <i>either</i> type, rather than <i>both</i>. Union types are important in program analysis, where they are used to represent symbolic values whose exact nature (e.g., value or type) is not known.</p>
+<p>In a subclassing hierarchy, the union of a type and an ancestor type (such as its parent) is the ancestor type. The union of sibling types is a subtype of their common ancestor (that is, all operations permitted on their common ancestor are permitted on the union type, but they may also have other valid operations in common).</p>
+<h3><span class="mw-headline" id="Existential_types">Existential types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Existential quantifier</div>
+<p>Existential types are frequently used in connection with record types to represent modules and abstract data types, due to their ability to separate implementation from interface. For example, the type "T = ∃X { a: X; f: (X → int); }" describes a module interface that has a data member named <i>a</i> of type <i>X</i> and a function named <i>f</i> that takes a parameter of the <i>same</i> type <i>X</i> and returns an integer. This could be implemented in different ways; for example:</p>
+<ul>
+<li>intT = { a: int; f: (int → int); }</li>
+<li>floatT = { a: float; f: (float → int); }</li>
+</ul>
+<p>These types are both subtypes of the more general existential type T and correspond to concrete implementation types, so any value of one of these types is a value of type T. Given a value "t" of type "T", we know that "t.f(t.a)" is well-typed, regardless of what the abstract type <i>X</i> is. This gives flexibility for choosing types suited to a particular implementation while clients that use only values of the interface type—the existential type—are isolated from these choices.</p>
+<p>In general it's impossible for the typechecker to infer which existential type a given module belongs to. In the above example intT { a: int; f: (int → int); } could also have the type ∃X { a: X; f: (int → int); }. The simplest solution is to annotate every module with its intended type, e.g.:</p>
+<ul>
+<li>intT = { a: int; f: (int → int); } <b>as</b> ∃X { a: X; f: (X → int); }</li>
+</ul>
+<p>Although abstract data types and modules had been implemented in programming languages for quite some time, it wasn't until 1988 that John C. Mitchell and Gordon Plotkin established the formal theory under the slogan: "Abstract [data] types have existential type".<sup id="cite_ref-25" class="reference">[24]</sup> The theory is a second-order typed lambda calculus similar to System F, but with existential instead of universal quantification.</p>
+<h3><span class="mw-headline" id="Gradual_typing">Gradual typing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Gradual typing</div>
+<p>Gradual typing is a type system in which variables may be typed either at compile-time (which is static typing) or at run-time (which is dynamic typing), allowing software developers to choose either type paradigm as appropriate, from within a single language.<sup id="cite_ref-26" class="reference">[25]</sup> In particular, gradual typing uses a special type named <i>dynamic</i> to represent statically-unknown types, and gradual typing replaces the notion of type equality with a new relation called <i>consistency</i> that relates the dynamic type to every other type. The consistency relation is symmetric but not transitive.<sup id="cite_ref-27" class="reference">[26]</sup></p>
+<h2><span class="mw-headline" id="Explicit_or_implicit_declaration_and_inference">Explicit or implicit declaration and inference</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">For more details on this topic, see Type inference.</div>
+<p>Many static type systems, such as those of C and Java, require <i>type declarations</i>: The programmer must explicitly associate each variable with a specific type. Others, such as Haskell's, perform <i>type inference</i>: The compiler draws conclusions about the types of variables based on how programmers use those variables. For example, given a function <code class="mw-highlight" dir="ltr"><span class="n">f</span><span class="o">(</span><span class="n">x</span><span class="o">,</span> <span class="n">y</span><span class="o">)</span></code> that adds <code class="mw-highlight" dir="ltr"><span class="n">x</span></code> and <code class="mw-highlight" dir="ltr"><span class="n">y</span></code> together, the compiler can infer that <code class="mw-highlight" dir="ltr"><span class="n">x</span></code> and <code class="mw-highlight" dir="ltr"><span class="n">y</span></code> must be numbers&#160;– since addition is only defined for numbers. Thus, any call to <code class="mw-highlight" dir="ltr"><span class="n">f</span></code> elsewhere in the program that specifies a non-numeric type (such as a string or list) as an argument would signal an error.</p>
+<p>Numerical and string constants and expressions in code can and often do imply type in a particular context. For example, an expression <code class="mw-highlight" dir="ltr"><span class="mf">3.14</span></code> might imply a type of floating-point, while <code class="mw-highlight" dir="ltr"><span class="o">[</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">]</span></code> might imply a list of integers&#160;– typically an array.</p>
+<p>Type inference is in general possible, if it is decidable in the type theory in question. Moreover, even if inference is undecidable in general for a given type theory, inference is often possible for a large subset of real-world programs. Haskell's type system, a version of Hindley–Milner, is a restriction of System Fω to so-called rank-1 polymorphic types, in which type inference is decidable. Most Haskell compilers allow arbitrary-rank polymorphism as an extension, but this makes type inference undecidable. (Type checking is decidable, however, and rank-1 programs still have type inference; higher rank polymorphic programs are rejected unless given explicit type annotations.)</p>
+<h2><span class="mw-headline" id="Unified_type_system">Unified type system</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Some languages like Perl 6 or C# have a unified type system.<sup id="cite_ref-28" class="reference">[27]</sup> This means that all C# types including primitive types inherit from a single root object. Every type in C# inherits from the Object class. <a href="Java_(programming_language).html" title="Java (programming language)">Java</a> has several primitive types that are not objects. Java provides wrapper object types that exist together with the primitive types so developers can use either the wrapper object types or the simpler non-object primitive types.</p>
+<h2><span class="mw-headline" id="Compatibility:_equivalence_and_subtyping">Compatibility: equivalence and subtyping</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>A type-checker for a statically typed language must verify that the type of any expression is consistent with the type expected by the context in which that expression appears. For example, in an assignment statement of the form <code>x&#160;:= <i>e</i></code>, the inferred type of the expression <i><code>e</code></i> must be consistent with the declared or inferred type of the variable <code>x</code>. This notion of consistency, called <i>compatibility</i>, is specific to each programming language.</p>
+<p>If the type of <i><code>e</code></i> and the type of <code>x</code> are the same, and assignment is allowed for that type, then this is a valid expression. Thus, in the simplest type systems, the question of whether two types are compatible reduces to that of whether they are <i>equal</i> (or <i>equivalent</i>). Different languages, however, have different criteria for when two type expressions are understood to denote the same type. These different <i>equational theories</i> of types vary widely, two extreme cases being <i>structural type systems</i>, in which any two types that describe values with the same structure are equivalent, and <i>nominative type systems</i>, in which no two syntactically distinct type expressions denote the same type (<i>i.e.</i>, types must have the same "name" in order to be equal).</p>
+<p>In languages with subtyping, the compatibility relation is more complex. In particular, if <code>A</code> is a subtype of <code>B</code>, then a value of type <code>A</code> can be used in a context where one of type <code>B</code> is expected, even if the reverse is not true. Like equivalence, the subtype relation is defined differently for each programming language, with many variations possible. The presence of parametric or ad hoc polymorphism in a language may also have implications for type compatibility.</p>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap">
+<ol class="references">
+<li id="cite_note-Burroughs-4"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">The Burroughs ALGOL computer line determined a memory location's contents by its flag bits. Flag bits specify the contents of a memory location. Instruction, data type, and functions are specified by a 3 bit code in addition to its 48 bit contents. Only the MCP (Master Control Program) could write to the flag code bits.</span></li>
+</ol>
+</div>
+</div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><a><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cc/8bit-dynamiclist_%28reversed%29.gif/28px-8bit-dynamiclist_%28reversed%29.gif" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/c/cc/8bit-dynamiclist_%28reversed%29.gif 1.5x" data-file-width="32" data-file-height="32" /></a></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle">Computer programming portal</span></li>
+</ul>
+</div>
+<ul>
+<li>Comparison of type systems</li>
+<li>Covariance and contravariance (computer science)</li>
+<li>Polymorphism in object-oriented programming</li>
+<li>Type rules</li>
+<li>Type signature</li>
+<li>Type theory</li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-FOOTNOTEPierce20021-1"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Pierce 2002, p.&#160;1: "A type system is a tractable syntactic method for proving the absence of certain program behaviors by classifying phrases according to the kinds of values they compute."</span></li>
+<li id="cite_note-FOOTNOTECardelli20041-2"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Cardelli 2004, p.&#160;1: "The fundamental purpose of a type system is to prevent the occurrence of execution errors during the running of a program."</span></li>
+<li id="cite_note-FOOTNOTEPierce2002208-3"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Pierce 2002, p.&#160;208.</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Infoworld 25 April 1983</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Brian Kernighan: <i>Why Pascal is not my favorite language</i></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">p. 29, <cite class="citation web">Remy, Didier. "Type systems for programming languages" <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">26 May</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AType+system&amp;rft.aufirst=Didier&amp;rft.aulast=Remy&amp;rft.btitle=Type+systems+for+programming+languages&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fgallium.inria.fr%2F~remy%2Fmpri%2Fcours1.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-FOOTNOTEPierce2002-8"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Pierce 2002.</span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"dynamic (C# Reference)". <i>MSDN Library</i>. Microsoft<span class="reference-accessdate">. Retrieved <span class="nowrap">14 January</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AType+system&amp;rft.atitle=dynamic+%28C%23+Reference%29&amp;rft.genre=unknown&amp;rft.jtitle=MSDN+Library&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fdd264741.aspx&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Meijer, Erik; Drayton, Peter. "Static Typing Where Possible, Dynamic Typing When Needed: The End of the Cold War Between Programming Languages" <span style="font-size:85%;">(PDF)</span>. Microsoft Corporation.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AType+system&amp;rft.au=Drayton%2C+Peter&amp;rft.aufirst=Erik&amp;rft.aulast=Meijer&amp;rft.btitle=Static+Typing+Where+Possible%2C+Dynamic+Typing+When+Needed%3A+The+End+of+the+Cold+War+Between+Programming+Languages&amp;rft.genre=unknown&amp;rft.pub=Microsoft+Corporation&amp;rft_id=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Femeijer%2FPapers%2FRDL04Meijer.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Laucher, Amanda; Snively, Paul. "Types vs Tests". InfoQ.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AType+system&amp;rft.au=Snively%2C+Paul&amp;rft.aufirst=Amanda&amp;rft.aulast=Laucher&amp;rft.btitle=Types+vs+Tests&amp;rft.genre=unknown&amp;rft.pub=InfoQ&amp;rft_id=http%3A%2F%2Fwww.infoq.com%2Fpresentations%2FTypes-Tests&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation journal">Xi, Hongwei; Scott, Dana (1998). "Dependent Types in Practical Programming". <i>Proceedings of ACM SIGPLAN Symposium on Principles of Programming Languages</i>. ACM Press: 214–227. CiteSeerX&#160;<span class="plainlinks">10.1.1.41.548 <img alt="Freely accessible" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png" title="Freely accessible" width="9" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/14px-Lock-green.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/18px-Lock-green.svg.png 2x" data-file-width="512" data-file-height="813" /></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AType+system&amp;rft.atitle=Dependent+Types+in+Practical+Programming&amp;rft.au=Scott%2C+Dana&amp;rft.aufirst=Hongwei&amp;rft.aulast=Xi&amp;rft.date=1998&amp;rft.genre=article&amp;rft.jtitle=Proceedings+of+ACM+SIGPLAN+Symposium+on+Principles+of+Programming+Languages&amp;rft.pages=214-227&amp;rft_id=%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.41.548&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Visual Basic is an example of a language that is both type-safe and memory-safe.</span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Standard ECMA-262. Ecma-international.org. Retrieved on 2013-07-17.</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Strict mode - JavaScript | MDN. Developer.mozilla.org (2013-07-03). Retrieved on 2013-07-17.</span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Strict Mode (JavaScript). Msdn.microsoft.com. Retrieved on 2013-07-17.</span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Strict typing</span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><a>Bracha, G.: <i>Pluggable Types</i></a></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">https://stackoverflow.com/a/13414347/975097</span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Rozsnyai, S.; Schiefer, J.; Schatten, A. (2007). "Concepts and models for typing events for event-based systems". <i>Proceedings of the 2007 inaugural international conference on Distributed event-based systems – DEBS '07</i>. p.&#160;62. ISBN&#160;9781595936653. doi:10.1145/1266894.1266904.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AType+system&amp;rft.atitle=Concepts+and+models+for+typing+events+for+event-based+systems&amp;rft.au=Schatten%2C+A.&amp;rft.au=Schiefer%2C+J.&amp;rft.aufirst=S.&amp;rft.aulast=Rozsnyai&amp;rft.btitle=Proceedings+of+the+2007+inaugural+international+conference+on+Distributed+event-based+systems+%E2%80%93+DEBS+%2707&amp;rft.date=2007&amp;rft.genre=bookitem&amp;rft.isbn=9781595936653&amp;rft.pages=62&amp;rft_id=info%3Adoi%2F10.1145%2F1266894.1266904&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation newsgroup">Martelli, Alex (26 July 2000). "Re: polymorphism (was Re: Type checking in python?)". Usenet:&#160;8lmvn6017l@news1.newsguy.com.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AType+system&amp;rft.au=Martelli%2C+Alex&amp;rft.btitle=Re%3A+polymorphism+%28was+Re%3A+Type+checking+in+python%3F%29&amp;rft.date=2000-07-26&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fgroups.google.com%2Fgroup%2Fcomp.lang.python%2Fmsg%2Fe230ca916be58835%3Fhl%3Den%26&amp;rft_id=news%3A8lmvn6017l%40news1.newsguy.com&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Stefan Hanenberg. ”An experiment about static and dynamic type systems: doubts about the positive impact of static type systems on development time“. OOPSLA 2010.</span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Kleinschmager, Hanenberg, Robbes, Tanter, Stefik: Do static type systems improve the maintainability of software systems? An empirical study. ICPC 2012</span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Hanenberg, Kleinschmager, S.Robbes, R.Tanter, Stefik: An empirical study on the impact of static typing on software maintainability, ESE 2014</span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Mitchell, John C.; Plotkin, Gordon D.; <a><i>Abstract Types Have Existential Type</i></a>, ACM Transactions on Programming Languages and Systems, Vol. 10, No. 3, July 1988, pp. 470–502</span></li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Siek, Jeremy. "What is gradual typing?".</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AType+system&amp;rft.au=Siek%2C+Jeremy&amp;rft.btitle=What+is+gradual+typing%3F&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fhomes.soic.indiana.edu%2Fjsiek%2Fwhat-is-gradual-typing%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation conference">Siek, Jeremy; Taha, Walid (September 2006). <a><i>Gradual Typing for Functional Languages</i></a> <span style="font-size:85%;">(PDF)</span>. <i>Scheme and Functional Programming 2006</i>. University of Chicago. pp.&#160;81–92.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AType+system&amp;rft.atitle=Gradual+Typing+for+Functional+Languages&amp;rft.au=Taha%2C+Walid&amp;rft.aufirst=Jeremy&amp;rft.aulast=Siek&amp;rft.date=2006-09&amp;rft.genre=conference&amp;rft.jtitle=Scheme+and+Functional+Programming+2006&amp;rft.pages=81-92&amp;rft_id=http%3A%2F%2Fscheme2006.cs.uchicago.edu%2F13-siek.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Standard ECMA-334, 8.2.4 Type system unification.</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><cite id="CITEREFCardelliWegner1985" class="citation journal">Cardelli, Luca; Wegner, Peter (December 1985). "On Understanding Types, Data Abstraction, and Polymorphism" <span style="font-size:85%;">(PDF)</span>. <i>ACM Computing Surveys</i>. New York, NY, USA: ACM. <b>17</b> (4): 471–523. ISSN&#160;0360-0300. doi:10.1145/6041.6042.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AType+system&amp;rft.atitle=On+Understanding+Types%2C+Data+Abstraction%2C+and+Polymorphism&amp;rft.au=Wegner%2C+Peter&amp;rft.aufirst=Luca&amp;rft.aulast=Cardelli&amp;rft.date=1985-12&amp;rft.genre=article&amp;rft.issn=0360-0300&amp;rft.issue=4&amp;rft.jtitle=ACM+Computing+Surveys&amp;rft.pages=471-523&amp;rft.volume=17&amp;rft_id=http%3A%2F%2Flucacardelli.name%2FPapers%2FOnUnderstanding.A4.pdf&amp;rft_id=info%3Adoi%2F10.1145%2F6041.6042&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="CITEREFPierce2002" class="citation book">Pierce, Benjamin C. (2002). <i>Types and Programming Languages</i>. MIT Press. ISBN&#160;978-0-262-16209-8.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AType+system&amp;rft.aufirst=Benjamin+C.&amp;rft.aulast=Pierce&amp;rft.btitle=Types+and+Programming+Languages&amp;rft.date=2002&amp;rft.genre=book&amp;rft.isbn=978-0-262-16209-8&amp;rft.pub=MIT+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite id="CITEREFCardelli2004" class="citation book">Cardelli, Luca (2004). "Type systems". In Allen B. Tucker. <a><i>CRC Handbook of Computer Science and Engineering</i></a> <span style="font-size:85%;">(PDF)</span> (2nd ed.). CRC Press. ISBN&#160;158488360X.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AType+system&amp;rft.atitle=Type+systems&amp;rft.aufirst=Luca&amp;rft.aulast=Cardelli&amp;rft.btitle=CRC+Handbook+of+Computer+Science+and+Engineering&amp;rft.date=2004&amp;rft.edition=2nd&amp;rft.genre=bookitem&amp;rft.isbn=158488360X&amp;rft.pub=CRC+Press&amp;rft_id=http%3A%2F%2Flucacardelli.name%2FPapers%2FTypeSystems.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li>Tratt, Laurence, <a><i>Dynamically Typed Languages</i></a>, Advances in Computers, Vol. 77, pp.&#160;149–184, July 2009</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="background-color:#f9f9f9;border:1px solid #aaa;color:#000">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></td>
+<td class="mbox-text plainlist">The Wikibook <i>Ada Programming</i> has a page on the topic of: <i><b>Types</b></i></td>
+</tr>
+</table>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="background-color:#f9f9f9;border:1px solid #aaa;color:#000">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></td>
+<td class="mbox-text plainlist">The Wikibook <i>Haskell</i> has a page on the topic of: <i><b>Class declarations</b></i></td>
+</tr>
+</table>
+<ul>
+<li>Smith, Chris, <a><i>What To Know Before Debating Type Systems</i></a></li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Data_types" style="padding:3px">
+<table class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="Data_types" style="font-size:114%;margin:0 4em"><a href="Data_type.html" title="Data type">Data types</a></div>
+</th>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Uninterpreted</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Bit</li>
+<li>Byte</li>
+<li>Trit</li>
+<li>Tryte</li>
+<li>Word</li>
+<li>Bit array</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Numeric</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Arbitrary-precision or bignum</li>
+<li>Complex</li>
+<li>Decimal</li>
+<li>Fixed point</li>
+<li>Floating point
+<ul>
+<li>Double precision</li>
+<li>Extended precision</li>
+<li>Half precision</li>
+<li>Long double</li>
+<li>Minifloat</li>
+<li>Octuple precision</li>
+<li>Quadruple precision</li>
+<li>Single precision</li>
+</ul>
+</li>
+<li><a href="Integer_(computer_science).html" title="Integer (computer science)">Integer</a>
+<ul>
+<li>signedness</li>
+</ul>
+</li>
+<li>Interval</li>
+<li>Rational</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%"><a href="Pointer_(computer_programming).html" title="Pointer (computer programming)">Pointer</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Memory_address.html" title="Memory address">Address</a>
+<ul>
+<li>physical</li>
+<li>virtual</li>
+</ul>
+</li>
+<li>Reference</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Text</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Character</li>
+<li>String
+<ul>
+<li>null-terminated</li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Composite</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Algebraic data type
+<ul>
+<li>generalized</li>
+</ul>
+</li>
+<li>Array</li>
+<li>Associative array</li>
+<li>Class</li>
+<li>Dependent</li>
+<li>Equality</li>
+<li>Inductive</li>
+<li>List</li>
+<li><a href="Object_(computer_science).html" title="Object (computer science)">Object</a>
+<ul>
+<li>metaobject</li>
+</ul>
+</li>
+<li>Option type</li>
+<li>Product</li>
+<li>Record</li>
+<li>Set</li>
+<li>Union
+<ul>
+<li>tagged</li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Other</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Boolean_data_type.html" title="Boolean data type">Boolean</a></li>
+<li>Bottom type</li>
+<li>Collection</li>
+<li>Enumerated type</li>
+<li>Exception</li>
+<li>Function type</li>
+<li>Opaque data type</li>
+<li>Recursive data type</li>
+<li>Semaphore</li>
+<li>Stream</li>
+<li>Top type</li>
+<li>Type class</li>
+<li>Unit type</li>
+<li>Void</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Related<br />
+topics</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Abstract data type</li>
+<li>Data structure</li>
+<li>Generic</li>
+<li>Kind
+<ul>
+<li>metaclass</li>
+</ul>
+</li>
+<li>Parametric polymorphism</li>
+<li>Primitive data type</li>
+<li>Protocol
+<ul>
+<li>interface</li>
+</ul>
+</li>
+<li>Subtyping</li>
+<li>Type constructor</li>
+<li>Type conversion</li>
+<li>Type system</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" colspan="2">
+<div>See also platform-dependent and independent units of information</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1270
+Cached time: 20170916181728
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.552 seconds
+Real time usage: 0.750 seconds
+Preprocessor visited node count: 3944/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 106110/2097152 bytes
+Template argument size: 14093/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 12/500
+Lua time usage: 0.283/10.000 seconds
+Lua memory usage: 4.93 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  540.287      1 -total
+ 25.64%  138.509     11 Template:Fix
+ 21.71%  117.314     15 Template:Delink
+ 20.99%  113.394      2 Template:Reflist
+ 16.30%   88.070      3 Template:Ambox
+ 13.33%   72.037      4 Template:Citation_needed
+ 13.02%   70.319      1 Template:Multiple_issues
+  9.68%   52.288      5 Template:Cite_web
+  7.82%   42.265     21 Template:Category_handler
+  7.03%   37.970      3 Template:Who
+-->
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:199701-0!canonical!math=5 and timestamp 20170916181727 and revision id 796819550
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "https://en.wikipedia.org/w/index.php?title=Type_system&amp;oldid=796819550"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks">Categories: <ul><li>Type systems</li><li>Data types</li><li>Program analysis</li><li>Type theory</li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li>Articles lacking in-text citations from October 2010</li><li>All articles lacking in-text citations</li><li>Wikipedia articles needing style editing from July 2016</li><li>All articles needing style editing</li><li>All articles with unsourced statements</li><li>Articles with unsourced statements from June 2014</li><li>Articles with unsourced statements from July 2016</li><li>All articles with specifically marked weasel-worded phrases</li><li>Articles with specifically marked weasel-worded phrases from July 2017</li><li>Articles with specifically marked weasel-worded phrases from November 2015</li><li>Articles with unsourced statements from November 2015</li><li>All Wikipedia articles needing clarification</li><li>Wikipedia articles needing clarification from July 2017</li><li>Wikipedia articles needing clarification from July 2016</li><li>Wikipedia articles needing clarification from November 2015</li><li>Articles needing more detailed references</li><li>All articles lacking reliable references</li><li>Articles lacking reliable references from March 2014</li><li>Articles with unsourced statements from January 2011</li><li>Articles with example Java code</li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk">Talk</li><li id="pt-anoncontribs">Contributions</li><li id="pt-createaccount">Create account</li><li id="pt-login">Log in</li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Type_system.html" title="View the content page [c]" accesskey="c">Article</a></span></li>
+							<li id="ca-talk"><span>Talk</span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="Type_system.html">Read</a></span></li>
+							<li id="ca-edit"><span>Edit</span></li>
+							<li id="ca-history" class="collapsible"><span>View history</span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description">Main page</li><li id="n-contents">Contents</li><li id="n-featuredcontent">Featured content</li><li id="n-currentevents">Current events</li><li id="n-randompage">Random article</li><li id="n-sitesupport">Donate to Wikipedia</li><li id="n-shoplink">Wikipedia store</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help">Help</li><li id="n-aboutsite">About Wikipedia</li><li id="n-portal">Community portal</li><li id="n-recentchanges">Recent changes</li><li id="n-contactpage">Contact page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere">What links here</li><li id="t-recentchangeslinked">Related changes</li><li id="t-upload">Upload file</li><li id="t-specialpages">Special pages</li><li id="t-permalink">Permanent link</li><li id="t-info">Page information</li><li id="t-wikibase">Wikidata item</li><li id="t-cite">Cite this page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book">Create a book</li><li id="coll-download-as-rdf2latex">Download as PDF</li><li id="t-print">Printable version</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar">العربية</li><li class="interlanguage-link interwiki-bn">বাংলা</li><li class="interlanguage-link interwiki-bg">Български</li><li class="interlanguage-link interwiki-bs">Bosanski</li><li class="interlanguage-link interwiki-cs">Čeština</li><li class="interlanguage-link interwiki-de">Deutsch</li><li class="interlanguage-link interwiki-el">Ελληνικά</li><li class="interlanguage-link interwiki-es">Español</li><li class="interlanguage-link interwiki-ko">한국어</li><li class="interlanguage-link interwiki-it">Italiano</li><li class="interlanguage-link interwiki-he">עברית</li><li class="interlanguage-link interwiki-ky">Кыргызча</li><li class="interlanguage-link interwiki-ms">Bahasa Melayu</li><li class="interlanguage-link interwiki-nl">Nederlands</li><li class="interlanguage-link interwiki-ja">日本語</li><li class="interlanguage-link interwiki-mhr">Олык марий</li><li class="interlanguage-link interwiki-pl">Polski</li><li class="interlanguage-link interwiki-pt">Português</li><li class="interlanguage-link interwiki-ru">Русский</li><li class="interlanguage-link interwiki-sco">Scots</li><li class="interlanguage-link interwiki-sr">Српски / srpski</li><li class="interlanguage-link interwiki-fi">Suomi</li><li class="interlanguage-link interwiki-sv">Svenska</li><li class="interlanguage-link interwiki-th">ไทย</li><li class="interlanguage-link interwiki-uk">Українська</li><li class="interlanguage-link interwiki-vi">Tiếng Việt</li><li class="interlanguage-link interwiki-zh">中文</li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link">Edit links</span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 23 August 2017, at 07:07.</li>
+											<li id="footer-info-copyright">Text is available under the Creative Commons Attribution-ShareAlike License;
+additional terms may apply.  By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy">Privacy policy</li>
+											<li id="footer-places-about">About Wikipedia</li>
+											<li id="footer-places-disclaimer">Disclaimers</li>
+											<li id="footer-places-contact">Contact Wikipedia</li>
+											<li id="footer-places-developers">Developers</li>
+											<li id="footer-places-cookiestatement">Cookie statement</li>
+											<li id="footer-places-mobileview">Mobile view</li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.552","walltime":"0.750","ppvisitednodes":{"value":3944,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":106110,"limit":2097152},"templateargumentsize":{"value":14093,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":12,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  540.287      1 -total"," 25.64%  138.509     11 Template:Fix"," 21.71%  117.314     15 Template:Delink"," 20.99%  113.394      2 Template:Reflist"," 16.30%   88.070      3 Template:Ambox"," 13.33%   72.037      4 Template:Citation_needed"," 13.02%   70.319      1 Template:Multiple_issues","  9.68%   52.288      5 Template:Cite_web","  7.82%   42.265     21 Template:Category_handler","  7.03%   37.970      3 Template:Who"]},"scribunto":{"limitreport-timeusage":{"value":"0.283","limit":"10.000"},"limitreport-memusage":{"value":5165262,"limit":52428800}},"cachereport":{"origin":"mw1270","timestamp":"20170916181728","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":881,"wgHostname":"mw1270"});});</script>
+	</body>
+</html>

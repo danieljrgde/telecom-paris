@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Kernel (operating system) - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Kernel_(operating_system)","wgTitle":"Kernel (operating system)","wgCurRevisionId":799539840,"wgRevisionId":799539840,"wgArticleId":21346982,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles to be merged from May 2016","All articles to be merged","All articles with unsourced statements","Articles with unsourced statements from July 2007","Articles with unsourced statements from June 2015","All pages needing factual verification","Wikipedia articles needing factual verification from July 2007","Pages using citations with accessdate and no URL","CS1 Italian-language sources (it)","Pages using web citations with no URL","Wikipedia articles with GND identifiers","Operating system kernels"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Kernel_(operating_system)","wgRelevantArticleId":21346982,"wgRequestId":"WcE32QpAMFcAAFddl04AAACC","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":["autoconfirmed"],"wgRedirectedFrom":"Kernel_(computing)","wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":false,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgInternalRedirectTargetUrl":"/wiki/Kernel_(operating_system)","wgWikibaseItemId":"Q9662","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["mediawiki.action.view.redirect","ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.30.0-wmf.18"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kernel_Layout.svg/1200px-Kernel_Layout.svg.png"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Kernel_(operating_system)"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Kernel_(operating_system)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Kernel_(operating_system)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Kernel_(operating_system)"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Kernel_operating_system rootpage-Kernel_operating_system skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Kernel (operating system)</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"><span class="mw-redirectedfrom">  (Redirected from Kernel (computing))</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					navigation, 					search
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div role="note" class="hatnote navigation-not-searchable">"Kernel (computer science)" redirects here. It is not to be confused with Compute kernel, Kernel method, or Kernel (image processing).</div>
+<div role="note" class="hatnote navigation-not-searchable">"Kernel (computing)" redirects here. For other uses, see Kernel#Computing.</div>
+<table class="plainlinks metadata ambox ambox-move" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mergefrom.svg/50px-Mergefrom.svg.png" width="50" height="20" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mergefrom.svg/75px-Mergefrom.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mergefrom.svg/100px-Mergefrom.svg.png 2x" data-file-width="50" data-file-height="20" /></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">It has been suggested that <i>Supervisory program</i> be merged into this article. (Discuss) <small><i>Proposed since May 2016.</i></small></span></td>
+</tr>
+</table>
+<p>The <b>kernel</b> is a <a href="Computer_program.html" title="Computer program">computer program</a> that is the core of a computer's <a href="Operating_system.html" title="Operating system">operating system</a>, with complete control over everything in the system.<sup id="cite_ref-Linfo_1-0" class="reference">[1]</sup> On most systems, it is one of the first programs loaded on start-up (after the bootloader). It handles the rest of start-up as well as input/output requests from <a href="Software.html" title="Software">software</a>, translating them into data-processing instructions for the central processing unit. It handles memory and peripherals like keyboards, monitors, printers, and speakers.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kernel_Layout.svg/220px-Kernel_Layout.svg.png" width="220" height="174" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kernel_Layout.svg/330px-Kernel_Layout.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kernel_Layout.svg/440px-Kernel_Layout.svg.png 2x" data-file-width="380" data-file-height="300" /></a>
+<div class="thumbcaption">
+<div class="magnify"></div>
+A kernel connects the application software to the hardware of a computer.</div>
+</div>
+</div>
+<p>The critical code of the kernel is usually loaded into a protected area of memory, which prevents it from being overwritten by applications or other, more minor parts of the operating system. The kernel performs its tasks, such as running processes and handling interrupts, in kernel space. In contrast, everything a user does is in user space: writing text in a text editor, running programs in a GUI, etc. This separation prevents user data and kernel data from interfering with each other and causing instability and slowness.<sup id="cite_ref-Linfo_1-1" class="reference">[1]</sup></p>
+<p>The kernel's interface is a low-level abstraction layer. When a process makes requests of the kernel, it is called a system call. Kernel designs differ in how they manage these system calls and resources. A monolithic kernel runs all the operating system <a href="Instruction_set.html" class="mw-redirect" title="Instruction set">instructions</a> in the same address space, for speed. A microkernel runs most processes in user space,<sup id="cite_ref-2" class="reference">[2]</sup> for modularity.<sup id="cite_ref-mono-micro_3-0" class="reference">[3]</sup></p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a><span class="tocnumber">1</span> <span class="toctext">Functions of the kernel</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a><span class="tocnumber">1.1</span> <span class="toctext">Memory management</span></a></li>
+<li class="toclevel-2 tocsection-3"><a><span class="tocnumber">1.2</span> <span class="toctext">Device management</span></a></li>
+<li class="toclevel-2 tocsection-4"><a><span class="tocnumber">1.3</span> <span class="toctext">System calls</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a><span class="tocnumber">2</span> <span class="toctext">Kernel design decisions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a><span class="tocnumber">2.1</span> <span class="toctext">Issues of kernel support for protection</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a><span class="tocnumber">2.1.1</span> <span class="toctext">Hardware-based or language-based protection</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-8"><a><span class="tocnumber">2.2</span> <span class="toctext">Process cooperation</span></a></li>
+<li class="toclevel-2 tocsection-9"><a><span class="tocnumber">2.3</span> <span class="toctext">I/O devices management</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a><span class="tocnumber">3</span> <span class="toctext">Kernel-wide design approaches</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a><span class="tocnumber">3.1</span> <span class="toctext">Monolithic kernels</span></a></li>
+<li class="toclevel-2 tocsection-12"><a><span class="tocnumber">3.2</span> <span class="toctext">Microkernels</span></a></li>
+<li class="toclevel-2 tocsection-13"><a><span class="tocnumber">3.3</span> <span class="toctext">Monolithic kernels vs. microkernels</span></a>
+<ul>
+<li class="toclevel-3 tocsection-14"><a><span class="tocnumber">3.3.1</span> <span class="toctext">Performance</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-15"><a><span class="tocnumber">3.4</span> <span class="toctext">Hybrid (or modular) kernels</span></a></li>
+<li class="toclevel-2 tocsection-16"><a><span class="tocnumber">3.5</span> <span class="toctext">Nanokernels</span></a></li>
+<li class="toclevel-2 tocsection-17"><a><span class="tocnumber">3.6</span> <span class="toctext">Exokernels</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a><span class="tocnumber">4</span> <span class="toctext">History of kernel development</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a><span class="tocnumber">4.1</span> <span class="toctext">Early operating system kernels</span></a></li>
+<li class="toclevel-2 tocsection-20"><a><span class="tocnumber">4.2</span> <span class="toctext">Time-sharing operating systems</span></a></li>
+<li class="toclevel-2 tocsection-21"><a><span class="tocnumber">4.3</span> <span class="toctext">Amiga</span></a></li>
+<li class="toclevel-2 tocsection-22"><a><span class="tocnumber">4.4</span> <span class="toctext">Unix</span></a></li>
+<li class="toclevel-2 tocsection-23"><a><span class="tocnumber">4.5</span> <span class="toctext">Mac OS</span></a></li>
+<li class="toclevel-2 tocsection-24"><a><span class="tocnumber">4.6</span> <span class="toctext">Microsoft Windows</span></a></li>
+<li class="toclevel-2 tocsection-25"><a><span class="tocnumber">4.7</span> <span class="toctext">Development of microkernels</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-27"><a><span class="tocnumber">6</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-28"><a><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-29"><a><span class="tocnumber">8</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-30"><a><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Functions_of_the_kernel">Functions of the kernel</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>The kernel's primary function is to mediate access to the computer's resources, including:<sup id="cite_ref-Wulf74_4-0" class="reference">[4]</sup></p>
+<dl>
+<dt>The central processing unit</dt>
+<dd>This central component of a computer system is responsible for <i>running</i> or <i>executing</i> programs. The kernel takes responsibility for deciding at any time which of the many running programs should be allocated to the processor or processors (each of which can usually run only one program at a time).</dd>
+<dt>Random-access memory (RAM)</dt>
+<dd>Random-access memory is used to store both program instructions and data. Typically, both need to be present in memory in order for a program to execute. Often multiple programs will want access to memory, frequently demanding more memory than the computer has available. The kernel is responsible for deciding which memory each process can use, and determining what to do when not enough memory is available.</dd>
+<dt>Input/output (I/O) devices</dt>
+<dd>I/O devices include such peripherals as keyboards, mice, disk drives, printers, USB devices, network adapters, and display devices. The kernel allocates requests from applications to perform I/O to an appropriate device and provides convenient methods for using the device (typically abstracted to the point where the application does not need to know implementation details of the device).</dd>
+</dl>
+<p>Key aspects necessary in resource management are the definition of an execution domain (address space) and the protection mechanism used to mediate the accesses to the resources within a domain.<sup id="cite_ref-Wulf74_4-1" class="reference">[4]</sup></p>
+<p>Kernels also usually provide methods for synchronization and communication between processes called inter-process communication (IPC).</p>
+<p>A kernel may implement these features itself, or rely on some of the processes it runs to provide the facilities to other processes, although in this case it must provide some means of IPC to allow processes to access the facilities provided by each other.</p>
+<p>Finally, a kernel must provide running programs with a method to make requests to access these facilities.</p>
+<h3><span class="mw-headline" id="Memory_management">Memory management</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">For more details on this topic, see Memory management (operating systems).</div>
+<p>The kernel has full access to the system's memory and must allow processes to safely access this memory as they require it. Often the first step in doing this is virtual addressing, usually achieved by paging and/or segmentation. Virtual addressing allows the kernel to make a given physical address appear to be another address, the virtual address. Virtual address spaces may be different for different processes; the memory that one process accesses at a particular (virtual) address may be different memory from what another process accesses at the same address. This allows every program to behave as if it is the only one (apart from the kernel) running and thus prevents applications from crashing each other.<sup id="cite_ref-OS-Concepts_5-0" class="reference">[5]</sup></p>
+<p>On many systems, a program's virtual address may refer to data which is not currently in memory. The layer of indirection provided by virtual addressing allows the operating system to use other data stores, like a hard drive, to store what would otherwise have to remain in main memory (RAM). As a result, operating systems can allow programs to use more memory than the system has physically available. When a program needs data which is not currently in RAM, the CPU signals to the kernel that this has happened, and the kernel responds by writing the contents of an inactive memory block to disk (if necessary) and replacing it with the data requested by the program. The program can then be resumed from the point where it was stopped. This scheme is generally known as demand paging.</p>
+<p>Virtual addressing also allows creation of virtual partitions of memory in two disjointed areas, one being reserved for the kernel (kernel space) and the other for the applications (user space). The applications are not permitted by the processor to address kernel memory, thus preventing an application from damaging the running kernel. This fundamental partition of memory space has contributed much to the current designs of actual general-purpose kernels and is almost universal in such systems, although some research kernels (e.g. Singularity) take other approaches.</p>
+<h3><span class="mw-headline" id="Device_management">Device management</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>To perform useful functions, processes need access to the peripherals connected to the computer, which are controlled by the kernel through device drivers. A device driver is a computer program that enables the operating system to interact with a hardware device. It provides the operating system with information of how to control and communicate with a certain piece of hardware. The driver is an important and vital piece to a program application. The design goal of a driver is abstraction; the function of the driver is to translate the OS-mandated function calls (programming calls) into device-specific calls. In theory, the device should work correctly with the suitable driver. Device drivers are used for such things as video cards, sound cards, printers, scanners, modems, and LAN cards. The common levels of abstraction of device drivers are:</p>
+<p>1. On the hardware side:</p>
+<ul>
+<li>Interfacing directly.</li>
+<li>Using a high level interface (Video BIOS).</li>
+<li>Using a lower-level device driver (file drivers using disk drivers).</li>
+<li>Simulating work with hardware, while doing something entirely different.</li>
+</ul>
+<p>2. On the software side:</p>
+<ul>
+<li>Allowing the operating system direct access to hardware resources.</li>
+<li>Implementing only primitives.</li>
+<li>Implementing an interface for non-driver software (Example: TWAIN).</li>
+<li>Implementing a language, sometimes high-level (Example PostScript).</li>
+</ul>
+<p>For example, to show the user something on the screen, an application would make a request to the kernel, which would forward the request to its display driver, which is then responsible for actually plotting the character/pixel.<sup id="cite_ref-OS-Concepts_5-1" class="reference">[5]</sup></p>
+<p>A kernel must maintain a list of available devices. This list may be known in advance (e.g. on an embedded system where the kernel will be rewritten if the available hardware changes), configured by the user (typical on older PCs and on systems that are not designed for personal use) or detected by the operating system at run time (normally called plug and play). In a plug and play system, a device manager first performs a scan on different hardware buses, such as Peripheral Component Interconnect (PCI) or Universal Serial Bus (USB), to detect installed devices, then searches for the appropriate drivers.</p>
+<p>As device management is a very <a href="Operating_system.html" title="Operating system">OS</a>-specific topic, these drivers are handled differently by each kind of kernel design, but in every case, the kernel has to provide the I/O to allow drivers to physically access their devices through some port or memory location. Very important decisions have to be made when designing the device management system, as in some designs accesses may involve context switches, making the operation very CPU-intensive and easily causing a significant performance overhead.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (July 2007)">citation needed</span></a></i>]</sup></p>
+<h3><span class="mw-headline" id="System_calls">System calls</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: System call</div>
+<p>In computing, a system call is how a process requests a service from an operating system's kernel that it does not normally have permission to run. System calls provide the interface between a process and the operating system. Most operations interacting with the system require permissions not available to a user level process, e.g. I/O performed with a device present on the system, or any form of communication with other processes requires the use of system calls.</p>
+<p>A system call is a mechanism that is used by the application program to request a service from the operating system. They use a machine-code instruction that causes the processor to change mode. An example would be from supervisor mode to protected mode. This is where the operating system performs actions like accessing hardware devices or the memory management unit. Generally the operating system provides a library that sits between the operating system and normal programs. Usually it is a C library such as Glibc or Windows API. The library handles the low-level details of passing information to the kernel and switching to supervisor mode. System calls include close, open, read, wait and write.</p>
+<p>To actually perform useful work, a process must be able to access the services provided by the kernel. This is implemented differently by each kernel, but most provide a C library or an API, which in turn invokes the related kernel functions.<sup id="cite_ref-6" class="reference">[6]</sup></p>
+<p>The method of invoking the kernel function varies from kernel to kernel. If memory isolation is in use, it is impossible for a user process to call the kernel directly, because that would be a violation of the processor's access control rules. A few possibilities are:</p>
+<ul>
+<li>Using a software-simulated interrupt. This method is available on most hardware, and is therefore very common.</li>
+<li>Using a call gate. A call gate is a special address stored by the kernel in a list in kernel memory at a location known to the processor. When the processor detects a call to that address, it instead redirects to the target location without causing an access violation. This requires hardware support, but the hardware for it is quite common.</li>
+<li>Using a special system call instruction. This technique requires special hardware support, which common architectures (notably, x86) may lack. System call instructions have been added to recent models of x86 processors, however, and some operating systems for PCs make use of them when available.</li>
+<li>Using a memory-based queue. An application that makes large numbers of requests but does not need to wait for the result of each may add details of requests to an area of memory that the kernel periodically scans to find requests.</li>
+</ul>
+<h2><span class="mw-headline" id="Kernel_design_decisions">Kernel design decisions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Issues_of_kernel_support_for_protection">Issues of kernel support for protection</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>An important consideration in the design of a kernel is the support it provides for protection from faults (fault tolerance) and from malicious behaviours (security). These two aspects are usually not clearly distinguished, and the adoption of this distinction in the kernel design leads to the rejection of a hierarchical structure for protection.<sup id="cite_ref-Wulf74_4-2" class="reference">[4]</sup></p>
+<p>The mechanisms or policies provided by the kernel can be classified according to several criteria, including: static (enforced at compile time) or dynamic (enforced at run time); pre-emptive or post-detection; according to the protection principles they satisfy (e.g. Denning<sup id="cite_ref-Denning76_7-0" class="reference">[7]</sup><sup id="cite_ref-Swift05Denning76_8-0" class="reference">[8]</sup>); whether they are hardware supported or language based; whether they are more an open mechanism or a binding policy; and many more.</p>
+<p>Support for hierarchical protection domains<sup id="cite_ref-Schroeder72_9-0" class="reference">[9]</sup> is typically implemented using CPU modes.</p>
+<p>Many kernels provide implementation of "capabilities", i.e. objects that are provided to user code which allow limited access to an underlying object managed by the kernel. A common example occurs in file handling: a file is a representation of information stored on a permanent storage device. The kernel may be able to perform many different operations (e.g. read, write, delete or execute the file contents) but a user level application may only be permitted to perform some of these operations (e.g. it may only be allowed to read the file). A common implementation of this is for the kernel to provide an object to the application (typically called a "file handle") which the application may then invoke operations on, the validity of which the kernel checks at the time the operation is requested. Such a system may be extended to cover all objects that the kernel manages, and indeed to objects provided by other user applications.</p>
+<p>An efficient and simple way to provide hardware support of capabilities is to delegate the MMU the responsibility of checking access-rights for every memory access, a mechanism called capability-based addressing.<sup id="cite_ref-LindenCapabilityAddressing_10-0" class="reference">[10]</sup> Most commercial computer architectures lack such MMU support for capabilities.</p>
+<p>An alternative approach is to simulate capabilities using commonly supported hierarchical domains; in this approach, each protected object must reside in an address space that the application does not have access to; the kernel also maintains a list of capabilities in such memory. When an application needs to access an object protected by a capability, it performs a system call and the kernel then checks whether the application's capability grants it permission to perform the requested action, and if it is permitted performs the access for it (either directly, or by delegating the request to another user-level process). The performance cost of address space switching limits the practicality of this approach in systems with complex interactions between objects, but it is used in current operating systems for objects that are not accessed frequently or which are not expected to perform quickly.<sup id="cite_ref-EranianMosberger_11-0" class="reference">[11]</sup><sup id="cite_ref-12" class="reference">[12]</sup> Approaches where protection mechanism are not firmware supported but are instead simulated at higher levels (e.g. simulating capabilities by manipulating page tables on hardware that does not have direct support), are possible, but there are performance implications.<sup id="cite_ref-HochBrowne_13-0" class="reference">[13]</sup> Lack of hardware support may not be an issue, however, for systems that choose to use language-based protection.<sup id="cite_ref-Schneider_14-0" class="reference">[14]</sup></p>
+<p>An important kernel design decision is the choice of the abstraction levels where the security mechanisms and policies should be implemented. Kernel security mechanisms play a critical role in supporting security at higher levels.<sup id="cite_ref-LindenCapabilityAddressing_10-1" class="reference">[10]</sup><sup id="cite_ref-Loscocco98_15-0" class="reference">[15]</sup><sup id="cite_ref-16" class="reference">[16]</sup><sup id="cite_ref-17" class="reference">[17]</sup><sup id="cite_ref-18" class="reference">[18]</sup></p>
+<p>One approach is to use firmware and kernel support for fault tolerance (see above), and build the security policy for malicious behavior on top of that (adding features such as cryptography mechanisms where necessary), delegating some responsibility to the <a href="Compiler.html" title="Compiler">compiler</a>. Approaches that delegate enforcement of security policy to the compiler and/or the application level are often called <i>language-based security</i>.</p>
+<p>The lack of many critical security mechanisms in current mainstream operating systems impedes the implementation of adequate security policies at the application abstraction level.<sup id="cite_ref-Loscocco98_15-1" class="reference">[15]</sup> In fact, a common misconception in computer security is that any security policy can be implemented in an application regardless of kernel support.<sup id="cite_ref-Loscocco98_15-2" class="reference">[15]</sup></p>
+<h4><span class="mw-headline" id="Hardware-based_or_language-based_protection">Hardware-based or language-based protection</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h4>
+<p>Typical computer systems today use hardware-enforced rules about what programs are allowed to access what data. The processor monitors the execution and stops a program that violates a rule (e.g., a user process that is about to read or write to kernel memory, and so on). In systems that lack support for capabilities, processes are isolated from each other by using separate address spaces.<sup id="cite_ref-19" class="reference">[19]</sup> Calls from user processes into the kernel are regulated by requiring them to use one of the above-described system call methods.</p>
+<p>An alternative approach is to use language-based protection. In a language-based protection system, the kernel will only allow code to execute that has been produced by a trusted language <a href="Compiler.html" title="Compiler">compiler</a>. The language may then be designed such that it is impossible for the programmer to instruct it to do something that will violate a security requirement.<sup id="cite_ref-Schneider_14-1" class="reference">[14]</sup></p>
+<p>Advantages of this approach include:</p>
+<ul>
+<li>No need for separate address spaces. Switching between address spaces is a slow operation that causes a great deal of overhead, and a lot of optimization work is currently performed in order to prevent unnecessary switches in current operating systems. Switching is completely unnecessary in a language-based protection system, as all code can safely operate in the same address space.</li>
+<li>Flexibility. Any protection scheme that can be designed to be expressed via a programming language can be implemented using this method. Changes to the protection scheme (e.g. from a hierarchical system to a capability-based one) do not require new hardware.</li>
+</ul>
+<p>Disadvantages include:</p>
+<ul>
+<li>Longer application start up time. Applications must be verified when they are started to ensure they have been compiled by the correct compiler, or may need recompiling either from source code or from <a href="Bytecode.html" title="Bytecode">bytecode</a>.</li>
+<li>Inflexible <a href="Type_system.html" title="Type system">type systems</a>. On traditional systems, applications frequently perform operations that are not type safe. Such operations cannot be permitted in a language-based protection system, which means that applications may need to be rewritten and may, in some cases, lose performance.</li>
+</ul>
+<p>Examples of systems with language-based protection include JX and Microsoft's Singularity.</p>
+<h3><span class="mw-headline" id="Process_cooperation">Process cooperation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Edsger Dijkstra proved that from a logical point of view, atomic lock and unlock operations operating on binary semaphores are sufficient primitives to express any functionality of process cooperation.<sup id="cite_ref-Dijkstra65_20-0" class="reference">[20]</sup> However this approach is generally held to be lacking in terms of safety and efficiency, whereas a message passing approach is more flexible.<sup id="cite_ref-Hansen70_21-0" class="reference">[21]</sup> A number of other approaches (either lower- or higher-level) are available as well, with many modern kernels providing support for systems such as shared memory and remote procedure calls.</p>
+<h3><span class="mw-headline" id="I.2FO_devices_management">I/O devices management</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>The idea of a kernel where I/O devices are handled uniformly with other processes, as parallel co-operating processes, was first proposed and implemented by Brinch Hansen (although similar ideas were suggested in 1967<sup id="cite_ref-22" class="reference">[22]</sup><sup id="cite_ref-23" class="reference">[23]</sup>). In Hansen's description of this, the "common" processes are called <i>internal processes</i>, while the I/O devices are called <i>external processes</i>.<sup id="cite_ref-Hansen70_21-1" class="reference">[21]</sup></p>
+<p>Similar to physical memory, allowing applications direct access to controller ports and registers can cause the controller to malfunction, or system to crash. With this, depending on the complexity of the device, some devices can get surprisingly complex to program, and use several different controllers. Because of this, providing a more abstract interface to manage the device is important. This interface is normally done by a Device Driver or Hardware Abstraction Layer. Frequently, applications will require access to these devices. The Kernel must maintain the list of these devices by querying the system for them in some way. This can be done through the BIOS, or through one of the various system buses (such as PCI/PCIE, or USB). When an application requests an operation on a device (Such as displaying a character), the kernel needs to send this request to the current active video driver. The video driver, in turn, needs to carry out this request. This is an example of Inter Process Communication (IPC).</p>
+<h2><span class="mw-headline" id="Kernel-wide_design_approaches">Kernel-wide design approaches</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Naturally, the above listed tasks and features can be provided in many ways that differ from each other in design and implementation.</p>
+<p>The principle of <i>separation of mechanism and policy</i> is the substantial difference between the philosophy of micro and monolithic kernels.<sup id="cite_ref-24" class="reference">[24]</sup><sup id="cite_ref-Levin75_25-0" class="reference">[25]</sup> Here a <i>mechanism</i> is the support that allows the implementation of many different policies, while a policy is a particular "mode of operation". For instance, a mechanism may provide for user log-in attempts to call an authorization server to determine whether access should be granted; a policy may be for the authorization server to request a password and check it against an encrypted password stored in a database. Because the mechanism is generic, the policy could more easily be changed (e.g. by requiring the use of a security token) than if the mechanism and policy were integrated in the same module.</p>
+<p>In minimal microkernel just some very basic policies are included,<sup id="cite_ref-Levin75_25-1" class="reference">[25]</sup> and its mechanisms allows what is running on top of the kernel (the remaining part of the operating system and the other applications) to decide which policies to adopt (as memory management, high level process scheduling, file system management, etc.).<sup id="cite_ref-Wulf74_4-3" class="reference">[4]</sup><sup id="cite_ref-Hansen70_21-2" class="reference">[21]</sup> A monolithic kernel instead tends to include many policies, therefore restricting the rest of the system to rely on them.</p>
+<p>Per Brinch Hansen presented arguments in favour of separation of mechanism and policy.<sup id="cite_ref-Wulf74_4-4" class="reference">[4]</sup><sup id="cite_ref-Hansen70_21-3" class="reference">[21]</sup> The failure to properly fulfill this separation is one of the major causes of the lack of substantial innovation in existing operating systems,<sup id="cite_ref-Wulf74_4-5" class="reference">[4]</sup> a problem common in computer architecture.<sup id="cite_ref-Denning80_26-0" class="reference">[26]</sup><sup id="cite_ref-Nehmer91_27-0" class="reference">[27]</sup><sup id="cite_ref-28" class="reference">[28]</sup> The monolithic design is induced by the "kernel mode"/"user mode" architectural approach to protection (technically called hierarchical protection domains), which is common in conventional commercial systems;<sup id="cite_ref-Levy84privilegedmode_29-0" class="reference">[29]</sup> in fact, every module needing protection is therefore preferably included into the kernel.<sup id="cite_ref-Levy84privilegedmode_29-1" class="reference">[29]</sup> This link between monolithic design and "privileged mode" can be reconducted to the key issue of mechanism-policy separation;<sup id="cite_ref-Wulf74_4-6" class="reference">[4]</sup> in fact the "privileged mode" architectural approach melts together the protection mechanism with the security policies, while the major alternative architectural approach, capability-based addressing, clearly distinguishes between the two, leading naturally to a microkernel design<sup id="cite_ref-Wulf74_4-7" class="reference">[4]</sup> (see Separation of protection and security).</p>
+<p>While monolithic kernels execute all of their code in the same address space (kernel space) microkernels try to run most of their services in user space, aiming to improve maintainability and modularity of the codebase.<sup id="cite_ref-mono-micro_3-1" class="reference">[3]</sup> Most kernels do not fit exactly into one of these categories, but are rather found in between these two designs. These are called hybrid kernels. More exotic designs such as nanokernels and exokernels are available, but are seldom used for production systems. The Xen hypervisor, for example, is an exokernel.</p>
+<h3><span class="mw-headline" id="Monolithic_kernels">Monolithic kernels</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Monolithic kernel</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:172px;"><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/64/Kernel-simple.svg/170px-Kernel-simple.svg.png" width="170" height="208" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/64/Kernel-simple.svg/255px-Kernel-simple.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/64/Kernel-simple.svg/340px-Kernel-simple.svg.png 2x" data-file-width="259" data-file-height="317" /></a>
+<div class="thumbcaption">
+<div class="magnify"></div>
+Diagram of a monolithic kernel</div>
+</div>
+</div>
+<p>In a monolithic kernel, all OS services run along with the main kernel thread, thus also residing in the same memory area. This approach provides rich and powerful hardware access. Some developers, such as <a href="Unix.html" title="Unix">UNIX</a> developer Ken Thompson, maintain that it is "easier to implement a monolithic kernel"<sup id="cite_ref-Linuxisobsoletedebate_30-0" class="reference">[30]</sup> than microkernels. The main disadvantages of monolithic kernels are the dependencies between system components&#160;–  a bug in a device driver might crash the entire system&#160;–  and the fact that large kernels can become very difficult to maintain.</p>
+<p>Monolithic kernels, which have traditionally been used by Unix-like operating systems, contain all the operating system core functions and the device drivers (small programs that allow the operating system to interact with hardware devices, such as disk drives, video cards and printers). This is the traditional design of UNIX systems. A monolithic kernel is one single program that contains all of the code necessary to perform every kernel related task. Every part which is to be accessed by most programs which cannot be put in a library is in the kernel space: Device drivers, Scheduler, Memory handling, File systems, Network stacks. Many system calls are provided to applications, to allow them to access all those services. A monolithic kernel, while initially loaded with subsystems that may not be needed, can be tuned to a point where it is as fast as or faster than the one that was specifically designed for the hardware, although more relevant in a general sense. Modern monolithic kernels, such as those of <a href="Linux.html" title="Linux">Linux</a> and FreeBSD, both of which fall into the category of Unix-like operating systems, feature the ability to load modules at runtime, thereby allowing easy extension of the kernel's capabilities as required, while helping to minimize the amount of code running in kernel space. In the monolithic kernel, some advantages hinge on these points:</p>
+<ul>
+<li>Since there is less software involved it is faster.</li>
+<li>As it is one single piece of software it should be smaller both in source and compiled forms.</li>
+<li>Less code generally means fewer bugs which can translate to fewer security problems.</li>
+</ul>
+<p>Most work in the monolithic kernel is done via system calls. These are interfaces, usually kept in a tabular structure, that access some subsystem within the kernel such as disk operations. Essentially calls are made within programs and a checked copy of the request is passed through the system call. Hence, not far to travel at all. The monolithic Linux kernel can be made extremely small not only because of its ability to dynamically load modules but also because of its ease of customization. In fact, there are some versions that are small enough to fit together with a large number of utilities and other programs on a single floppy disk and still provide a fully functional operating system (one of the most popular of which is muLinux). This ability to miniaturize its kernel has also led to a rapid growth in the use of Linux in embedded systems.</p>
+<p>These types of kernels consist of the core functions of the operating system and the device drivers with the ability to load modules at runtime. They provide rich and powerful abstractions of the underlying hardware. They provide a small set of simple hardware abstractions and use applications called servers to provide more functionality. This particular approach defines a high-level virtual interface over the hardware, with a set of system calls to implement operating system services such as process management, concurrency and memory management in several modules that run in supervisor mode. This design has several flaws and limitations:</p>
+<ul>
+<li>Coding in kernel can be challenging, in part because one cannot use common libraries (like a full-featured libc), and because one needs to use a source-level debugger like gdb. Rebooting the computer is often required. This is not just a problem of convenience to the developers. When debugging is harder, and as difficulties become stronger, it becomes more likely that code will be "buggier".</li>
+<li>Bugs in one part of the kernel have strong side effects; since every function in the kernel has all the privileges, a bug in one function can corrupt data structure of another, totally unrelated part of the kernel, or of any running program.</li>
+<li>Kernels often become very large and difficult to maintain.</li>
+<li>Even if the modules servicing these operations are separate from the whole, the code integration is tight and difficult to do correctly.</li>
+<li>Since the modules run in the same address space, a bug can bring down the entire system.</li>
+<li>Monolithic kernels are not portable; therefore, they must be rewritten for each new architecture that the operating system is to be used on.</li>
+</ul>
+<div class="thumb tright">
+<div class="thumbinner" style="width:262px;"><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Kernel-microkernel.svg/260px-Kernel-microkernel.svg.png" width="260" height="195" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Kernel-microkernel.svg/390px-Kernel-microkernel.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Kernel-microkernel.svg/520px-Kernel-microkernel.svg.png 2x" data-file-width="400" data-file-height="300" /></a>
+<div class="thumbcaption">
+<div class="magnify"></div>
+In the microkernel approach, the kernel itself only provides basic functionality that allows the execution of servers, separate programs that assume former kernel functions, such as device drivers, GUI servers, etc.</div>
+</div>
+</div>
+<h3><span class="mw-headline" id="Microkernels">Microkernels</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Microkernel</div>
+<p>Microkernel (also abbreviated μK or uK) is the term describing an approach to operating system design by which the functionality of the system is moved out of the traditional "kernel", into a set of "servers" that communicate through a "minimal" kernel, leaving as little as possible in "system space" and as much as possible in "user space". A microkernel that is designed for a specific platform or device is only ever going to have what it needs to operate. The microkernel approach consists of defining a simple abstraction over the hardware, with a set of primitives or system calls to implement minimal OS services such as memory management, multitasking, and inter-process communication. Other services, including those normally provided by the kernel, such as networking, are implemented in user-space programs, referred to as <i>servers</i>. Microkernels are easier to maintain than monolithic kernels, but the large number of system calls and context switches might slow down the system because they typically generate more overhead than plain function calls.</p>
+<p>Only parts which really require being in a privileged mode are in kernel space: IPC (Inter-Process Communication), basic scheduler, or scheduling primitives, basic memory handling, basic I/O primitives. Many critical parts are now running in user space: The complete scheduler, memory handling, file systems, and network stacks. Micro kernels were invented as a reaction to traditional "monolithic" kernel design, whereby all system functionality was put in a one static program running in a special "system" mode of the processor. In the microkernel, only the most fundamental of tasks are performed such as being able to access some (not necessarily all) of the hardware, manage memory and coordinate message passing between the processes. Some systems that use micro kernels are QNX and the HURD. In the case of QNX and Hurd user sessions can be entire snapshots of the system itself or views as it is referred to. The very essence of the microkernel architecture illustrates some of its advantages:</p>
+<ul>
+<li>Maintenance is generally easier.</li>
+<li>Patches can be tested in a separate instance, and then swapped in to take over a production instance.</li>
+<li>Rapid development time and new software can be tested without having to reboot the kernel.</li>
+<li>More persistence in general, if one instance goes hay-wire, it is often possible to substitute it with an operational mirror.</li>
+</ul>
+<p>Most micro kernels use a message passing system of some sort to handle requests from one server to another. The message passing system generally operates on a port basis with the microkernel. As an example, if a request for more memory is sent, a port is opened with the microkernel and the request sent through. Once within the microkernel, the steps are similar to system calls. The rationale was that it would bring modularity in the system architecture, which would entail a cleaner system, easier to debug or dynamically modify, customizable to users' needs, and more performing. They are part of the operating systems like AIX, BeOS, Hurd, Mach, macOS, MINIX, QNX. Etc. Although micro kernels are very small by themselves, in combination with all their required auxiliary code they are, in fact, often larger than monolithic kernels. Advocates of monolithic kernels also point out that the two-tiered structure of microkernel systems, in which most of the operating system does not interact directly with the hardware, creates a not-insignificant cost in terms of system efficiency. These types of kernels normally provide only the minimal services such as defining memory address spaces, Inter-process communication (IPC) and the process management. The other functions such as running the hardware processes are not handled directly by micro kernels. Proponents of micro kernels point out those monolithic kernels have the disadvantage that an error in the kernel can cause the entire system to crash. However, with a microkernel, if a kernel process crashes, it is still possible to prevent a crash of the system as a whole by merely restarting the service that caused the error.</p>
+<p>Other services provided by the kernel such as networking are implemented in user-space programs referred to as <i>servers</i>. Servers allow the operating system to be modified by simply starting and stopping programs. For a machine without networking support, for instance, the networking server is not started. The task of moving in and out of the kernel to move data between the various applications and servers creates overhead which is detrimental to the efficiency of micro kernels in comparison with monolithic kernels.</p>
+<p>Disadvantages in the microkernel exist however. Some are:</p>
+<ul>
+<li>Larger running memory footprint</li>
+<li>More software for interfacing is required, there is a potential for performance loss.</li>
+<li>Messaging bugs can be harder to fix due to the longer trip they have to take versus the one off copy in a monolithic kernel.</li>
+<li>Process management in general can be very complicated.</li>
+</ul>
+<p>The disadvantages for micro kernels are extremely context based. As an example, they work well for small single purpose (and critical) systems because if not many processes need to run, then the complications of process management are effectively mitigated.</p>
+<p>A microkernel allows the implementation of the remaining part of the operating system as a normal application program written in a high-level language, and the use of different operating systems on top of the same unchanged kernel.<sup id="cite_ref-Hansen70_21-4" class="reference">[21]</sup> It is also possible to dynamically switch among operating systems and to have more than one active simultaneously.<sup id="cite_ref-Hansen70_21-5" class="reference">[21]</sup></p>
+<h3><span class="mw-headline" id="Monolithic_kernels_vs._microkernels">Monolithic kernels vs. microkernels</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>As the computer kernel grows, so grows the size and vulnerability of its trusted computing base; and, besides reducing security, there is the problem of enlarging the memory footprint. This is mitigated to some degree by perfecting the virtual memory system, but not all computer architectures have virtual memory support.<sup id="cite_ref-31" class="reference">[31]</sup> To reduce the kernel's footprint, extensive editing has to be performed to carefully remove unneeded code, which can be very difficult with non-obvious interdependencies between parts of a kernel with millions of lines of code.</p>
+<p>By the early 1990s, due to the various shortcomings of monolithic kernels versus microkernels, monolithic kernels were considered obsolete by virtually all operating system researchers.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (June 2015)">citation needed</span></a></i>]</sup> As a result, the design of Linux as a monolithic kernel rather than a microkernel was the topic of a famous debate between Linus Torvalds and Andrew Tanenbaum.<sup id="cite_ref-TorvaldsTanenbaum_32-0" class="reference">[32]</sup> There is merit on both sides of the argument presented in the Tanenbaum–Torvalds debate.</p>
+<h4><span class="mw-headline" id="Performance">Performance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h4>
+<p>Monolithic kernels are designed to have all of their code in the same address space (kernel space), which some developers argue is necessary to increase the performance of the system.<sup id="cite_ref-MatthewRussell_33-0" class="reference">[33]</sup> Some developers also maintain that monolithic systems are extremely efficient if well written.<sup id="cite_ref-MatthewRussell_33-1" class="reference">[33]</sup> The monolithic model tends to be more efficient<sup id="cite_ref-34" class="reference">[34]</sup> through the use of shared kernel memory, rather than the slower IPC system of microkernel designs, which is typically based on message passing.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (July 2007)">citation needed</span></a></i>]</sup></p>
+<p>The performance of microkernels was poor in both the 1980s and early 1990s.<sup id="cite_ref-Liedtke95_35-0" class="reference">[35]</sup><sup id="cite_ref-Hartig97_36-0" class="reference">[36]</sup> However, studies that empirically measured the performance of these microkernels did not analyze the reasons of such inefficiency.<sup id="cite_ref-Liedtke95_35-1" class="reference">[35]</sup> The explanations of this data were left to "folklore", with the assumption that they were due to the increased frequency of switches from "kernel-mode" to "user-mode",<sup id="cite_ref-Liedtke95_35-2" class="reference">[35]</sup> to the increased frequency of inter-process communication<sup id="cite_ref-Liedtke95_35-3" class="reference">[35]</sup> and to the increased frequency of context switches.<sup id="cite_ref-Liedtke95_35-4" class="reference">[35]</sup></p>
+<p>In fact, as guessed in 1995, the reasons for the poor performance of microkernels might as well have been: (1) an actual inefficiency of the whole microkernel <i>approach</i>, (2) the particular <i>concepts</i> implemented in those microkernels, and (3) the particular <i>implementation</i> of those concepts.<sup id="cite_ref-Liedtke95_35-5" class="reference">[35]</sup> Therefore it remained to be studied if the solution to build an efficient microkernel was, unlike previous attempts, to apply the correct construction techniques.<sup id="cite_ref-Liedtke95_35-6" class="reference">[35]</sup></p>
+<p>On the other end, the hierarchical protection domains architecture that leads to the design of a monolithic kernel<sup id="cite_ref-Levy84privilegedmode_29-2" class="reference">[29]</sup> has a significant performance drawback each time there's an interaction between different levels of protection (i.e. when a process has to manipulate a data structure both in 'user mode' and 'supervisor mode'), since this requires message copying by value.<sup id="cite_ref-Hansen73SupervisorMode_37-0" class="reference">[37]</sup></p>
+<p>By the mid-1990s, most researchers had abandoned the belief that careful tuning could reduce this overhead dramatically,<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (July 2007)">citation needed</span></a></i>]</sup> but recently, newer microkernels, optimized for performance, such as L4<sup id="cite_ref-l4_38-0" class="reference">[38]</sup> and K42 have addressed these problems.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="The material near this tag needs to be fact-checked with the cited source(s). (July 2007)">verification needed</span></a></i>]</sup></p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:262px;"><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kernel-hybrid.svg/260px-Kernel-hybrid.svg.png" width="260" height="195" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kernel-hybrid.svg/390px-Kernel-hybrid.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kernel-hybrid.svg/520px-Kernel-hybrid.svg.png 2x" data-file-width="400" data-file-height="300" /></a>
+<div class="thumbcaption">
+<div class="magnify"></div>
+The hybrid kernel approach combines the speed and simpler design of a monolithic kernel with the modularity and execution safety of a microkernel.</div>
+</div>
+</div>
+<h3><span class="mw-headline" id="Hybrid_.28or_modular.29_kernels">Hybrid (or modular) kernels</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Hybrid kernel</div>
+<p>Hybrid kernels are used in most commercial operating systems such as Microsoft Windows NT 3.1, NT 3.5, NT 3.51, NT 4.0, 2000, XP, Vista, 7, 8, 8.1 and 10. Apple Inc's own macOS uses a hybrid kernel called XNU which is based upon code from OSF/1's Mach kernel (OSFMK 7.3) <sup id="cite_ref-39" class="reference">[39]</sup> and FreeBSD's monolithic kernel. They are similar to micro kernels, except they include some additional code in kernel-space to increase performance. These kernels represent a compromise that was implemented by some developers before it was demonstrated that pure micro kernels can provide high performance. These types of kernels are extensions of micro kernels with some properties of monolithic kernels. Unlike monolithic kernels, these types of kernels are unable to load modules at runtime on their own. Hybrid kernels are micro kernels that have some "non-essential" code in kernel-space in order for the code to run more quickly than it would were it to be in user-space. Hybrid kernels are a compromise between the monolithic and microkernel designs. This implies running some services (such as the network stack or the filesystem) in kernel space to reduce the performance overhead of a traditional microkernel, but still running kernel code (such as device drivers) as servers in user space.</p>
+<p>Many traditionally monolithic kernels are now at least adding (if not actively exploiting) the module capability. The most well known of these kernels is the Linux kernel. The modular kernel essentially can have parts of it that are built into the core kernel binary or binaries that load into memory on demand. It is important to note that a code tainted module has the potential to destabilize a running kernel. Many people become confused on this point when discussing micro kernels. It is possible to write a driver for a microkernel in a completely separate memory space and test it before "going" live. When a kernel module is loaded, it accesses the monolithic portion's memory space by adding to it what it needs, therefore, opening the doorway to possible pollution. A few advantages to the modular (or) Hybrid kernel are:</p>
+<ul>
+<li>Faster development time for drivers that can operate from within modules. No reboot required for testing (provided the kernel is not destabilized).</li>
+<li>On demand capability versus spending time recompiling a whole kernel for things like new drivers or subsystems.</li>
+<li>Faster integration of third party technology (related to development but pertinent unto itself nonetheless).</li>
+</ul>
+<p>Modules, generally, communicate with the kernel using a module interface of some sort. The interface is generalized (although particular to a given operating system) so it is not always possible to use modules. Often the device drivers may need more flexibility than the module interface affords. Essentially, it is two system calls and often the safety checks that only have to be done once in the monolithic kernel now may be done twice. Some of the disadvantages of the modular approach are:</p>
+<ul>
+<li>With more interfaces to pass through, the possibility of increased bugs exists (which implies more security holes).</li>
+<li>Maintaining modules can be confusing for some administrators when dealing with problems like symbol differences.</li>
+</ul>
+<h3><span class="mw-headline" id="Nanokernels">Nanokernels</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Nanokernel</div>
+<p>A nanokernel delegates virtually all services&#160;–  including even the most basic ones like interrupt controllers or the timer&#160;–  to device drivers to make the kernel memory requirement even smaller than a traditional microkernel.<sup id="cite_ref-40" class="reference">[40]</sup></p>
+<h3><span class="mw-headline" id="Exokernels">Exokernels</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Exokernel</div>
+<p>Exokernels are a still-experimental approach to operating system design. They differ from the other types of kernels in that their functionality is limited to the protection and multiplexing of the raw hardware, providing no hardware abstractions on top of which to develop applications. This separation of hardware protection from hardware management enables application developers to determine how to make the most efficient use of the available hardware for each specific program.</p>
+<p>Exokernels in themselves are extremely small. However, they are accompanied by library operating systems (see also unikernel), providing application developers with the functionalities of a conventional operating system. A major advantage of exokernel-based systems is that they can incorporate multiple library operating systems, each exporting a different API, for example one for high level UI development and one for real-time control.</p>
+<h2><span class="mw-headline" id="History_of_kernel_development">History of kernel development</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Early_operating_system_kernels">Early operating system kernels</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: History of operating systems</div>
+<p>Strictly speaking, an operating system (and thus, a kernel) is not <i>required</i> to run a computer. Programs can be directly loaded and executed on the "bare metal" machine, provided that the authors of those programs are willing to work without any hardware abstraction or operating system support. Most early computers operated this way during the 1950s and early 1960s, which were reset and reloaded between the execution of different programs. Eventually, small ancillary programs such as program loaders and debuggers were left in memory between runs, or loaded from ROM. As these were developed, they formed the basis of what became early operating system kernels. The "bare metal" approach is still used today on some video game consoles and embedded systems,<sup id="cite_ref-Ball2002_41-0" class="reference">[41]</sup> but in general, newer computers use modern operating systems and kernels.</p>
+<p>In 1969, the RC 4000 Multiprogramming System introduced the system design philosophy of a small nucleus "upon which operating systems for different purposes could be built in an orderly manner",<sup id="cite_ref-Hansen2001RC4k_42-0" class="reference">[42]</sup> what would be called the microkernel approach.</p>
+<h3><span class="mw-headline" id="Time-sharing_operating_systems">Time-sharing operating systems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Time-sharing</div>
+<p>In the decade preceding <a href="Unix.html" title="Unix">Unix</a>, computers had grown enormously in power&#160;–  to the point where computer operators were looking for new ways to get people to use their spare time on their machines. One of the major developments during this era was time-sharing, whereby a number of users would get small slices of computer time, at a rate at which it appeared they were each connected to their own, slower, machine.<sup id="cite_ref-43" class="reference">[43]</sup></p>
+<p>The development of time-sharing systems led to a number of problems. One was that users, particularly at universities where the systems were being developed, seemed to want to hack the system to get more CPU time. For this reason, security and access control became a major focus of the Multics project in 1965.<sup id="cite_ref-44" class="reference">[44]</sup> Another ongoing issue was properly handling computing resources: users spent most of their time staring at the screen and thinking instead of actually using the resources of the computer, and a time-sharing system should give the CPU time to an active user during these periods. Finally, the systems typically offered a memory hierarchy several layers deep, and partitioning this expensive resource led to major developments in virtual memory systems.</p>
+<h3><span class="mw-headline" id="Amiga">Amiga</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: AmigaOS</div>
+<p>The Commodore Amiga was released in 1985, and was among the first&#160;–  and certainly most successful&#160;–  home computers to feature an advanced kernel architecture. The AmigaOS kernel's executive component, <i>exec.library</i>, uses a microkernel message-passing design, but there are other kernel components, like <i>graphics.library</i>, that have direct access to the hardware. There is no memory protection, and the kernel is almost always running in user mode. Only special actions are executed in kernel mode, and user-mode applications can ask the operating system to execute their code in kernel mode.</p>
+<h3><span class="mw-headline" id="Unix">Unix</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="Unix.html" title="Unix">Unix</a></div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Unix-history.svg/300px-Unix-history.svg.png" width="300" height="496" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/11/Unix-history.svg/450px-Unix-history.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/11/Unix-history.svg/600px-Unix-history.svg.png 2x" data-file-width="1032" data-file-height="1707" /></a>
+<div class="thumbcaption">
+<div class="magnify"></div>
+A diagram of the predecessor/successor family relationship for Unix-like systems</div>
+</div>
+</div>
+<p>During the design phase of <a href="Unix.html" title="Unix">Unix</a>, programmers decided to model every high-level device as a file, because they believed the purpose of computation was data transformation.<sup id="cite_ref-unix_45-0" class="reference">[45]</sup></p>
+<p>For instance, printers were represented as a "file" at a known location&#160;–  when data was copied to the file, it printed out. Other systems, to provide a similar functionality, tended to virtualize devices at a lower level&#160;–  that is, both devices <i>and</i> files would be instances of some lower level concept. Virtualizing the system at the file level allowed users to manipulate the entire system using their existing file management utilities and concepts, dramatically simplifying operation. As an extension of the same paradigm, Unix allows programmers to manipulate files using a series of small programs, using the concept of pipes, which allowed users to complete operations in stages, feeding a file through a chain of single-purpose tools. Although the end result was the same, using smaller programs in this way dramatically increased flexibility as well as ease of development and use, allowing the user to modify their workflow by adding or removing a program from the chain.</p>
+<p>In the Unix model, the <i>operating system</i> consists of two parts; first, the huge collection of utility programs that drive most operations, the other the kernel that runs the programs.<sup id="cite_ref-unix_45-1" class="reference">[45]</sup> Under Unix, from a programming standpoint, the distinction between the two is fairly thin; the kernel is a program, running in supervisor mode,<sup id="cite_ref-supervisor_46-0" class="reference">[46]</sup> that acts as a program loader and supervisor for the small utility programs making up the rest of the system, and to provide locking and I/O services for these programs; beyond that, the kernel didn't intervene at all in user space.</p>
+<p>Over the years the computing model changed, and Unix's treatment of everything as a file or byte stream no longer was as universally applicable as it was before. Although a terminal could be treated as a file or a byte stream, which is printed to or read from, the same did not seem to be true for a graphical user interface. Networking posed another problem. Even if network communication can be compared to file access, the low-level packet-oriented architecture dealt with discrete chunks of data and not with whole files. As the capability of computers grew, Unix became increasingly cluttered with code. It is also because the modularity of the Unix kernel is extensively scalable.<sup id="cite_ref-47" class="reference">[47]</sup> While kernels might have had 100,000 lines of code in the seventies and eighties, kernels of modern Unix successors like Linux have more than 13 million lines.<sup id="cite_ref-48" class="reference">[48]</sup></p>
+<p>Modern Unix-derivatives are generally based on module-loading monolithic kernels. Examples of this are the Linux kernel in its many distributions as well as the Berkeley software distribution variant kernels such as FreeBSD, DragonflyBSD, OpenBSD, NetBSD,and macOS. Apart from these alternatives, amateur developers maintain an active operating system development community, populated by self-written hobby kernels which mostly end up sharing many features with Linux, FreeBSD, DragonflyBSD, OpenBSD or NetBSD kernels and/or being compatible with them.<sup id="cite_ref-49" class="reference">[49]</sup></p>
+<h3><span class="mw-headline" id="Mac_OS">Mac OS</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main articles: Classic Mac OS and macOS</div>
+<p>Apple first launched its classic Mac OS in 1984, bundled with its Macintosh personal computer. Apple moved to a nanokernel design in Mac OS 8.6. Against this, the modern macOS (originally named Mac OS X) is based on Darwin, which uses a hybrid kernel called XNU, which was created combining the 4.3BSD kernel and the Mach kernel.<sup id="cite_ref-50" class="reference">[50]</sup></p>
+<h3><span class="mw-headline" id="Microsoft_Windows">Microsoft Windows</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: History of Microsoft Windows</div>
+<p>Microsoft Windows was first released in 1985 as an add-on to MS-DOS. Because of its dependence on another operating system, initial releases of Windows, prior to Windows 95, were considered an operating environment (not to be confused with an <a href="Operating_system.html" title="Operating system">operating system</a>). This product line continued to evolve through the 1980s and 1990s, culminating with release of the Windows 9x series (upgrading the system's capabilities to 32-bit addressing and pre-emptive multitasking) through the mid-1990s and ending with the release of Windows Me in 2000. Microsoft also developed Windows NT, an operating system intended for high-end and business users. This line started with the release of Windows NT 3.1 in 1993, and still continues with Windows 10.</p>
+<p>The release of Windows XP in October 2001 brought the NT kernel version of Windows to general users, replacing Windows 9x with a completely different operating system. The architecture of Windows NT's kernel is considered a hybrid kernel because the kernel itself contains tasks such as the Window Manager and the IPC Managers, with a client/server layered subsystem model.<sup id="cite_ref-51" class="reference">[51]</sup></p>
+<h3><span class="mw-headline" id="Development_of_microkernels">Development of microkernels</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Although Mach, developed at Carnegie Mellon University from 1985 to 1994, is the best-known general-purpose microkernel, other microkernels have been developed with more specific aims. The L4 microkernel family (mainly the L3 and the L4 kernel) was created to demonstrate that microkernels are not necessarily slow.<sup id="cite_ref-l4_38-1" class="reference">[38]</sup> Newer implementations such as Fiasco and Pistachio are able to run <a href="Linux.html" title="Linux">Linux</a> next to other L4 processes in separate address spaces.<sup id="cite_ref-52" class="reference">[52]</sup><sup id="cite_ref-53" class="reference">[53]</sup></p>
+<p>Additionally, QNX is a microkernel which is principally used in embedded systems.<sup id="cite_ref-54" class="reference">[54]</sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Comparison of operating system kernels</li>
+<li>Inter-process communication</li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Linfo-1"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">"Kernel". <i>Linfo</i>. Bellevue Linux Users Group<span class="reference-accessdate">. Retrieved <span class="nowrap">15 September</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=Kernel&amp;rft.genre=unknown&amp;rft.jtitle=Linfo&amp;rft_id=http%3A%2F%2Fwww.linfo.org%2Fkernel.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">cf. Daemon (computing)</span></li>
+<li id="cite_note-mono-micro-3"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Roch 2004</span></li>
+<li id="cite_note-Wulf74-4"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a> <a><sup><i><b>c</b></i></sup></a> <a><sup><i><b>d</b></i></sup></a> <a><sup><i><b>e</b></i></sup></a> <a><sup><i><b>f</b></i></sup></a> <a><sup><i><b>g</b></i></sup></a> <a><sup><i><b>h</b></i></sup></a></span> <span class="reference-text">Wulf 1974 pp.337–345</span></li>
+<li id="cite_note-OS-Concepts-5"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Silberschatz 1991</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Tanenbaum, Andrew S. (2008). <i>Modern Operating Systems</i> (3rd ed.). Prentice Hall. pp.&#160;50–51. ISBN&#160;0-13-600663-9. <q>. . . nearly all system calls [are] invoked from C programs by calling a library procedure . . . The library procedure . . . executes a TRAP instruction to switch from user mode to kernel mode and start execution . . .</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.aufirst=Andrew+S.&amp;rft.aulast=Tanenbaum&amp;rft.btitle=Modern+Operating+Systems&amp;rft.date=2008&amp;rft.edition=3rd&amp;rft.genre=book&amp;rft.isbn=0-13-600663-9&amp;rft.pages=50-51&amp;rft.pub=Prentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Denning76-7"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Denning 1976</span></li>
+<li id="cite_note-Swift05Denning76-8"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Swift 2005, p.29 quote: "isolation, resource control, decision verification (checking), and error recovery."</span></li>
+<li id="cite_note-Schroeder72-9"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Schroeder 72</span></li>
+<li id="cite_note-LindenCapabilityAddressing-10"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Linden 76</span></li>
+<li id="cite_note-EranianMosberger-11"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Stephane Eranian and David Mosberger, Virtual Memory in the IA-64 Linux Kernel, Prentice Hall PTR, 2002</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Silberschatz &amp; Galvin, Operating System Concepts, 4th ed, pp. 445 &amp; 446</span></li>
+<li id="cite_note-HochBrowne-13"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation journal">Hoch, Charles; J. C. Browne (July 1980). "An implementation of capabilities on the PDP-11/45" <span style="font-size:85%;">(PDF)</span>. <i>ACM SIGOPS Operating Systems Review</i>. <b>14</b> (3): 22–32. doi:10.1145/850697.850701<span class="reference-accessdate">. Retrieved <span class="nowrap">2007-01-07</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=An+implementation+of+capabilities+on+the+PDP-11%2F45&amp;rft.au=J.+C.+Browne&amp;rft.aufirst=Charles&amp;rft.aulast=Hoch&amp;rft.date=1980-07&amp;rft.genre=article&amp;rft.issue=3&amp;rft.jtitle=ACM+SIGOPS+Operating+Systems+Review&amp;rft.pages=22-32&amp;rft.volume=14&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D850701%26dl%3Dacm%26coll%3D%26CFID%3D15151515%26CFTOKEN%3D6184618&amp;rft_id=info%3Adoi%2F10.1145%2F850697.850701&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Schneider-14"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">A Language-Based Approach to Security, Schneider F., Morrissett G. (Cornell University) and Harper R. (Carnegie Mellon University)</span></li>
+<li id="cite_note-Loscocco98-15"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a> <a><sup><i><b>c</b></i></sup></a></span> <span class="reference-text">P. A. Loscocco, S. D. Smalley, P. A. Muckelbauer, R. C. Taylor, S. J. Turner, and J. F. Farrell. <i>The Inevitability of Failure: The Flawed Assumption of Security in Modern Computing Environments</i>. In Proceedings of the 21st National Information Systems Security Conference, pages 303–314, Oct. 1998. [1].</span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">J. Lepreau et al. <i>The Persistent Relevance of the Local Operating System to Global Applications</i>. Proceedings of the 7th ACM SIGOPS Eurcshelf/book001/book001.html Information Security: An Integrated Collection of Essays, IEEE Comp. 1995.</span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">J. Anderson, <i>Computer Security Technology Planning Study, Air Force Elect. Systems Div., ESD-TR-73-51, October 1972.</i></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">* <cite class="citation journal">Jerry H. Saltzer; Mike D. Schroeder (September 1975). "The protection of information in computer systems". <i>Proceedings of the IEEE</i>. <b>63</b> (9): 1278–1308. doi:10.1109/PROC.1975.9939.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=The+protection+of+information+in+computer+systems&amp;rft.au=Jerry+H.+Saltzer&amp;rft.au=Mike+D.+Schroeder&amp;rft.date=1975-09&amp;rft.genre=article&amp;rft.issue=9&amp;rft.jtitle=Proceedings+of+the+IEEE&amp;rft.pages=1278-1308&amp;rft.volume=63&amp;rft_id=http%3A%2F%2Fweb.mit.edu%2FSaltzer%2Fwww%2Fpublications%2Fprotection%2F&amp;rft_id=info%3Adoi%2F10.1109%2FPROC.1975.9939&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation journal">Jonathan S. Shapiro; Jonathan M. Smith; David J. Farber (1999). "EROS: a fast capability system". <i>Proceedings of the seventeenth ACM symposium on Operating systems principles</i>. <b>33</b> (5): 170–185. doi:10.1145/319344.319163.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=EROS%3A+a+fast+capability+system&amp;rft.au=David+J.+Farber&amp;rft.au=Jonathan+M.+Smith&amp;rft.au=Jonathan+S.+Shapiro&amp;rft.date=1999&amp;rft.genre=article&amp;rft.issue=5&amp;rft.jtitle=Proceedings+of+the+seventeenth+ACM+symposium+on+Operating+systems+principles&amp;rft.pages=170-185&amp;rft.volume=33&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fdoid%3D319151.319163&amp;rft_id=info%3Adoi%2F10.1145%2F319344.319163&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Dijkstra65-20"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Dijkstra, E. W. <i>Cooperating Sequential Processes</i>. Math. Dep., Technological U., Eindhoven, Sept. 1965.</span></li>
+<li id="cite_note-Hansen70-21"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a> <a><sup><i><b>c</b></i></sup></a> <a><sup><i><b>d</b></i></sup></a> <a><sup><i><b>e</b></i></sup></a> <a><sup><i><b>f</b></i></sup></a></span> <span class="reference-text">Brinch Hansen 70 pp.238–241</span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"SHARER, a time sharing system for the CDC 6600"<span class="reference-accessdate">. Retrieved <span class="nowrap">2007-01-07</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.btitle=SHARER%2C+a+time+sharing+system+for+the+CDC+6600&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D363778%26dl%3DACM%26coll%3DGUIDE%26CFID%3D11111111%26CFTOKEN%3D2222222&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">"Dynamic Supervisors – their design and construction"<span class="reference-accessdate">. Retrieved <span class="nowrap">2007-01-07</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.btitle=Dynamic+Supervisors+%E2%80%93+their+design+and+construction&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D811675%26dl%3DACM%26coll%3DGUIDE%26CFID%3D11111111%26CFTOKEN%3D2222222&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Baiardi 1988</span></li>
+<li id="cite_note-Levin75-25"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Levin 75</span></li>
+<li id="cite_note-Denning80-26"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Denning 1980</span></li>
+<li id="cite_note-Nehmer91-27"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Jürgen Nehmer <i>The Immortality of Operating Systems, or: Is Research in Operating Systems still Justified?</i> Lecture Notes In Computer Science; Vol. 563. Proceedings of the International Workshop on Operating Systems of the 90s and Beyond. pp. 77–83 (1991) ISBN&#160;3-540-54987-0 [2] quote: "The past 25 years have shown that research on operating system architecture had a minor effect on existing main stream [<i>sic</i>] systems."</span></li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Levy 84, p.1 quote: "Although the complexity of computer applications increases yearly, the underlying hardware architecture for applications has remained unchanged for decades."</span></li>
+<li id="cite_note-Levy84privilegedmode-29"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a> <a><sup><i><b>c</b></i></sup></a></span> <span class="reference-text">Levy 84, p.1 quote: "Conventional architectures support a single privileged mode of operation. This structure leads to monolithic design; any module needing protection must be part of the single operating system kernel. If, instead, any module could execute within a protected domain, systems could be built as a collection of independent modules extensible by any user."</span></li>
+<li id="cite_note-Linuxisobsoletedebate-30"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Open Sources: Voices from the Open Source Revolution</span></li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Virtual addressing is most commonly achieved through a built-in memory management unit.</span></li>
+<li id="cite_note-TorvaldsTanenbaum-32"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Recordings of the debate between Torvalds and Tanenbaum can be found at dina.dk, groups.google.com, oreilly.com and Andrew Tanenbaum's website</span></li>
+<li id="cite_note-MatthewRussell-33"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">Matthew Russell. "What Is Darwin (and How It Powers Mac OS X)". O'Reilly Media.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.au=Matthew+Russell&amp;rft.btitle=What+Is+Darwin+%28and+How+It+Powers+Mac+OS+X%29&amp;rft.genre=unknown&amp;rft.pub=O%27Reilly+Media&amp;rft_id=http%3A%2F%2Foreilly.com%2Fpub%2Fa%2Fmac%2F2005%2F09%2F27%2Fwhat-is-darwin.html%3Fpage%3D2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> quote: "The tightly coupled nature of a monolithic kernel allows it to make very efficient use of the underlying hardware [...] Microkernels, on the other hand, run a lot more of the core processes in userland. [...] Unfortunately, these benefits come at the cost of the microkernel having to pass a lot of information in and out of the kernel space through a process known as a context switch. Context switches introduce considerable overhead and therefore result in a performance penalty."</span></li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Operating Systems/Kernel Models</span></li>
+<li id="cite_note-Liedtke95-35"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a> <a><sup><i><b>c</b></i></sup></a> <a><sup><i><b>d</b></i></sup></a> <a><sup><i><b>e</b></i></sup></a> <a><sup><i><b>f</b></i></sup></a> <a><sup><i><b>g</b></i></sup></a></span> <span class="reference-text">Liedtke 95</span></li>
+<li id="cite_note-Hartig97-36"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Härtig 97</span></li>
+<li id="cite_note-Hansen73SupervisorMode-37"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Hansen 73, section 7.3 p.233 "<i>interactions between different levels of protection require transmission of messages by value</i>"</span></li>
+<li id="cite_note-l4-38"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">The L4 microkernel family – Overview</span></li>
+<li id="cite_note-39"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">https://www.youtube.com/watch?v=ggnFoDqzGMU</span></li>
+<li id="cite_note-40"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">KeyKOS Nanokernel Architecture</span></li>
+<li id="cite_note-Ball2002-41"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Ball: Embedded Microprocessor Designs, p. 129</span></li>
+<li id="cite_note-Hansen2001RC4k-42"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Hansen 2001 (os), pp.17–18</span></li>
+<li id="cite_note-43"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">BSTJ version of C.ACM Unix paper</span></li>
+<li id="cite_note-44"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Introduction and Overview of the Multics System, by F. J. Corbató and V. A. Vissotsky.</span></li>
+<li id="cite_note-unix-45"><span class="mw-cite-backlink">^ <a><sup><i><b>a</b></i></sup></a> <a><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation web">"The Single Unix Specification". <i>The open group</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=The+Single+Unix+Specification&amp;rft.genre=unknown&amp;rft.jtitle=The+open+group&amp;rft_id=https%3A%2F%2Fwww.unix.org%2Fwhat_is_unix%2Fsingle_unix_specification.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-supervisor-46"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">The highest privilege level has various names throughout different architectures, such as supervisor mode, kernel mode, CPL0, DPL0, ring 0, etc. See Ring (computer security) for more information.</span></li>
+<li id="cite_note-47"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Unix's Revenge by Horace Dediu</span></li>
+<li id="cite_note-48"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Linux Kernel 2.6: It's Worth More!, by David A. Wheeler, October 12, 2004</span></li>
+<li id="cite_note-49"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">This community mostly gathers at Bona Fide OS Development, The Mega-Tokyo Message Board and other operating system enthusiast web sites.</span></li>
+<li id="cite_note-50"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">XNU: The Kernel</span></li>
+<li id="cite_note-51"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Windows History: Windows Desktop Products History</span></li>
+<li id="cite_note-52"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">The Fiasco microkernel – Overview</span></li>
+<li id="cite_note-53"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">L4Ka – The L4 microkernel family and friends</span></li>
+<li id="cite_note-54"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">QNX Realtime Operating System Overview</span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="refbegin references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em;">
+<ul>
+<li><cite class="citation web">Roch, Benjamin (2004). "Monolithic kernel vs. Microkernel" <span style="font-size:85%;">(PDF)</span>. Archived from the original <span style="font-size:85%;">(PDF)</span> on 2006-11-01<span class="reference-accessdate">. Retrieved <span class="nowrap">2006-10-12</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.aufirst=Benjamin&amp;rft.aulast=Roch&amp;rft.btitle=Monolithic+kernel+vs.+Microkernel&amp;rft.date=2004&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fwww.vmars.tuwien.ac.at%2Fcourses%2Fakti12%2Fjournal%2F04ss%2Farticle_04ss_Roch.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Silberschatz, Abraham; James L. Peterson; Peter B. Galvin (1991). <a><i>Operating system concepts</i></a>. Boston, Massachusetts: Addison-Wesley. p.&#160;696. ISBN&#160;0-201-51379-X.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.au=James+L.+Peterson&amp;rft.au=Peter+B.+Galvin&amp;rft.aufirst=Abraham&amp;rft.aulast=Silberschatz&amp;rft.btitle=Operating+system+concepts&amp;rft.date=1991&amp;rft.genre=book&amp;rft.isbn=0-201-51379-X&amp;rft.pages=696&amp;rft.place=Boston%2C+Massachusetts&amp;rft.pub=Addison-Wesley&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D95329%26dl%3Dacm%26coll%3D%26CFID%3D15151515%26CFTOKEN%3D6184618&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Ball, Stuart R. (2002) [2002]. <i>Embedded Microprocessor Systems: Real World Designs</i> (first ed.). Elsevier Science. ISBN&#160;0-7506-7534-9.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.aufirst=Stuart+R.&amp;rft.aulast=Ball&amp;rft.btitle=Embedded+Microprocessor+Systems%3A+Real+World+Designs&amp;rft.date=2002&amp;rft.edition=first&amp;rft.genre=book&amp;rft.isbn=0-7506-7534-9&amp;rft.pub=Elsevier+Science&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Deitel, Harvey M. (1984) [1982]. <a><i>An introduction to operating systems</i></a> (revisited first ed.). Addison-Wesley. p.&#160;673. ISBN&#160;0-201-14502-2.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.aufirst=Harvey+M.&amp;rft.aulast=Deitel&amp;rft.btitle=An+introduction+to+operating+systems&amp;rft.date=1984&amp;rft.edition=revisited+first&amp;rft.genre=book&amp;rft.isbn=0-201-14502-2&amp;rft.pages=673&amp;rft.pub=Addison-Wesley&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D79046%26dl%3DGUIDE%26coll%3DGUIDE&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Denning, Peter J. (December 1976). "Fault tolerant operating systems". <i>ACM Computing Surveys</i>. <b>8</b> (4): 359–389. ISSN&#160;0360-0300. doi:10.1145/356678.356680.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=Fault+tolerant+operating+systems&amp;rft.au=Denning%2C+Peter+J.&amp;rft.date=1976-12&amp;rft.genre=article&amp;rft.issn=0360-0300&amp;rft.issue=4&amp;rft.jtitle=ACM+Computing+Surveys&amp;rft.pages=359-389&amp;rft.volume=8&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D356680%26dl%3DACM%26coll%3D%26CFID%3D15151515%26CFTOKEN%3D6184618&amp;rft_id=info%3Adoi%2F10.1145%2F356678.356680&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Denning, Peter J. (April 1980). "Why not innovations in computer architecture?". <i>ACM SIGARCH Computer Architecture News</i>. <b>8</b> (2): 4–7. ISSN&#160;0163-5964. doi:10.1145/859504.859506.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=Why+not+innovations+in+computer+architecture%3F&amp;rft.aufirst=Peter+J.&amp;rft.aulast=Denning&amp;rft.date=1980-04&amp;rft.genre=article&amp;rft.issn=0163-5964&amp;rft.issue=2&amp;rft.jtitle=ACM+SIGARCH+Computer+Architecture+News&amp;rft.pages=4-7&amp;rft.volume=8&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D859506%26coll%3D%26dl%3DACM%26CFID%3D15151515%26CFTOKEN%3D6184618&amp;rft_id=info%3Adoi%2F10.1145%2F859504.859506&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Hansen, Per Brinch (April 1970). "The nucleus of a Multiprogramming System". <i>Communications of the ACM</i>. <b>13</b> (4): 238–241. ISSN&#160;0001-0782. doi:10.1145/362258.362278.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=The+nucleus+of+a+Multiprogramming+System&amp;rft.aufirst=Per+Brinch&amp;rft.aulast=Hansen&amp;rft.date=1970-04&amp;rft.genre=article&amp;rft.issn=0001-0782&amp;rft.issue=4&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.pages=238-241&amp;rft.volume=13&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D362278%26dl%3DACM%26coll%3DGUIDE%26CFID%3D11111111%26CFTOKEN%3D2222222&amp;rft_id=info%3Adoi%2F10.1145%2F362258.362278&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Hansen, Per Brinch (1973). <a><i>Operating System Principles</i></a>. Englewood Cliffs: Prentice Hall. p.&#160;496. ISBN&#160;0-13-637843-9.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.aufirst=Per+Brinch&amp;rft.aulast=Hansen&amp;rft.btitle=Operating+System+Principles&amp;rft.date=1973&amp;rft.genre=book&amp;rft.isbn=0-13-637843-9&amp;rft.pages=496&amp;rft.place=Englewood+Cliffs&amp;rft.pub=Prentice+Hall&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D540365&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Hansen, Per Brinch (2001). "The evolution of operating systems" <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">2006-10-24</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=The+evolution+of+operating+systems&amp;rft.au=Hansen%2C+Per+Brinch&amp;rft.date=2001&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fbrinch-hansen.net%2Fpapers%2F2001b.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span> included in book: <cite class="citation book">Per Brinch Hansen, ed. (2001). "1" <span style="font-size:85%;">(PDF)</span>. <a><i>Classic operating systems: from batch processing to distributed systems</i></a>. New York,: Springer-Verlag. pp.&#160;1–36. ISBN&#160;0-387-95113-X.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=1&amp;rft.btitle=Classic+operating+systems%3A+from+batch+processing+to+distributed+systems&amp;rft.date=2001&amp;rft.genre=bookitem&amp;rft.isbn=0-387-95113-X&amp;rft.pages=1-36&amp;rft.place=New+York%2C&amp;rft.pub=Springer-Verlag&amp;rft_id=http%3A%2F%2Fbrinch-hansen.net%2Fpapers%2F2001b.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li>Hermann Härtig, Michael Hohmuth, Jochen Liedtke, Sebastian Schönberg, Jean Wolter <i>The performance of μ-kernel-based systems</i>, <cite class="citation book">Härtig, Hermann; Hohmuth, Michael; Liedtke, Jochen; Schönberg, Sebastian (1997). "The performance of μ-kernel-based systems". <i>Proceedings of the sixteenth ACM symposium on Operating systems principles - SOSP '97</i>. p.&#160;66. ISBN&#160;0897919165. doi:10.1145/268998.266660.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=The+performance+of+%CE%BC-kernel-based+systems&amp;rft.au=Hohmuth%2C+Michael&amp;rft.au=Liedtke%2C+Jochen&amp;rft.au=Sch%C3%B6nberg%2C+Sebastian&amp;rft.aufirst=Hermann&amp;rft.aulast=H%C3%A4rtig&amp;rft.btitle=Proceedings+of+the+sixteenth+ACM+symposium+on+Operating+systems+principles++-+SOSP+%2797&amp;rft.date=1997&amp;rft.genre=bookitem&amp;rft.isbn=0897919165&amp;rft.pages=66&amp;rft_id=info%3Adoi%2F10.1145%2F268998.266660&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> <span style="display:none;font-size:100%" class="error citation-comment"><code style="color:inherit; border:inherit; padding:inherit;">|access-date=</code> requires <code style="color:inherit; border:inherit; padding:inherit;">|url=</code> (help)</span> ACM SIGOPS Operating Systems Review, v.31 n.5, p.&#160;66–77, Dec. 1997</li>
+<li>Houdek, M. E., Soltis, F. G., and Hoffman, R. L. 1981. <i>IBM System/38 support for capability-based addressing</i>. In Proceedings of the 8th ACM International Symposium on Computer Architecture. ACM/IEEE, pp.&#160;341–348.</li>
+<li>Intel Corporation (2002) <i>The IA-32 Architecture Software Developer's Manual, Volume 1: Basic Architecture</i></li>
+<li><cite class="citation journal">Levin, R.; Cohen, E.; Corwin, W.; Pollack, F.; Wulf, William (1975). "Policy/mechanism separation in Hydra". <i>ACM Symposium on Operating Systems Principles / Proceedings of the fifth ACM symposium on Operating systems principles</i>. <b>9</b> (5): 132–140. doi:10.1145/1067629.806531.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=Policy%2Fmechanism+separation+in+Hydra&amp;rft.au=Cohen%2C+E.&amp;rft.au=Corwin%2C+W.&amp;rft.au=Pollack%2C+F.&amp;rft.au=Wulf%2C+William&amp;rft.aufirst=R.&amp;rft.aulast=Levin&amp;rft.date=1975&amp;rft.genre=article&amp;rft.issue=5&amp;rft.jtitle=ACM+Symposium+on+Operating+Systems+Principles+%2F+Proceedings+of+the+fifth+ACM+symposium+on+Operating+systems+principles&amp;rft.pages=132-140&amp;rft.volume=9&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D806531%26dl%3DACM%26coll%3D%26CFID%3D15151515%26CFTOKEN%3D6184618&amp;rft_id=info%3Adoi%2F10.1145%2F1067629.806531&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Levy, Henry M. (1984). <a><i>Capability-based computer systems</i></a>. Maynard, Mass: Digital Press. ISBN&#160;0-932376-22-3.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.au=Levy%2C+Henry+M.&amp;rft.btitle=Capability-based+computer+systems&amp;rft.date=1984&amp;rft.genre=book&amp;rft.isbn=0-932376-22-3&amp;rft.place=Maynard%2C+Mass&amp;rft.pub=Digital+Press&amp;rft_id=http%3A%2F%2Fwww.cs.washington.edu%2Fhomes%2Flevy%2Fcapabook%2Findex.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li>Liedtke, Jochen. <i>On µ-Kernel Construction</i>, <i>Proc. 15th ACM Symposium on Operating System Principles (SOSP)</i>, December 1995</li>
+<li><cite class="citation journal">Linden, Theodore A. (December 1976). "Operating System Structures to Support Security and Reliable Software". <i>ACM Computing Surveys</i>. <b>8</b> (4): 409–445. ISSN&#160;0360-0300. doi:10.1145/356678.356682.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=Operating+System+Structures+to+Support+Security+and+Reliable+Software&amp;rft.aufirst=Theodore+A.&amp;rft.aulast=Linden&amp;rft.date=1976-12&amp;rft.genre=article&amp;rft.issn=0360-0300&amp;rft.issue=4&amp;rft.jtitle=ACM+Computing+Surveys&amp;rft.pages=409-445&amp;rft.volume=8&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D356682%26coll%3D%26dl%3DACM%26CFID%3D15151515%26CFTOKEN%3D6184618&amp;rft_id=info%3Adoi%2F10.1145%2F356678.356682&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span>, <cite class="citation web">"Operating System Structures to Support Security and Reliable Software" <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">2010-06-19</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.btitle=Operating+System+Structures+to+Support+Security+and+Reliable+Software&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fcsrc.nist.gov%2Fpublications%2Fhistory%2Flind76.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Lorin, Harold (1981). <a><i>Operating systems</i></a>. Boston, Massachusetts: Addison-Wesley. pp.&#160;161–186. ISBN&#160;0-201-14464-6.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.aufirst=Harold&amp;rft.aulast=Lorin&amp;rft.btitle=Operating+systems&amp;rft.date=1981&amp;rft.genre=book&amp;rft.isbn=0-201-14464-6&amp;rft.pages=161-186&amp;rft.place=Boston%2C+Massachusetts&amp;rft.pub=Addison-Wesley&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D578308%26coll%3DGUIDE%26dl%3DGUIDE%26CFID%3D2651732%26CFTOKEN%3D19681373&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Schroeder, Michael D.; Jerome H. Saltzer (March 1972). "A hardware architecture for implementing protection rings". <i>Communications of the ACM</i>. <b>15</b> (3): 157–170. ISSN&#160;0001-0782. doi:10.1145/361268.361275.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=A+hardware+architecture+for+implementing+protection+rings&amp;rft.au=Jerome+H.+Saltzer&amp;rft.aufirst=Michael+D.&amp;rft.aulast=Schroeder&amp;rft.date=1972-03&amp;rft.genre=article&amp;rft.issn=0001-0782&amp;rft.issue=3&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.pages=157-170&amp;rft.volume=15&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D361275%26dl%3DACM%26coll%3D%26CFID%3D15151515%26CFTOKEN%3D6184618&amp;rft_id=info%3Adoi%2F10.1145%2F361268.361275&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Shaw, Alan C. (1974). <a><i>The logical design of Operating systems</i></a>. Prentice-Hall. p.&#160;304. ISBN&#160;0-13-540112-7.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.aufirst=Alan+C.&amp;rft.aulast=Shaw&amp;rft.btitle=The+logical+design+of+Operating+systems&amp;rft.date=1974&amp;rft.genre=book&amp;rft.isbn=0-13-540112-7&amp;rft.pages=304&amp;rft.pub=Prentice-Hall&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D540329&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Tanenbaum, Andrew S. (1979). <i>Structured Computer Organization</i>. Englewood Cliffs, New Jersey: Prentice-Hall. ISBN&#160;0-13-148521-0.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.aufirst=Andrew+S.&amp;rft.aulast=Tanenbaum&amp;rft.btitle=Structured+Computer+Organization&amp;rft.date=1979&amp;rft.genre=book&amp;rft.isbn=0-13-148521-0&amp;rft.place=Englewood+Cliffs%2C+New+Jersey&amp;rft.pub=Prentice-Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Wulf, W.; E. Cohen; W. Corwin; A. Jones; R. Levin; C. Pierson; F. Pollack (June 1974). "HYDRA: the kernel of a multiprocessor operating system" <span style="font-size:85%;">(PDF)</span>. <i>Communications of the ACM</i>. <b>17</b> (6): 337–345. ISSN&#160;0001-0782. doi:10.1145/355616.364017.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.atitle=HYDRA%3A+the+kernel+of+a+multiprocessor+operating+system&amp;rft.au=A.+Jones&amp;rft.au=C.+Pierson&amp;rft.au=E.+Cohen&amp;rft.au=F.+Pollack&amp;rft.au=R.+Levin&amp;rft.au=W.+Corwin&amp;rft.aufirst=W.&amp;rft.aulast=Wulf&amp;rft.date=1974-06&amp;rft.genre=article&amp;rft.issn=0001-0782&amp;rft.issue=6&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.pages=337-345&amp;rft.volume=17&amp;rft_id=http%3A%2F%2Fwww.cs.virginia.edu%2Fpapers%2Fp337-wulf.pdf&amp;rft_id=info%3Adoi%2F10.1145%2F355616.364017&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Baiardi, F.; A. Tomasi; M. Vanneschi (1988). <a><i>Architettura dei Sistemi di Elaborazione, volume 1</i></a> (in Italian). Franco Angeli. ISBN&#160;88-204-2746-X.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.au=A.+Tomasi&amp;rft.au=M.+Vanneschi&amp;rft.aufirst=F.&amp;rft.aulast=Baiardi&amp;rft.btitle=Architettura+dei+Sistemi+di+Elaborazione%2C+volume+1&amp;rft.date=1988&amp;rft.genre=book&amp;rft.isbn=88-204-2746-X&amp;rft.pub=Franco+Angeli&amp;rft_id=http%3A%2F%2Fwww.pangloss.it%2Flibro.php%3Fisbn%3D882042746X%26id%3D4357%26PHPSESSID%3D9da1895b18ed1cda115cf1c7ace9bdf0&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Swift, Michael M.; Brian N. Bershad; Henry M. Levy. <a><i>Improving the reliability of commodity operating systems</i></a> <span style="font-size:85%;">(PDF)</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.au=Brian+N.+Bershad&amp;rft.au=Henry+M.+Levy&amp;rft.aufirst=Michael+M.&amp;rft.aulast=Swift&amp;rft.btitle=Improving+the+reliability+of+commodity+operating+systems&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fnooks.cs.washington.edu%2Fnooks-tocs.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation web">"Improving the reliability of commodity operating systems". Doi.acm.org. doi:10.1002/spe.4380201404<span class="reference-accessdate">. Retrieved <span class="nowrap">2010-06-19</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.btitle=Improving+the+reliability+of+commodity+operating+systems&amp;rft.genre=unknown&amp;rft.pub=Doi.acm.org&amp;rft_id=http%3A%2F%2Fdoi.acm.org%2F10.1145%2F1047915.1047919&amp;rft_id=info%3Adoi%2F10.1002%2Fspe.4380201404&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation web">"ACM Transactions on Computer Systems (TOCS), v.23 n.1, p.&#160;77–110, February 2005".</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AKernel+%28operating+system%29&amp;rft.btitle=ACM+Transactions+on+Computer+Systems+%28TOCS%29%2C+v.23+n.1%2C+p.+77%E2%80%93110%2C+February+2005&amp;rft.genre=unknown&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span> <span style="display:none;font-size:100%" class="error citation-comment">Missing or empty <code style="color:inherit; border:inherit; padding:inherit;">|url=</code> (help)</span></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Andrew Tanenbaum, <i>Operating Systems – Design and Implementation (Third edition)</i>;</li>
+<li>Andrew Tanenbaum, <i>Modern Operating Systems (Second edition)</i>;</li>
+<li>Daniel P. Bovet, Marco Cesati, <i>The Linux Kernel</i>;</li>
+<li>David A. Peterson, Nitin Indurkhya, Patterson, <i>Computer Organization and Design</i>, Morgan Koffman <small>(ISBN&#160;1-55860-428-6)</small>;</li>
+<li>B.S. Chalk, <i>Computer Organisation and Architecture</i>, Macmillan P.(ISBN&#160;0-333-64551-0).</li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="background-color:#f9f9f9;border:1px solid #aaa;color:#000">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/40px-Wikiversity-logo.svg.png" width="40" height="32" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/60px-Wikiversity-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/80px-Wikiversity-logo.svg.png 2x" data-file-width="1000" data-file-height="800" /></td>
+<td class="mbox-text plainlist">Wikiversity has learning resources about <i><b>Kernel Models</b></i> at
+<div style="margin-left: 10px;">Operating Systems/Kernel Models</div>
+</td>
+</tr>
+</table>
+<ul>
+<li>Detailed comparison between most popular operating system kernels</li>
+</ul>
+<div role="navigation" class="navbox" aria-labelledby="Operating_systems" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="Operating_systems" style="font-size:114%;margin:0 4em"><a href="Operating_system.html" title="Operating system">Operating systems</a></div>
+</th>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">General</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Advocacy</li>
+<li>Comparison</li>
+<li>Forensic engineering</li>
+<li>History</li>
+<li>Hobbyist development</li>
+<li>List</li>
+<li>Timeline</li>
+<li>Usage share</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Kernel</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">Architectures</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Exokernel</li>
+<li>Hybrid</li>
+<li>Microkernel</li>
+<li>Monolithic</li>
+<li>Rump kernel</li>
+<li>Unikernel</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">Components</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Device driver</li>
+<li>Loadable kernel module</li>
+<li>Microkernel</li>
+<li>User space</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Process management</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em"></div>
+<table class="nowraplinks navbox-subgroup" style="border-spacing:0">
+<tr>
+<th scope="row" class="navbox-group" style="width:9em">Concepts</th>
+<td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Context switch</li>
+<li>Interrupt</li>
+<li>IPC</li>
+<li>Process</li>
+<li>Process control block</li>
+<li>Real-time</li>
+<li>Thread</li>
+<li>Time-sharing</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:9em"><a>Scheduling<br />
+algorithms</a></th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Computer multitasking</li>
+<li>Fixed-priority preemptive</li>
+<li>Multilevel feedback queue</li>
+<li>Preemptive</li>
+<li>Round-robin</li>
+<li>Shortest job next</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Memory management and<br />
+resource protection</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Bus error</li>
+<li>General protection fault</li>
+<li>Memory protection</li>
+<li>Paging</li>
+<li>Protection ring</li>
+<li>Segmentation fault</li>
+<li>Virtual memory</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Storage access and<br />
+file systems</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Boot loader</li>
+<li>Defragmentation</li>
+<li>Device file</li>
+<li>File attribute</li>
+<li>Inode</li>
+<li>Journal</li>
+<li>Partition</li>
+<li>Virtual file system</li>
+<li>Virtual tape library</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">List</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>AmigaOS</li>
+<li>Android</li>
+<li>BeOS</li>
+<li>BSD</li>
+<li>Chrome OS</li>
+<li>CP/M</li>
+<li>DOS</li>
+<li>GNU</li>
+<li>Haiku</li>
+<li>illumos</li>
+<li>iOS</li>
+<li><a href="Linux.html" title="Linux">Linux</a></li>
+<li>Macintosh
+<ul>
+<li>Classic Mac OS</li>
+<li>macOS</li>
+</ul>
+</li>
+<li>MINIX</li>
+<li>MorphOS</li>
+<li>MUSIC/SP</li>
+<li>Nemesis</li>
+<li>NOS</li>
+<li>OpenVMS</li>
+<li>ORVYL</li>
+<li>OS/2</li>
+<li>OSv</li>
+<li>Pick</li>
+<li>QNX</li>
+<li>ReactOS</li>
+<li>RISC OS</li>
+<li>RSTS/E</li>
+<li>RSX-11</li>
+<li>RT-11</li>
+<li>Solaris</li>
+<li>TOPS-10/TOPS-20</li>
+<li>TPF</li>
+<li><a href="Unix.html" title="Unix">Unix</a></li>
+<li>Visi On</li>
+<li>VM/CMS</li>
+<li>VS/9</li>
+<li>Windows</li>
+<li>Xinu</li>
+<li>z/OS</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Miscellaneous concepts</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>API</li>
+<li>Computer network</li>
+<li>HAL</li>
+<li>Live CD</li>
+<li>Live USB</li>
+<li>OS shell
+<ul>
+<li>CLI</li>
+<li>GUI</li>
+<li>TUI</li>
+<li>VUI</li>
+</ul>
+</li>
+<li>PXE</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-label="Navbox" style="padding:3px">
+<table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Authority control</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span class="nowrap">GND: <span class="uid">4338679-9</span></span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1222
+Cached time: 20170908095527
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.596 seconds
+Real time usage: 0.704 seconds
+Preprocessor visited node count: 4033/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 108325/2097152 bytes
+Template argument size: 4414/2097152 bytes
+Highest expansion depth: 16/40
+Expensive parser function count: 6/500
+Lua time usage: 0.280/10.000 seconds
+Lua memory usage: 6.17 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  564.543      1 -total
+ 24.98%  141.010      1 Template:Reflist
+ 13.35%   75.358      5 Template:Fix
+ 11.60%   65.466     13 Template:Cite_book
+ 10.60%   59.831      4 Template:Citation_needed
+ 10.31%   58.178     11 Template:Cite_journal
+  9.66%   54.521      9 Template:Cite_web
+  8.79%   49.647      5 Template:Delink
+  7.86%   44.386      1 Template:Merge_from
+  5.76%   32.513      3 Template:ISBN
+-->
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:21346982-0!canonical and timestamp 20170908095545 and revision id 799539840
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "https://en.wikipedia.org/w/index.php?title=Kernel_(operating_system)&amp;oldid=799539840"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks">Categories: <ul><li>Operating system kernels</li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li>Articles to be merged from May 2016</li><li>All articles to be merged</li><li>All articles with unsourced statements</li><li>Articles with unsourced statements from July 2007</li><li>Articles with unsourced statements from June 2015</li><li>All pages needing factual verification</li><li>Wikipedia articles needing factual verification from July 2007</li><li>Pages using citations with accessdate and no URL</li><li>CS1 Italian-language sources (it)</li><li>Pages using web citations with no URL</li><li>Wikipedia articles with GND identifiers</li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk">Talk</li><li id="pt-anoncontribs">Contributions</li><li id="pt-createaccount">Create account</li><li id="pt-login">Log in</li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span>Article</span></li>
+							<li id="ca-talk"><span>Talk</span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span>Read</span></li>
+							<li id="ca-edit"><span>Edit</span></li>
+							<li id="ca-history" class="collapsible"><span>View history</span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description">Main page</li><li id="n-contents">Contents</li><li id="n-featuredcontent">Featured content</li><li id="n-currentevents">Current events</li><li id="n-randompage">Random article</li><li id="n-sitesupport">Donate to Wikipedia</li><li id="n-shoplink">Wikipedia store</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help">Help</li><li id="n-aboutsite">About Wikipedia</li><li id="n-portal">Community portal</li><li id="n-recentchanges">Recent changes</li><li id="n-contactpage">Contact page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere">What links here</li><li id="t-recentchangeslinked">Related changes</li><li id="t-upload">Upload file</li><li id="t-specialpages">Special pages</li><li id="t-permalink">Permanent link</li><li id="t-info">Page information</li><li id="t-wikibase">Wikidata item</li><li id="t-cite">Cite this page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book">Create a book</li><li id="coll-download-as-rdf2latex">Download as PDF</li><li id="t-print">Printable version</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons">Wikimedia Commons</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-af">Afrikaans</li><li class="interlanguage-link interwiki-als">Alemannisch</li><li class="interlanguage-link interwiki-ar">العربية</li><li class="interlanguage-link interwiki-as">অসমীয়া</li><li class="interlanguage-link interwiki-ast">Asturianu</li><li class="interlanguage-link interwiki-az">Azərbaycanca</li><li class="interlanguage-link interwiki-azb">تۆرکجه</li><li class="interlanguage-link interwiki-bn">বাংলা</li><li class="interlanguage-link interwiki-be">Беларуская</li><li class="interlanguage-link interwiki-bg">Български</li><li class="interlanguage-link interwiki-bs">Bosanski</li><li class="interlanguage-link interwiki-ca">Català</li><li class="interlanguage-link interwiki-cs">Čeština</li><li class="interlanguage-link interwiki-da">Dansk</li><li class="interlanguage-link interwiki-de">Deutsch</li><li class="interlanguage-link interwiki-et">Eesti</li><li class="interlanguage-link interwiki-el">Ελληνικά</li><li class="interlanguage-link interwiki-es">Español</li><li class="interlanguage-link interwiki-eo">Esperanto</li><li class="interlanguage-link interwiki-fa">فارسی</li><li class="interlanguage-link interwiki-fr">Français</li><li class="interlanguage-link interwiki-gl">Galego</li><li class="interlanguage-link interwiki-ko">한국어</li><li class="interlanguage-link interwiki-hi">हिन्दी</li><li class="interlanguage-link interwiki-hr">Hrvatski</li><li class="interlanguage-link interwiki-ilo">Ilokano</li><li class="interlanguage-link interwiki-id">Bahasa Indonesia</li><li class="interlanguage-link interwiki-ia">Interlingua</li><li class="interlanguage-link interwiki-is">Íslenska</li><li class="interlanguage-link interwiki-it">Italiano</li><li class="interlanguage-link interwiki-he">עברית</li><li class="interlanguage-link interwiki-ka">ქართული</li><li class="interlanguage-link interwiki-ku">Kurdî</li><li class="interlanguage-link interwiki-lo">ລາວ</li><li class="interlanguage-link interwiki-la">Latina</li><li class="interlanguage-link interwiki-lv">Latviešu</li><li class="interlanguage-link interwiki-lt">Lietuvių</li><li class="interlanguage-link interwiki-lmo">Lumbaart</li><li class="interlanguage-link interwiki-hu">Magyar</li><li class="interlanguage-link interwiki-mk">Македонски</li><li class="interlanguage-link interwiki-mg">Malagasy</li><li class="interlanguage-link interwiki-ml">മലയാളം</li><li class="interlanguage-link interwiki-mr">मराठी</li><li class="interlanguage-link interwiki-ms">Bahasa Melayu</li><li class="interlanguage-link interwiki-mn">Монгол</li><li class="interlanguage-link interwiki-my">မြန်မာဘာသာ</li><li class="interlanguage-link interwiki-nl">Nederlands</li><li class="interlanguage-link interwiki-ja">日本語</li><li class="interlanguage-link interwiki-no">Norsk</li><li class="interlanguage-link interwiki-nn">Norsk nynorsk</li><li class="interlanguage-link interwiki-or">ଓଡ଼ିଆ</li><li class="interlanguage-link interwiki-pa">ਪੰਜਾਬੀ</li><li class="interlanguage-link interwiki-pl">Polski</li><li class="interlanguage-link interwiki-pt">Português</li><li class="interlanguage-link interwiki-ro">Română</li><li class="interlanguage-link interwiki-ru">Русский</li><li class="interlanguage-link interwiki-sco">Scots</li><li class="interlanguage-link interwiki-scn">Sicilianu</li><li class="interlanguage-link interwiki-si">සිංහල</li><li class="interlanguage-link interwiki-simple">Simple English</li><li class="interlanguage-link interwiki-sk">Slovenčina</li><li class="interlanguage-link interwiki-sl">Slovenščina</li><li class="interlanguage-link interwiki-sr">Српски / srpski</li><li class="interlanguage-link interwiki-sh">Srpskohrvatski / српскохрватски</li><li class="interlanguage-link interwiki-fi">Suomi</li><li class="interlanguage-link interwiki-sv">Svenska</li><li class="interlanguage-link interwiki-tl">Tagalog</li><li class="interlanguage-link interwiki-th">ไทย</li><li class="interlanguage-link interwiki-tr">Türkçe</li><li class="interlanguage-link interwiki-uk">Українська</li><li class="interlanguage-link interwiki-vi">Tiếng Việt</li><li class="interlanguage-link interwiki-zh">中文</li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link">Edit links</span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 8 September 2017, at 09:55.</li>
+											<li id="footer-info-copyright">Text is available under the Creative Commons Attribution-ShareAlike License;
+additional terms may apply.  By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy">Privacy policy</li>
+											<li id="footer-places-about">About Wikipedia</li>
+											<li id="footer-places-disclaimer">Disclaimers</li>
+											<li id="footer-places-contact">Contact Wikipedia</li>
+											<li id="footer-places-developers">Developers</li>
+											<li id="footer-places-cookiestatement">Cookie statement</li>
+											<li id="footer-places-mobileview">Mobile view</li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.596","walltime":"0.704","ppvisitednodes":{"value":4033,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":108325,"limit":2097152},"templateargumentsize":{"value":4414,"limit":2097152},"expansiondepth":{"value":16,"limit":40},"expensivefunctioncount":{"value":6,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  564.543      1 -total"," 24.98%  141.010      1 Template:Reflist"," 13.35%   75.358      5 Template:Fix"," 11.60%   65.466     13 Template:Cite_book"," 10.60%   59.831      4 Template:Citation_needed"," 10.31%   58.178     11 Template:Cite_journal","  9.66%   54.521      9 Template:Cite_web","  8.79%   49.647      5 Template:Delink","  7.86%   44.386      1 Template:Merge_from","  5.76%   32.513      3 Template:ISBN"]},"scribunto":{"limitreport-timeusage":{"value":"0.280","limit":"10.000"},"limitreport-memusage":{"value":6471831,"limit":52428800}},"cachereport":{"origin":"mw1222","timestamp":"20170908095527","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":84,"wgHostname":"mw1252"});});</script>
+	</body>
+</html>

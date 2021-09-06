@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Imperative programming - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Imperative_programming","wgTitle":"Imperative programming","wgCurRevisionId":793367404,"wgRevisionId":793367404,"wgArticleId":197847,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles needing additional references from October 2011","All articles needing additional references","Wikipedia articles with LCCN identifiers","Programming paradigms"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Imperative_programming","wgRelevantArticleId":197847,"wgRequestId":"WcFBywpAADoAAAj2XFQAAABC","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":false,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q275596","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.30.0-wmf.18"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Imperative_programming"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Imperative_programming&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Imperative_programming&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Imperative_programming"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Imperative_programming rootpage-Imperative_programming skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Imperative programming</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					navigation, 					search
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table class="plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>needs additional citations for verification</b>. <span class="hide-when-compact">Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.</span> <small><i>(October 2011)</i></small> <small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></span></td>
+</tr>
+</table>
+<table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%">
+<tr>
+<th style="padding:0.2em 0.4em 0.2em;font-size:145%;line-height:1.2em">Programming paradigms</th>
+</tr>
+<tr>
+<td style="padding:0 0.1em 0.4em;text-align: left">
+<ul>
+<li>Action</li>
+<li>Agent-oriented</li>
+<li>Array-oriented</li>
+<li>Automata-based</li>
+<li>Concept</li>
+<li>Concurrent computing
+<ul>
+<li>Relativistic programming</li>
+</ul>
+</li>
+<li>Data-driven</li>
+<li>Declarative (contrast: Imperative)
+<ul>
+<li>Constraint
+<ul>
+<li>Constraint logic
+<ul>
+<li>Concurrent constraint logic</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Dataflow
+<ul>
+<li>Flow-based</li>
+<li>Cell-oriented (spreadsheets)</li>
+<li>Reactive</li>
+</ul>
+</li>
+<li>Functional
+<ul>
+<li>Functional logic</li>
+<li>Purely functional</li>
+</ul>
+</li>
+<li><a href="Logic_programming.html" title="Logic programming">Logic</a>
+<ul>
+<li>Abductive logic</li>
+<li>Answer set</li>
+<li>Concurrent logic</li>
+<li>Functional logic</li>
+<li>Inductive logic</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="Dynamic_programming_language.html" title="Dynamic programming language">Dynamic</a></li>
+<li>End-user programming</li>
+<li>Event-driven
+<ul>
+<li>Service-oriented</li>
+<li>Time-driven</li>
+</ul>
+</li>
+<li>Expression-oriented</li>
+<li>Feature-oriented</li>
+<li>Function-level (contrast: Value-level)</li>
+<li>Generic</li>
+<li>Imperative (contrast: Declarative)
+<ul>
+<li>Literate</li>
+<li>Procedural</li>
+</ul>
+</li>
+<li>Language-oriented
+<ul>
+<li>Natural language programming</li>
+<li>Discipline-specific</li>
+<li>Domain-specific</li>
+<li>Grammar-oriented
+<ul>
+<li>Dialecting</li>
+</ul>
+</li>
+<li>Intentional</li>
+</ul>
+</li>
+<li>Metaprogramming
+<ul>
+<li>Automatic
+<ul>
+<li>Inductive programming</li>
+</ul>
+</li>
+<li>Reflective
+<ul>
+<li>Attribute-oriented</li>
+</ul>
+</li>
+<li>Homoiconic</li>
+<li>Macro</li>
+<li>Template
+<ul>
+<li>Policy-based</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Non-structured (contrast: Structured)
+<ul>
+<li>Array</li>
+</ul>
+</li>
+<li>Nondeterministic</li>
+<li>Parallel computing
+<ul>
+<li>Process-oriented</li>
+</ul>
+</li>
+<li>Point-free style
+<ul>
+<li>Concatenative</li>
+</ul>
+</li>
+<li>Probabilistic</li>
+<li>Semantic</li>
+<li>Structured (contrast: Non-structured)
+<ul>
+<li>Block-structured</li>
+<li>Modular (contrast: Monolithic)</li>
+<li><a href="Object-oriented_programming.html" title="Object-oriented programming">Object-oriented</a>
+<ul>
+<li>Actor-based</li>
+<li>Class-based</li>
+<li>Concurrent</li>
+<li>Prototype-based</li>
+<li>By separation of concerns:
+<ul>
+<li>Aspect-oriented</li>
+<li>Role-oriented</li>
+<li>Subject-oriented</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Recursive</li>
+</ul>
+</li>
+<li>Value-level (contrast: Function-level)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;font-size:115%">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p>In <a href="Computer_science.html" title="Computer science">computer science</a>, <b>imperative programming</b> is a programming paradigm that uses statements that change a program's state. In much the same way that the imperative mood in natural languages expresses commands, an imperative program consists of commands for the <a href="Computer.html" title="Computer">computer</a> to perform. Imperative programming focuses on describing <i>how</i> a program operates.</p>
+<p>The term is often used in contrast to declarative programming, which focuses on <i>what</i> the program should accomplish without specifying <i>how</i> the program should achieve the result.</p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a><span class="tocnumber">1</span> <span class="toctext">Imperative and procedural programming</span></a></li>
+<li class="toclevel-1 tocsection-2"><a><span class="tocnumber">2</span> <span class="toctext">Rationale and foundations of imperative programming</span></a></li>
+<li class="toclevel-1 tocsection-3"><a><span class="tocnumber">3</span> <span class="toctext">History of imperative and object-oriented languages</span></a></li>
+<li class="toclevel-1 tocsection-4"><a><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-5"><a><span class="tocnumber">5</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-6"><a><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Imperative_and_procedural_programming">Imperative and procedural programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Procedural programming is a type of imperative programming in which the program is built from one or more procedures (also termed <a href="Subroutine.html" title="Subroutine">subroutines</a> or functions). The terms are often used as synonyms, but the use of procedures has a dramatic effect on how imperative programs appear and how they are constructed. Heavily-procedural programming, in which state changes are localized to procedures or restricted to explicit arguments and returns from procedures, is a form of structured programming. From the 1960s onwards, structured programming and modular programming in general have been promoted as techniques to improve the maintainability and overall quality of imperative programs. The concepts behind <a href="Object-oriented_programming.html" title="Object-oriented programming">object-oriented programming</a> attempt to extend this approach.<sup id="cite_ref-1" class="reference">[1]</sup></p>
+<p>Procedural programming could be considered a step towards declarative programming. A programmer can often tell, simply by looking at the names, arguments, and return types of procedures (and related comments), what a particular procedure is supposed to do, without necessarily looking at the details of how it achieves its result. At the same time, a complete program is still imperative since it <i>fixes</i> the statements to be executed and their order of execution to a large extent.</p>
+<h2><span class="mw-headline" id="Rationale_and_foundations_of_imperative_programming">Rationale and foundations of imperative programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>The hardware implementation of almost all computers is imperative.<sup id="cite_ref-2" class="reference">[note 1]</sup> Nearly all computer hardware is designed to execute machine code, which is native to the computer, written in the imperative style. From this low-level perspective, the program state is defined by the contents of memory, and the statements are instructions in the native machine language of the computer. Higher-level imperative languages use variables and more complex statements, but still follow the same paradigm. Recipes and process checklists, while not <a href="Computer_program.html" title="Computer program">computer programs</a>, are also familiar concepts that are similar in style to imperative programming; each step is an instruction, and the physical world holds the state. Since the basic ideas of imperative programming are both conceptually familiar and directly embodied in the hardware, most computer languages are in the imperative style.</p>
+<p>Assignment statements, in imperative paradigm, perform an operation on information located in memory and store the results in memory for later use. High-level imperative languages, in addition, permit the evaluation of complex expressions, which may consist of a combination of arithmetic operations and function evaluations, and the assignment of the resulting value to memory. Looping statements (as in while loops, do while loops, and for loops) allow a sequence of statements to be executed multiple times. Loops can either execute the statements they contain a predefined number of times, or they can execute them repeatedly until some condition changes. Conditional branching statements allow a sequence of statements to be executed only if some condition is met. Otherwise, the statements are skipped and the execution sequence continues from the statement following them. Unconditional branching statements allow an execution sequence to be transferred to another part of a program. These include the jump (called <i>goto</i> in many languages), switch, and the subprogram, <a href="Subroutine.html" title="Subroutine">subroutine</a>, or procedure call (which usually returns to the next statement after the call).</p>
+<p>Early in the development of <a href="High-level_programming_language.html" title="High-level programming language">high-level programming languages</a>, the introduction of the block enabled the construction of programs in which a group of statements and declarations could be treated as if they were one statement. This, alongside the introduction of <a href="Subroutine.html" title="Subroutine">subroutines</a>, enabled complex structures to be expressed by hierarchical decomposition into simpler procedural structures.</p>
+<p>Many imperative programming languages (such as <a href="Fortran.html" title="Fortran">Fortran</a>, BASIC, and <a href="C_(programming_language).html" title="C (programming language)">C</a>) are abstractions of <a href="Assembly_language.html" title="Assembly language">assembly language</a>.<sup id="cite_ref-3" class="reference">[2]</sup></p>
+<h2><span class="mw-headline" id="History_of_imperative_and_object-oriented_languages">History of imperative and object-oriented languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>The earliest imperative languages were the machine languages of the original computers. In these languages, instructions were very simple, which made hardware implementation easier, but hindered the creation of complex programs. FORTRAN, developed by John Backus at International Business Machines (IBM) starting in 1954, was the first major programming language to remove the obstacles presented by machine code in the creation of complex programs. FORTRAN was a compiled language that allowed named variables, complex expressions, subprograms, and many other features now common in imperative languages. The next two decades saw the development of many other major high-level imperative programming languages. In the late 1950s and 1960s, ALGOL was developed in order to allow mathematical algorithms to be more easily expressed, and even served as the <a href="Operating_system.html" title="Operating system">operating system</a>'s target language for some computers. MUMPS (1966) carried the imperative paradigm to a logical extreme, by not having any statements at all, relying purely on commands, even to the extent of making the IF and ELSE commands independent of each other, connected only by an intrinsic variable named $TEST. <a href="COBOL.html" title="COBOL">COBOL</a> (1960) and BASIC (1964) were both attempts to make programming syntax look more like English. In the 1970s, Pascal was developed by Niklaus Wirth, and <a href="C_(programming_language).html" title="C (programming language)">C</a> was created by Dennis Ritchie while he was working at Bell Laboratories. Wirth went on to design Modula-2 and Oberon. For the needs of the United States Department of Defense, Jean Ichbiah and a team at Honeywell began designing Ada in 1978, after a 4-year project to define the requirements for the language. The specification was first published in 1983, with revisions in 1995, 2005 and 2012.</p>
+<p>The 1980s saw a rapid growth in interest in <a href="Object-oriented_programming.html" title="Object-oriented programming">object-oriented programming</a>. These languages were imperative in style, but added features to support objects. The last two decades of the 20th century saw the development of many such languages. Smalltalk-80, originally conceived by Alan Kay in 1969, was released in 1980, by the Xerox Palo Alto Research Center (PARC). Drawing from concepts in another object-oriented language—Simula (which is considered the world's first object-oriented programming language, developed in the 1960s)—Bjarne Stroustrup designed <a href="C++.html" title="C++">C++</a>, an object-oriented language based on <a href="C_(programming_language).html" title="C (programming language)">C</a>. Design of <a href="C++.html" title="C++">C++</a> began in 1979 and the first implementation was completed in 1983. In the late 1980s and 1990s, the notable imperative languages drawing on object-oriented concepts were Perl, released by Larry Wall in 1987; <a href="Python_(programming_language).html" title="Python (programming language)">Python</a>, released by Guido van Rossum in 1990; Visual Basic and Visual C++ (which included Microsoft Foundation Class Library (MFC) 2.0), released by Microsoft in 1991 and 1993 respectively; PHP, released by Rasmus Lerdorf in 1994; <a href="Java_(programming_language).html" title="Java (programming language)">Java</a>, released by Sun Microsystems in 1994, <a href="JavaScript.html" title="JavaScript">JavaScript</a>, by Brendan Eich (Netscape), and Ruby, by Yukihiro "Matz" Matsumoto, both released in 1995. Microsoft's .NET Framework (2002) is imperative at its core, as are its main target languages, VB.NET and C# that run on it; however Microsoft's F#, a functional language, also runs on it.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><a><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/28px-Internet_map_1024.jpg" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/42px-Internet_map_1024.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/56px-Internet_map_1024.jpg 2x" data-file-width="1280" data-file-height="1280" /></a></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle">Computer science portal</span></li>
+</ul>
+</div>
+<ul>
+<li>Functional programming</li>
+<li>Comparison of programming paradigms</li>
+<li>Declarative programming (contrast)</li>
+<li>Programming paradigms</li>
+<li><a href="Object-oriented_programming.html" title="Object-oriented programming">Object-oriented programming</a></li>
+<li>Reactive programming</li>
+<li>History of programming languages</li>
+<li>List of imperative programming languages</li>
+<li>Category:Procedural programming languages lists additional imperative programming languages</li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap">
+<ol class="references">
+<li id="cite_note-2"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Reconfigurable computing is a notable exception.</span></li>
+</ol>
+</div>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Michael Stevens (2011). "Programming paradigms and an overview of C - COMP3610 - Principles of Programming Languages: Object-Oriented programming" <span style="font-size:85%;">(PDF)</span>. Australian National University. p.&#160;5. Archived from the original on 2011<span class="reference-accessdate">. Retrieved <span class="nowrap">2012-05-22</span></span>. <q>Object oriented programming extends the concept of modularity by introducing objects</q></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AImperative+programming&amp;rft.au=Michael+Stevens&amp;rft.btitle=Programming+paradigms+and+an+overview+of+C+-+COMP3610+-+Principles+of+Programming+Languages%3A+Object-Oriented+programming&amp;rft.date=2011&amp;rft.genre=unknown&amp;rft.pages=5&amp;rft.pub=Australian+National+University&amp;rft_id=http%3A%2F%2Fcs.anu.edu.au%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Bruce Eckel (2006). <a><i>Thinking in Java</i></a>. Pearson Education. p.&#160;24. ISBN&#160;978-0-13-187248-6.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AImperative+programming&amp;rft.au=Bruce+Eckel&amp;rft.btitle=Thinking+in+Java&amp;rft.date=2006&amp;rft.genre=book&amp;rft.isbn=978-0-13-187248-6&amp;rft.pages=24&amp;rft.pub=Pearson+Education&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DbQVvAQAAQBAJ%26pg%3DPA24%26lpg%3DPA24%26dq%3Dimperative%26source%3Dbl%26ots%3DLXUh8GZ17E%26sig%3Du2aOh64yjWEYX_nCs9NolKmKhE4%26hl%3Den%26sa%3DX%26ei%3DjLv0U6i1IMKSyAS-7oKADg%26ved%3D0CDUQ6AEwAw%23v%3Donepage%26q%3Dimperative%26f%3Dfalse&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+</div>
+<ul>
+<li>Pratt, Terrence W. and Marvin V. Zelkowitz. <i>Programming Languages: Design and Implementation</i>, 3rd ed. Englewood Cliffs, N.J.: Prentice Hall, 1996.</li>
+<li>Sebesta, Robert W. <i>Concepts of Programming Languages</i>, 3rd ed. Reading, Mass.: Addison-Wesley Publishing Company, 1996.</li>
+</ul>
+<p><i>Originally based on the article 'Imperative programming' by Stan Seibert, from Nupedia, licensed under the GNU Free Documentation License.</i></p>
+<div role="navigation" class="navbox" aria-labelledby="Types_of_programming_languages" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+<div id="Types_of_programming_languages" style="font-size:114%;margin:0 4em">Types of programming languages</div>
+</th>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Actor-based</li>
+<li>Array</li>
+<li>Aspect-oriented</li>
+<li>Class-based</li>
+<li>Concatenative</li>
+<li>Concurrent</li>
+<li>Data-structured</li>
+<li>Dataflow</li>
+<li>Declarative</li>
+<li>Domain-specific</li>
+<li><a href="Dynamic_programming_language.html" title="Dynamic programming language">Dynamic</a></li>
+<li>Esoteric</li>
+<li>Event-driven</li>
+<li>Extensible</li>
+<li>Functional</li>
+<li>Imperative</li>
+<li><a href="Logic_programming.html" title="Logic programming">Logic</a></li>
+<li>Macro</li>
+<li>Metaprogramming</li>
+<li>Multi-paradigm</li>
+<li>Object-based</li>
+<li><a href="Object-oriented_programming.html" title="Object-oriented programming">Object-oriented</a></li>
+<li>Pipeline</li>
+<li>Procedural</li>
+<li>Prototype-based</li>
+<li>Reflective</li>
+<li>Rule-based</li>
+<li><a href="Scripting_language.html" title="Scripting language">Scripting</a></li>
+<li>Synchronous</li>
+<li>Templating</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Assembly_language.html" title="Assembly language">Assembly</a></li>
+<li>Compiled</li>
+<li>Interpreted</li>
+<li>Machine</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Low-level_programming_language.html" title="Low-level programming language">Low-level</a></li>
+<li><a href="High-level_programming_language.html" title="High-level programming language">High-level</a></li>
+<li>Very high-level</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-even hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>First generation</li>
+<li>Second generation</li>
+<li>Third generation</li>
+<li>Fourth generation</li>
+<li>Fifth generation</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li>Non-English-based</li>
+<li>Visual</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div role="navigation" class="navbox" aria-label="Navbox" style="padding:3px">
+<table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Authority control</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span class="nowrap">LCCN: <span class="uid">sh2009011030</span></span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1239
+Cached time: 20170915051250
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.128 seconds
+Real time usage: 0.187 seconds
+Preprocessor visited node count: 509/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 37048/2097152 bytes
+Template argument size: 192/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 1/500
+Lua time usage: 0.056/10.000 seconds
+Lua memory usage: 2.81 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  141.188      1 -total
+ 33.29%   46.997      2 Template:Reflist
+ 28.43%   40.143      1 Template:Refimprove
+ 20.52%   28.970      1 Template:Cite_web
+ 19.08%   26.937      1 Template:Ambox
+ 17.76%   25.078      1 Template:Authority_control
+  7.51%   10.599      1 Template:Programming_language
+  6.81%    9.620      1 Template:Programming_paradigms
+  5.51%    7.773      1 Template:Sidebar
+  5.26%    7.428      1 Template:Navbox
+-->
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:197847-0!canonical and timestamp 20170915051250 and revision id 793367404
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "https://en.wikipedia.org/w/index.php?title=Imperative_programming&amp;oldid=793367404"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks">Categories: <ul><li>Programming paradigms</li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li>Articles needing additional references from October 2011</li><li>All articles needing additional references</li><li>Wikipedia articles with LCCN identifiers</li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk">Talk</li><li id="pt-anoncontribs">Contributions</li><li id="pt-createaccount">Create account</li><li id="pt-login">Log in</li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Imperative_programming.html" title="View the content page [c]" accesskey="c">Article</a></span></li>
+							<li id="ca-talk"><span>Talk</span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="Imperative_programming.html">Read</a></span></li>
+							<li id="ca-edit"><span>Edit</span></li>
+							<li id="ca-history" class="collapsible"><span>View history</span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description">Main page</li><li id="n-contents">Contents</li><li id="n-featuredcontent">Featured content</li><li id="n-currentevents">Current events</li><li id="n-randompage">Random article</li><li id="n-sitesupport">Donate to Wikipedia</li><li id="n-shoplink">Wikipedia store</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help">Help</li><li id="n-aboutsite">About Wikipedia</li><li id="n-portal">Community portal</li><li id="n-recentchanges">Recent changes</li><li id="n-contactpage">Contact page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere">What links here</li><li id="t-recentchangeslinked">Related changes</li><li id="t-upload">Upload file</li><li id="t-specialpages">Special pages</li><li id="t-permalink">Permanent link</li><li id="t-info">Page information</li><li id="t-wikibase">Wikidata item</li><li id="t-cite">Cite this page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book">Create a book</li><li id="coll-download-as-rdf2latex">Download as PDF</li><li id="t-print">Printable version</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-wikibooks">Wikibooks</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-ar">العربية</li><li class="interlanguage-link interwiki-be-x-old">Беларуская (тарашкевіца)‎</li><li class="interlanguage-link interwiki-bg">Български</li><li class="interlanguage-link interwiki-bs">Bosanski</li><li class="interlanguage-link interwiki-ca">Català</li><li class="interlanguage-link interwiki-cs">Čeština</li><li class="interlanguage-link interwiki-de">Deutsch</li><li class="interlanguage-link interwiki-et">Eesti</li><li class="interlanguage-link interwiki-el">Ελληνικά</li><li class="interlanguage-link interwiki-es">Español</li><li class="interlanguage-link interwiki-eo">Esperanto</li><li class="interlanguage-link interwiki-eu">Euskara</li><li class="interlanguage-link interwiki-fa">فارسی</li><li class="interlanguage-link interwiki-fr">Français</li><li class="interlanguage-link interwiki-gl">Galego</li><li class="interlanguage-link interwiki-ko">한국어</li><li class="interlanguage-link interwiki-it">Italiano</li><li class="interlanguage-link interwiki-he">עברית</li><li class="interlanguage-link interwiki-sw">Kiswahili</li><li class="interlanguage-link interwiki-ms">Bahasa Melayu</li><li class="interlanguage-link interwiki-mwl">Mirandés</li><li class="interlanguage-link interwiki-nl">Nederlands</li><li class="interlanguage-link interwiki-ja">日本語</li><li class="interlanguage-link interwiki-no">Norsk</li><li class="interlanguage-link interwiki-pl">Polski</li><li class="interlanguage-link interwiki-pt">Português</li><li class="interlanguage-link interwiki-ro">Română</li><li class="interlanguage-link interwiki-rue">Русиньскый</li><li class="interlanguage-link interwiki-ru">Русский</li><li class="interlanguage-link interwiki-sk">Slovenčina</li><li class="interlanguage-link interwiki-sr">Српски / srpski</li><li class="interlanguage-link interwiki-sh">Srpskohrvatski / српскохрватски</li><li class="interlanguage-link interwiki-fi">Suomi</li><li class="interlanguage-link interwiki-sv">Svenska</li><li class="interlanguage-link interwiki-ta">தமிழ்</li><li class="interlanguage-link interwiki-th">ไทย</li><li class="interlanguage-link interwiki-uk">Українська</li><li class="interlanguage-link interwiki-vi">Tiếng Việt</li><li class="interlanguage-link interwiki-zh">中文</li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link">Edit links</span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 1 August 2017, at 09:28.</li>
+											<li id="footer-info-copyright">Text is available under the Creative Commons Attribution-ShareAlike License;
+additional terms may apply.  By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy">Privacy policy</li>
+											<li id="footer-places-about">About Wikipedia</li>
+											<li id="footer-places-disclaimer">Disclaimers</li>
+											<li id="footer-places-contact">Contact Wikipedia</li>
+											<li id="footer-places-developers">Developers</li>
+											<li id="footer-places-cookiestatement">Cookie statement</li>
+											<li id="footer-places-mobileview">Mobile view</li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.128","walltime":"0.187","ppvisitednodes":{"value":509,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":37048,"limit":2097152},"templateargumentsize":{"value":192,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  141.188      1 -total"," 33.29%   46.997      2 Template:Reflist"," 28.43%   40.143      1 Template:Refimprove"," 20.52%   28.970      1 Template:Cite_web"," 19.08%   26.937      1 Template:Ambox"," 17.76%   25.078      1 Template:Authority_control","  7.51%   10.599      1 Template:Programming_language","  6.81%    9.620      1 Template:Programming_paradigms","  5.51%    7.773      1 Template:Sidebar","  5.26%    7.428      1 Template:Navbox"]},"scribunto":{"limitreport-timeusage":{"value":"0.056","limit":"10.000"},"limitreport-memusage":{"value":2941795,"limit":52428800}},"cachereport":{"origin":"mw1239","timestamp":"20170915051250","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":75,"wgHostname":"mw1263"});});</script>
+	</body>
+</html>

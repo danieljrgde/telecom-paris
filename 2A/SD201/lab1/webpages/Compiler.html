@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Compiler - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Compiler","wgTitle":"Compiler","wgCurRevisionId":801423849,"wgRevisionId":801423849,"wgArticleId":5739,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: Uses editors parameter","Accuracy disputes from March 2017","All pages needing factual verification","Wikipedia articles needing factual verification from March 2017","Pages containing links to subscription-only content","CS1 maint: Uses authors parameter","Use dmy dates from July 2012","Articles lacking reliable references from February 2017","All articles lacking reliable references","Articles needing additional references from September 2010","All articles needing additional references","All accuracy disputes","Articles with disputed statements from January 2017","Wikipedia articles needing clarification from November 2015","All articles with unsourced statements","Articles with unsourced statements from March 2017","Wikipedia articles needing clarification from February 2017","Wikipedia articles needing clarification from March 2017","All articles that are too technical","Wikipedia articles that are too technical from March 2017","All articles needing expert attention","Articles needing expert attention from March 2017","Articles needing additional references from February 2017","CS1 maint: Extra text","Articles with DMOZ links","Wikipedia articles with LCCN identifiers","Wikipedia articles with GND identifiers","Wikipedia articles with BNF identifiers","American inventions","Compilers","Compiler construction","Computer libraries","Programming language implementation","Utility software types"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Compiler","wgRelevantArticleId":5739,"wgRequestId":"WcE@pQpAMEkAAK5vZaMAAACY","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":false,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q47506","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0bhc5ha",function($,jQuery,require,module){mw.user.options.set([]);});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.30.0-wmf.18"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Compiler"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Compiler&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Compiler&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Compiler"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/resources/lib/html5shiv/html5shiv.min.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Compiler rootpage-Compiler skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Compiler</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					navigation, 					search
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div role="note" class="hatnote navigation-not-searchable">This article is about software to translate computer languages. For the anime, see Compiler (anime).</div>
+<div role="note" class="hatnote navigation-not-searchable">"Compile" and "compiling" redirect here. For the software company, see Compile (company). For other uses, see compilation.</div>
+<table class="plainlinks metadata ambox ambox-content ambox-Primary_sources" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a><img alt="Question book-new.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This article <b>relies too much on references to primary sources</b>. <span class="hide-when-compact">Please improve this by adding secondary or tertiary sources.</span> <small><i>(February 2017)</i></small> <small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></span></td>
+</tr>
+</table>
+<table class="vertical-navbox nowraplinks" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%;margin-top: 0.5em;">
+<tr>
+<th style="background-color: rgba(51, 153, 255, 0.15);;padding:0.2em 0.4em 0.2em;font-size:145%;line-height:1.2em">Program execution</th>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: rgba(51, 153, 255, 0.15);">General concepts</th>
+</tr>
+<tr>
+<td style="padding:0 0.1em 0.4em;text-align: left;">
+<ul>
+<li>Runtime system</li>
+<li>Runtime library</li>
+<li><a href="Executable.html" title="Executable">Executable</a></li>
+<li>Compiler</li>
+<li>Interpreter</li>
+<li><a href="Virtual_machine.html" title="Virtual machine">Virtual machine</a></li>
+<li>Intermediate representation (IR)</li>
+<li><a href="Source_code.html" title="Source code">Source code</a></li>
+<li>Object code</li>
+<li><a href="Bytecode.html" title="Bytecode">Bytecode</a></li>
+<li>Machine code</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: rgba(51, 153, 255, 0.15);">Compilation strategies</th>
+</tr>
+<tr>
+<td style="padding:0 0.1em 0.4em;text-align: left;">
+<ul>
+<li>Just-in-time (JIT)
+<ul>
+<li>Tracing just-in-time</li>
+</ul>
+</li>
+<li>Ahead-of-time (AOT)</li>
+<li>Transcompilation</li>
+<li>Recompilation</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: rgba(51, 153, 255, 0.15);">Notable runtimes</th>
+</tr>
+<tr>
+<td style="padding:0 0.1em 0.4em;text-align: left;">
+<ul>
+<li>Android Runtime (ART)</li>
+<li>Common Language Runtime (CLR)</li>
+<li>crt0</li>
+<li>Java virtual machine (JVM)</li>
+<li>Node.js</li>
+<li>Zend Engine</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="padding:0.1em;background-color: rgba(51, 153, 255, 0.15);">Notable compilers &amp; toolchains</th>
+</tr>
+<tr>
+<td style="padding:0 0.1em 0.4em;text-align: left;">
+<ul>
+<li>LLVM</li>
+<li><a href="GNU_Compiler_Collection.html" title="GNU Compiler Collection">GNU Compiler Collection</a> (GCC)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;font-size:115%">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a><a>v</abbr></a></li>
+<li class="nv-talk"><a><a>t</abbr></a></li>
+<li class="nv-edit"><a><a>e</abbr></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p>A <b>compiler</b> is computer software that transforms computer code written in one <a href="Programming_language.html" title="Programming language">programming language</a> (the source language) into another computer language (the target language). Compilers are a type of translator that support digital devices, primarily computers. The name <i>compiler</i> is primarily used for programs that translate <a href="Source_code.html" title="Source code">source code</a> from a <a href="High-level_programming_language.html" title="High-level programming language">high-level programming language</a> to a lower level language (e.g., <a href="Assembly_language.html" title="Assembly language">assembly language</a>, object code, or machine code) to create an <a href="Executable.html" title="Executable">executable</a> program.<sup id="cite_ref-1" class="reference">[1]</sup></p>
+<p>However, there are many different types of compiler. If the compiled program can run on a computer whose CPU or <a href="Operating_system.html" title="Operating system">operating system</a> is different from the one on which the compiler runs, the compiler is a cross-compiler. A bootstrap compiler is written in the language that is compiled. A program that translates from a low-level language to a higher level one is a decompiler. A program that translates between high-level languages is usually called a source-to-source compiler or transpiler. A language rewriter is usually a program that translates the form of expressions without a change of language. The term compiler-compiler refers to tools used to create parsers that perform syntax analysis.</p>
+<p>A compiler is likely to perform many or all of the following operations: preprocessing, lexical analysis, parsing, semantic analysis (syntax-directed translation), conversion of input programs to an intermediate representation, code optimization and code generation. Compilers implement these operations in phases that promote efficient design and correct transformations of source input to target output. Program faults caused by incorrect compiler behavior can be very difficult to track down and work around; therefore, compiler implementers invest significant effort to ensure compiler correctness.<sup id="cite_ref-Sun2016_2-0" class="reference">[2]</sup></p>
+<p>Compilers are not the only translators used to transform source programs. An interpreter is computer software that transforms and then executes the indicated operations. The translation process influences the design of computer languages which leads to a preference of compilation or interpretation. In practice, an interpreter can be implemented for compiled languages and compilers can be implemented for interpreted languages.</p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a><span class="tocnumber">2</span> <span class="toctext">Compiler construction</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a><span class="tocnumber">2.1</span> <span class="toctext">One-pass versus multi-pass compilers</span></a></li>
+<li class="toclevel-2 tocsection-4"><a><span class="tocnumber">2.2</span> <span class="toctext">Three-stage compiler structure</span></a></li>
+<li class="toclevel-2 tocsection-5"><a><span class="tocnumber">2.3</span> <span class="toctext">Front end</span></a></li>
+<li class="toclevel-2 tocsection-6"><a><span class="tocnumber">2.4</span> <span class="toctext">Middle end</span></a></li>
+<li class="toclevel-2 tocsection-7"><a><span class="tocnumber">2.5</span> <span class="toctext">Back end</span></a></li>
+<li class="toclevel-2 tocsection-8"><a><span class="tocnumber">2.6</span> <span class="toctext">Compiler correctness</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a><span class="tocnumber">3</span> <span class="toctext">Compiled versus interpreted languages</span></a></li>
+<li class="toclevel-1 tocsection-10"><a><span class="tocnumber">4</span> <span class="toctext">Types</span></a></li>
+<li class="toclevel-1 tocsection-11"><a><span class="tocnumber">5</span> <span class="toctext">Compilers in education</span></a></li>
+<li class="toclevel-1 tocsection-12"><a><span class="tocnumber">6</span> <span class="toctext">Conferences and organizations</span></a></li>
+<li class="toclevel-1 tocsection-13"><a><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a><span class="tocnumber">8</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-15"><a><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-16"><a><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: History of compiler construction</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Compiler.svg/300px-Compiler.svg.png" width="300" height="339" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Compiler.svg/450px-Compiler.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Compiler.svg/600px-Compiler.svg.png 2x" data-file-width="834" data-file-height="942" /></a>
+<div class="thumbcaption">
+<div class="magnify"></div>
+A diagram of the operation of a typical multi-language, multi-target compiler</div>
+</div>
+</div>
+<p>Theoretical computing concepts developed by scientists, mathematicians, and engineers formed the basis of digital computing development during World War II. Primitive binary languages evolved because digital devices only understand ones and zeros and the circuit patterns in the underlying machine architecture. In the late forties, assembly languages were created to offer a more workable abstraction of the computer architectures. Limited memory capacity of early computers led to substantial technical challenges when the first compilers were designed. Therefore, the compilation process needed to be divided into several small programs. The front end programs produce the analysis products used by the back end programs to generate target code. As computer technology provided more resources compiler designs could align better with the compilation process.</p>
+<p>The human mind can design better solutions as the language moves from the machine to a higher level. So the development of high-level languages follows naturally from the capabilities offered by the digital computers. High-level languages are formal languages that are strictly defined by their syntax and semantics which form the high-level language architecture. Elements of these formal languages include:</p>
+<ul>
+<li><i>Alphabet</i>, any finite set of symbols;</li>
+<li><i>String</i>, a finite sequence of symbols;</li>
+<li><i>Language</i>, any set of strings on an alphabet.</li>
+</ul>
+<p>The sentences in a language may be defined by a set rules called a grammar.<sup id="cite_ref-3" class="reference">[3]</sup></p>
+<p>Backus-Naur form (BNF) describes the syntax of "sentences" of a language and was used for the syntax of Algol 60 by John Backus.<sup id="cite_ref-4" class="reference">[4]</sup> The ideas derive from the context-free grammar concepts by Noam Chomsky, a linguist.<sup id="cite_ref-5" class="reference">[5]</sup> "BNF and its extensions have become standard tools for describing the syntax of programming notations, and in many cases parts of compilers are generated automatically from a BNF description."<sup id="cite_ref-6" class="reference">[6]</sup></p>
+<p>In the 1940s, Konrad Zuse designed an algorithmic programming language called Plankalkül ("Plan Calculus"). While no actual implementation occurred until the 1970s, it presented concepts later seen in APL designed by Ken Iverson in the late 1950s.<sup id="cite_ref-7" class="reference">[7]</sup> APL is a language for mathematical computations.</p>
+<p>High-level language design during the formative years of digital computing provided useful programming tools for a variety of applications:</p>
+<ul>
+<li><a href="Fortran.html" title="Fortran">FORTRAN</a> (Formula Translation) for engineering and science applications is considered to be the first high-level language.<sup id="cite_ref-8" class="reference">[8]</sup></li>
+<li><a href="COBOL.html" title="COBOL">COBOL</a> (Common Business-Oriented Language) evolved from A-0 and FLOW-MATIC to become the dominant high-level language for business applications.<sup id="cite_ref-9" class="reference">[9]</sup></li>
+<li><a href="Lisp_(programming_language).html" title="Lisp (programming language)">LISP</a> (List Processor) for symbolic computation.<sup id="cite_ref-10" class="reference">[10]</sup></li>
+</ul>
+<p>Compiler technology evolved from the need for a strictly defined transformation of the high-level source program into target low-level target program for the digital computer. The compiler could be viewed as a front end to deal with analysis of the source code and a back end to synthesize the analysis into the target code. Optimization between the front end and back end could produce more efficient target code.<sup id="cite_ref-11" class="reference">[11]</sup></p>
+<p>Some early milestones in the development of compiler technology:</p>
+<ul>
+<li><b>1952</b> – An Autocode compiler developed by Alick Glennie for the Manchester Mark I computer at the University of Manchester is considered by some to be the first compiled programming language.</li>
+<li><b>1952</b> – Grace Hopper wrote the compiler for the A-0 programming language, though the A-0 compiler functioned more as a loader or linker than the modern notion of a full compiler.</li>
+<li><b>1954-1957</b> – A team led by John Backus at IBM developed <a href="Fortran.html" title="Fortran">FORTRAN</a> which is usually considered the first high-level language. In 1957, they completed a FORTRAN compiler that is generally credited as having introduced the first unambiguously complete compiler.</li>
+<li><b>1959</b> – The Conference on Data Systems Language (CODASYL) initiated development of <a href="COBOL.html" title="COBOL">COBOL</a>. The COBOL design drew on A-0 and FLOW-MATIC. By the early 1960s COBOL was compiled on multiple architectures.</li>
+<li><b>1958-1962</b> – John McCarthy at MIT designed <a href="Lisp_(programming_language).html" title="Lisp (programming language)">LISP</a>.<sup id="cite_ref-12" class="reference">[12]</sup> The symbol processing capabilities provided useful features for artificial intelligence research. In 1962, LISP 1.5 release noted some tools: an interpreter written by Stephen Russell and Daniel J. Edwards, a compiler and assembler written by Tim Hart and Mike Levin.<sup id="cite_ref-13" class="reference">[13]</sup></li>
+</ul>
+<p>Early operating system and systems software were written in assembly language. In the 60s and early 70s, high-level languages for system programming was still controversial due to resource limitations. Still several research and industry efforts began the shift toward high-level systems programming languages, for example, BCPL, BLISS, B, and <a href="C_(programming_language).html" title="C (programming language)">C</a>.</p>
+<p>BCPL (Basic Combined Programming Language) designed in 1966 by Martin Richards at the University of Cambridge was originally developed as a compiler writing tool.<sup id="cite_ref-14" class="reference">[14]</sup> Several compilers have been implemented, Richards' book provides insights to the language and its compiler.<sup id="cite_ref-15" class="reference">[15]</sup> BCPL was not only an influential systems programming language that is still used in research<sup id="cite_ref-16" class="reference">[16]</sup> but also provided a basis for the design of B and C languages.</p>
+<p>BLISS (Basic Language for Implementation of System Software) was developed for a Digital Equipment Corporation (DEC) PDP-10 Minicomputer by W.A. Wulf's Carnegie Mellon University (CMU) research team. The CMU team went on to develop BLISS-11 compiler one year later in 1970.</p>
+<p>Multics (Multiplexed Information and Computing Service), a time-sharing operating system project, involved MIT, Bell Labs, General Electric (later Honeywell) and was led by Fernando Corbató from MIT.<sup id="cite_ref-17" class="reference">[17]</sup> Multics was written in the PL/I language developed by IBM and IBM User Group.<sup id="cite_ref-18" class="reference">[18]</sup> IBM's goal was to satisfy business, scientific, and systems programming requirements. There were other languages that could have been considered but PL/I offered the most complete solution even though it had not been implemented.<sup id="cite_ref-19" class="reference">[19]</sup> For the first few years of the Mulitics project, a subset of the language could be compiled to assembly language with the Early PL/I (EPL) compiler by Doug McIlory and Bob Morris from Bell Labs.<sup id="cite_ref-20" class="reference">[20]</sup> EPL supported the project until a boot-strapping compiler for the full PL/I could be developed.<sup id="cite_ref-21" class="reference">[21]</sup></p>
+<p>Bell Labs left the Multics project in 1969: "Over time, hope was replaced by frustration as the group effort initially failed to produce an economically useful system."<sup id="cite_ref-22" class="reference">[22]</sup> Continued participation would drive up project support costs. So researchers turned to other development efforts. A system programming language B based on BCPL concepts was written by Dennis Ritchie and Ken Thompson. Ritchie created a boot-strapping compiler for B and wrote <a href="Unix.html" title="Unix">Unics</a> (Uniplexed Information and Computing Service) operating system for a PDP-7 in B. Unics eventually became spelled Unix.</p>
+<p>Bell Labs started development and expansion of <a href="C_(programming_language).html" title="C (programming language)">C</a> based on B and BCPL. The BCPL compiler had been transported to Multics by Bell Labs and BCPL was a preferred language at Bell Labs.<sup id="cite_ref-23" class="reference">[23]</sup> Initially, a front-end program to Bell Labs' B compiler was used while a C compiler was developed. In 1971, a new PDP-11 provided the resource to define extensions to B and rewrite the compiler. By 1973 the design of C language was essentially complete and the Unix kernel for a PDP-11 was rewritten in C. Steve Johnson started development of Portable C Compiler (PCC) to support retargeting of C compilers to new machines.<sup id="cite_ref-24" class="reference">[24]</sup><sup id="cite_ref-25" class="reference">[25]</sup></p>
+<p><a href="Object-oriented_programming.html" title="Object-oriented programming">Object-oriented programming</a> (OOP) offered some interesting possibilities for application development and maintenance. OOP concepts go further back but were part of LISP and Simula language science.<sup id="cite_ref-26" class="reference">[26]</sup> At Bell Labs, the development of <a href="C++.html" title="C++">C++</a> became interested in OOP.<sup id="cite_ref-27" class="reference">[27]</sup> C++ was first used in 1980 for systems programming. The initial design leveraged C language systems programming capabilities with Simula concepts. Object-oriented facilities were added in 1983.<sup id="cite_ref-28" class="reference">[28]</sup> The Cfront program implemented a C++ front-end for C84 language compiler. In subsequent years several C++ compilers were developed as C++ popularity grew.</p>
+<p>In many application domains, the idea of using a higher-level language quickly caught on. Because of the expanding functionality supported by newer <a href="Programming_language.html" title="Programming language">programming languages</a> and the increasing complexity of computer architectures, compilers became more complex.</p>
+<p>DARPA (Defense Advanced Research Projects Agency) sponsored a compiler project with Wulf's CMU research team in 1970. The Production Quality Compiler-Compiler PQCC design would produce a Production Quality Compiler (PQC) from formal definitions of source language and the target.<sup id="cite_ref-29" class="reference">[29]</sup> PQCC tried to extend the term compiler-compiler beyond the traditional meaning as a parser generator (e.g., Yacc) without much success. PQCC might more properly be referred to as a compiler generator.</p>
+<p>PQCC research into code generation process sought to build a truly automatic compiler-writing system. The effort discovered and designed the phase structure of the PQC. The BLISS-11 compiler provided the initial structure.<sup id="cite_ref-30" class="reference">[30]</sup> The phases included analyses (front end), intermediate translation to virtual machine (middle end), and translation to the target (back end). TCOL was developed for the PQCC research to handle language specific constructs in the intermediate representation.<sup id="cite_ref-31" class="reference">[31]</sup> Variations of TCOL supported various languages. The PQCC project investigated techniques of automated compiler construction. The design concepts proved useful in optimizing compilers and compilers for the object-oriented programming language Ada.</p>
+<p>The Ada Stoneman Document formalized the program support environment (APSE) along with the kernel (KAPSE) and minimal (MAPSE). An Ada interpreter NYU/ED supported development and standardization efforts with American National Standards Institute (ANSI) and the International Standards Organization (ISO). Initial Ada compiler development by the U.S. Military Services included the compilers in a complete integrated design environment along the lines of the Stoneman Document. Army and Navy worked on the Ada Language System (ALS) project targeted to DEC/VAX architecture while the Air Force started on the Ada Integrated Environment (AIE) targeted to IBM 370 series. While the projects did not provide the desired results, they did contribute to the overal effort on Ada development.<sup id="cite_ref-32" class="reference">[32]</sup></p>
+<p>Other Ada compiler efforts got under way in Britain at University of York and in Germany at University of Karlsruhe. In the U. S., Verdix (later acquired by Rational) delivered the Verdix Ada Development System (VADS) to the Army. VADS provided a set of development tools including a compiler. Unix/VADS could be hosted on a variety of Unix platforms such as DEC Ultrix and the Sun 3/60 Solaris taageted to Motorola 68020 in an Army CECOM evaluation,<sup id="cite_ref-33" class="reference">[33]</sup> There were soon many Ada compilers available that passed the Ada Validation tests. The Freesoftware Foundation GNU project developed the <a href="GNU_Compiler_Collection.html" title="GNU Compiler Collection">GNU Compiler Collection</a> (GCC) which provides a core capability to support multiple languages and targets. The Ada version GNAT is one of the most widely used Ada compilers. GNAT is free but there is also commercial support, for example, AdaCore, was founded in 1994 to provide commercial software solutions for Ada. GNAT Pro includes the GNU GCC based GNAT with a tool suite to provide an integrated development environment.</p>
+<p>High-level languages continued to drive compiler research and development. Focus areas included optimization and automatic code generation. Trends in programming languages and development environments influenced compiler technology. More compilers became included in language distributions (PERL, Java Development Kit) and as a component of an IDE (VADS, Eclipse, Ada Pro). The interrelationship and interdependence of technologies grew. The advent of web services promoted growth of web languages and scripting languages. Scripts trace back to the early days of Command Line Interfaces (CLI) where the user could enter commands to be executed by the system. User Shell concepts developed with languages to write shell programs. Early Windows designs offered a simple batch programming capability. The conventional transformation of these language used an interpreter. While not widely used, Bash and Batch compilers have been written. More recently sophisticated interpreted languages became part of the developers tool kit. Modern scripting languages include PHP, Python, Ruby and Lua. (Lua is widely used in game development.) All of these have interpreter and compiler support.<sup id="cite_ref-34" class="reference">[34]</sup></p>
+<p>"When the field of compiling began in the late 50s, its focus was limited to the translation of high-level language programs into machine code ... The compiler field is increasingly intertwined with other disciplines including computer architecture, programming languages, formal methods, software engineering, and computer security."<sup id="cite_ref-35" class="reference">[35]</sup> The "Compiler Research: The Next 50 Years" article noted the importance of object-oriented languages and Java. Security and parallel computing were cited among the future research targets.</p>
+<h2><span class="mw-headline" id="Compiler_construction">Compiler construction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<table class="plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>does not cite any sources</b>. <span class="hide-when-compact">Please help improve this section by adding citations to reliable sources. Unsourced material may be challenged and removed.</span> <small><i>(September 2010)</i></small> <small class="hide-when-compact"><i>(Learn how and when to remove this template message)</i></small></span></td>
+</tr>
+</table>
+<p>A compiler implements a formal transformation from a high-level source program to a low-level target program. Compiler design can define an end to end solution or tackle a defined subset that interfaces with other compilation tools e.g. preprocessors, assemblers, linkers. Design requirements include rigorously defined interfaces both internally between compiler components and externally between supporting toolsets.</p>
+<p>In the early days, the approach taken to compiler design was directly affected by the complexity of the computer language to be processed, the experience of the person(s) designing it, and the resources available. Resource limitations led to the need to pass through the source code more than once.</p>
+<p>A compiler for a relatively simple language written by one person might be a single, monolithic piece of software. However, as the source language grows in complexity the design may be split into a number of interdependent phases. Separate phases provide design improvements that focus development on the functions in the compilation process.</p>
+<h3><span class="mw-headline" id="One-pass_versus_multi-pass_compilers">One-pass versus multi-pass compilers<span id="Single-pass"></span></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>Classifying compilers by number of passes has its background in the hardware resource limitations of computers. Compiling involves performing lots of work and early computers did not have enough memory to contain one program that did all of this work. So compilers were split up into smaller programs which each made a pass over the source (or some representation of it) performing some of the required analysis and translations.</p>
+<p>The ability to compile in a single pass has classically been seen as a benefit because it simplifies the job of writing a compiler and one-pass compilers generally perform compilations faster than multi-pass compilers. Thus, partly driven by the resource limitations of early systems, many early languages were specifically designed so that they could be compiled in a single pass (e.g., Pascal).</p>
+<p>In some cases the design of a language feature may require a compiler to perform more than one pass over the source. For instance, consider a declaration appearing on line 20 of the source which affects the translation of a statement appearing on line 10. In this case, the first pass needs to gather information about declarations appearing after statements that they affect, with the actual translation happening during a subsequent pass.</p>
+<p>The disadvantage of compiling in a single pass is that it is not possible to perform many of the sophisticated optimizations needed to generate high quality code. It can be difficult to count exactly how many passes an optimizing compiler makes. For instance, different phases of optimization may analyse one expression many times but only analyse another expression once.</p>
+<p>Splitting a compiler up into small programs is a technique used by researchers interested in producing provably correct compilers. Proving the correctness of a set of small programs often requires less effort than proving the correctness of a larger, single, equivalent program.</p>
+<h3><span class="mw-headline" id="Three-stage_compiler_structure">Three-stage compiler structure</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div class="center">
+<div class="thumb tnone">
+<div class="thumbinner" style="width:552px;"><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Compiler_design.svg/550px-Compiler_design.svg.png" width="550" height="96" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Compiler_design.svg/825px-Compiler_design.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Compiler_design.svg/1100px-Compiler_design.svg.png 2x" data-file-width="1237" data-file-height="215" /></a>
+<div class="thumbcaption">
+<div class="magnify"></div>
+Compiler design</div>
+</div>
+</div>
+</div>
+<p>Regardless of the exact number of phases in the compiler design, the phases can be assigned to one of three stages. The stages include a front end, a middle end, and a back end.</p>
+<ul>
+<li>The <i>front end</i> verifies syntax and semantics according to a specific source language. For <a href="Type_system.html" title="Type system">statically typed languages</a> it performs type checking by collecting type information. If the input program is syntactically incorrect or has a type error, it generates errors and warnings, highlighting<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="The material near this tag is possibly inaccurate or nonfactual. (January 2017)">dubious</span></a> <span class="metadata">– discuss</span></i>]</sup> them on the source code. Aspects of the front end include lexical analysis, syntax analysis, and semantic analysis. The front end transforms the input program into an intermediate representation (IR) for further processing by the middle end. This IR is usually a lower-level representation of the program with respect to the source code.</li>
+<li>The <i>middle end</i> performs optimizations on the IR that are independent of the CPU architecture being targeted. This source code/machine code independence is intended to enable generic optimizations to be shared between versions of the compiler supporting different languages and target processors. Examples of middle end optimizations are removal of useless (dead code elimination) or unreachable code (reachability analysis), discovery and propagation of constant values (constant propagation), relocation of computation to a less frequently executed place (e.g., out of a loop), or specialization of computation based on the context. Eventually producing the "optimized" IR that is used by the back end.</li>
+<li>The <i>back end</i> takes the optimized IR from the middle end. It may perform more analysis, transformations and optimizations that are specific for the target CPU architecture. The back end generates the target-dependent assembly code, performing register allocation in the process. The back end performs instruction scheduling, which re-orders instructions to keep parallel execution units busy by filling delay slots. Although most algorithms for optimization are NP-hard, heuristic techniques are well-developed and currently implemented in production-quality compilers. Typically the output of a back end is machine code specialized for a particular processor and operating system.</li>
+</ul>
+<p>This front/middle/back-end approach makes it possible to combine front ends for different languages with back ends for different CPUs while sharing the optimizations of the middle end.<sup id="cite_ref-36" class="reference">[36]</sup> Practical examples of this approach are the <a href="GNU_Compiler_Collection.html" title="GNU Compiler Collection">GNU Compiler Collection</a>, LLVM,<sup id="cite_ref-LattnerBook1st_37-0" class="reference">[37]</sup> and the Amsterdam Compiler Kit, which have multiple front-ends, shared optimizations and multiple back-ends.</p>
+<h3><span class="mw-headline" id="Front_end">Front end</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:402px;"><a><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Xxx_Scanner_and_parser_example_for_C.gif/400px-Xxx_Scanner_and_parser_example_for_C.gif" width="400" height="277" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Xxx_Scanner_and_parser_example_for_C.gif/600px-Xxx_Scanner_and_parser_example_for_C.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Xxx_Scanner_and_parser_example_for_C.gif/800px-Xxx_Scanner_and_parser_example_for_C.gif 2x" data-file-width="1033" data-file-height="715" /></a>
+<div class="thumbcaption">
+<div class="magnify"></div>
+Lexer and parser example for <a href="C_(programming_language).html" title="C (programming language)">C</a>. Starting from the sequence of characters "<code>if(net&gt;0.0)total+=net*(1.0+tax/100.0);</code>", the scanner composes a sequence of tokens, and categorizes each of them, for example as <span style="color:#600000">identifier</span>, <span style="color:#606000">reserved word</span>, <span style="color:#006000">number literal</span>, or <span style="color:#000060">operator</span>. The latter sequence is transformed by the parser into a syntax tree, which is then treated by the remaining compiler phases. The scanner and parser handles the regular and properly context-free parts of the grammar for C, respectively.</div>
+</div>
+</div>
+<p>The front end analyzes the source code to build an internal representation of the program, called the intermediate representation (IR). It also manages the symbol table, a data structure mapping each symbol in the source code to associated information such as location, type and scope.</p>
+<p>While the frontend can be a single monolithic function or program, as in a scannerless parser, it is more commonly implemented and analyzed as several phases, which may execute sequentially or concurrently. This method is favored due to its modularity and separation of concerns. Most commonly today, the frontend is broken into three phases: lexical analysis (also known as lexing), syntax analysis (also known as parsing), and semantic analysis. Lexing and parsing comprise the syntactic analysis (word syntax and phrase syntax, respectively), and in simple cases these modules (the lexer and parser) can be automatically generated from a grammar for the language, though in more complex cases these require manual modification. The lexical grammar and phrase grammar are usually context-free grammars, which simplifies analysis significantly, with context-sensitivity handled at the semantic analysis phase. The semantic analysis phase is generally more complex and written by hand, but can be partially or fully automated using attribute grammars. These phases themselves can be further broken down: lexing as scanning and evaluating, and parsing as building a concrete syntax tree (CST, parse tree) and then transforming it into an abstract syntax tree (AST, syntax tree). In some cases additional phases are used, notably <i>line reconstruction</i> and <i>preprocessing,</i> but these are rare.</p>
+<p>The main phases of the front end include the following:</p>
+<ul>
+<li><i>Line reconstruction</i> converts the input character sequence to a canonical form ready for the parser. Languages which strop their keywords or allow arbitrary spaces within identifiers require this phase. The top-down, recursive-descent, table-driven parsers used in the 1960s typically read the source one character at a time and did not require a separate tokenizing phase. Atlas Autocode, and Imp (and some implementations of ALGOL and Coral 66) are examples of stropped languages which compilers would have a <i>Line Reconstruction</i> phase.</li>
+<li><i>Preprocessing</i> supports macro substitution and conditional compilation. Typically the preprocessing phase occurs before syntactic or semantic analysis; e.g. in the case of C, the preprocessor manipulates lexical tokens rather than syntactic forms. However, some languages such as Scheme support macro substitutions based on syntactic forms.</li>
+<li><i>Lexical analysis</i> (also known as <i>lexing</i> or <i>tokenization</i>) breaks the source code text into a sequence of small pieces called <i>lexical tokens</i>.<sup id="cite_ref-38" class="reference">[38]</sup> This phase can be divided into two stages: the <i>scanning</i>, which segments the input text into syntactic units called <i>lexemes</i> and assign them a category; and the <i>evaluating</i>, which converts lexemes into a processed value. A token is a pair consisting of a <i>token name</i> and an optional <i>token value</i>.<sup id="cite_ref-39" class="reference">[39]</sup> Common token categories may include identifiers, keywords, separators, operators, literals and comments, although the set of token categories varies in different <a href="Programming_language.html" title="Programming language">programming languages</a>. The lexeme syntax is typically a regular language, so a finite state automaton constructed from a regular expression can be used to recognize it. The software doing lexical analysis is called a lexical analyzer. This may not be a separate step—it can be combined with the parsing step in scannerless parsing, in which case parsing is done at the character level, not the token level.</li>
+<li><i>Syntax analysis</i> (also known as <i>parsing</i>) involves parsing the token sequence to identify the syntactic structure of the program. This phase typically builds a parse tree, which replaces the linear sequence of tokens with a tree structure built according to the rules of a formal grammar which define the language's syntax. The parse tree is often analyzed, augmented, and transformed by later phases in the compiler.<sup id="cite_ref-40" class="reference">[40]</sup></li>
+<li><i>Semantic analysis</i> adds semantic information to the parse tree and builds the symbol table. This phase performs semantic checks such as type checking (checking for type errors), or object binding (associating variable and function references with their definitions), or definite assignment (requiring all local variables to be initialized before use), rejecting incorrect programs or issuing warnings. Semantic analysis usually requires a complete parse tree, meaning that this phase logically follows the parsing phase, and logically precedes the code generation phase, though it is often possible to fold multiple phases into one pass over the code in a compiler implementation.</li>
+</ul>
+<h3><span class="mw-headline" id="Middle_end">Middle end</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>The middle end performs optimizations on the intermediate representation in order to improve the performance and the quality of the produced machine code.<sup id="cite_ref-41" class="reference">[41]</sup> The middle end contains those optimizations that are independent of the CPU architecture being targeted.</p>
+<p>The main phases of the middle end include the following:</p>
+<ul>
+<li>Analysis: This is the gathering of program information from the intermediate representation derived from the input; data-flow analysis is used to build use-define chains, together with dependence analysis, alias analysis, pointer analysis, escape analysis, etc. Accurate analysis is the basis for any compiler optimization. The control flow graph of every compiled function and the call graph of the program and are usually also built during the analysis phase.</li>
+<li>Optimization: the intermediate language representation is transformed into functionally equivalent but faster (or smaller) forms. Popular optimizations are inline expansion, dead code elimination, constant propagation, loop transformation and even automatic parallelization.</li>
+</ul>
+<p>Compiler analysis is the prerequisite for any compiler optimization, and they tightly work together. For example, dependence analysis is crucial for loop transformation.</p>
+<p>The scope of compiler analysis and optimizations vary greatly, from as small as a basic block to the procedure/function level, or even over the whole program (interprocedural optimization). Obviously,<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a><span title="The text near this tag may need clarification or removal of jargon. (November 2015)">clarification needed</span></a></i>]</sup> a compiler can potentially do a better job using a broader view. But that broad view is not free: large scope analysis and optimizations are very costly in terms of compilation time and memory space; this is especially true for interprocedural analysis and optimizations.</p>
+<p>Interprocedural analysis and optimizations are common in modern commercial compilers from HP, IBM, SGI, Intel, Microsoft, and Sun Microsystems. The open source <a href="GNU_Compiler_Collection.html" title="GNU Compiler Collection">GCC</a> was criticized for a long time for lacking powerful interprocedural optimizations, but it is changing in this respect. Another open source compiler with full analysis and optimization infrastructure is Open64, which is used by many organizations for research and commercial purposes.</p>
+<p>Due to the extra time and space needed for compiler analysis and optimizations, some compilers skip them by default. Users have to use compilation options to explicitly tell the compiler which optimizations should be enabled.</p>
+<h3><span class="mw-headline" id="Back_end">Back end</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<p>The back end is responsible for the CPU architecture specific optimizations and for code generation<i>.</i></p>
+<p>The main phases of the back end include the following:</p>
+<ul>
+<li><i>Machine dependent optimizations</i>: optimizations that depend on the details of the CPU architecture that the compiler targets.<sup id="cite_ref-42" class="reference">[42]</sup> A prominent example is peephole optimizations, which rewrites short sequences of assembler instructions into more efficient instructions.</li>
+<li><i>Code generation</i>: the transformed intermediate language is translated into the output language, usually the native machine language of the system. This involves resource and storage decisions, such as deciding which variables to fit into registers and memory and the selection and scheduling of appropriate machine instructions along with their associated addressing modes (see also Sethi-Ullman algorithm). Debug data may also need to be generated to facilitate debugging.</li>
+</ul>
+<h3><span class="mw-headline" id="Compiler_correctness">Compiler correctness</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h3>
+<div role="note" class="hatnote navigation-not-searchable">Main article: Compiler correctness</div>
+<p>Compiler correctness is the branch of software engineering that deals with trying to show that a compiler behaves according to its <a href="Programming_language.html" title="Programming language">language specification</a>.<sup id="cite_ref-43" class="reference">[43]</sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="The material near this tag may rely on a self-published source. (March 2017)">self-published source?</span></a></i>]</sup><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable secondary sources. (March 2017)">non-primary source needed</span></a></i>]</sup> Techniques include developing the compiler using formal methods and using rigorous testing (often called compiler validation) on an existing compiler.</p>
+<h2><span class="mw-headline" id="Compiled_versus_interpreted_languages">Compiled versus interpreted languages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Higher-level programming languages usually appear with a type of translation in mind: either designed as compiled language or interpreted language. However, in practice there is rarely anything about a language that <i>requires</i> it to be exclusively compiled or exclusively interpreted, although it is possible to design languages that rely on re-interpretation at run time. The categorization usually reflects the most popular or widespread implementations of a language — for instance, BASIC is sometimes called an interpreted language, and C a compiled one, despite the existence of BASIC compilers and C interpreters.</p>
+<p>Interpretation does not replace compilation completely. It only hides it from the user and makes it gradual. Even though an interpreter can itself be interpreted, a directly executed program is needed somewhere at the bottom of the stack (see machine language).</p>
+<p>Further, compilers can contain interpreters for optimization reasons. For example, where an expression can be executed during compilation and the results inserted into the output program, then it prevents it having to be recalculated each time the program runs, which can greatly speed up the final program. Modern trends toward just-in-time compilation and <a href="Bytecode.html" title="Bytecode">bytecode interpretation</a> at times blur the traditional categorizations of compilers and interpreters even further.</p>
+<p>Some language specifications spell out that implementations <i>must</i> include a compilation facility; for example, Common Lisp. However, there is nothing inherent in the definition of Common Lisp that stops it from being interpreted. Other languages have features that are very easy to implement in an interpreter, but make writing a compiler much harder; for example, APL, SNOBOL4, and many scripting languages allow programs to construct arbitrary source code at runtime with regular string operations, and then execute that code by passing it to a special evaluation function. To implement these features in a compiled language, programs must usually be shipped with a runtime library that includes a version of the compiler itself.</p>
+<h2><span class="mw-headline" id="Types">Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>One classification of compilers is by the platform on which their generated code executes. This is known as the <i>target platform.</i></p>
+<p>A <i>native</i> or <i>hosted</i> compiler is one which output is intended to directly run on the same type of computer and operating system that the compiler itself runs on. The output of a cross compiler is designed to run on a different platform. Cross compilers are often used when developing software for embedded systems that are not intended to support a software development environment.</p>
+<p>The output of a compiler that produces code for a <a href="Virtual_machine.html" title="Virtual machine">virtual machine</a> (VM) may or may not be executed on the same platform as the compiler that produced it. For this reason such compilers are not usually classified as native or cross compilers.</p>
+<p>The lower level language that is the target of a compiler may itself be a <a href="High-level_programming_language.html" title="High-level programming language">high-level programming language</a>. C, often viewed as some sort of portable assembler, can also be the target language of a compiler. E.g.: Cfront, the original compiler for <a href="C++.html" title="C++">C++</a> used C as target language. The C created by such a compiler is usually not intended to be read and maintained by humans. So indent style and pretty C intermediate code are irrelevant. Some features of C turn it into a good target language. E.g.: C code with <a><code>#line</code></a> directives can be generated to support debugging of the original source.</p>
+<p>While a common compiler type outputs machine code, there are many other types:</p>
+<ul>
+<li>A source-to-source compiler is a type of compiler that takes a high-level language as its input and outputs a high-level language. For example, an automatic parallelizing compiler will frequently take in a high-level language program as an input and then transform the code and annotate it with parallel code annotations (e.g. OpenMP) or language constructs (e.g. Fortran's <code>DOALL</code> statements).</li>
+<li><a href="Bytecode.html" title="Bytecode">Bytecode</a> compilers that compile to assembly language of a theoretical machine, like some Prolog implementations
+<ul>
+<li>This Prolog machine is also known as the Warren Abstract Machine (or WAM).</li>
+<li>Bytecode compilers for <a href="Java_(programming_language).html" title="Java (programming language)">Java</a>, <a href="Python_(programming_language).html" title="Python (programming language)">Python</a> are also examples of this category.</li>
+</ul>
+</li>
+<li>Just-in-time compiler (JIT compiler) is the last part of a multi-pass compiler chain in which some compilation stages are deferred to run-time. Examples are implemented in Smalltalk, <a href="Java_(programming_language).html" title="Java (programming language)">Java</a> and Microsoft .NET's Common Intermediate Language (CIL) systems.
+<ul>
+<li>Applications are first compiled using a bytecode compiler and delivered in a machine-independent intermediate representation. This bytecode is then compiled using a JIT compiler to native machine code just when the execution of the program is required.<sup id="cite_ref-44" class="reference">[44]</sup><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable secondary sources. (March 2017)">non-primary source needed</span></a></i>]</sup></li>
+</ul>
+</li>
+<li>hardware compilers (also known as syntheses tools) are compilers whose output is a description of the hardware configuration instead of a sequence of instructions.
+<ul>
+<li>The output of these compilers target <a href="Computer_hardware.html" title="Computer hardware">computer hardware</a> at a very low level, for example a field-programmable gate array (FPGA) or structured application-specific integrated circuit (ASIC).<sup id="cite_ref-45" class="reference">[45]</sup><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable secondary sources. (March 2017)">non-primary source needed</span></a></i>]</sup> Such compilers are said to be hardware compilers, because the source code they compile effectively controls the final configuration of the hardware and how it operates. The output of the compilation is only an interconnection of transistors or lookup tables.</li>
+<li>An example of hardware compiler is XST, the Xilinx Synthesis Tool used for configuring FPGAs.<sup id="cite_ref-46" class="reference">[46]</sup><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable secondary sources. (March 2017)">non-primary source needed</span></a></i>]</sup> Similar tools are available from Altera,<sup id="cite_ref-47" class="reference">[47]</sup><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable secondary sources. (March 2017)">non-primary source needed</span></a></i>]</sup> Synplicity, Synopsys and other hardware vendors.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (March 2017)">citation needed</span></a></i>]</sup></li>
+</ul>
+</li>
+<li><a href="Assembly_language.html" title="Assembly language">Assembly language</a> is a type of low-level language and a program that compiles it is an <i>assembler</i>, with the inverse program known as a disassembler.</li>
+<li>A program that translates from a low-level language to a higher level one is a decompiler.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (March 2017)">citation needed</span></a></i>]</sup></li>
+<li>A program that translates between high-level languages is usually called a language translator, source-to-source compiler, language converter, or language rewriter.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (March 2017)">citation needed</span></a></i>]</sup> The last term is usually applied to translations that do not involve a change of language.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (March 2017)">citation needed</span></a></i>]</sup></li>
+<li>A program that translates into an object code format that is not supported on the compilation machine is called a cross compiler and is commonly used to prepare code for embedded applications.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (March 2017)">citation needed</span></a></i>]</sup><sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a><span title="The text near this tag may need clarification or removal of jargon. (February 2017)">clarification needed</span></a></i>]</sup></li>
+<li>A program that rewrites object code back into the same type of object code while applying optimisations and transformations is a binary recompiler.</li>
+</ul>
+<h2><span class="mw-headline" id="Compilers_in_education">Compilers in education</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<p>Compiler construction and compiler optimization are taught at universities and schools as part of a <a href="Computer_science.html" title="Computer science">computer science</a> curriculum.<sup id="cite_ref-48" class="reference">[48]</sup><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable secondary sources. (March 2017)">non-primary source needed</span></a></i>]</sup> Such courses are usually supplemented with the implementation of a compiler for an educational programming language. A well-documented example is Niklaus Wirth's PL/0 compiler, which Wirth used to teach compiler construction in the 1970s.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (March 2017)">citation needed</span></a></i>]</sup> In spite of its simplicity, the PL/0 compiler introduced several influential concepts to the field, including uses of:</p>
+<ol>
+<li>akin to the 1971 paper by Wirth,<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable sources. (March 2017)">citation needed</span></a></i>]</sup> program development by stepwise refinement;<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a><span title="The text near this tag may need clarification or removal of jargon. (March 2017)">clarification needed</span></a></i>]</sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="The material near this tag may be using jargon that limits the article's accessibility. (March 2017)">jargon</span></a></i>]</sup></li>
+<li>a recursive descent parser;<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a><span title="The text near this tag may need clarification or removal of jargon. (March 2017)">clarification needed</span></a></i>]</sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="The material near this tag may be using jargon that limits the article's accessibility. (March 2017)">jargon</span></a></i>]</sup></li>
+<li>an extended Backus–Naur form (EBNF) to specify the syntax of a language;<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a><span title="The text near this tag may need clarification or removal of jargon. (March 2017)">clarification needed</span></a></i>]</sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="The material near this tag may be using jargon that limits the article's accessibility. (March 2017)">jargon</span></a></i>]</sup></li>
+<li>a code generator producing portable <a href="Bytecode.html" title="Bytecode">P-code</a>;<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a><span title="The text near this tag may need clarification or removal of jargon. (March 2017)">clarification needed</span></a></i>]</sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="The material near this tag may be using jargon that limits the article's accessibility. (March 2017)">jargon</span></a></i>]</sup> and</li>
+<li>tombstone diagrams in the formal description of the bootstrapping problem.<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">[<i><a><span title="The text near this tag may need clarification or removal of jargon. (March 2017)">clarification needed</span></a></i>]</sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="The material near this tag may be using jargon that limits the article's accessibility. (March 2017)">jargon</span></a></i>]</sup></li>
+</ol>
+<h2><span class="mw-headline" id="Conferences_and_organizations"><span id="International_conferences_and_organizations"></span>Conferences and organizations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<table class="plainlinks metadata ambox ambox-content ambox-one_source" role="presentation">
+<tr>
+<td class="mbox-image">
+<div style="width:52px"><a><img alt="Question book-new.svg" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div>
+</td>
+<td class="mbox-text"><span class="mbox-text-span">This section <b>relies largely or entirely on a single source</b>. <span class="hide-when-compact">Relevant discussion may be found on the talk page. Please help improve this article by introducing citations to additional sources.</span> <small><i>(February 2017)</i></small></span></td>
+</tr>
+</table>
+<p>High-level programming languages mature over time and lead to a need for Standardization. The American National Standards Institute (ANSI) and the International Organization for Standardization (ISO) manage standards for various programming languages such as FORTRAN, COBOL, C, C++ and so on.</p>
+<p>Universities in conjunction with industry and government provide active research and development for programming languages and the associated language tools: compilers, integrated development environments, formal validation suites.</p>
+<p>Professional organizations have representation from across the research, education, industry, and government. These include the Institute of Electrical and Electronic Engineers (IEEE) and Association for Computing Machinery (ACM).</p>
+<p><br />
+A number of conferences in the field of <a href="Programming_language.html" title="Programming language">programming languages</a> present advances in compiler construction as one of their main topics.</p>
+<p>ACM SIGPLAN supports a number of conferences, including:</p>
+<ul>
+<li>Programming Language Design and Implementation (PLDI)</li>
+<li>Principles of Programming Languages (POPL)</li>
+<li>Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA)</li>
+<li>International Conference on Functional Programming (ICFP)</li>
+</ul>
+<p>The European Joint Conferences on Theory and Practice of Software (ETAPS) sponsors the International Conference on Compiler Construction, with papers from both the academic and industrial sectors.<sup id="cite_ref-49" class="reference">[49]</sup></p>
+<p>Asian Symposium on Programming Languages and Systems (APLAS) is organized by the Asian Association for Foundation of Software (AAFS).</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div role="navigation" aria-label="Portals" class="noprint portal plainlist tright" style="margin:0.5em 0 0.5em 1em;border:solid #aaa 1px">
+<ul style="display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold">
+<li style="display:table-row"><span style="display:table-cell;padding:0.2em;vertical-align:middle;text-align:center"><a><img alt="icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/cc/8bit-dynamiclist_%28reversed%29.gif/28px-8bit-dynamiclist_%28reversed%29.gif" width="28" height="28" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/c/cc/8bit-dynamiclist_%28reversed%29.gif 1.5x" data-file-width="32" data-file-height="32" /></a></span><span style="display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle">Computer programming portal</span></li>
+</ul>
+</div>
+<table role="presentation" class="metadata mbox-small" style="background-color:#f9f9f9;border:1px solid #aaa;color:#000">
+<tr>
+<td class="mbox-image"><img alt="Book icon" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Office-book.svg/30px-Office-book.svg.png" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Office-book.svg/45px-Office-book.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Office-book.svg/60px-Office-book.svg.png 2x" data-file-width="48" data-file-height="48" /></td>
+<td class="mbox-text plainlist">
+<ul style="font-weight: bold">
+<li>Book: Compiler construction</li>
+</ul>
+</td>
+</tr>
+</table>
+<div class="div-col columns column-count column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3;">
+<ul>
+<li>Abstract interpretation</li>
+<li>Bottom-up parsing</li>
+<li>Compile and go loader</li>
+<li>Compile farm</li>
+<li>List of compilers</li>
+<li>List of important publications in computer science §&#160;Compilers</li>
+<li>Metacompilation</li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">PC Mag Staff (28 February 2017). "Encyclopedia: Definition of Compiler". <i>PCMag.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">28 February</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.atitle=Encyclopedia%3A+Definition+of+Compiler&amp;rft.au=PC+Mag+Staff&amp;rft.date=2017-02-28&amp;rft.genre=unknown&amp;rft.jtitle=PCMag.com&amp;rft_id=https%3A%2F%2Fwww.pcmag.com%2Fencyclopedia%2Fterm%2F40105&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Sun2016-2"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Sun, Chengnian; Le, Vu; Zhang, Qirun; Su, Zhendong (2016). "Toward Understanding Compiler Bugs in GCC and LLVM". <i>ACM</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.atitle=Toward+Understanding+Compiler+Bugs+in+GCC+and+LLVM&amp;rft.au=Le%2C+Vu&amp;rft.au=Su%2C+Zhendong&amp;rft.au=Zhang%2C+Qirun&amp;rft.aufirst=Chengnian&amp;rft.aulast=Sun&amp;rft.date=2016&amp;rft.genre=unknown&amp;rft.jtitle=ACM&amp;rft_id=http%3A%2F%2Fdl.acm.org%2Fcitation.cfm%3Fdoid%3D2931037.2931074&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">lecture notes Compilers: Principles, Techniques, and Tools Jing-Shin Chang Department of Computer Science &amp; Information Engineering National Chi-Nan University</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Naur, P. et al. Report on ALGOL 60. Communications of the ACM 3 (May 1960), 299-314.</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Syntactic Structures ISBN&#160;3-11-017279-8</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Science of Programming, Appendix 1, ISBN&#160;1461259835</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">A Programming Language K. E. Iverson ISBN&#160;0-471430-14-5</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">John Backus. "The history of FORTRAN I, II and III" (PDF). Softwarepreservation.org</span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Porter Adams, Vicki (5 October 1981). "Captain Grace M. Hopper: the Mother of COBOL". InfoWorld. 3 (20): 33. ISSN 0199-6649.</span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">McCarthy, J.; Brayton, R.; Edwards, D.; Fox, P.; Hodes, L.; Luckham, D.; Maling, K.; Park, D.; Russell, S. (March 1960). "LISP I Programmers Manual" (PDF). Boston, Massachusetts: Artificial Intelligence Group, M.I.T. Computation Center and Research Laboratory.</span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Compilers Principles, Techniques, &amp; Tools 2nd edition by Aho, Lam, Sethi, Ullman ISBN&#160;0-321-48681-1</span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">"Recursive Functions of Symbolic Expressions and Their Computation by Machine", Communications of the ACM, April 1960</span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Lisp 1.5 Programmers Manual, The MIT Press</span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">"BCPL: A tool for compiler writing and system programming" M. Richards, University Mathematical Laboratory Cambridge, England 1969</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">BCPL: The Language and Its Compiler, M Richards, Cambridge University Press (first published 31 December 1981)</span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">The BCPL Cintsys and Cintpos User Guide, M. Richards, 2017</span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Corabato/Vyssotsky "Introduction and Overview of the MULTICS System" FJCC 1965</span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Report II of the SHARE Advanced Language Development Committee, 25 June 1964</span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Multicians.org "The Choice of PL/I" article, Editor /tom Van Vleck</span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">"PL/I As a Tool for System Programming", F.J. Corbato, Datamation May 6, 1969 issue</span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">"The Multics PL/1 Compiler", R. A. Freiburghouse, GE, Fall Joint Computer Conference 1969</span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Datamation column, 1969</span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Dennis M. Ritchie, "The Development of the C Language", ACM Second History of Programming Languages Conference, April, 1993</span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">S.C. Johnson, "a Portable C Compiler: Theory and Practice", 5th ACM POPL Symposium, January 1978</span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">A. Snyder, A Portable Compiler for the Language C, MIT, 1974.</span></li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">K. Nygarard, University of Oslo, Norway, "Basic Concepts in Object Oriented Programming", SIGPLAN Notices V21, 1986</span></li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">B. Stroustrup: "What is Object-Oriented Programming?" Proceedings 14th ASU Conference, 1986.</span></li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Bjarne Stroustrup, "An Overview of the C++ Programming Language", Handbook of Object Technology (Editor: Saba Zamir, ISBN&#160;0-8493-3135-8)</span></li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Leverett, Cattell, Hobbs, Newcomer, Reiner, Schatz, Wulf: "An Overview of the Production Quality Compiler-Compiler Project", CMU-CS-89-105, 1979</span></li>
+<li id="cite_note-30"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">W. Wulf, K. Nori, "Delayed binding in PQCC generated compilers", CMU Research Showcase Report, CMU-CS-82-138, 1982</span></li>
+<li id="cite_note-31"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Joseph M. Newcomer, David Alex Lamb, Bruce W. Leverett, Michael Tighe, William A. Wulf - Carnegie-Mellon University and David Levine, Andrew H. Reinerit - Intermetrics: "TCOL Ada: Revised Report on An Intermediate Representation for the DOD Standard Programming Language", 1979</span></li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">William A. Whitaker, "Ada - the project: the DoD High Order Working Group", ACM SIGPLAN Notices (Volume 28, No. 3, March 1991)</span></li>
+<li id="cite_note-33"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">CECOM Center for Software Engineering Advanced Software Technology, "Final Report - Evaluation of the ACEC Benchmark Suite for Real-Time Applications", AD-A231 968, 1990</span></li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">P.Biggar, E. de Vries, D. Gregg, "A Practical Solution for Scripting Language Compilers", submission to Science of Computer Programming, 2009</span></li>
+<li id="cite_note-35"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">M.Hall, D. Padua, K. Pingali, "Compiler Research: The Next 50 Years", ACM Communications 2009 Vol 54 #2</span></li>
+<li id="cite_note-36"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Cooper and Torczon 2012, p. 8</span></li>
+<li id="cite_note-LattnerBook1st-37"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation book">Lattner, Chris (2017). "LLVM". In Brown, Amy &amp; Wilson, Greg. <a><i>The Architecture of Open Source Applications</i></a><span class="reference-accessdate">. Retrieved <span class="nowrap">28 February</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.atitle=LLVM&amp;rft.au=Lattner%2C+Chris&amp;rft.btitle=The+Architecture+of+Open+Source+Applications&amp;rft.date=2017&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fwww.aosabook.org%2Fen%2Fllvm.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span><span class="citation-comment" style="display:none; color:#33aa33; margin-left:0.3em">CS1 maint: Uses editors parameter (link)</span></span></li>
+<li id="cite_note-38"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Aho, Lam, Sethi, Ullman 2007, p. 5-6, 109-189</span></li>
+<li id="cite_note-39"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Aho, Lam, Sethi, Ullman 2007, p. 111</span></li>
+<li id="cite_note-40"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Aho, Lam, Sethi, Ullman 2007, p. 8, 191-300</span></li>
+<li id="cite_note-41"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Aho, Lam, Sethi, Ullman 2007, p. 10, 583-703</span></li>
+<li id="cite_note-42"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text">Cooper and Toczon (2012), p. 540</span></li>
+<li id="cite_note-43"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Chlipala, Adam. "Syntactic Proofs of Compositional Compiler Correctness" <span style="font-size:85%;">(manuscript draft, publication date unknown)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">28 February</span> 2017</span> – via Adam.Chlipala.net.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.au=Chlipala%2C+Adam&amp;rft.btitle=Syntactic+Proofs+of+Compositional+Compiler+Correctness&amp;rft.genre=unknown&amp;rft_id=http%3A%2F%2Fadam.chlipala.net%2Ftmp%2Fcompose.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a><span title="The material near this tag may rely on a self-published source. (March 2017)">self-published source?</span></a></i>]</sup><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable secondary sources. (March 2017)">non-primary source needed</span></a></i>]</sup></span></li>
+<li id="cite_note-44"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation journal">Aycock, John (2003). "A Brief History of Just-in-Time". <i>ACM Comput. Surv</i>. <b>35</b> (2; June): 93–113. doi:10.1145/857076.857077<span class="reference-accessdate">. Retrieved <span class="nowrap">28 February</span> 2017</span>. <span style="font-size:90%; color:#555">(Subscription required (<span title="The site requires a paid subscription to access this page." style="border-bottom:1px dotted;cursor:help">help</span>))</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.atitle=A+Brief+History+of+Just-in-Time&amp;rft.date=2003&amp;rft.genre=article&amp;rft.issue=2%3B+June&amp;rft.jtitle=ACM+Comput.+Surv.&amp;rft.pages=93-113&amp;rft.volume=35&amp;rft_id=http%3A%2F%2Fdl.acm.org%2Fcitation.cfm%3Fdoid%3D857076.857077&amp;rft_id=info%3Adoi%2F10.1145%2F857076.857077&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span><span class="citation-comment" style="display:none; color:#33aa33; margin-left:0.3em">CS1 maint: Uses authors parameter (link)</span><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable secondary sources. (March 2017)">non-primary source needed</span></a></i>]</sup></span></li>
+<li id="cite_note-45"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Swartz, Jordan S.; Betz, Vaugh; Rose, Jonathan. "A Fast Routability-Driven Router for FPGAs" <span style="font-size:85%;">(manuscript draft, publication date unknown)</span>. Toronto, CA: Univ. of Toronto, Dept. of Electrical and Computer Engineering<span class="reference-accessdate">. Retrieved <span class="nowrap">28 February</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.au=Betz%2C+Vaugh&amp;rft.au=Rose%2C+Jonathan&amp;rft.aufirst=Jordan+S.&amp;rft.aulast=Swartz&amp;rft.btitle=A+Fast+Routability-Driven+Router+for+FPGAs&amp;rft.genre=unknown&amp;rft.place=Toronto%2C+CA&amp;rft.pub=Univ.+of+Toronto%2C+Dept.+of+Electrical+and+Computer+Engineering&amp;rft_id=http%3A%2F%2Fwww.eecg.toronto.edu%2F~vaughn%2Fpapers%2Ffpga98.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable secondary sources. (March 2017)">non-primary source needed</span></a></i>]</sup></span></li>
+<li id="cite_note-46"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Xilinx Staff (2009). "XST Synthesis Overview". Xilinx, Inc<span class="reference-accessdate">. Retrieved <span class="nowrap">28 February</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.au=Xilinx+Staff&amp;rft.btitle=XST+Synthesis+Overview&amp;rft.date=2009&amp;rft.genre=unknown&amp;rft.pub=Xilinx%2C+Inc.&amp;rft_id=http%3A%2F%2Fwww.xilinx.com%2Fsupport%2Fdocumentation%2Fsw_manuals%2Fxilinx11%2Fise_c_using_xst_for_synthesis.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable secondary sources. (March 2017)">non-primary source needed</span></a></i>]</sup></span></li>
+<li id="cite_note-47"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">Altera Staff (2017). "Spectra-Q™ Engine". Altera.com<span class="reference-accessdate">. Retrieved <span class="nowrap">28 February</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.au=Altera+Staff&amp;rft.btitle=Spectra-Q%E2%84%A2+Engine&amp;rft.date=2017&amp;rft.genre=unknown&amp;rft.pub=Altera.com&amp;rft_id=https%3A%2F%2Fwww.altera.com%2Fproducts%2Fdesign-software%2Ffpga-design%2Fquartus-prime%2Ffeatures%2Fspectra-q.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable secondary sources. (March 2017)">non-primary source needed</span></a></i>]</sup></span></li>
+<li id="cite_note-48"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation journal">Chakraborty, P.; Saxena, P. C.; Katti, C. P.; Pahwa, G.; Taneja, S. (2011). "A New Practicum in Compiler Construction". <i>Computer Applications in Engineering Education</i>. <b>22</b> (3; 25 July)<span class="reference-accessdate">. Retrieved <span class="nowrap">28 February</span> 2017</span>. <span style="font-size:90%; color:#555">(Subscription required (<span title="The site requires a paid subscription to access this page." style="border-bottom:1px dotted;cursor:help">help</span>))</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.atitle=A+New+Practicum+in+Compiler+Construction&amp;rft.au=Chakraborty%2C+P.&amp;rft.au=Katti%2C+C.+P.&amp;rft.au=Pahwa%2C+G.&amp;rft.au=Saxena%2C+P.+C.&amp;rft.au=Taneja%2C+S.&amp;rft.date=2011&amp;rft.genre=article&amp;rft.issue=3%3B+25+July&amp;rft.jtitle=Computer+Applications+in+Engineering+Education&amp;rft.volume=22&amp;rft_id=http%3A%2F%2Fonlinelibrary.wiley.com%2Fdoi%2F10.1002%2Fcae.20566%2Fpdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span><sup class="noprint Inline-Template noprint Template-Fact" style="white-space:nowrap;">[<i><a><span title="This claim needs references to reliable secondary sources. (March 2017)">non-primary source needed</span></a></i>]</sup></span></li>
+<li id="cite_note-49"><span class="mw-cite-backlink"><b>^</b></span> <span class="reference-text"><cite class="citation web">ETAPS Staff (28 February 2017). "Conferences". <i>ETAPS.org</i><span class="reference-accessdate">. Retrieved <span class="nowrap">28 February</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.atitle=Conferences&amp;rft.au=ETAPS+Staff&amp;rft.date=2017-02-28&amp;rft.genre=unknown&amp;rft.jtitle=ETAPS.org&amp;rft_id=http%3A%2F%2Fwww.etaps.org%2Findex.php%2Fabout%2Fconferences&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+</div>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<div class="refbegin" style="">
+<ul>
+<li><cite class="citation web">LLVM community. "The LLVM Target-Independent Code Generator". <i>LLVM Documentation</i><span class="reference-accessdate">. Retrieved <span class="nowrap">17 June</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.atitle=The+LLVM+Target-Independent+Code+Generator&amp;rft.au=LLVM+community&amp;rft.genre=unknown&amp;rft.jtitle=LLVM+Documentation&amp;rft_id=http%3A%2F%2Fllvm.org%2Fdocs%2FCodeGenerator.html%23built-in-register-allocators&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li>Compiler textbook references A collection of references to mainstream Compiler Construction Textbooks</li>
+<li><cite class="citation book">Aho, Alfred V.; Sethi, Ravi; Ullman, Jeffrey D. (1986). <i>Compilers: Principles, Techniques, and Tools</i> (1st ed.). Addison-Wesley. ISBN&#160;9780201100884.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.au=Sethi%2C+Ravi&amp;rft.au=Ullman%2C+Jeffrey+D.&amp;rft.aufirst=Alfred+V.&amp;rft.aulast=Aho&amp;rft.btitle=Compilers%3A+Principles%2C+Techniques%2C+and+Tools&amp;rft.date=1986&amp;rft.edition=1st&amp;rft.genre=book&amp;rft.isbn=9780201100884&amp;rft.pub=Addison-Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation journal">Allen, Frances E. (September 1981). "A History of Language Processor Technology in IBM" <span style="font-size:85%;">(PDF)</span>. <i>IBM Journal of Research and Development</i>. IBM. <b>25</b> (5). doi:10.1147/rd.255.0535. <span style="font-size:90%; color:#555">(Subscription required (<span title="The site requires a paid subscription to access this page." style="border-bottom:1px dotted;cursor:help">help</span>))</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.atitle=A+History+of+Language+Processor+Technology+in+IBM&amp;rft.aufirst=Frances+E.&amp;rft.aulast=Allen&amp;rft.date=1981-09&amp;rft.genre=article&amp;rft.issue=5&amp;rft.jtitle=IBM+Journal+of+Research+and+Development&amp;rft.volume=25&amp;rft_id=http%3A%2F%2Fwww.research.ibm.com%2Fjournal%2Frd%2F255%2Fibmrd2505Q.pdf&amp;rft_id=info%3Adoi%2F10.1147%2Frd.255.0535&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Allen, Randy; Kennedy, Ken (2001). <i>Optimizing Compilers for Modern Architectures</i>. Morgan Kaufmann Publishers. ISBN&#160;1-55860-286-0.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.au=Kennedy%2C+Ken&amp;rft.aufirst=Randy&amp;rft.aulast=Allen&amp;rft.btitle=Optimizing+Compilers+for+Modern+Architectures&amp;rft.date=2001&amp;rft.genre=book&amp;rft.isbn=1-55860-286-0&amp;rft.pub=Morgan+Kaufmann+Publishers&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Appel, Andrew Wilson (2002). <i>Modern Compiler Implementation in Java</i> (2nd ed.). Cambridge University Press. ISBN&#160;0-521-82060-X.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.aufirst=Andrew+Wilson&amp;rft.aulast=Appel&amp;rft.btitle=Modern+Compiler+Implementation+in+Java&amp;rft.date=2002&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.isbn=0-521-82060-X&amp;rft.pub=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Appel, Andrew Wilson (1998). <a><i>Modern Compiler Implementation in ML</i></a>. Cambridge University Press. ISBN&#160;0-521-58274-1.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.aufirst=Andrew+Wilson&amp;rft.aulast=Appel&amp;rft.btitle=Modern+Compiler+Implementation+in+ML&amp;rft.date=1998&amp;rft.genre=book&amp;rft.isbn=0-521-58274-1&amp;rft.pub=Cambridge+University+Press&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D8APOYafUt-oC&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Bornat, Richard (1979). <a><i>Understanding and Writing Compilers: A Do It Yourself Guide</i></a> <span style="font-size:85%;">(PDF)</span>. Macmillan Publishing. ISBN&#160;0-333-21732-2.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.aufirst=Richard&amp;rft.aulast=Bornat&amp;rft.btitle=Understanding+and+Writing+Compilers%3A+A+Do+It+Yourself+Guide&amp;rft.date=1979&amp;rft.genre=book&amp;rft.isbn=0-333-21732-2&amp;rft.pub=Macmillan+Publishing&amp;rft_id=http%3A%2F%2Fwww.cs.mdx.ac.uk%2Fstaffpages%2Fr_bornat%2Fbooks%2Fcompiling.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Cooper, Keith Daniel; Torczon, Linda (2012). <a><i>Engineering a compiler</i></a> (2nd ed ed.). Amsterdam: Elsevier/Morgan Kaufmann. p.&#160;8. ISBN&#160;9780120884780. OCLC&#160;714113472.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.au=Torczon%2C+Linda&amp;rft.aufirst=Keith+Daniel&amp;rft.aulast=Cooper&amp;rft.btitle=Engineering+a+compiler&amp;rft.date=2012&amp;rft.edition=2nd+ed&amp;rft.genre=book&amp;rft.isbn=9780120884780&amp;rft.pages=8&amp;rft.place=Amsterdam&amp;rft.pub=Elsevier%2FMorgan+Kaufmann&amp;rft_id=https%3A%2F%2Fwww.worldcat.org%2Foclc%2F714113472&amp;rft_id=info%3Aoclcnum%2F714113472&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span><span class="citation-comment" style="display:none; color:#33aa33; margin-left:0.3em">CS1 maint: Extra text (link)</span></li>
+<li><cite class="citation book">McKeeman, William Marshall; Horning, James J.; Wortman, David B. (1970). <a><i>A Compiler Generator</i></a>. Englewood Cliffs, NJ: Prentice-Hall. ISBN&#160;0-13-155077-2.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.au=Horning%2C+James+J.&amp;rft.au=Wortman%2C+David+B.&amp;rft.aufirst=William+Marshall&amp;rft.aulast=McKeeman&amp;rft.btitle=A+Compiler+Generator&amp;rft.date=1970&amp;rft.genre=book&amp;rft.isbn=0-13-155077-2&amp;rft.place=Englewood+Cliffs%2C+NJ&amp;rft.pub=Prentice-Hall&amp;rft_id=http%3A%2F%2Fwww.cs.toronto.edu%2FXPL%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Muchnick, Steven (1997). <a><i>Advanced Compiler Design and Implementation</i></a>. Morgan Kaufmann Publishers. ISBN&#160;1-55860-320-4.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.aufirst=Steven&amp;rft.aulast=Muchnick&amp;rft.btitle=Advanced+Compiler+Design+and+Implementation&amp;rft.date=1997&amp;rft.genre=book&amp;rft.isbn=1-55860-320-4&amp;rft.pub=Morgan+Kaufmann+Publishers&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DPq7pHwG1_OkC&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Scott, Michael Lee (2005). <a><i>Programming Language Pragmatics</i></a> (2nd ed.). Morgan Kaufmann. ISBN&#160;0-12-633951-1.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.aufirst=Michael+Lee&amp;rft.aulast=Scott&amp;rft.btitle=Programming+Language+Pragmatics&amp;rft.date=2005&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.isbn=0-12-633951-1&amp;rft.pub=Morgan+Kaufmann&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D4LMtA2wOsPcC&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Srikant, Y. N.; Shankar, Priti (2003). <a><i>The Compiler Design Handbook: Optimizations and Machine Code Generation</i></a>. CRC Press. ISBN&#160;0-8493-1240-X.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.au=Shankar%2C+Priti&amp;rft.aufirst=Y.+N.&amp;rft.aulast=Srikant&amp;rft.btitle=The+Compiler+Design+Handbook%3A+Optimizations+and+Machine+Code+Generation&amp;rft.date=2003&amp;rft.genre=book&amp;rft.isbn=0-8493-1240-X&amp;rft.pub=CRC+Press&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D0K_jIsgyNpoC&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Terry, Patrick D. (1997). <a><i>Compilers and Compiler Generators: An Introduction with C++</i></a>. International Thomson Computer Press. ISBN&#160;1-85032-298-8.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.aufirst=Patrick+D.&amp;rft.aulast=Terry&amp;rft.btitle=Compilers+and+Compiler+Generators%3A+An+Introduction+with+C%2B%2B&amp;rft.date=1997&amp;rft.genre=book&amp;rft.isbn=1-85032-298-8&amp;rft.pub=International+Thomson+Computer+Press&amp;rft_id=http%3A%2F%2Fscifac.ru.ac.za%2Fcompilers%2Fconts.htm&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+<li><cite class="citation book">Wirth, Niklaus (1996). <a><i>Compiler Construction</i></a> <span style="font-size:85%;">(PDF)</span>. Addison-Wesley. ISBN&#160;0-201-40353-6.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ACompiler&amp;rft.aufirst=Niklaus&amp;rft.aulast=Wirth&amp;rft.btitle=Compiler+Construction&amp;rft.date=1996&amp;rft.genre=book&amp;rft.isbn=0-201-40353-6&amp;rft.pub=Addison-Wesley&amp;rft_id=http%3A%2F%2Fwww.ethoberon.ethz.ch%2FWirthPubl%2FCBEAll.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span>edit<span class="mw-editsection-bracket">]</span></span></h2>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="background-color:#f9f9f9;border:1px solid #aaa;color:#000">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/40px-Wiktionary-logo-en-v2.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/60px-Wiktionary-logo-en-v2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wiktionary-logo-en-v2.svg/80px-Wiktionary-logo-en-v2.svg.png 2x" data-file-width="391" data-file-height="391" /></td>
+<td class="mbox-text plainlist">Look up <i><b>compiler</b></i> in Wiktionary, the free dictionary.</td>
+</tr>
+</table>
+<table role="presentation" class="mbox-small plainlinks sistersitebox" style="background-color:#f9f9f9;border:1px solid #aaa;color:#000">
+<tr>
+<td class="mbox-image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" class="noviewer" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x" data-file-width="400" data-file-height="400" /></td>
+<td class="mbox-text plainlist">Wikibooks has a book on the topic of: <i><b>Compiler Construction</b></i></td>
+</tr>
+</table>
+<ul>
+<li>Compilers at DMOZ</li>
+<li>Incremental Approach to Compiler Construction&#160;– a PDF tutorial</li>
+<li>Compile-Howto</li>
+<li><i>Basics of Compiler Design</i> by Torben Ægidius Mogensen</li>
+<li><a><span class="plainlinks">Short animation</span></a> on YouTube explaining the key conceptual difference between compilers and interpreters</li>
+<li><a><span class="plainlinks">Syntax Analysis &amp; LL1 Parsing</span></a> on YouTube</li>
+<li>Let's Build a Compiler, by Jack Crenshaw</li>
+<li>Forum about compiler development</li>
+</ul>
+<div role="navigation" class="navbox" aria-label="Navbox" style="padding:3px">
+<table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="row" class="navbox-group" style="width:1%">Authority control</th>
+<td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span class="nowrap">LCCN: <span class="uid">sh86007588</span></span></li>
+<li><span class="nowrap">GND: <span class="uid">4148248-7</span></span></li>
+<li><span class="nowrap">BNF: <span class="uid">cb120631538 (data)</span></span></li>
+<li><span class="nowrap">NDL: <span class="uid">01191219</span></span></li>
+<li><span class="nowrap">BNE: <span class="uid">XX532454</span></span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1161
+Cached time: 20170919155729
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 1.236 seconds
+Real time usage: 1.356 seconds
+Preprocessor visited node count: 8093/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 158197/2097152 bytes
+Template argument size: 22864/2097152 bytes
+Highest expansion depth: 16/40
+Expensive parser function count: 15/500
+Lua time usage: 0.700/10.000 seconds
+Lua memory usage: 6.18 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1140.891      1 -total
+ 33.27%  379.544     27 Template:Fix
+ 29.18%  332.952     34 Template:Delink
+ 28.80%  328.569      1 Template:Reflist
+ 15.25%  173.994     12 Template:Primary_source_inline
+  9.06%  103.387      7 Template:Citation_needed
+  9.03%  103.006      7 Template:Clarify
+  8.78%  100.157     48 Template:Category_handler
+  8.29%   94.589      8 Template:Cite_web
+  8.07%   92.026      7 Template:Fix-span
+-->
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:5739-0!canonical and timestamp 20170919155728 and revision id 801423849
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "https://en.wikipedia.org/w/index.php?title=Compiler&amp;oldid=801423849"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks">Categories: <ul><li>American inventions</li><li>Compilers</li><li>Compiler construction</li><li>Computer libraries</li><li>Programming language implementation</li><li>Utility software types</li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li>CS1 maint: Uses editors parameter</li><li>Accuracy disputes from March 2017</li><li>All pages needing factual verification</li><li>Wikipedia articles needing factual verification from March 2017</li><li>Pages containing links to subscription-only content</li><li>CS1 maint: Uses authors parameter</li><li>Use dmy dates from July 2012</li><li>Articles lacking reliable references from February 2017</li><li>All articles lacking reliable references</li><li>Articles needing additional references from September 2010</li><li>All articles needing additional references</li><li>All accuracy disputes</li><li>Articles with disputed statements from January 2017</li><li>Wikipedia articles needing clarification from November 2015</li><li>All articles with unsourced statements</li><li>Articles with unsourced statements from March 2017</li><li>Wikipedia articles needing clarification from February 2017</li><li>Wikipedia articles needing clarification from March 2017</li><li>All articles that are too technical</li><li>Wikipedia articles that are too technical from March 2017</li><li>All articles needing expert attention</li><li>Articles needing expert attention from March 2017</li><li>Articles needing additional references from February 2017</li><li>CS1 maint: Extra text</li><li>Articles with DMOZ links</li><li>Wikipedia articles with LCCN identifiers</li><li>Wikipedia articles with GND identifiers</li><li>Wikipedia articles with BNF identifiers</li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk">Talk</li><li id="pt-anoncontribs">Contributions</li><li id="pt-createaccount">Create account</li><li id="pt-login">Log in</li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Compiler.html" title="View the content page [c]" accesskey="c">Article</a></span></li>
+							<li id="ca-talk"><span>Talk</span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="selected"><span><a href="Compiler.html">Read</a></span></li>
+							<li id="ca-edit"><span>Edit</span></li>
+							<li id="ca-history" class="collapsible"><span>View history</span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description">Main page</li><li id="n-contents">Contents</li><li id="n-featuredcontent">Featured content</li><li id="n-currentevents">Current events</li><li id="n-randompage">Random article</li><li id="n-sitesupport">Donate to Wikipedia</li><li id="n-shoplink">Wikipedia store</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help">Help</li><li id="n-aboutsite">About Wikipedia</li><li id="n-portal">Community portal</li><li id="n-recentchanges">Recent changes</li><li id="n-contactpage">Contact page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere">What links here</li><li id="t-recentchangeslinked">Related changes</li><li id="t-upload">Upload file</li><li id="t-specialpages">Special pages</li><li id="t-permalink">Permanent link</li><li id="t-info">Page information</li><li id="t-wikibase">Wikidata item</li><li id="t-cite">Cite this page</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book">Create a book</li><li id="coll-download-as-rdf2latex">Download as PDF</li><li id="t-print">Printable version</li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-af">Afrikaans</li><li class="interlanguage-link interwiki-ar">العربية</li><li class="interlanguage-link interwiki-an">Aragonés</li><li class="interlanguage-link interwiki-ast">Asturianu</li><li class="interlanguage-link interwiki-az">Azərbaycanca</li><li class="interlanguage-link interwiki-azb">تۆرکجه</li><li class="interlanguage-link interwiki-bn">বাংলা</li><li class="interlanguage-link interwiki-zh-min-nan">Bân-lâm-gú</li><li class="interlanguage-link interwiki-be">Беларуская</li><li class="interlanguage-link interwiki-be-x-old">Беларуская (тарашкевіца)‎</li><li class="interlanguage-link interwiki-bg">Български</li><li class="interlanguage-link interwiki-bs">Bosanski</li><li class="interlanguage-link interwiki-ca">Català</li><li class="interlanguage-link interwiki-cs">Čeština</li><li class="interlanguage-link interwiki-da">Dansk</li><li class="interlanguage-link interwiki-de">Deutsch</li><li class="interlanguage-link interwiki-et">Eesti</li><li class="interlanguage-link interwiki-el">Ελληνικά</li><li class="interlanguage-link interwiki-es">Español</li><li class="interlanguage-link interwiki-eo">Esperanto</li><li class="interlanguage-link interwiki-eu">Euskara</li><li class="interlanguage-link interwiki-fa">فارسی</li><li class="interlanguage-link interwiki-fr">Français</li><li class="interlanguage-link interwiki-ga">Gaeilge</li><li class="interlanguage-link interwiki-gl">Galego</li><li class="interlanguage-link interwiki-ko">한국어</li><li class="interlanguage-link interwiki-hy">Հայերեն</li><li class="interlanguage-link interwiki-hi">हिन्दी</li><li class="interlanguage-link interwiki-hsb">Hornjoserbsce</li><li class="interlanguage-link interwiki-hr">Hrvatski</li><li class="interlanguage-link interwiki-ilo">Ilokano</li><li class="interlanguage-link interwiki-id">Bahasa Indonesia</li><li class="interlanguage-link interwiki-ia">Interlingua</li><li class="interlanguage-link interwiki-is">Íslenska</li><li class="interlanguage-link interwiki-it">Italiano</li><li class="interlanguage-link interwiki-he">עברית</li><li class="interlanguage-link interwiki-ka">ქართული</li><li class="interlanguage-link interwiki-kk">Қазақша</li><li class="interlanguage-link interwiki-ky">Кыргызча</li><li class="interlanguage-link interwiki-la">Latina</li><li class="interlanguage-link interwiki-lv">Latviešu</li><li class="interlanguage-link interwiki-lb">Lëtzebuergesch</li><li class="interlanguage-link interwiki-lt">Lietuvių</li><li class="interlanguage-link interwiki-hu">Magyar</li><li class="interlanguage-link interwiki-mk">Македонски</li><li class="interlanguage-link interwiki-ml">മലയാളം</li><li class="interlanguage-link interwiki-ms">Bahasa Melayu</li><li class="interlanguage-link interwiki-mwl">Mirandés</li><li class="interlanguage-link interwiki-my">မြန်မာဘာသာ</li><li class="interlanguage-link interwiki-nl">Nederlands</li><li class="interlanguage-link interwiki-ne">नेपाली</li><li class="interlanguage-link interwiki-ja">日本語</li><li class="interlanguage-link interwiki-no">Norsk</li><li class="interlanguage-link interwiki-mhr">Олык марий</li><li class="interlanguage-link interwiki-pa">ਪੰਜਾਬੀ</li><li class="interlanguage-link interwiki-pnb">پنجابی</li><li class="interlanguage-link interwiki-pl">Polski</li><li class="interlanguage-link interwiki-pt">Português</li><li class="interlanguage-link interwiki-ro">Română</li><li class="interlanguage-link interwiki-ru">Русский</li><li class="interlanguage-link interwiki-sco">Scots</li><li class="interlanguage-link interwiki-simple">Simple English</li><li class="interlanguage-link interwiki-sk">Slovenčina</li><li class="interlanguage-link interwiki-sl">Slovenščina</li><li class="interlanguage-link interwiki-ckb">کوردی</li><li class="interlanguage-link interwiki-sr">Српски / srpski</li><li class="interlanguage-link interwiki-sh">Srpskohrvatski / српскохрватски</li><li class="interlanguage-link interwiki-fi">Suomi</li><li class="interlanguage-link interwiki-sv">Svenska</li><li class="interlanguage-link interwiki-tl">Tagalog</li><li class="interlanguage-link interwiki-ta">தமிழ்</li><li class="interlanguage-link interwiki-te">తెలుగు</li><li class="interlanguage-link interwiki-th">ไทย</li><li class="interlanguage-link interwiki-tr">Türkçe</li><li class="interlanguage-link interwiki-uk">Українська</li><li class="interlanguage-link interwiki-ur">اردو</li><li class="interlanguage-link interwiki-vi">Tiếng Việt</li><li class="interlanguage-link interwiki-war">Winaray</li><li class="interlanguage-link interwiki-yi">ייִדיש</li><li class="interlanguage-link interwiki-diq">Zazaki</li><li class="interlanguage-link interwiki-zh">中文</li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link">Edit links</span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 19 September 2017, at 15:57.</li>
+											<li id="footer-info-copyright">Text is available under the Creative Commons Attribution-ShareAlike License;
+additional terms may apply.  By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy">Privacy policy</li>
+											<li id="footer-places-about">About Wikipedia</li>
+											<li id="footer-places-disclaimer">Disclaimers</li>
+											<li id="footer-places-contact">Contact Wikipedia</li>
+											<li id="footer-places-developers">Developers</li>
+											<li id="footer-places-cookiestatement">Cookie statement</li>
+											<li id="footer-places-mobileview">Mobile view</li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"1.236","walltime":"1.356","ppvisitednodes":{"value":8093,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":158197,"limit":2097152},"templateargumentsize":{"value":22864,"limit":2097152},"expansiondepth":{"value":16,"limit":40},"expensivefunctioncount":{"value":15,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00% 1140.891      1 -total"," 33.27%  379.544     27 Template:Fix"," 29.18%  332.952     34 Template:Delink"," 28.80%  328.569      1 Template:Reflist"," 15.25%  173.994     12 Template:Primary_source_inline","  9.06%  103.387      7 Template:Citation_needed","  9.03%  103.006      7 Template:Clarify","  8.78%  100.157     48 Template:Category_handler","  8.29%   94.589      8 Template:Cite_web","  8.07%   92.026      7 Template:Fix-span"]},"scribunto":{"limitreport-timeusage":{"value":"0.700","limit":"10.000"},"limitreport-memusage":{"value":6476651,"limit":52428800}},"cachereport":{"origin":"mw1161","timestamp":"20170919155729","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":90,"wgHostname":"mw1238"});});</script>
+	</body>
+</html>

@@ -14,6 +14,16 @@ from googleapiclient.discovery import build
 
 
 #------------------------------#
+#--- README -------------------#
+#------------------------------#
+
+# This script allows you to manage Télécom's calendar's events and divide them into two different calendars on Google's Agenda.
+# To Properly use this script, one should:
+# 
+# 1- Have a Google Account 
+# 2- 
+
+#------------------------------#
 #--- USER INPUTS --------------#
 #------------------------------#
 
@@ -170,15 +180,15 @@ class Calendar:
     def __init__(self, calendarId):
         self.creds = None
         self.calendarId = calendarId
-        if os.path.exists("./credentials/token.pickle"):
-            with open("./credentials/token.pickle", "rb") as token:
+        if os.path.exists("./token.pickle"):
+            with open("./token.pickle", "rb") as token:
                 self.creds = pickle.load(token)
         if not self.creds or not self.creds.valid:
             if self.creds and self.creds.expired and self.creds.refresh_token:
                 self.creds.refresh(Request())
             else:
-                self.creds = InstalledAppFlow.from_client_secrets_file("./credentials/credentials.json", self.SCOPES).run_local_server(port=0)
-            with open("./credentials/token.pickle", "wb") as token:
+                self.creds = InstalledAppFlow.from_client_secrets_file("./credentials.json", self.SCOPES).run_local_server(port=0)
+            with open("./token.pickle", "wb") as token:
                 pickle.dump(self.creds, token)
         self.service = build("calendar", "v3", credentials=self.creds)
 

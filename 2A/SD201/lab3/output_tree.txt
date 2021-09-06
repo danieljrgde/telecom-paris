@@ -1,0 +1,44 @@
+Root
+Level 0
+Feature Sex 0
+Gini 0.5
+
+Intermediate
+Level 1
+Feature Pclass 1 2
+Gini 0.2975
+*****
+Intermediate
+Level 1
+Feature Pclass 1 2
+Gini 0.1975
+
+Leaf
+Level 2
+Class 1
+Gini 0.0
+*****
+Intermediate
+Level 2
+Feature Embarked 0 1
+Gini 0.4444
+*****
+Leaf
+Level 2
+Class 0
+Gini 0.5
+*****
+Leaf
+Level 2
+Class 0
+Gini 0.0
+
+Leaf
+Level 3
+Class 1
+Gini 0.0
+*****
+Leaf
+Level 3
+Class 1
+Gini 0.48
