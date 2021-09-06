@@ -31,7 +31,7 @@ Hope it helps some lost students haha
 
 🎲 SD projects: 
 
-- SD201: *Mining of large Datasets*
+- SD201: *Mining of Large Datasets*
 - SD202: *Databases*
 - SD-TSIA214: *Machine Learning for Text Mining*
 
