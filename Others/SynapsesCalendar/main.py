@@ -52,13 +52,13 @@ kinds = {
 
 # Set the colors you wish for each type of class (https://blog.kodono.info/wordpress/2016/04/18/get-color_id-from-a-google-calendar-using-api-p)
 colors = {
-    "": "",
-    "(TP)": 7,
-    "(TD)": 7,
-    "Project": 7,
-    "Other": 7,
-    "(Exam)": 4,
-    "(Oral Exam)": 4
+    '': "",
+    '(TP)': 7,
+    '(TD)': 7,
+    'Project': 7,
+    'Other': 7,
+    '(Exam)': 4,
+    '(Oral Exam)': 4
 }
 
 # Set your timezone
