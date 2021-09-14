@@ -8,7 +8,7 @@ I created this repository to share with you some of the projects that I did whil
 
 Hope it helps some lost students haha
 
-**PS: I'd also like to thank José Lucas Barretto, Kevin Kühl and Lucas Miguel Agrizzi for providing their works from other filières.**
+**PS: I'd also like to thank José Lucas Barretto, Kevin Kühl and Lucas Miguel Agrizzi for providing some of their works.**
 
 <br>
 
