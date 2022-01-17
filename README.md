@@ -8,8 +8,6 @@ I created this repository to share with you some of the projects that I did whil
 
 Hope it helps some lost students haha
 
-**PS: I'd also like to thank José Lucas Barretto, Kevin Kühl and Lucas Miguel Agrizzi for providing some of their works.**
-
 <br>
 
 ## What You'll Find Here
@@ -41,3 +39,12 @@ Hope it helps some lost students haha
 - MDI220: *Statistics*
 - INF203: *Web Development*
 - INF280: *Programming Contest Training*
+
+<br>
+
+# Contributors
+
+[![](https://avatars.githubusercontent.com/u/51557487?v=4)](https://github.com/daniel-deutsch)
+[![](https://avatars.githubusercontent.com/u/36503832?v=4)](https://github.com/kevinkuhl)
+[![](https://avatars.githubusercontent.com/u/29128981?v=4)](https://github.com/lucasbarretto)
+[![](https://avatars.githubusercontent.com/u/30624187?v=4)](https://github.com/lucasagrizzi)
