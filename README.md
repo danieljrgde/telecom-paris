@@ -44,7 +44,7 @@ Hope it helps some lost students haha
 
 # Contributors
 
-[![](https://avatars.githubusercontent.com/u/51557487?v=4)](https://github.com/daniel-deutsch)
-[![](https://avatars.githubusercontent.com/u/36503832?v=4)](https://github.com/kevinkuhl)
-[![](https://avatars.githubusercontent.com/u/29128981?v=4)](https://github.com/lucasbarretto)
-[![](https://avatars.githubusercontent.com/u/30624187?v=4)](https://github.com/lucasagrizzi)
+[![](https://avatars.githubusercontent.com/u/51557487?s=50&v=4)](https://github.com/daniel-deutsch)
+[![](https://avatars.githubusercontent.com/u/36503832?s=50&v=4)](https://github.com/kevinkuhl)
+[![](https://avatars.githubusercontent.com/u/29128981?s=50&v=4)](https://github.com/lucasbarretto)
+[![](https://avatars.githubusercontent.com/u/30624187?s=50&v=4)](https://github.com/lucasagrizzi)
