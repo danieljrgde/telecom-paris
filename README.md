@@ -42,7 +42,7 @@ Hope it helps some lost students haha
 
 <br>
 
-# Special Thx To
+# Contributors
 
 [![](https://avatars.githubusercontent.com/u/51557487?s=70&v=4)](https://github.com/daniel-deutsch)
 [![](https://avatars.githubusercontent.com/u/36503832?s=70&v=4)](https://github.com/kevinkuhl)
